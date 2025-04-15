@@ -1,0 +1,52 @@
+{
+    "movies": [
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    },
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    }, 
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    }, 
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    }, 
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    },
+    {
+        "title": "name",
+        "rating": 4,
+        "nr_of_revews": "4k",
+        "image":"url",
+        "description": "insert text"
+    }
+
+
+
+
+
+
+    ]
+}
