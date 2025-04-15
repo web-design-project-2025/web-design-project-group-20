@@ -18,9 +18,9 @@ html {
 #logo {
   font-family: "citrus-gothic", sans-serif;
   font-style: normal;
-  color: #fbf1cd;
+  color: var(--off-white);
 }
 
 header {
-  background-color: #da4a49;
+  background-color: var(--red);
 }
