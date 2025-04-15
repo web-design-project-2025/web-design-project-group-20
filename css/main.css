@@ -7,5 +7,9 @@ html {
 #logo {
   font-family: "citrus-gothic", sans-serif;
   font-style: normal;
-  background-color: FBF1CD;
+  color: #fbf1cd;
+}
+
+header {
+  background-color: #da4a49;
 }
