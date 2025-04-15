@@ -5,6 +5,7 @@
         "rating": 4,
         "nr_of_revews": "4k",
         "image":"url",
+        "publiching_year":"insert",
         "genre":"insert",
         "description": "insert text"
     },
@@ -13,6 +14,7 @@
         "rating": 4,
         "nr_of_revews": "4k",
         "image":"url",
+        "publiching_year":"insert",
         "genre":"insert",
         "description": "insert text"
     }, 
@@ -22,6 +24,7 @@
         "nr_of_revews": "4k",
         "image":"url",
         "genre":"insert",
+        "publiching_year":"insert",
         "description": "insert text"
     }, 
     {
@@ -30,6 +33,7 @@
         "nr_of_revews": "4k",
         "image":"url",
         "genre":"insert",
+        "publiching_year":"insert",
         "description": "insert text"
     }, 
     {
@@ -38,6 +42,7 @@
         "nr_of_revews": "4k",
         "image":"url",
         "genre":"insert",
+        "publiching_year":"insert",
         "description": "insert text"
     },
     {
@@ -46,6 +51,7 @@
         "nr_of_revews": "4k",
         "image":"url",
         "genre":"insert",
+        "publiching_year":"insert",
         "description": "insert text"
     }
     ]
