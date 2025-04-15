@@ -1,1 +1,11 @@
 /* Header */
+
+html {
+  font-family: "Kumbh Sans";
+}
+
+#logo {
+  font-family: "citrus-gothic", sans-serif;
+  font-style: normal;
+  background-color: FBF1CD;
+}
