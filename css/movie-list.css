@@ -3,15 +3,18 @@
   grid-template-columns: 10% auto auto auto auto auto 10%;
   grid-template-rows: auto auto;
   grid-template-areas:
-    ". content content content content content ."
-    ". content content content content content .";
+    " . content content content content content ."
+    " . content content content content content .";
+}
+
+.content {
+  grid-area: content;
 }
 
 .movie-box {
-  grid-area: content;
   background-color: #ffffff;
 }
 
 .posters {
-  width: 100%;
+  width: 50%;
 }
