@@ -18,6 +18,11 @@ function createMovieElement(movie) {
   imageElement.classList.add("posters");
   movieElement.appendChild(imageElement);
 
+  const movieName = document.createElement("p");
+  movieName.innerText = movie.title;
+  movieName.classList.add("movie-name");
+  movieElement.appendChild(movieName);
+
   return movieElement;
 }
 

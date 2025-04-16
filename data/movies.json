@@ -170,7 +170,7 @@
       "title": "10 Things I Hate About You",
       "rating": 4,
       "nr_of_reviews": "4k",
-      "image": "movie-img/90/10-things.jpg",
+      "image": "movie-img/90s/10-things.jpg",
       "publishing_year": "1999",
       "genre1": "comedy",
       "description": "insert text"
@@ -318,7 +318,7 @@
       "title": "Pulp Fiction",
       "rating": 4,
       "nr_of_reviews": "4k",
-      "image": "movie-img/90s/pulp-fiction.jpg",
+      "image": "movie-img/90s/pulp-ficton.jpg",
       "publishing_year": "1994",
       "genre1": "action",
       "description": "insert text"
@@ -333,7 +333,6 @@
       "genre2": "action",
       "description": "insert text"
     },
-
     {
       "title": "The Matrix",
       "rating": 4,
