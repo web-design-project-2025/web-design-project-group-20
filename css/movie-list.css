@@ -1,20 +1,24 @@
 .container {
   display: grid;
-  grid-template-columns: 10% auto auto auto auto auto 10%;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    " . content content content content content ."
-    " . content content content content content .";
-}
-
-.content {
-  grid-area: content;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .movie-box {
-  background-color: #ffffff;
+  background-color: #cc9393;
 }
 
 .posters {
-  width: 50%;
+  width: 100%;
+}
+
+.movie-name {
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
+
+.movie-main {
+  margin-left: 10%;
+  margin-right: 10%;
 }
