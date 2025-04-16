@@ -1,0 +1,26 @@
+/* variables*/
+:root {
+  --red: #DA4A49;
+  --light-green: #DEE195;
+  --yellow: #F8AF3A;
+  --dark-green: #4F867E;
+  --off-white: #FBF1CD;
+  --light-brown: #BC7D57;
+  --brown: #624330;
+  --dark-red: #953635;
+}
+
+/* Header */
+html {
+  font-family: "Kumbh Sans";
+}
+
+#logo {
+  font-family: "citrus-gothic", sans-serif;
+  font-style: normal;
+  color: var(--off-white);
+}
+
+header {
+  background-color: var(--red);
+}
