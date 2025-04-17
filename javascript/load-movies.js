@@ -44,7 +44,8 @@ function homeRenderContent() {
   homeContentElement.innerHTML = "";
 
   while (movies.length > 5) {
-    movies.pop();
+    let mov = Math.floor(Math.random() * movies.length);
+    movies.splice(mov, 1);
   }
 
   for (let movie of movies) {
