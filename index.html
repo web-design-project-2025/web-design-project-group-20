@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <script src="javascript/load-movies.js" defer></script>
     <title>Home</title>
   </head>
   <body>
@@ -22,7 +25,16 @@
         <a href="account.html">temporary(account)</a>
       </nav>
     </header>
-    <main></main>
+    <main class="home-container">
+      <section class="home-hero"></section>
+      <section class="home-movies">
+        <p class="home-movies-title">RECOMMENDED MOVIES</p>
+        <div class="home-movies-container" id="home-movie-content"></div>
+      </section>
+      <section class="home-articles">
+        <p class="home-articles-title">RECOMMENDED ARTICLES</p>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
