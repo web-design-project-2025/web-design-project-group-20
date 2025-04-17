@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.article-box {
+  background-color: #cc9393;
+}
+
+.icons {
+  width: 100%;
+}
+
+.article-name {
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
+
+.article-main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
