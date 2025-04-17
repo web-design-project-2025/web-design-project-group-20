@@ -14,7 +14,7 @@ function createArticleElement(article) {
   articleElement.classList.add("article-box");
 
   const iconElement = document.createElement("img");
-  iconElement.scr = article.icon;
+  iconElement.src = article.icon;
   iconElement.classList.add("icons");
   articleElement.appendChild(iconElement);
 
