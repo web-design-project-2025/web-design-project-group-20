@@ -3,7 +3,7 @@
     {
       "title": "FLEISCHER STUDIOS",
       "authur": "Wilma Nyrén",
-      "icon": "article-icons/circle-icon/icon-boop.png",
+      "icon": "article-icons/icon-boop.png",
       "hero_image": "url",
       "image1": "url",
       "filter": "History",
@@ -23,7 +23,7 @@
     {
       "title": "E.T. The Extra-Terrestrial",
       "authur": "Roger Ebert",
-      "icon": "article-icons/circle-icon/icon-et.png",
+      "icon": "article-icons/icon-et.png",
       "hero_image": "url",
       "image1": "url",
       "filter": "Review",
@@ -38,7 +38,7 @@
     {
       "title": "Princess Mononoke",
       "authur": "Roger Ebert",
-      "icon": "article-icons/circle-icon/icon-mononoke.png",
+      "icon": "article-icons/icon-mononoke.png",
       "hero_image": "url",
       "image1": "url",
       "filter": "Review",
@@ -77,7 +77,7 @@
     {
       "title": "Forrest Gump — The Movie Review",
       "authur": "Paul Leslie",
-      "icon": "article-icons/circle-icon/icon-gump.png",
+      "icon": "article-icons/icon-gump.png",
       "hero_image": "url",
       "image1": "url",
       "filter": "Review",
@@ -99,7 +99,7 @@
     {
       "title": "Flying, Freedom & Nature in Laputa : The Castle In The Sky",
       "authur": "Ritvik",
-      "icon": "article-icons/circle-icon/icon-castle.png",
+      "icon": "article-icons/icon-castle.png",
       "hero_image": "url",
       "image1": "url",
       "filter": "Review",
