@@ -1,12 +1,17 @@
 let movies = [];
 const contentElement = document.getElementById("movies_content");
+const homeContentElement = document.getElementById("home-movie-content");
 
 async function loadData() {
   const movieResponse = await fetch("data/movies.json");
   const movieJSON = await movieResponse.json();
   movies = movieJSON.movies;
 
-  renderContent();
+  if (document.getElementById("movies_content")) {
+    renderContent();
+  } else if (document.getElementById("home-movie-content")) {
+    homeRenderContent();
+  }
 }
 
 function createMovieElement(movie) {
@@ -32,6 +37,19 @@ function renderContent() {
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
     contentElement.appendChild(movieElement);
+  }
+}
+
+function homeRenderContent() {
+  homeContentElement.innerHTML = "";
+
+  while (movies.length > 5) {
+    movies.pop();
+  }
+
+  for (let movie of movies) {
+    const movieElement = createMovieElement(movie);
+    homeContentElement.appendChild(movieElement);
   }
 }
 
