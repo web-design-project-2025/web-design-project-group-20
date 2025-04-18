@@ -1,0 +1,37 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.home-hero {
+  background-color: rgb(83, 77, 69);
+}
+
+.home-movies {
+  background-color: var(--off-white);
+}
+
+.home-movies-title {
+  color: var(--dark-green);
+}
+
+.home-movies-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home-articles {
+  background-color: var(--light-green);
+}
+
+.home-articles-title {
+  color: black;
+}
+
+.home-articles-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
