@@ -13,6 +13,26 @@ li {
 ul {
     display: flex;
     justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*account list end*/
+
+/*account content*/
+/*icons*/
+.account-icons {
+    width: 50px;
+}
+
+.settings-list {
+    display: flex;
+}
+
+
+/*icons end*/
+h2 {
+    text-align: center;
+}
+
+/*account content end*/
