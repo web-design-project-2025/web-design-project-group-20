@@ -24,3 +24,7 @@ html {
 header {
   background-color: var(--red);
 }
+
+nav a {
+  color: var(--off-white);
+}
