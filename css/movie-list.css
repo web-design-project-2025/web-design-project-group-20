@@ -2,10 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+
   gap: 2rem;
 }
 
 .movie-box {
+  justify-self: center;
   width: 15rem;
 }
 
@@ -19,6 +21,6 @@
 }
 
 .movie-main {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
