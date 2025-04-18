@@ -1,12 +1,17 @@
 let articles = [];
-const contentElement = document.getElementById("articles_content");
+const content = document.getElementById("articles_content");
+const homeContent = document.getElementById("home-articles-content");
 
 async function loadData() {
   const articleResponse = await fetch("data/articles.json");
   const articleJSON = await articleResponse.json();
   articles = articleJSON.articles;
 
-  renderContent();
+  if (document.getElementById("articles_content")) {
+    renderContent();
+  } else if (document.getElementById("home-articles-content")) {
+    homeRenderArticles();
+  }
 }
 
 function createArticleElement(article) {
@@ -32,11 +37,25 @@ function createArticleElement(article) {
 }
 
 function renderContent() {
-  contentElement.innerHTML = "";
+  content.innerHTML = "";
 
   for (let article of articles) {
     const articleElement = createArticleElement(article);
-    contentElement.appendChild(articleElement);
+    content.appendChild(articleElement);
+  }
+}
+
+function homeRenderArticles() {
+  homeContent.innerHTML = "";
+
+  while (articles.length > 3) {
+    let art = Math.floor(Math.random() * articles.length);
+    articles.splice(art, 1);
+  }
+
+  for (let article of articles) {
+    const articleElement = createArticleElement(article);
+    homeContent.appendChild(articleElement);
   }
 }
 
