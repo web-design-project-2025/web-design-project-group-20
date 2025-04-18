@@ -1,8 +1,8 @@
+/* grid for movies */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 
@@ -16,11 +16,38 @@
 }
 
 .movie-name {
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-left: 0.5rem;
+  padding-right: 3rem;
+  font-weight: bold;
 }
 
-.movie-main {
+.movie-sides {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.movie-body {
+  background-color: var(--off-white);
+}
+
+.stars {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* will be moved to main.css */
+.top-of-page {
+  height: 7rem;
+  background-color: var(--light-green);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.top-of-page-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  color: var(--dark-green);
 }

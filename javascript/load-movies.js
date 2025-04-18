@@ -28,6 +28,13 @@ function createMovieElement(movie) {
   movieName.classList.add("movie-name");
   movieElement.appendChild(movieName);
 
+  if (movie.rating === 4) {
+    const starElement = document.createElement("img");
+    starElement.classList.add("stars");
+    starElement.src = "icons/star-full.svg";
+    movieElement.appendChild(starElement);
+  }
+
   return movieElement;
 }
 
@@ -51,6 +58,12 @@ function homeRenderContent() {
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
     homeContentElement.appendChild(movieElement);
+  }
+}
+
+class Star {
+  constructor(number) {
+    this.number;
   }
 }
 

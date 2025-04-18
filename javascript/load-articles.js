@@ -48,7 +48,7 @@ function renderContent() {
 function homeRenderArticles() {
   homeContent.innerHTML = "";
 
-  while (articles.length > 3) {
+  while (articles.length > 4) {
     let art = Math.floor(Math.random() * articles.length);
     articles.splice(art, 1);
   }
