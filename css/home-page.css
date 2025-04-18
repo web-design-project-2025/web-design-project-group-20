@@ -23,10 +23,15 @@
 }
 
 .home-articles {
-  height: 10rem;
   background-color: var(--light-green);
 }
 
 .home-articles-title {
   color: black;
+}
+
+.home-articles-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
