@@ -1,0 +1,18 @@
+/*account list*/
+img {
+    width: 150px;
+}
+
+li {
+    list-style: none;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+/*account list end*/
