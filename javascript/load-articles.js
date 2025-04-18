@@ -23,6 +23,11 @@ function createArticleElement(article) {
   articleTitle.classList.add("article-name");
   articleElement.appendChild(articleTitle);
 
+  const articleAuthor = document.createElement("p");
+  articleAuthor.innerText = article.authur;
+  articleAuthor.classList.add("article-author");
+  articleElement.appendChild(articleAuthor);
+
   return articleElement;
 }
 
