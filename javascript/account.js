@@ -7,8 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
   detailElement.addEventListener("click", function (event) {
     contentElement.innerHTML = `
             <section>
-                 <h2>Account Details</h2>
-        
+              <h2>Your Account Details</h2>
+              <div id="bowl2"> 
+                <div id="settings-list3"> 
+                <h5>Your Username:</h5>
+                <p>iho3i73jh</p>
+                </div> 
+                <div id="settings-list3"> 
+                <h5>Your Email:</h5>
+                <p>nonreal@email.com</p>
+                </div> 
+                <div id="settings-list5"> 
+                <h5>Your Password:</h5>
+                <p>***********</p>
+                </div> 
+              </div> 
             </section>
   `;
   });
@@ -20,11 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <h2>Settings</h2>
               <div id="bowl"> 
                 <div id="settings-list1"> 
-                  <p>Light mode:</p> 
+                  <h5>Light mode:</h5> 
                   <img class="account-icons" id="light" src="icons/sun-green.svg" alt="light mode button">
                 </div> 
                 <div id="settings-list2"> 
-                  <p>Dark mode:</p> 
+                  <h5>Dark mode:</h5> 
                   <img class="account-icons" id="dark" src="icons/moon-green.svg" alt="dark mode button">
                 </div> 
               </div> 
