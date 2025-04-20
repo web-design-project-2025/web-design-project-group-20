@@ -21,13 +21,33 @@ ul {
 
 /*account content*/
 /*icons*/
+
 .account-icons {
     width: 50px;
 }
 
-.settings-list {
-    display: flex;
+#bowl {
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
 }
+
+#settings-list1,
+#settings-list2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 25vw;
+}
+
+#dark {
+    margin-left: 2.15vw;
+}
+
+.account-icons {
+    margin-left: 2vw;
+}
+
 
 
 /*icons end*/
