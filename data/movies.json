@@ -12,7 +12,7 @@
     },
     {
       "title": "Batman",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/batman.jpg",
       "publishing_year": "1989",
@@ -22,7 +22,7 @@
     {
       "title": "Beetlejuice",
       "rating": 4,
-      "nr_of_reviews": "4k",
+      "nr_of_reviews": "2k",
       "image": "movie-img/80s/beetlejuice.jpg",
       "genre1": "comedy",
       "publishing_year": "1988",
@@ -30,7 +30,7 @@
     },
     {
       "title": "Blade Runner",
-      "rating": 4,
+      "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/blade-runner.jpg",
       "genre1": "science fiction",
@@ -40,7 +40,7 @@
     {
       "title": "The Breakfast Club",
       "rating": 4,
-      "nr_of_reviews": "4k",
+      "nr_of_reviews": "1k",
       "image": "movie-img/80s/breakfast.jpg",
       "genre1": "comedy",
       "publishing_year": "1985",
@@ -49,8 +49,8 @@
 
     {
       "title": "Castle in the Sky",
-      "rating": 4,
-      "nr_of_reviews": "4k",
+      "rating": 5,
+      "nr_of_reviews": "5k",
       "image": "movie-img/80s/castle-in-sky.jpg",
       "publishing_year": "1986",
       "genre1": "animation",

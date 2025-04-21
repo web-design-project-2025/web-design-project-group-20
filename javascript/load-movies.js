@@ -28,11 +28,66 @@ function createMovieElement(movie) {
   movieName.classList.add("movie-name");
   movieElement.appendChild(movieName);
 
-  if (movie.rating === 4) {
+  const starContainer = document.createElement("div");
+  starContainer.innerHTML = "";
+  starContainer.classList.add("movie-stars");
+  movieElement.appendChild(starContainer);
+
+  function fullStar() {
     const starElement = document.createElement("img");
     starElement.classList.add("stars");
     starElement.src = "icons/star-full.svg";
-    movieElement.appendChild(starElement);
+    starContainer.appendChild(starElement);
+  }
+
+  function hollowStar() {
+    const starElement = document.createElement("img");
+    starElement.classList.add("stars");
+    starElement.src = "icons/star-hallow.svg";
+    starContainer.appendChild(starElement);
+  }
+
+  function numberOfReviews() {
+    const reviewElement = document.createElement("p");
+    reviewElement.innerHTML = movie.nr_of_reviews;
+    reviewElement.classList.add("numberOfReviews");
+    starContainer.appendChild(reviewElement);
+  }
+  if (movie.rating === 5) {
+    fullStar();
+    fullStar();
+    fullStar();
+    fullStar();
+    fullStar();
+    numberOfReviews();
+  } else if (movie.rating === 4) {
+    fullStar();
+    fullStar();
+    fullStar();
+    fullStar();
+    hollowStar();
+    numberOfReviews();
+  } else if (movie.rating === 3) {
+    fullStar();
+    fullStar();
+    fullStar();
+    hollowStar();
+    hollowStar();
+    numberOfReviews();
+  } else if (movie.rating === 2) {
+    fullStar();
+    fullStar();
+    hollowStar();
+    hollowStar();
+    hollowStar();
+    numberOfReviews();
+  } else if (movie.rating === 1) {
+    fullStar();
+    hollowStar();
+    hollowStar();
+    hollowStar();
+    hollowStar();
+    numberOfReviews();
   }
 
   return movieElement;
@@ -58,12 +113,6 @@ function homeRenderContent() {
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
     homeContentElement.appendChild(movieElement);
-  }
-}
-
-class Star {
-  constructor(number) {
-    this.number;
   }
 }
 

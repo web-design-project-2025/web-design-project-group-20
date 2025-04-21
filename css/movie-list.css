@@ -31,9 +31,20 @@
   background-color: var(--off-white);
 }
 
+.movie-stars {
+  margin-left: 0.5rem;
+  display: flex;
+  gap: 0.1rem;
+}
+
 .stars {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+}
+
+.numberOfReviews {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-left: 6rem;
 }
 
 /* will be moved to main.css */
