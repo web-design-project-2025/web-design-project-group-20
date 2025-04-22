@@ -29,7 +29,7 @@ function createArticleElement(article) {
   articleElement.appendChild(articleTitle);
 
   const articleAuthor = document.createElement("p");
-  articleAuthor.innerText = article.authur;
+  articleAuthor.innerText = article.author;
   articleAuthor.classList.add("article-author");
   articleElement.appendChild(articleAuthor);
 
