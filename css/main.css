@@ -53,6 +53,10 @@ nav li {
   margin-left: 1rem;
 }
 
+body {
+  margin: 0;
+}
+
 /* Title for pages */
 h1 {
   text-align: center;
