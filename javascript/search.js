@@ -14,13 +14,13 @@ let articleTitle = []; // Declareing globally so the event listener can access t
 let movieTitle = [];
 
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value
+  const value = e.target.value.toLowerCase()
   articleTitle.forEach(articles=>{
-    const isVisible = articles.title.includes(value)
+    const isVisible = articles.title.toLowerCase().includes(value)
     articles.element.classList.toggle("hide", !isVisible)
   })
   movieTitle.forEach(movies=>{
-    const isVisible = movies.title.includes(value)
+    const isVisible = movies.title.toLowerCase().includes(value)
     movies.element.classList.toggle("hide", !isVisible)
   })
 
