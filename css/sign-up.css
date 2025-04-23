@@ -1,0 +1,66 @@
+body {
+  background-color: var(--off-white);
+}
+
+#email {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+#password {
+  margin-left: 2.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+#name {
+  margin-top: 1.2rem;
+  margin-left: 3.8rem;
+}
+
+#username {
+  margin-top: 1.2rem;
+  margin-left: 1.8rem;
+}
+
+#re-enter-password {
+  margin-top: 1.2rem;
+  margin-left: 2.3rem;
+}
+
+#email,
+#password,
+#name,
+#username,
+#re-enter-password {
+  width: 18rem;
+}
+
+.sign-in-text {
+  color: var(--off-white);
+}
+
+.sign-in-box {
+  background-color: var(--dark-green);
+  width: 26rem;
+  height: auto;
+  padding: 1rem;
+  padding-bottom: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+}
+
+.red-signin {
+  background-color: var(--red);
+  color: var(--off-white);
+  box-shadow: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  margin-left: 20rem;
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+}
