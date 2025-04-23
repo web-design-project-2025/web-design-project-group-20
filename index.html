@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="./css/home-page.css" />
   <link rel="stylesheet" href="./css/movie-list.css" />
   <link rel="stylesheet" href="./css/article-list.css" />
+  <link rel="stylesheet" href="./css/search.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
   <script src="javascript/load-movies.js" defer></script>
   <script src="javascript/load-articles.js" defer></script>
+  <script src="javascript/search.js" defer></script>
   <title>Home</title>
 </head>
 
@@ -35,7 +37,21 @@
     </nav>
   </header>
   <main class="home-container">
-    <section class="home-hero"></section>
+    <section class="home-hero">
+      <!--img, soursehttps://www.w3schools.com/howto/howto_css_image_text.asp-->
+      <div class="search-warpper-home">
+        <label for="search">Search Content</label>
+        <input type="search" id="search">
+        <div class="search-show-home" data-show-container>
+        </div>
+        <!--other things for hero img text-->
+      </div>
+      <template data-content-template>
+        <div class="title-content-home">
+          <p data-title></p>
+        </div>
+      </template>
+    </section>
     <section class="home-movies">
       <p class="home-movies-title">RECOMMENDED MOVIES</p>
       <div class="home-movies-container" id="home-movie-content"></div>
