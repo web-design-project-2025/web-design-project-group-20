@@ -1,37 +1,50 @@
+/* grid for whole page */
 .home-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* hero img */
 .home-hero {
   background-color: rgb(83, 77, 69);
 }
 
+/* recommended movies */
 .home-movies {
   background-color: var(--off-white);
+  padding-bottom: 2rem;
 }
 
 .home-movies-title {
   color: var(--dark-green);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
 }
 
 .home-movies-container {
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
   justify-content: center;
 }
 
+/* recommended articles */
 .home-articles {
   background-color: var(--light-green);
+  padding-bottom: 3rem;
 }
 
 .home-articles-title {
   color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 4rem;
 }
 
 .home-articles-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   justify-content: center;
 }
