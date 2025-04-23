@@ -29,3 +29,14 @@ input{
 .hide {
   display: none !important;
 }
+/*https://chatgpt.com/share/6808f37e-08ac-8002-b37d-6f0941dd8589*/
+[data-show-container] {
+  display: none;
+}
+[data-show-container].active {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
