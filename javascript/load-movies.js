@@ -15,8 +15,9 @@ async function loadData() {
 }
 
 function createMovieElement(movie) {
-  const movieElement = document.createElement("article");
+  const movieElement = document.createElement("a");
   movieElement.classList.add("movie-box");
+  movieElement.href = `detail-page.html?title=${movie.title}`;
 
   const imageElement = document.createElement("img");
   imageElement.src = movie.image;
