@@ -6,8 +6,16 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/back-to-the-future.jpg",
       "publishing_year": "1985",
-      "genre1": "science fiction",
-      "genre2": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        },
+        {
+           "type":"genre",
+          "text":"science fiction"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -16,7 +24,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/batman.jpg",
       "publishing_year": "1989",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -24,7 +37,12 @@
       "rating": 4,
       "nr_of_reviews": "2k",
       "image": "movie-img/80s/beetlejuice.jpg",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],
       "publishing_year": "1988",
       "description": "insert text"
     },
@@ -33,7 +51,12 @@
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/blade-runner.jpg",
-      "genre1": "science fiction",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],
       "publishing_year": "1982",
       "description": "insert text"
     },
@@ -42,7 +65,12 @@
       "rating": 4,
       "nr_of_reviews": "1k",
       "image": "movie-img/80s/breakfast.jpg",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],
       "publishing_year": "1985",
       "description": "insert text"
     },
@@ -53,8 +81,16 @@
       "nr_of_reviews": "5k",
       "image": "movie-img/80s/castle-in-sky.jpg",
       "publishing_year": "1986",
-      "genre1": "animation",
-      "genre2": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        },
+        {
+           "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -63,7 +99,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/die-hard.jpg",
       "publishing_year": "1988",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -72,7 +113,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/diva.jpg",
       "publishing_year": "1981",
-      "genre1": "action",
+     "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -81,7 +127,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ET.jpg",
       "publishing_year": "1982",
-      "genre1": "science fiction",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -90,7 +141,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ghostbusters.jpg",
       "publishing_year": "1984",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -99,7 +155,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/karate-kid.jpg",
       "publishing_year": "1984",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -108,7 +169,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/little-mermaid.jpg",
       "publishing_year": "1989",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -117,7 +183,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/moonstruck.jpg",
       "publishing_year": "1987",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -126,7 +197,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/nineteen-eighty-four.jpg",
       "publishing_year": "1984",
-      "genre1": "science fiction",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -135,7 +211,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/scarface.jpg",
       "publishing_year": "1983",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -144,7 +225,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/supergirl.jpg",
       "publishing_year": "1984",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -154,7 +240,12 @@
       "image": "movie-img/80s/the-terminator.jpg",
       "publishing_year": "1984",
       "genre1": "action",
-      "genre2": "science fiction",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -163,7 +254,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/totoro.jpg",
       "publishing_year": "1988",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -172,7 +268,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/10-things.jpg",
       "publishing_year": "1999",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],     
       "description": "insert text"
     },
     {
@@ -181,8 +282,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bad-boys.jpg",
       "publishing_year": "1995",
-      "genre1": "comedy",
-      "genre2": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        },{
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],   
       "description": "insert text"
     },
     {
@@ -191,8 +299,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/buffy.jpg",
       "publishing_year": "1992",
-      "genre1": "action",
-      "genre2": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        },{
+          "type":"genre",
+          "text":"comedy"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -201,8 +316,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bugs-life.jpg",
       "publishing_year": "1998",
-      "genre1": "animation",
-      "genre2": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        },{
+          "type":"genre",
+          "text":"comedy"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -211,7 +333,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/clueless.jpg",
       "publishing_year": "1995",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -220,7 +347,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/dumb-and-dumber.jpg",
       "publishing_year": "1994",
-      "genre1": "comedy",
+      "genres": [
+       {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -229,7 +361,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fallen-angels.jpg",
       "publishing_year": "1995",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -238,7 +375,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fight-club.jpg",
       "publishing_year": "1999",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -247,7 +389,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/forrest-gump.jpg",
       "publishing_year": "1994",
-      "genre1": "comedy",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -256,7 +403,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/home-alone.jpg",
       "publishing_year": "1990",
-      "genre1": "comedy",
+      "genres": [
+       {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -265,7 +417,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/jurassic-park.jpg",
       "publishing_year": "1993",
-      "genre1": "science fiction",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -274,7 +431,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/nightmare-before.jpg",
       "publishing_year": "1993",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -283,7 +445,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/parent-trap.jpg",
       "publishing_year": "1998",
-      "genre1": "comedy",
+      "genres": [
+       {
+          "type":"genre",
+          "text":"comedy"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -292,7 +459,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pocahontas.jpg",
       "publishing_year": "1995",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -301,8 +473,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pokemon.jpg",
       "publishing_year": "1998",
-      "genre1": "animation",
-      "genre2": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        },{
+          "type":"genre",
+          "text":"animation"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -311,7 +490,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/princess-mononoke.jpg",
       "publishing_year": "1997",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -320,7 +504,12 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pulp-ficton.jpg",
       "publishing_year": "1994",
-      "genre1": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        }
+      ],       
       "description": "insert text"
     },
     {
@@ -329,8 +518,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/sailor-moon.jpg",
       "publishing_year": "1994",
-      "genre1": "animation",
-      "genre2": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        },{
+          "type":"genre",
+          "text":"animation"
+        }
+      ],
       "description": "insert text"
     },
     {
@@ -339,8 +535,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/the-matrix.jpg",
       "publishing_year": "1999",
-      "genre1": "science fiction",
-      "genre2": "action",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"action"
+        },{
+          "type":"genre",
+          "text":"science fiction"
+        }
+      ],      
       "description": "insert text"
     },
     {
@@ -349,7 +552,15 @@
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/trigun.jpg",
       "publishing_year": "1998",
-      "genre1": "animation",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        },{
+          "type":"genre",
+          "text":"comedy"
+        }
+      ], 
       "description": "insert text"
     },
     {
@@ -357,8 +568,12 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/gullivers-travels.jpg",
-      "genre1": "animation",
-      "publishing_year": "1939",
+      "genres": [
+        {
+          "type":"genre",
+          "text":"animation"
+        }
+      ],       "publishing_year": "1939",
       "description": "insert text"
     }
   ]
