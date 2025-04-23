@@ -61,3 +61,18 @@ body {
 h1 {
   text-align: center;
 }
+
+.top-of-page {
+  height: 7rem;
+  background-color: var(--light-green);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.top-of-page-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  color: var(--dark-green);
+}
