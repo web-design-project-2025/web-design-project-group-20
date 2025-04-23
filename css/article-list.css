@@ -1,8 +1,9 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .article-box {
@@ -18,14 +19,24 @@
   margin-top: 0;
   margin-left: 0.5rem;
   margin-bottom: 0.2rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.article-main {
+.article-sides {
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .article-author {
-  margin-top: 0;
+  margin-top: 0.4rem;
   margin-left: 0.5rem;
+  text-align: center;
+}
+
+.article-body {
+  background-color: var(--off-white);
 }
