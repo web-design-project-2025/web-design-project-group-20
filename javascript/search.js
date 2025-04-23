@@ -1,20 +1,33 @@
-const dataContentTemplate = document.querySelector("[data-content-template]")
-const dataShowContainer = document.querySelector("[data-show-container]")
-const searchInput = document.querySelector("[data-search]")
-
-let contentTitles =[]
-
-searchInput.addEventListener("input", (e) => {
-  const value = e.target.value
-  console.log(value)
-})
-
 /*
 sourse for the searchbar, Av Web Dev Sipmlified, retreved 23, apr - 2025.
 https://www.youtube.com/watch?v=TlP5WIxVirU&list=PLYY0z1wR_QjmDCbh6DIaB6voQIPeestZ1&index=10
 edited to fit senario and bug fixes:
 https://chatgpt.com/share/6808d0fd-3138-8002-a242-f760ef828899
 */
+
+const dataContentTemplate = document.querySelector("[data-content-template]")
+const dataShowContainer = document.querySelector("[data-show-container]")
+const searchInput = document.querySelector("[data-search]")
+
+let contentTitles =[]
+let articleTitle = []; // Declareing globally so the event listener can access them
+let movieTitle = [];
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value
+  articleTitle.forEach(articles=>{
+    const isVisible = articles.title.includes(value)
+    articles.element.classList.toggle("hide", !isVisible)
+  })
+  movieTitle.forEach(movies=>{
+    const isVisible = movies.title.includes(value)
+    movies.element.classList.toggle("hide", !isVisible)
+  })
+
+  console.log(articleTitle, movieTitle)
+})
+
+
 fetch("data/articles.json")
   .then(res => res.json())
   .then(data => {
@@ -25,6 +38,7 @@ fetch("data/articles.json")
       const title = dataContent.querySelector("[data-title]");
       title.textContent = article.title;
       dataShowContainer.appendChild(dataContent);
+      return {title: article.title, element: dataContent}
     });
   })
   .catch(err => console.error("Failed to load articles:", err));
@@ -39,6 +53,7 @@ fetch("data/movies.json")
       const title = dataContent.querySelector("[data-title]");
       title.textContent = movie.title;
       dataShowContainer.appendChild(dataContent);
+      return {title: movie.title, element: dataContent}
     });
   })
   .catch(err => console.error("Failed to load movies:", err));

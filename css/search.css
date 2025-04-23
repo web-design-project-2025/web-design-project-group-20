@@ -26,3 +26,6 @@ input{
   gap: .25rem;
   margin-top: .5rem;
 }
+.hide {
+  display: none !important;
+}
