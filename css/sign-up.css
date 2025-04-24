@@ -13,7 +13,7 @@ body {
   margin-bottom: 0;
 }
 
-#name {
+#name1 {
   margin-top: 1.2rem;
   margin-left: 3.8rem;
 }
@@ -30,7 +30,7 @@ body {
 
 #email,
 #password,
-#name,
+#name1,
 #username,
 #re-enter-password {
   width: 18rem;
