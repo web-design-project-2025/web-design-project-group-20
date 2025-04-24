@@ -1,24 +1,33 @@
 :root {
   --margin-left-home: 10vw;
-  --width-home: 35vw;
 }
 
 .search-wraper-home{
-    display: flex;
-    flex-direction: row;
-   
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers items */
 }
 .title-content-home{
-  margin-left: var(--margin-left-home);
+  margin-left: 35vw;
   margin-top: rem;
 }
 label{
-  margin-left: var(--margin-left-home);
+  margin-left: 35vw;
 }
-input{
-    font-size: 1rem;
-    width: var(--width-home);
+.search-img{
+width: 1.8rem;
+vertical-align: middle;
 }
+input {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: var(--width-home);
+  background-color: var( --light-green) !important;
+  border: 2px solid transparent;  
+  border-radius: 5px;
+  outline: none; 
+}
+
 
 .search-show-home{
   display: grid;
