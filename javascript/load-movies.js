@@ -51,7 +51,7 @@ function createMovieElement(movie) {
   function numberOfReviews() {
     const reviewElement = document.createElement("p");
     reviewElement.innerHTML = movie.nr_of_reviews;
-    reviewElement.classList.add("numberOfReviews");
+    reviewElement.classList.add("number-of-reviews");
     starContainer.appendChild(reviewElement);
   }
   if (movie.rating === 5) {
