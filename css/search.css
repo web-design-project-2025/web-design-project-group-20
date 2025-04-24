@@ -1,51 +1,71 @@
-:root {
-  --margin-left-home: 10vw;
-}
-
-.search-wraper-home{
+/*search bar */
+.search-wraper-home {
   display: flex;
   flex-direction: row;
   align-items: center; /* Vertically centers items */
 }
-.title-content-home{
-  margin-left: 35vw;
-  margin-top: rem;
-}
-label{
-  margin-left: 35vw;
-}
-.search-img{
-width: 1.8rem;
-vertical-align: middle;
+
+.search-contaner2 {
+  background-color: var(--light-green) !important;
+  width: 100%; 
+  max-width: 35vw; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border-color: var(--dark-green);
+  border-style: solid;
+  border: 2px;
+  border-radius: 28px;
+  height: 6vh;
+  padding: 0.5rem; 
+  box-sizing: border-box; 
 }
 input {
-  margin-top: 1rem;
   font-size: 1rem;
-  width: var(--width-home);
-  background-color: var( --light-green) !important;
+  width: calc(100% - 2.8rem); 
+  background-color: var(--light-green) !important;
   border: 2px solid transparent;  
   border-radius: 5px;
   outline: none; 
+  height: 2rem; 
+  color: var(--dark-green);
 }
+.search-img {
+  width: 1.8rem;
+  vertical-align: middle;
+  margin-right: 0.5rem; 
+}
+/*search bar end*/
 
-
-.search-show-home{
+/*search result*/
+.search-show-home {
+  margin-left: 6vw;
+  max-width: 58vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill), var(--width-home); 
-  gap: .25rem;
+  grid-template-columns: repeat(auto-fill), 35vw; 
   margin-top: .5rem;
 }
+
+.title-content-home {
+  margin-left: 30vw;
+  color: var(--dark-green);
+}
+#home-search-result{
+  color: var(--off-white);
+}
+
+/*search result*/
+
+/*visible css*/
 .hide {
   display: none !important;
 }
-/*https://chatgpt.com/share/6808f37e-08ac-8002-b37d-6f0941dd8589*/
+
 [data-show-container] {
   display: none;
 }
+
 [data-show-container].active {
   display: block;
 }
-.hide {
-  display: none;
-}
-
+/*visible css end*/
