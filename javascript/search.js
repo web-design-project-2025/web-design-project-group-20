@@ -36,7 +36,7 @@ searchInput.addEventListener("input", (e) => {
   }
   for (let i = 0; i < articleTitle.length; i++) {
     const article = articleTitle[i];
-    if (article.title.toLowerCase().includes(value)) {
+    if (article.title.toLowerCase().startsWith(value)) {
       if (visibleCount < MAX_RESULTS) {
         article.element.classList.remove("hide");
         visibleCount++;
@@ -46,7 +46,7 @@ searchInput.addEventListener("input", (e) => {
   }
   for (let i = 0; i < movieTitle.length; i++) {
     const movie = movieTitle[i];
-    if (movie.title.toLowerCase().includes(value)) {
+    if (movie.title.toLowerCase().startsWith(value)) {
       if (visibleCount < MAX_RESULTS) {
         movie.element.classList.remove("hide");
         visibleCount++;

@@ -28,13 +28,13 @@ function getQueryParam() {
       let hasVisibleResults = false;
   
       articleTitle.forEach(article => {
-        const isVisible = article.title.toLowerCase().includes(value);
+        const isVisible = article.title.toLowerCase().startsWith(value);
         article.element.classList.toggle("hide", !isVisible);
         if (isVisible) hasVisibleResults = true;
       });
   
       movieTitle.forEach(movie => {
-        const isVisible = movie.title.toLowerCase().includes(value);
+        const isVisible = movie.title.toLowerCase().startsWith(value);
         movie.element.classList.toggle("hide", !isVisible);
         if (isVisible) hasVisibleResults = true;
       });
