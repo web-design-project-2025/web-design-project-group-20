@@ -43,6 +43,11 @@ signUpButton.addEventListener("click", function (event) {
         users.push(newUser);
         localStorage.setItem("users", JSON.stringify(users));
         alert("Sign in successful! Please log in");
+        emailText.value = "";
+        nameText.value = "";
+        userNameText.value = "";
+        passWordText.value = "";
+        reEnterPassWordText.value = "";
       }
     } else {
       alert("Passwords are not matching, please retry");
