@@ -1,5 +1,5 @@
-/*search bar */
-.search-wraper-home {
+/* General Search Bar Styles */
+.search-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center; /* Vertically centers items */
@@ -9,17 +9,14 @@
   background-color: var(--light-green) !important;
   width: 100%; 
   max-width: 35vw; 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  border-color: var(--dark-green);
-  border-style: solid;
-  border: 2px;
+  margin: 1rem auto;
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 28px;
   height: 6vh;
   padding: 0.5rem; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
 .input-search {
   font-size: 1rem;
   width: calc(100% - 2.8rem); 
@@ -30,33 +27,54 @@
   height: 2rem; 
   color: var(--dark-green);
 }
+
 .search-img {
   width: 1.8rem;
   vertical-align: middle;
   margin-right: 0.5rem; 
 }
-/*search bar end*/
 
-/*search result*/
-.search-show-home {
-  margin-left: 6vw;
-  max-width: 58vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fill), 35vw; 
-  margin-top: .5rem;
+/* Header Search Styles */
+.search-container-header {
+  background-color: var(--light-green) !important;
+  width: 100%; 
+  max-width: 35vw; 
+  margin-top: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 28px;
+  height: 6vh;
+  padding: 0.5rem; 
+  box-sizing: border-box;
 }
 
-.title-content-home {
-  margin-left: 30vw;
+.input-search-header {
+  font-size: 1rem;
+  width: calc(100% - 2.8rem);
+  background-color: var(--light-green) !important;
+  border: 2px solid transparent;  
+  border-radius: 5px;
+  outline: none; 
+  height: 2rem; 
   color: var(--dark-green);
 }
-.search-result{
-  color: var(--off-white);
+/* When the search bar is visible */
+.search-wrapper-header.active .search-container-header {
+  display: block; /* Make it visible when active */
+}
+/* Search Results */
+.search-show {
+  margin-top: 0.5rem;
+  max-width: 58vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr)); /* Ensures flexible grid layout */
 }
 
-/*search result*/
+.search-result {
+  color: var(--off-white);
+  padding: 0.5rem 0;
+}
 
-/*visible css*/
+/* Visibility Controls */
 .hide {
   display: none !important;
 }
@@ -68,4 +86,3 @@
 [data-show-container].active {
   display: block;
 }
-/*visible css end*/
