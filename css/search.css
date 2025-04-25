@@ -6,12 +6,9 @@
 }
 
 .search-container {
-  background-color: var(--light-green) !important;
   width: 100%; 
   max-width: 35vw; 
   margin: 1rem auto;
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-radius: 28px;
   height: 6vh;
   padding: 0.5rem; 
   box-sizing: border-box;
@@ -22,60 +19,86 @@
   width: calc(100% - 2.8rem); 
   background-color: var(--light-green) !important;
   border: 2px solid transparent;  
-  border-radius: 5px;
+  border-radius: 28px;
   outline: none; 
   height: 2rem; 
   color: var(--dark-green);
 }
 
 .search-img {
-  width: 1.8rem;
+  width: 2rem;
   vertical-align: middle;
   margin-right: 0.5rem; 
 }
+.search-img, .input-search{
+  align-items: center;
+}
+/* Search Results */
+.search-show-home {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr)); /* Ensures flexible grid layout */
+}
 
+.title-content-home {
+  color: var(--off-white);
+  padding: 0.5rem 0;
+  max-width: 30vw;
+  margin-left: 38vw;
+  margin-top: 5px;
+}
 /* Header Search Styles */
 .search-container-header {
-  background-color: var(--light-green) !important;
-  max-width: 30vw; 
-  margin-top: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0);
+  width: 15vw;
+  height: 2.5rem; /* match input height */
   border-radius: 28px;
-  height: 6vh;
-  padding: 0.5rem; 
   box-sizing: border-box;
-  margin: 0; 
 }
-.search-wrapper-header{
-  display: flex; /*not doing anything :(((*/
+
+#flex-search{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.header-icon, .search-header{
+  align-items: center;
 }
 
 .input-search-header {
   font-size: 1rem;
-  width: calc(100% - 2.8rem);
   background-color: var(--light-green) !important;
-  border: 2px solid transparent;  
-  border-radius: 5px;
-  outline: none; 
-  height: 2rem; 
+  border: 2px solid transparent;
+  border-radius: 28px;
+  outline: none;
+  height: 2rem;
   color: var(--dark-green);
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  line-height: 2rem;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 /* When the search bar is visible */
 .search-wrapper-header.active .search-container-header {
   display: block; /* Make it visible when active */
 }
 /* Search Results */
-.search-show {
+.search-show-header {
   margin-top: 0.5rem;
   max-width: 58vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr)); /* Ensures flexible grid layout */
+  position: relative
 }
 
-.search-result {
+.search-result-header {
   color: var(--off-white);
   padding: 0.5rem 0;
+  max-width: 15vw;
 }
+
 
 /* Visibility Controls */
 .hide {
@@ -89,3 +112,5 @@
 [data-show-container].active {
   display: block;
 }
+/* Visibility Controls */
+
