@@ -5,6 +5,7 @@ body {
 .detail-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   gap: 2rem;
 }
@@ -43,4 +44,18 @@ body {
   margin-left: 1rem;
   margin-bottom: auto;
   margin-top: auto;
+}
+
+.review-box-right {
+  background-color: var(--light-green);
+  margin-left: auto;
+  width: 95%;
+  height: 30rem;
+}
+
+.review-box-left {
+  background-color: var(--light-green);
+  margin-right: auto;
+  width: 95%;
+  height: 30rem;
 }
