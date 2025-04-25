@@ -47,6 +47,14 @@
   margin-left: 38vw;
   margin-top: 5px;
 }
+.title-content-result {
+  color: var(--dark-green);
+  padding: 0.5rem 0;
+  max-width: 30vw;
+  margin-left: 38vw;
+  margin-top: 5px;
+}
+
 /* Header Search Styles */
 .search-container-header {
   width: 15vw;
