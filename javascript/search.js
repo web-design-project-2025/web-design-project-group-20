@@ -12,7 +12,7 @@ https://chatgpt.com/share/6808fac7-2550-8002-a76e-f02d7789adc5
 
 const dataContentTemplate = document.querySelector("[data-content-template]")
 const dataShowContainer = document.querySelector("[data-show-container]")
-const searchInput = document.querySelector("[data-search]")
+const searchInput = document.querySelector("[data-search='home']")
 
 let contentTitles =[]
 let articleTitle = []; // Declareing globally so the event-listener can access them
@@ -20,6 +20,7 @@ let movieTitle = [];  // Declareing globally so the event listener can access th
 
 const MAX_RESULTS = 5;   //makes it so that the home page does not get overwelmed by the titles
 
+    // Search logic
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase()
   let visibleCount = 0;
@@ -59,8 +60,8 @@ searchInput.addEventListener("input", (e) => {
   console.log(articleTitle, movieTitle)
 })
 
-// if you press enter you get transported to search results
-searchInput.addEventListener("keydown", (e) => {
+    // ENTER to redirect
+    searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const query = searchInput.value.trim();
       if (query !== "") {
@@ -69,8 +70,8 @@ searchInput.addEventListener("keydown", (e) => {
     }
   });
 
-//loading article titels
-fetch("data/articles.json")
+    // Fetch data
+    fetch("data/articles.json")
   .then(res => res.json())
   .then(data => {
     console.log(data); 
@@ -84,7 +85,6 @@ fetch("data/articles.json")
     });
   });
  
-//loading movie titels
 fetch("data/movies.json")
   .then(res => res.json())
   .then(data => {
