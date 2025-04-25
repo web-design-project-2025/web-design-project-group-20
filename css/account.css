@@ -22,10 +22,6 @@ img {
 /*account content*/
 /*icons*/
 
-.account-icons {
-  width: 50px;
-}
-
 #bowl {
   display: grid;
   flex-direction: column;

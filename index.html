@@ -15,6 +15,7 @@
   <script src="javascript/load-movies.js" defer></script>
   <script src="javascript/load-articles.js" defer></script>
   <script src="javascript/search.js" defer></script>
+  <script src="javascript/header-search.js" defer></script>
   <title>Home</title>
 </head>
 
@@ -31,8 +32,9 @@
         <li><a href="watch-list.html">temporary(Watch-list)</a></li>
         <li>
           <a href="account.html">
-            <img src="icons/account-icon.svg" alt="account-icon" class="account-icon" /></a>
+            <img src="icons/account-icon.svg" alt="account-icon" class="header-icon" /></a>
         </li>
+        <li><img src="icons/search-icon-white.svg" alt="search-icon" class="header-icon" id="icon"/><div id="search-wrapper-header"></div></li>
       </ul>
     </nav>
   </header>
@@ -46,13 +48,13 @@
         </div>
         <div class="search-show-home" data-show-container>
         </div>
-        <!--other things for hero img text-->
       </div>
       <template data-content-template>
         <div class="title-content-home">
           <p id="home-search-result" data-title></p>
         </div>
       </template>
+       <!--other things for hero img text-->
     </section>
     <section class="home-movies">
       <p class="home-movies-title">RECOMMENDED MOVIES</p>
