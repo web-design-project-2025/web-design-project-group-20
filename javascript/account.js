@@ -5,25 +5,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //this inserts html when pressing a button
   detailElement.addEventListener("click", function (event) {
-    contentElement.innerHTML = `
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (loggedInUser) {
+      contentElement.innerHTML = `
             <section>
               <h2>Your Account Details</h2>
               <div id="bowl2"> 
                 <div id="settings-list3"> 
                 <h5>Your Username:</h5>
-                <p>iho3i73jh</p>
+                <p>${loggedInUser.username}</p>
                 </div> 
                 <div id="settings-list3"> 
                 <h5>Your Email:</h5>
-                <p>nonreal@email.com</p>
+                <p>${loggedInUser.email}</p>
                 </div> 
                 <div id="settings-list5"> 
                 <h5>Your Password:</h5>
-                <p>***********</p>
+                <p>${"*".repeat(loggedInUser.password.length)}</p>
                 </div> 
               </div> 
             </section>
   `;
+    } else {
+      contentElement.innerHTML = `
+            <section>
+            <h5>You are not logged in </h5>
+            <p>Please log in to view your account details</p>
+            </section>
+            `;
+    }
   });
 
   //this inserts html when pressing a button
