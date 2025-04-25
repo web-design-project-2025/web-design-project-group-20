@@ -7,7 +7,7 @@ function getQueryParam() {
   }
   
   document.addEventListener("DOMContentLoaded", () => {
-    console.log("📦 search-results.js loaded");
+    console.log("search-results.js loaded");
   
     const searchInput = document.querySelector("[data-search]");
     const dataShowContainer = document.querySelector("[data-show-container]");
@@ -25,6 +25,14 @@ function getQueryParam() {
     searchInput.value = query;
   
     function performSearch(value) {
+      // the .trim makes it so that blankspaces are treated as empty
+      if (!value.trim()) {
+        // If input is empty, hide all results and deactivate container
+        articleTitle.forEach(article => article.element.classList.add("hide"));
+        movieTitle.forEach(movie => movie.element.classList.add("hide"));
+        dataShowContainer.classList.remove("active");
+        return;
+      }
       let hasVisibleResults = false;
   
       articleTitle.forEach(article => {
