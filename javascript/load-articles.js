@@ -17,7 +17,7 @@ async function loadData() {
 function createArticleElement(article) {
   const articleElement = document.createElement("a");
   articleElement.classList.add("article-box");
-  articleElement.href = `detail-page-articles.html?id=${article.title}`;
+  articleElement.href = `detail-page-articles.html?id=${article.id}`;
 
   const iconElement = document.createElement("img");
   iconElement.src = article.icon;
