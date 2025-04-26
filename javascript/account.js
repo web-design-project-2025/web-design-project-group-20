@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h5>Your Password:</h5>
                 <p>${"*".repeat(loggedInUser.password.length)}</p>
                 </div> 
+
+                <ul id="button-list">
+      <li id="show-password" class="list-account">
+        <img src="icons/show-password.png" alt="Button for showing the password" />
+      </li>
+      <li id="log-out" class="list-account">
+        <img src="icons/log-out.png" alt="Button for logging out" />
+      </li>
+      </ul>
               </div> 
             </section>
   `;
