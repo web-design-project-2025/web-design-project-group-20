@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div> 
                 <div id="settings-list5"> 
                 <h5>Your Password:</h5>
-                <p>${"*".repeat(loggedInUser.password.length)}</p>
+                <p id="password-text">${"*".repeat(
+                  loggedInUser.password.length
+                )}</p>
                 </div> 
 
                 <ul id="account-detail-buttons">
@@ -36,6 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
               </div> 
             </section>
   `;
+
+      /* Clicking the buttin will make the password appear, 
+and clicking it again will make it dissapear */
+
+      const showPasswordButton = document.getElementById("show-password");
+      const passWordText = document.getElementById("password-text");
+
+      showPasswordButton.addEventListener("click", function (event) {});
     } else {
       contentElement.innerHTML = `
             <section>
