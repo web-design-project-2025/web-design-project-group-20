@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${"*".repeat(loggedInUser.password.length)}</p>
                 </div> 
 
-                <ul id="button-list">
+                <ul id="account-detail-buttons">
       <li id="show-password" class="list-account">
         <img src="icons/show-password.png" alt="Button for showing the password" />
       </li>

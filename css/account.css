@@ -3,6 +3,10 @@ img {
   width: 150px;
 }
 
+body {
+  background-color: var(--off-white);
+}
+
 .list-account {
   list-style: none;
   margin-left: 5vw;
@@ -15,6 +19,10 @@ img {
   justify-content: center;
   margin: 0px;
   padding: 0px;
+}
+
+#account-detail-buttons {
+  margin-left: 130px;
 }
 
 /*account list end*/
