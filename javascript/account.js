@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 and clicking it again will make it dissapear */
 
       const showPasswordButton = document.getElementById("show-password");
+      const logoutButton = document.getElementById("log-out");
       const passwordText = document.getElementById("password-text");
 
       showPasswordButton.addEventListener("click", function (event) {
@@ -53,6 +54,17 @@ and clicking it again will make it dissapear */
         } else {
           passwordText.textContent = "*".repeat(loggedInUser.password.length);
         }
+      });
+
+      //Logout button that removes the loggedInUser from localstorage
+      logoutButton.addEventListener("click", function (event) {
+        localStorage.removeItem("loggedInUser");
+        contentElement.innerHTML = `
+          <section>
+            <h5> You have been logged out</h5>
+            <p> Please log in to view your account details.</p>
+          </section>
+        `;
       });
     } else {
       contentElement.innerHTML = `
