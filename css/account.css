@@ -25,6 +25,9 @@ body {
   margin-left: 130px;
 }
 
+.account-text-color {
+  color: var(--dark-green);
+}
 /*account list end*/
 
 /*account content*/

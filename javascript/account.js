@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (loggedInUser) {
       contentElement.innerHTML = `
-            <section>
+            <section class="account-text-color">
               <h2>Your Account Details</h2>
               <div id="bowl2"> 
                 <div id="settings-list3"> 
@@ -61,10 +61,10 @@ and clicking it again will make it dissapear */
       logoutButton.addEventListener("click", function (event) {
         localStorage.removeItem("loggedInUser");
         contentElement.innerHTML = `
-          <section>
+          <section class="account-text-color">
             <h2>Your Account Details</h2>
           <div id="bowl-logged-out">
-            <h5> You have been logged out</h5>
+            <h3> You have been logged out</h3>
             <p> Please log in to view your account details.</p>
           </section>
           </div>
@@ -72,10 +72,10 @@ and clicking it again will make it dissapear */
       });
     } else {
       contentElement.innerHTML = `
-            <section>
+            <section class = "account-text-color">
               <h2>Your Account Details</h2>
              <div id="bowl-logged-out">
-            <h5>You are not logged in </h5>
+            <h3>You are not logged in </h3>
             <p>Please log in to view your account details</p>
             </section>
             </div>
