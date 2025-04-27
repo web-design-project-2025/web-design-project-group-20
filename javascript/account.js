@@ -43,9 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
 and clicking it again will make it dissapear */
 
       const showPasswordButton = document.getElementById("show-password");
-      const passWordText = document.getElementById("password-text");
+      const passwordText = document.getElementById("password-text");
 
-      showPasswordButton.addEventListener("click", function (event) {});
+      showPasswordButton.addEventListener("click", function (event) {
+        if (
+          passwordText.textContent === "*".repeat(loggedInUser.password.length)
+        ) {
+          passwordText.textContent = loggedInUser.password;
+        } else {
+          passwordText.textContent = "*".repeat(loggedInUser.password.length);
+        }
+      });
     } else {
       contentElement.innerHTML = `
             <section>
