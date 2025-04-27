@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p id="password-text">${"*".repeat(
                   loggedInUser.password.length
                 )}</p>
-                </div> 
+          
 
                 <ul id="account-detail-buttons">
       <li id="show-password" class="list-account">
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="icons/log-out.png" alt="Button for logging out" />
       </li>
       </ul>
+        </div> 
               </div> 
             </section>
   `;
@@ -61,17 +62,23 @@ and clicking it again will make it dissapear */
         localStorage.removeItem("loggedInUser");
         contentElement.innerHTML = `
           <section>
+            <h2>Your Account Details</h2>
+          <div id="bowl-logged-out">
             <h5> You have been logged out</h5>
             <p> Please log in to view your account details.</p>
           </section>
+          </div>
         `;
       });
     } else {
       contentElement.innerHTML = `
             <section>
+              <h2>Your Account Details</h2>
+             <div id="bowl-logged-out">
             <h5>You are not logged in </h5>
             <p>Please log in to view your account details</p>
             </section>
+            </div>
             `;
     }
   });
