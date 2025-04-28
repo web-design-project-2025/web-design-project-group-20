@@ -21,6 +21,13 @@
   overflow: hidden;
   margin-top: -35vh;
 }
+/*image text*/
+#movie-details-home{
+  position: absolute; /* så det kan läggas ovanpå */
+  z-index: 1001;
+  top: 20%;
+  left: 78%;
+}
 /* recommended movies */
 .home-movies {
   background-color: var(--off-white);
