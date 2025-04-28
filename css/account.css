@@ -49,6 +49,16 @@ body {
 .account-text-color {
   color: var(--dark-green);
 }
+
+.account-here {
+  color: var(--dark-red);
+  text-decoration: none;
+}
+
+.account-here:hover {
+  text-decoration: underline;
+}
+
 /*account list end*/
 
 /*account content*/

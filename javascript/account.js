@@ -86,7 +86,7 @@ and clicking it again will make it dissapear */
             <h2>Your Account Details</h2>
           <div id="bowl-logged-out">
             <h3> You have been logged out.</h3>
-            <p> Please log in to view your account details.</p>
+            <p> Please log in to view your account details <a href="login.html" class="account-here"> here.</a></p>
           </section>
           </div>
         `;
@@ -97,7 +97,7 @@ and clicking it again will make it dissapear */
               <h2>Your Account Details</h2>
              <div id="bowl-logged-out">
             <h3>You are not logged in </h3>
-            <p>Please log in to view your account details</p>
+            <p>Please log in to view your account details <a href="login.html" class="account-here"> here.</a></p>
             
             </section>
             </div>
