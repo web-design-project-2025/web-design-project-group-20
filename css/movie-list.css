@@ -65,10 +65,10 @@ a {
   height: 3rem;
   margin-bottom: 1rem;
   margin-left: 0.5rem;
-  background-color: var(--red);
   border-style: solid;
   border-color: var(--red);
   border-radius: 0.5rem;
+  background-color: var(--red);
 }
 
 #movie-filter-comedy,

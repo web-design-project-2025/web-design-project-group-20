@@ -123,6 +123,7 @@ function filterTest(movie) {
       }
     }
     document.getElementById("movie-filter-comedy").href = `movie-list.html`;
+    document.getElementById("movie-filter-comedy").style.fontWeight = "bold";
   }
 
   if (genre == "animation") {
@@ -138,6 +139,7 @@ function filterTest(movie) {
       }
     }
     document.getElementById("movie-filter-animation").href = `movie-list.html`;
+    document.getElementById("movie-filter-animation").style.fontWeight = "bold";
   }
 }
 
