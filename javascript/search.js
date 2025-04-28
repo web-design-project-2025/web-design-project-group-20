@@ -79,6 +79,7 @@ searchInput.addEventListener("input", (e) => {
     articleTitle = articles.map(article => {
       const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
       const title = dataContent.querySelector("[data-title]");
+      title.href = `detail-page-articles.html?id=${article.id}`;
       title.textContent = article.title;
       dataShowContainer.appendChild(dataContent);
       return {title: article.title, element: dataContent}
@@ -93,6 +94,7 @@ fetch("data/movies.json")
     movieTitle = movies.map(movie => {
       const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
       const title = dataContent.querySelector("[data-title]");
+      title.href = `detail-page.html?title=${movie.title}`;
       title.textContent = movie.title;
       dataShowContainer.appendChild(dataContent);
       return {title: movie.title, element: dataContent}
