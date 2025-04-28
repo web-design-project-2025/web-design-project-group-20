@@ -48,6 +48,8 @@ signUpButton.addEventListener("click", function (event) {
         userNameText.value = "";
         passWordText.value = "";
         reEnterPassWordText.value = "";
+
+        window.location.href = "login.html";
       }
     } else {
       alert("Passwords are not matching, please retry");
