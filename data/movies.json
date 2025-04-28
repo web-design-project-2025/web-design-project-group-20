@@ -5,6 +5,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/back-to-the-future.jpg",
+      "alt":"Back to the Future, movie poster",
       "publishing_year": "1985",
       "genres": [
         {
@@ -23,6 +24,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/batman.jpg",
+      "alt":"Batman(1989), movie poster",
       "publishing_year": "1989",
       "genres": [
         {
@@ -37,6 +39,7 @@
       "rating": 4,
       "nr_of_reviews": "2k",
       "image": "movie-img/80s/beetlejuice.jpg",
+      "alt":"Beetlejuice, movie poster",
       "genres": [
         {
           "type": "genre",
@@ -51,6 +54,7 @@
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/blade-runner.jpg",
+      "alt":"Blade Runner, movie poster",
       "genres": [
         {
           "type": "genre",
@@ -65,6 +69,7 @@
       "rating": 4,
       "nr_of_reviews": "1k",
       "image": "movie-img/80s/breakfast.jpg",
+      "alt":"The Breakfast Club, movie poster",
       "genres": [
         {
           "type": "genre",
@@ -80,6 +85,7 @@
       "rating": 5,
       "nr_of_reviews": "5k",
       "image": "movie-img/80s/castle-in-sky.jpg",
+      "alt":"Castle in the Sky, movie poster",
       "publishing_year": "1986",
       "genres": [
         {
@@ -98,6 +104,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/die-hard.jpg",
+      "alt":"Die Hard, movie poster",
       "publishing_year": "1988",
       "genres": [
         {
@@ -112,6 +119,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/diva.jpg",
+      "alt":"Diva, movie poster",
       "publishing_year": "1981",
       "genres": [
         {
@@ -126,6 +134,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ET.jpg",
+      "alt":"E.T., movie poster",
       "publishing_year": "1982",
       "genres": [
         {
@@ -140,6 +149,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ghostbusters.jpg",
+      "alt":"Ghostbusters, movie poster",
       "publishing_year": "1984",
       "genres": [
         {
@@ -154,6 +164,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/karate-kid.jpg",
+      "alt":"The Karate Kid, movie poster",
       "publishing_year": "1984",
       "genres": [
         {
@@ -168,6 +179,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/little-mermaid.jpg",
+      "alt":"The Little Mermaid (1989), movie poster",
       "publishing_year": "1989",
       "genres": [
         {
@@ -182,6 +194,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/moonstruck.jpg",
+      "alt":"Moonstruck, movie poster",
       "publishing_year": "1987",
       "genres": [
         {
@@ -196,6 +209,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/nineteen-eighty-four.jpg",
+      "alt":"1984, movie poster",
       "publishing_year": "1984",
       "genres": [
         {
@@ -210,6 +224,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/scarface.jpg",
+      "alt":"Scarface, movie poster",
       "publishing_year": "1983",
       "genres": [
         {
@@ -224,6 +239,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/supergirl.jpg",
+      "alt":"Supergirl, movie poster",
       "publishing_year": "1984",
       "genres": [
         {
@@ -238,6 +254,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/the-terminator.jpg",
+      "alt":"The Terminator, movie poster",
       "publishing_year": "1984",
       "genre1": "action",
       "genres": [
@@ -253,6 +270,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/totoro.jpg",
+      "alt":"My Neighbor Totoro, movie poster",
       "publishing_year": "1988",
       "genres": [
         {
@@ -267,6 +285,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/10-things.jpg",
+      "alt":"10 Things I Hate About You, movie poster",
       "publishing_year": "1999",
       "genres": [
         {
@@ -281,6 +300,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bad-boys.jpg",
+      "alt":"Bad Boys, movie poster",
       "publishing_year": "1995",
       "genres": [
         {
@@ -299,6 +319,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/buffy.jpg",
+      "alt":"Buffy the Vampire Slayer, movie poster",
       "publishing_year": "1992",
       "genres": [
         {
@@ -317,6 +338,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bugs-life.jpg",
+      "alt":"A Bug's Life, movie poster",
       "publishing_year": "1998",
       "genres": [
         {
@@ -335,6 +357,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/clueless.jpg",
+      "alt":"Clueless, movie poster",
       "publishing_year": "1995",
       "genres": [
         {
@@ -349,6 +372,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/dumb-and-dumber.jpg",
+      "alt":"Dumb and Dumber, movie poster",
       "publishing_year": "1994",
       "genres": [
         {
@@ -363,6 +387,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fallen-angels.jpg",
+      "alt":"Fallen Angels, movie poster",
       "publishing_year": "1995",
       "genres": [
         {
@@ -377,6 +402,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fight-club.jpg",
+      "alt":"Fight Club, movie poster",
       "publishing_year": "1999",
       "genres": [
         {
@@ -391,6 +417,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/forrest-gump.jpg",
+      "alt":"Forrest Gump, movie poster",
       "publishing_year": "1994",
       "genres": [
         {
@@ -405,6 +432,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/home-alone.jpg",
+      "alt":"Home Alone, movie poster",
       "publishing_year": "1990",
       "genres": [
         {
@@ -419,6 +447,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/jurassic-park.jpg",
+      "alt":"Jurassic Park, movie poster",
       "publishing_year": "1993",
       "genres": [
         {
@@ -433,6 +462,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/nightmare-before.jpg",
+      "alt":"The Nightmare Before Christmas, movie poster",
       "publishing_year": "1993",
       "genres": [
         {
@@ -447,6 +477,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/parent-trap.jpg",
+      "alt":"The Parent Trap, movie poster",
       "publishing_year": "1998",
       "genres": [
         {
@@ -461,6 +492,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pocahontas.jpg",
+      "alt":"Pocahontas, movie poster",
       "publishing_year": "1995",
       "genres": [
         {
@@ -475,6 +507,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pokemon.jpg",
+      "alt":"Pokémon: The First Movie, movie poster",
       "publishing_year": "1998",
       "genres": [
         {
@@ -493,6 +526,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/princess-mononoke.jpg",
+      "alt":"Princess Mononoke, movie poster",
       "publishing_year": "1997",
       "genres": [
         {
@@ -507,6 +541,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pulp-ficton.jpg",
+      "alt":"Pulp Fiction, movie poster",
       "publishing_year": "1994",
       "genres": [
         {
@@ -521,6 +556,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/sailor-moon.jpg",
+      "alt":"Sailor Moon, movie poster",
       "publishing_year": "1994",
       "genres": [
         {
@@ -539,6 +575,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/the-matrix.jpg",
+      "alt":"The Matrix, movie poster",
       "publishing_year": "1999",
       "genres": [
         {
@@ -557,6 +594,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/trigun.jpg",
+      "alt":"Trigun, movie poster",
       "publishing_year": "1998",
       "genres": [
         {
@@ -575,6 +613,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/gullivers-travels.jpg",
+      "alt":"Gulliver's Travels, movie poster",
       "genres": [
         {
           "type": "genre",
