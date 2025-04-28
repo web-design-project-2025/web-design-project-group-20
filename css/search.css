@@ -71,6 +71,7 @@
   height: 2.5rem; /* match input height */
   border-radius: 28px;
   box-sizing: border-box;
+  
 }
 
 #flex-search{
@@ -108,7 +109,8 @@
   max-width: 38vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr)); /* Ensures flexible grid layout */
-  position: relative
+  position: absolute; /* så det kan läggas ovanpå */
+  z-index: 1001;
 }
 /*search results*/
 .search-result-header {
