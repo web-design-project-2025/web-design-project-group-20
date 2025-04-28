@@ -116,6 +116,7 @@ body {
 /*icons end*/
 h2 {
   text-align: center;
+  color: var(--dark-green);
 }
 
 h5 {
