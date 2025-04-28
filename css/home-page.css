@@ -2,18 +2,25 @@
 .home-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }
 
 /* hero img */
 .home-hero {
-  background-color: rgb(83, 77, 69);
+  background-color: rgb(31, 33, 57);
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 }
-
+#hero-image {
+  height: 30%;
+  object-fit: cover;
+}
 /* recommended movies */
 .home-movies {
   background-color: var(--off-white);
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .home-movies-title {
