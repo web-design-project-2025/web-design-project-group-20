@@ -1,6 +1,12 @@
 let movies = [];
+
 const contentElement = document.getElementById("movies_content");
+const comedyContent = document.getElementById("movies-comedy-content");
+const animationContent = document.getElementById("movies-animation-content");
 const homeContentElement = document.getElementById("home-movie-content");
+
+const comedyFilter = document.getElementById("movie-filter-comedy");
+const animationFilter = document.getElementById("movie-filter-animation");
 
 async function loadData() {
   const movieResponse = await fetch("data/movies.json");
@@ -95,12 +101,53 @@ function createMovieElement(movie) {
   return movieElement;
 }
 
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(document.location.search);
+  return urlParams.get(param);
+}
+
+function filterTest(movie) {
+  const genre = getQueryParam("genre");
+  const filter = movie.genres;
+
+  if (genre == "comedy") {
+    contentElement.style.display = "none";
+    animationContent.style.display = "none";
+    comedyContent.style.display = "grid";
+    const comedy = filter.filter((filter) => filter.text === "comedy");
+
+    for (let i = 0; i < comedy.length; i++) {
+      if (comedy[i].text == "comedy") {
+        const movieElement = createMovieElement(movie);
+        comedyContent.appendChild(movieElement);
+      }
+    }
+    document.getElementById("movie-filter-comedy").href = `movie-list.html`;
+  }
+
+  if (genre == "animation") {
+    contentElement.style.display = "none";
+    comedyContent.style.display = "none";
+    animationContent.style.display = "grid";
+    const animation = filter.filter((filter) => filter.text === "animation");
+
+    for (let i = 0; i < animation.length; i++) {
+      if (animation[i].text == "animation") {
+        const movieElement = createMovieElement(movie);
+        animationContent.appendChild(movieElement);
+      }
+    }
+    document.getElementById("movie-filter-animation").href = `movie-list.html`;
+  }
+}
+
 function renderContent() {
   contentElement.innerHTML = "";
 
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
     contentElement.appendChild(movieElement);
+    filterTest(movie);
   }
 }
 

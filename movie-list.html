@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/movie-list.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <script src="javascript/load-movies.js" defer></script>
-  <title>Home</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/load-movies.js" defer></script>
+    <title>Home</title>
+  </head>
   <body class="movie-body">
     <header>
-       <nav class="nav-space">
+      <nav class="nav-space">
         <a href="index.html">
-          <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="movie-list.html">Movies</a></li>
@@ -25,7 +31,11 @@
           <li><a href="watch-list.html">temporary(Watch-list)</a></li>
           <li>
             <a href="account.html">
-              <img src="icons/account-icon.svg" alt="account-icon" class="account-icon" /></a>
+              <img
+                src="icons/account-icon.svg"
+                alt="account-icon"
+                class="account-icon"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -34,12 +44,25 @@
       <section class="top-of-page">
         <h1 class="top-of-page-title">MOVIES</h1>
       </section>
+      <section>
+        <button class="movie-filter">
+          <a id="movie-filter-comedy" href="movie-list.html?genre=comedy">
+            Comedy
+          </a>
+        </button>
+        <button class="movie-filter">
+          <a id="movie-filter-animation" href="movie-list.html?genre=animation">
+            Animation
+          </a>
+        </button>
+        <div class="movie-line"></div>
+      </section>
       <div class="movie-sides">
+        <div class="container" id="movies-comedy-content"></div>
+        <div class="container" id="movies-animation-content"></div>
         <div class="container" id="movies_content"></div>
       </div>
     </main>
     <footer></footer>
   </body>
 </html>
-
-
