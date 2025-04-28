@@ -1,10 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
   const detailElement = document.getElementById("account-details");
-  const settingsEliment = document.getElementById("settings");
+  const settingsElement = document.getElementById("settings");
   const contentElement = document.getElementById("account-content");
+
+  const images = {
+    account: {
+      inactive: "icons/account-red.png",
+      active: "icons/account-yellow.png"
+    },
+    settings: {
+      inactive: "icons/settings-red.png",
+      active: "icons/settings-yellow.png"
+    }
+  };
+  
+  function clearActiveButtons() {
+    document.querySelectorAll(".list-account").forEach((el) => {
+      el.classList.remove("active");
+      const img = el.querySelector("img");
+      if (el.id === "account-details") {
+        img.src = images.account.inactive;
+      } else if (el.id === "settings") {
+        img.src = images.settings.inactive;
+      }
+    });
+  }
 
   //this inserts html when pressing a button
   detailElement.addEventListener("click", function (event) {
+    clearActiveButtons();
+    detailElement.classList.add("active");
+    detailElement.querySelector("img").src = images.account.active;
+
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
     if (loggedInUser) {
@@ -84,7 +111,10 @@ and clicking it again will make it dissapear */
   });
 
   //this inserts html when pressing a button
-  settingsEliment.addEventListener("click", function (event) {
+  settingsElement.addEventListener("click", function (event) {
+    clearActiveButtons();
+    settingsElement.classList.add("active");
+    settingsElement.querySelector("img").src = images.settings.active;
     contentElement.innerHTML = `
             <section>
               <h2>Settings</h2>
