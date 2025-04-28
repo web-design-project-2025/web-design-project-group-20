@@ -3,29 +3,44 @@ body {
 }
 
 #email {
-  margin-left: 4rem;
+  margin-left: 8rem;
   margin-top: 1rem;
+  background-color: var(--off-white);
 }
 
 #password {
-  margin-left: 2.2rem;
+  margin-left: 6.2rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
+  background-color: var(--off-white);
 }
 
 #name1 {
   margin-top: 1.2rem;
-  margin-left: 3.8rem;
+  margin-left: 7.8rem;
+  background-color: var(--off-white);
 }
 
 #username {
   margin-top: 1.2rem;
-  margin-left: 1.8rem;
+  margin-left: 5.8rem;
+  background-color: var(--off-white);
 }
 
 #re-enter-password {
-  margin-top: 1.2rem;
-  margin-left: 2.3rem;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  background-color: var(--off-white);
+}
+
+.re-enter-move-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.re-enter-move-group label {
+  white-space: nowrap;
 }
 
 #email,
@@ -42,7 +57,7 @@ body {
 
 .sign-in-box {
   background-color: var(--dark-green);
-  width: 26rem;
+  width: 30rem;
   height: auto;
   padding: 1rem;
   padding-bottom: 1.3rem;
@@ -60,7 +75,7 @@ body {
   border-radius: 0.5rem;
   width: 5rem;
   height: 2rem;
-  margin-left: 20rem;
+  margin-left: 24.3rem;
   margin-top: 1.3rem;
   font-size: 0.9rem;
 }

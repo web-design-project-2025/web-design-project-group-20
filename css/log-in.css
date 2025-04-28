@@ -5,12 +5,14 @@ body {
 #email {
   margin-left: 4rem;
   margin-top: 1rem;
+  background-color: var(--off-white);
 }
 
 #password {
   margin-left: 2.2rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
+  background-color: var(--off-white);
 }
 
 #email,
