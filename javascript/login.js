@@ -19,6 +19,8 @@ here is the link : https://chatgpt.com/share/680ba771-1378-800a-89eb-d3109508927
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       alert("Login Successul!");
+      loginEmail.value = "";
+      loginPassword.value = "";
     } else {
       alert("Invalid email or password, please retry.");
     }
