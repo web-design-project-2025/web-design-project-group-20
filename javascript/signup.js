@@ -37,7 +37,7 @@ signUpButton.addEventListener("click", function (event) {
 
       if (userExists) {
         alert(
-          "A user with this username or mail already exists, please write something else"
+          "A user with this username or mail already exists, please write something else."
         );
       } else {
         users.push(newUser);
@@ -52,9 +52,9 @@ signUpButton.addEventListener("click", function (event) {
         window.location.href = "login.html";
       }
     } else {
-      alert("Passwords are not matching, please retry");
+      alert("Passwords are not matching, please retry.");
     }
   } else {
-    alert("Please fill in all the boxes to sign in");
+    alert("Please fill in all the boxes to sign in.");
   }
 });
