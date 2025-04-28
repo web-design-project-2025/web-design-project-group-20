@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <link rel="stylesheet" href="./css/article-list.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/load-movies.js" defer></script>
+    <script src="javascript/load-articles.js" defer></script>
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/home-page.css" />
-  <link rel="stylesheet" href="./css/movie-list.css" />
-  <link rel="stylesheet" href="./css/article-list.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <script src="javascript/load-movies.js" defer></script>
-  <script src="javascript/load-articles.js" defer></script>
-  <title>Home</title>
-</head>
-
-<body>
-  <header>
-    <nav class="nav-space">
-      <a href="index.html">
-        <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="movie-list.html">Movies</a></li>
-        <li><a href="article-list.html">Articles</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="watch-list.html">temporary(Watch-list)</a></li>
-        <li>
-          <a href="account.html">
-            <img src="icons/account-icon.svg" alt="account-icon" class="account-icon" /></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="home-container">
-    <section class="home-hero"></section>
-    <section class="home-movies">
-      <p class="home-movies-title">RECOMMENDED MOVIES</p>
-      <div class="home-movies-container" id="home-movie-content"></div>
-    </section>
-    <section class="home-articles">
-      <p class="home-articles-title">RECOMMENDED ARTICLES</p>
-      <div class="home-articles-container" id="home-articles-content"></div>
-    </section>
-  </main>
-  <footer></footer>
-</body>
-
+  <body>
+    <header>
+      <nav class="nav-space">
+        <a href="index.html">
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="article-list.html">Articles</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="watch-list.html">Watchlist</a></li>
+          <li>
+            <a href="account.html">
+              <img
+                src="icons/account-icon.svg"
+                alt="account-icon"
+                class="account-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="home-container">
+      <section class="home-hero"></section>
+      <section class="home-movies">
+        <p class="home-movies-title">RECOMMENDED MOVIES</p>
+        <div class="home-movies-container" id="home-movie-content"></div>
+      </section>
+      <section class="home-articles">
+        <p class="home-articles-title">RECOMMENDED ARTICLES</p>
+        <div class="home-articles-container" id="home-articles-content"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
