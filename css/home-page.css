@@ -12,9 +12,9 @@
   text-align: center;
   color: white;
   overflow: hidden;
+  height: 30%;
 }
 #hero-image {
-  height: 30%;
   object-fit: cover;
 }
 /* recommended movies */
