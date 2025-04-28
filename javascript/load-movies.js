@@ -21,6 +21,7 @@ function createMovieElement(movie) {
 
   const imageElement = document.createElement("img");
   imageElement.src = movie.image;
+  imageElement.alt = movie.alt;
   imageElement.classList.add("posters");
   movieElement.appendChild(imageElement);
 
