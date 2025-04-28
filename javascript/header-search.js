@@ -17,8 +17,8 @@ iconElement.addEventListener("click", () => {
   </div>
       <div class="search-show-header" data-show-container></div>
        <template data-content-template>
-        <div class="title-content-home">
-          <a href="" class="search-result-home" id="home-search-result" data-title> </a>
+        <div class="title-content-header">
+          <a href="" class="search-result-header" id="header-search-result" data-title> </a>
         </div>
       </template>
     `;
