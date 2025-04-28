@@ -30,9 +30,10 @@
 }
 
 .search-img {
-  width: 2rem;
+  width: 1.9rem;
   vertical-align: middle;
   margin-right: 0.5rem; 
+  margin-top: -.3rem;
 }
 .search-img, .input-search{
   align-items: center;

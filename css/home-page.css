@@ -7,15 +7,19 @@
 
 /* hero img */
 .home-hero {
-  background-color: rgb(31, 33, 57);
+  background-color: black;
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
   overflow: hidden;
-  height: 30%;
+  height: 100%;
+  max-height: 30vw;
 }
 #hero-image {
-  object-fit: cover;
+  width: 70vw;
+  color: white;
+  overflow: hidden;
+  margin-top: -35vh;
 }
 /* recommended movies */
 .home-movies {
