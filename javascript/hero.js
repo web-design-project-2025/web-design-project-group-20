@@ -18,7 +18,7 @@ fetch('data/movies.json')
     const ratingQuery = document.querySelector("[rating]");
     const genreQuery = document.querySelector("[genres]");
     const descriptionQuery = document.querySelector("[description]");
-    const linkToDetailQuery = document.querySelector("[link-to-detail]"); // This targets the <img> tag!
+    const linkToDetailQuery = document.querySelector("[link-to-detail]"); 
 
     // Debugging: Check if the image element is found
     if (!imageElement) {
@@ -48,8 +48,6 @@ fetch('data/movies.json')
         ).join(" &nbsp; "); // Adds more space between genres
       }
 
-      // Fix: Set the href attribute of the <a> tag (not the <img> tag)
-      const linkToDetail = linkToDetailQuery.closest('a'); // Find the closest <a> tag
       if (linkToDetail) {
         linkToDetail.href = `detail-page.html?title=${encodeURIComponent(movie.title)}`;
       } else {
