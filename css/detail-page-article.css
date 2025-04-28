@@ -1,0 +1,50 @@
+.detail-article-main {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "author"
+    "t";
+  justify-items: center;
+}
+
+.detail-article-div {
+  width: 80%;
+  grid-area: t;
+}
+
+.header-class {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 80%;
+}
+
+.paragraph-class {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#detail-article-title {
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  grid-area: title;
+}
+
+#detail-article-author {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  grid-area: author;
+}
