@@ -19,15 +19,27 @@
   width: 70vw;
   color: white;
   overflow: hidden;
-  margin-top: -35vh;
+  margin-top: -45vh;
 }
 /*image text*/
 #movie-details-home{
-  position: absolute; /* så det kan läggas ovanpå */
+  position: absolute; /*to have the text on top*/
   z-index: 1001;
-  top: 20%;
-  left: 78%;
+  top: 15%;
+  left: 75%;
 }
+h3{
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+#read-more-button-home{
+  margin-top: 14vh;
+  width: 8rem;
+}
+/*image text ect*/
+
 /* recommended movies */
 .home-movies {
   background-color: var(--off-white);

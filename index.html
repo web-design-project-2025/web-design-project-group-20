@@ -16,6 +16,7 @@
   <script src="javascript/load-articles.js" defer></script>
   <script src="javascript/search.js" defer></script>
   <script src="javascript/header-search.js" defer></script>
+  <script src="javascript/hero.js" defer></script>
   <title>Home</title>
 </head>
 
@@ -40,8 +41,8 @@
   </header>
   <main class="home-container">
     <section class="home-hero">
-      <!--img, sourse https://www.w3schools.com/howto/howto_css_image_text.asp-->
-      <img id="hero-image" src="movie-img/80s/back-to-the-future.jpg" alt="">
+      <img id="hero-image" src="" alt=""> <!--hero image-->
+          <!--search bar things-->
       <div class="search-wrapper-home">
         <div class="search-container">
           <label for="search"><img class="search-img" src="icons/search-icon.svg" alt="search icon"></label>
@@ -55,14 +56,16 @@
           <a href="" class="search-result-home" id="home-search-result" data-title> </a>
         </div>
       </template>
+      <!--search bar things end-->
+      <!--hero image text-->
       <div id="movie-details-home">
         <h3 movie-title></h3>
         <div rating></div>
         <div genres></div>
         <p description></p>
-        <a href="detail-page.html"><img src="icons/settings-red.png" alt="link to learn more about te movie" link-to-detail></a>
+        <a href="detail-page.html" link-to-detail><img id="read-more-button-home" src="icons/settings-red.png" alt="link to learn more about te movie"></a>
       </div>
-       <!--other things for hero img text-->
+      <!--hero image text end-->
     </section>
     <section class="home-movies">
       <p class="home-movies-title">RECOMMENDED MOVIES</p>
