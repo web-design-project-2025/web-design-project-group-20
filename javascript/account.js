@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = {
     account: {
       inactive: "icons/account-red.png",
-      active: "icons/account-yellow.png"
+      active: "icons/account-yellow.png",
     },
     settings: {
       inactive: "icons/settings-red.png",
-      active: "icons/settings-yellow.png"
-    }
+      active: "icons/settings-yellow.png",
+    },
   };
-  
+
   function clearActiveButtons() {
     document.querySelectorAll(".list-account").forEach((el) => {
       el.classList.remove("active");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h5>Your Username:</h5>
                 <p>${loggedInUser.username}</p>
                 </div> 
-                <div id="settings-list3"> 
+                <div id="settings-list4"> 
                 <h5>Your Email:</h5>
                 <p>${loggedInUser.email}</p>
                 </div> 
@@ -52,18 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p id="password-text">${"*".repeat(
                   loggedInUser.password.length
                 )}</p>
-          
+                </div>
+             
+        <div class="account-detail-buttons">
+       <button id="show-password" class="button-click"> Show Password </button>
+        <button id="log-out" class="button-click"> Log out </button>
 
-                <ul id="account-detail-buttons">
-      <li id="show-password" class="list-account">
-        <img src="icons/show-password.png" alt="Button for showing the password" />
-      </li>
-      <li id="log-out" class="list-account">
-        <img src="icons/log-out.png" alt="Button for logging out" />
-      </li>
-      </ul>
-        </div> 
-              </div> 
             </section>
   `;
 

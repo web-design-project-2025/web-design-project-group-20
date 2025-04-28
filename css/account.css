@@ -21,10 +21,31 @@ body {
   padding: 0px;
 }
 
-#account-detail-buttons {
-  margin-left: 130px;
+.account-detail-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vw;
+  margin-left: 15rem;
 }
 
+.button-click {
+  background-color: var(--red);
+  border: 2px solid var(--dark-red);
+  color: var(--off-white);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+#show-password {
+  width: 9rem;
+  height: 2.3rem;
+}
+
+#log-out {
+  width: 6rem;
+  height: 2.3rem;
+}
 .account-text-color {
   color: var(--dark-green);
 }
