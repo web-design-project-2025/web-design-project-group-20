@@ -39,10 +39,6 @@ body {
   margin-top: 1rem;
 }
 
-.re-enter-move-group label {
-  white-space: nowrap;
-}
-
 #email,
 #password,
 #name1,
