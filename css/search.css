@@ -19,8 +19,8 @@
 }
 
 .input-search {
-  font-size: .7rem;
-  width: 28.3rem; 
+  font-size: .8rem;
+  width: 27rem; 
   background-color: var(--light-green) !important;
   border: 2px solid transparent;  
   border-radius: 28px;
@@ -40,8 +40,9 @@
 }
 /* Search Results */
 .search-show-home {
+  align-items: center;
   background-color: var(--red);
-  width: 27.4rem;
+  width: 28vw;
   margin-left: 3.2rem;
   margin-top: -0.3rem;
   padding-top: 0.7rem;

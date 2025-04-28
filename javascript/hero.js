@@ -1,4 +1,3 @@
-// Fetch the movies JSON file
 fetch('data/movies.json')
   .then(response => {
     if (!response.ok) {
@@ -7,51 +6,70 @@ fetch('data/movies.json')
     return response.json();
   })
   .then(data => {
-    // Now you have the movie data from the JSON file
     const movies = data.movies;
 
-    // Choose a movie 
-    const movie = movies[5];
-    
+    // Choose 3 movies by index (posible to ad mor just ad a ", ")
+    const selectedMovieIndexes = [37, 6, 5];
+    let currentIndex = 0; 
+
     const imageElement = document.getElementById("hero-image");
     const movieTitleQuery = document.querySelector("[movie-title]");
     const ratingQuery = document.querySelector("[rating]");
     const genreQuery = document.querySelector("[genres]");
-    const linkToDetailQuery = document.querySelector("[link-to-detail]"); 
+    const linkToDetailQuery = document.querySelector("[link-to-detail]");
 
-    // Debugging: Check if the image element is found
-    if (!imageElement) {
-      console.error('Image element not found!');
-      return;
+    let isFirstLoad = true; // Start by assuming it's the first load
+
+function updateHero(movie) {
+  if (!movie) return;
+
+  if (!isFirstLoad) {
+    // Only fade out when switching between movies (not on first load)
+    imageElement.classList.add('fade-out');
+  }
+
+  setTimeout(() => {
+    console.log('Setting image source to:', movie.image);
+
+    imageElement.src = movie.image;
+    imageElement.alt = movie.alt;
+
+    if (movieTitleQuery) movieTitleQuery.textContent = movie.title;
+
+    if (ratingQuery) {
+      ratingQuery.innerHTML = "★".repeat(movie.rating) + "☆".repeat(5 - movie.rating) + ` (${movie.nr_of_reviews})`;
     }
 
-    // Set the hero content only if the movie data exists
-    if (movie) {
-      // Debugging: Log the movie image path to the console
-      console.log('Setting image source to:', movie.image);
-
-      // Set the image source and alt attribute
-      imageElement.src = movie.image;
-      imageElement.alt = movie.alt;
-
-      // Set the movie title
-      if (movieTitleQuery) movieTitleQuery.textContent = movie.title;
-
-      // Set the rating (creating a simple star system)
-      if (ratingQuery) ratingQuery.innerHTML = "★".repeat(movie.rating) + "☆".repeat(5 - movie.rating) + ` (${movie.nr_of_reviews})`;
-
-      // Set the genres
-      if (genreQuery) {
-        genreQuery.innerHTML = movie.genres.map(genre => 
-          genre.text.charAt(0).toUpperCase() + genre.text.slice(1).toLowerCase()
-        ).join(" &nbsp; "); // Adds more space between genres
-      }
-
-      if (linkToDetailQuery) {
-        linkToDetailQuery.href = `detail-page.html?title=${encodeURIComponent(movie.title)}`;
-      
-      }
+    if (genreQuery) {
+      genreQuery.innerHTML = movie.genres.map(genre => 
+        genre.text.charAt(0).toUpperCase() + genre.text.slice(1).toLowerCase()
+      ).join("&nbsp;&nbsp;");
     }
+
+    if (linkToDetailQuery) {
+      linkToDetailQuery.href = `detail-page.html?title=${encodeURIComponent(movie.title)}`;
+    }
+
+    if (!isFirstLoad) {
+      // Only fade back in if not the first load
+      imageElement.classList.remove('fade-out');
+    }
+
+    isFirstLoad = false; // After first load, set to false
+  }, isFirstLoad ? 0 : 1000); 
+  // If first load: 0 ms delay, otherwise: 1000 ms for fade
+}
+
+
+    // Initial update
+    updateHero(movies[selectedMovieIndexes[currentIndex]]);
+
+    // Set interval, cycle every 5 seconds (5000 ms)
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % selectedMovieIndexes.length; // Go to next movie, loop around
+      updateHero(movies[selectedMovieIndexes[currentIndex]]);
+    }, 4000);
+
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);

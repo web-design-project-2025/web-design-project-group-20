@@ -13,14 +13,20 @@
   color: white;
   overflow: hidden;
   height: 100%;
-  max-height: 30vw;
+  max-height: 35vw;
 }
 #hero-image {
   width: 70vw;
   color: white;
   overflow: hidden;
   margin-top: -45vh;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
+.fade-out {
+  opacity: 0;
+}
+
 /*image text*/
 #movie-details-home{
   position: absolute; /*to have the text on top*/
