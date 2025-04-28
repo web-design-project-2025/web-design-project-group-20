@@ -17,7 +17,6 @@ fetch('data/movies.json')
     const movieTitleQuery = document.querySelector("[movie-title]");
     const ratingQuery = document.querySelector("[rating]");
     const genreQuery = document.querySelector("[genres]");
-    const descriptionQuery = document.querySelector("[description]");
     const linkToDetailQuery = document.querySelector("[link-to-detail]"); 
 
     // Debugging: Check if the image element is found
@@ -48,10 +47,9 @@ fetch('data/movies.json')
         ).join(" &nbsp; "); // Adds more space between genres
       }
 
-      if (linkToDetail) {
-        linkToDetail.href = `detail-page.html?title=${encodeURIComponent(movie.title)}`;
-      } else {
-        console.error("Link to detail page not found.");
+      if (linkToDetailQuery) {
+        linkToDetailQuery.href = `detail-page.html?title=${encodeURIComponent(movie.title)}`;
+      
       }
     }
   })
