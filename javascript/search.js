@@ -35,6 +35,7 @@ searchInput.addEventListener("input", (e) => {
     dataShowContainer.classList.remove("active");
     return;
   }
+  
   for (let i = 0; i < articleTitle.length; i++) {
     const article = articleTitle[i];
     if (article.title.toLowerCase().startsWith(value)) {
