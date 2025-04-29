@@ -1,6 +1,7 @@
 /*sourse for the search-result conversion ect
 https://chatgpt.com/share/6808fd89-2e7c-8002-87f0-39fa11598588*/
 
+
 function getQueryParam() {
     const params = new URLSearchParams(window.location.search);
     return params.get("query")?.toLowerCase() || "";
@@ -34,47 +35,49 @@ function getQueryParam() {
         return;
       }
       let hasVisibleResults = false;
+
+        articleTitle.forEach(article => {
+          const match = article.title.toLowerCase().startsWith(value);
+          article.element.classList.toggle("hide", !match);
+          if (match) hasVisibleResults = true;
+        });
   
-      articleTitle.forEach(article => {
-        const isVisible = article.title.toLowerCase().startsWith(value);
-        article.element.classList.toggle("hide", !isVisible);
-        if (isVisible) hasVisibleResults = true;
-      });
+        movieTitle.forEach(movie => {
+          const match = movie.title.toLowerCase().startsWith(value);
+          movie.element.classList.toggle("hide", !match);
+          if (match) hasVisibleResults = true;
+        });
   
-      movieTitle.forEach(movie => {
-        const isVisible = movie.title.toLowerCase().startsWith(value);
-        movie.element.classList.toggle("hide", !isVisible);
-        if (isVisible) hasVisibleResults = true;
-      });
-  
-      dataShowContainer.classList.toggle("active", hasVisibleResults);
+        dataShowContainer.classList.toggle("active", hasVisibleResults);
+        console.log("Running performSearch with value:", value);
     }
   
     Promise.all([
       fetch("data/articles.json").then(res => res.json()),
       fetch("data/movies.json").then(res => res.json())
     ])
-      .then(([articlesData, moviesData]) => {
-        articleTitle = articlesData.articles.map(article => {
-          const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
-          const title = dataContent.querySelector("[data-title]");
-          title.href = `detail-page-articles.html?id=${article.id}`;
-          title.textContent = article.title;
-          dataShowContainer.appendChild(dataContent);
-          return { title: article.title, element: dataContent };
-        });
-  
-        movieTitle = moviesData.movies.map(movie => {
-          const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
-          const title = dataContent.querySelector("[data-title]");
-          title.href = `detail-page.html?title=${movie.title}`;
-          title.textContent = movie.title;
-          dataShowContainer.appendChild(dataContent);
-          return { title: movie.title, element: dataContent };
-        });
-  
-        // Perform search AFTER DOM is ready and data is loaded
-        performSearch(query);
+    .then(([articlesData, moviesData]) => {
+      articleTitle = articlesData.articles.map(article => {
+        const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+        const title = dataContent.querySelector("[data-title]");
+        title.href = `detail-page-articles.html?id=${article.id}`;
+        title.textContent = article.title;
+        dataShowContainer.appendChild(dataContent);
+        return { title: article.title, element: dataContent };
+      });
+    
+      movieTitle = moviesData.movies.map(movie => {
+        const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+        const title = dataContent.querySelector("[data-title]");
+        title.href = `detail-page.html?title=${movie.title}`;
+        title.textContent = movie.title;
+        dataShowContainer.appendChild(dataContent);
+        return { title: movie.title, element: dataContent };
+      });
+    
+      //test to maybe fix
+      queueMicrotask(() => performSearch(query));
+
       })
       .catch(err => {
         console.error("Failed to load data:", err);

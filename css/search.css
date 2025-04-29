@@ -25,15 +25,14 @@
   border: 2px solid transparent;  
   border-radius: 28px;
   outline: none; 
-  height: 1.5rem; 
+  height: 1.8rem; 
   color: var(--dark-green);
 }
 
 .search-img {
-  width: 1.9rem;
+  width: 1.5rem;
   vertical-align: middle;
   margin-right: 0.5rem; 
-  margin-top: -.3rem;
 }
 .search-img, .input-search{
   align-items: center;
@@ -43,7 +42,7 @@
   align-items: center;
   background-color: var(--red);
   width: 28vw;
-  margin-left: 3.2rem;
+  margin-left: 2.9rem;
   margin-top: -0.3rem;
   padding-top: 0.7rem;
   padding-bottom: 1rem;

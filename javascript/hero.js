@@ -36,6 +36,7 @@ function updateHero(movie) {
 
     if (movieTitleQuery) movieTitleQuery.textContent = movie.title;
 
+    //stars here
     if (ratingQuery) {
       ratingQuery.innerHTML = "★".repeat(movie.rating) + "☆".repeat(5 - movie.rating) + ` (${movie.nr_of_reviews})`;
     }

@@ -31,13 +31,18 @@
 #movie-details-home{
   position: absolute; /*to have the text on top*/
   z-index: 1001;
-  top: 15%;
+  top: 20%;
   left: 75%;
 }
+/*movie hero title*/
 h3{
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 35px;
+  font-weight: 600;
   margin-bottom: 5px;
+}
+
+#genre-text{
+  font-weight: 200;
 }
 
 #read-more-button-home{
