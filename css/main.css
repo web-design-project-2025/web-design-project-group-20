@@ -86,10 +86,17 @@ footer {
   padding-top: 0;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
 .footer-titles {
   margin-bottom: 0;
   margin-top: 0;
   padding-top: 1rem;
+  text-align: center;
 }
 
 .footer-section {
