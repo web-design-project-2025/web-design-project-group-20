@@ -11,7 +11,7 @@
 
 .search-container {
   width: 100%; 
-  max-width: 35vw; 
+  max-width: 50vw; 
   margin: 1rem auto;
   height: 6vh;
   padding: 0.5rem; 
@@ -29,10 +29,10 @@
   color: var(--dark-green);
 }
 
-.search-img {
-  width: 1.5rem;
+#search-img {
   vertical-align: middle;
   margin-right: 0.5rem; 
+  margin-top: -.2rem;
 }
 .search-img, .input-search{
   align-items: center;

@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <div id="bowl"> 
                 <div id="settings-list1"> 
                   <h5>Light mode:</h5> 
-                  <img class="account-icons" id="light" src="icons/sun-green.svg" alt="light mode button">
+                  <img class="icon"" id="light" src="icons/sun-green.svg" alt="light mode button">
                 </div> 
                 <div id="settings-list2"> 
                   <h5>Dark mode:</h5> 
-                  <img class="account-icons" id="dark" src="icons/moon-green.svg" alt="dark mode button">
+                  <img class="icon" id="dark" src="icons/moon-green.svg" alt="dark mode button">
                 </div> 
               </div> 
             </section>

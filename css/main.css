@@ -41,9 +41,10 @@ nav li {
   margin-top: 1rem;
 }
 
-.header-icon {
-  width: 3vh;
+.icon {
+  width: 2.8rem;
   height: auto;
+  margin-top: -0.6rem;
 }
 
 .cinema-logo {
