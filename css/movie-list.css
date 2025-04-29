@@ -58,22 +58,58 @@ a {
   margin-bottom: 2rem;
 }
 
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+}
+
 .movie-filter {
   font-family: "Kumbh Sans";
   font-size: 1rem;
   width: 6rem;
   height: 3rem;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
   border-style: solid;
   border-color: var(--red);
   border-radius: 0.5rem;
   background-color: var(--red);
+  transition-duration: 0.2s;
+}
+
+.movie-filter:hover {
+  font-weight: bold;
+}
+
+/* movie-filter-clear has an id on <button>, and class on <a> */
+#movie-filter-clear {
+  font-family: "Kumbh Sans";
+  font-size: 1rem;
+  width: 7rem;
+  height: 3rem;
+  border-style: solid;
+  border-color: var(--dark-green);
+  border-radius: 0.5rem;
+  background-color: var(--dark-green);
+  visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+#movie-filter-clear:hover {
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
 #movie-filter-comedy,
-#movie-filter-animation {
+#movie-filter-animation,
+#movie-filter-action,
+#movie-filter-scifi,
+.movie-filter-clear {
+  display: block;
   color: var(--off-white);
+  height: 100%;
+  width: 100%;
+  padding-top: 0.6rem;
 }
 
 #movies-comedy-content {
@@ -81,5 +117,13 @@ a {
 }
 
 #movies-animation-content {
+  display: none;
+}
+
+#movies-action-content {
+  display: none;
+}
+
+#movies-scifi-content {
   display: none;
 }
