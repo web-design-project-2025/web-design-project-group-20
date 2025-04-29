@@ -56,7 +56,7 @@ function updateHero(movie) {
     }
 
     isFirstLoad = false; // After first load, set to false
-  }, isFirstLoad ? 0 : 1000); 
+  }, isFirstLoad ? 0 : 2000); 
   // If first load: 0 ms delay, otherwise: 1000 ms for fade
 }
 
@@ -66,9 +66,9 @@ function updateHero(movie) {
 
     // Set interval, cycle every 5 seconds (5000 ms)
     setInterval(() => {
-      currentIndex = (currentIndex + 1) % selectedMovieIndexes.length; // Go to next movie, loop around
+      currentIndex = (currentIndex + 1) % selectedMovieIndexes.length; 
       updateHero(movies[selectedMovieIndexes[currentIndex]]);
-    }, 4000);
+    }, 4000); 
 
   })
   .catch(error => {
