@@ -23,6 +23,8 @@
   opacity: 1;
   transition: opacity 2s ease-in-out;
   mask-image: linear-gradient(to right, black -10% , transparent 90%);
+  /* sourse for image gradient
+  https://www.youtube.com/watch?v=Ca8L8iqnmdw */
 }
 .fade-out {
   opacity: 0;
