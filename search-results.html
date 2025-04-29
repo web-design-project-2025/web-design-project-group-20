@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/search.css" />
-    <link rel="stylesheet" href="./css/search.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
@@ -19,30 +18,30 @@
           <a href="index.html">
             <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="movie-list.html">Movies</a></li>
-              <li><a href="article-list.html">Articles</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="watch-list.html">temporary(Watch-list)</a></li>
+              <li class="header-list"><a href="index.html">Home</a></li>
+              <li class="header-list"><a href="movie-list.html">Movies</a></li>
+              <li class="header-list"><a href="article-list.html">Articles</a></li>
+              <li class="header-list"><a href="login.html">Login</a></li>
+              <li class="header-list"><a href="watch-list.html">temporary(Watch-list)</a></li>
               <li><a href="account.html"><img src="icons/account-icon.svg" alt="account-icon" class="icon" /></a></li>
               <li id="flex-search"><div id="search-wrapper-header"></div><label for="search-header"><img src="icons/search-icon.svg" alt="search-icon" class="icon" id="icon"/></label></li>
           </ul>
         </nav>
       </header>
       <main>
-        <div class="search-warpper-home">
-          <div class="search-container">
-              <label for="search"><img class="search-img" src="icons/search-icon-green 15.41.14.svg" alt="search icon"></label>
-              <input class="input-search" type="search" id="search" data-search="home">
-              <div class="search-show-home" data-show-container>
-              </div>
-            </div>
+        <div class="search-wrapper">
+        <div class="search-container">
+          <label for="search"><img class="icon" id="search-img" src="icons/search-icon.svg" alt="search icon"></label>
+          <input class="input-search" type="search" id="search" data-search="home">
+          <div class="search-show-home" data-show-container>
           </div>
-          <template data-content-template>
-            <div class="title-content-home">
-              <a href="" class="search-result-home" id="home-search-result" data-title> </a>
-            </div>
-          </template>
+        </div>
+      </div>
+      <template data-content-template>
+        <div class="title-content-home">
+          <a href="" class="search-result-home" id="home-search-result" data-title> </a>
+        </div>
+      </template>
       </main>
     
 </body>

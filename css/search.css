@@ -4,15 +4,26 @@
   flex-direction: row;
   align-items: center; /* Vertically centers items */
   position: absolute;
-  top: 10%;
+  top: 6%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*search results spesific*/
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers items */
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*search results spesific end*/
 
 .search-container {
   width: 100%; 
   max-width: 50vw; 
-  margin: 1rem auto;
+  margin: 0.3rem ;
   height: 6vh;
   padding: 0.5rem; 
   box-sizing: border-box;
@@ -25,14 +36,14 @@
   border: 2px solid transparent;  
   border-radius: 28px;
   outline: none; 
-  height: 1.8rem; 
+  height: 2rem; 
   color: var(--dark-green);
 }
 
 #search-img {
   vertical-align: middle;
-  margin-right: 0.5rem; 
   margin-top: -.2rem;
+  margin-right: .5rem;
 }
 .search-img, .input-search{
   align-items: center;
@@ -42,8 +53,8 @@
   align-items: center;
   background-color: var(--red);
   width: 28vw;
-  margin-left: 2.9rem;
-  margin-top: -0.3rem;
+  margin-left: 3.1rem;
+  margin-top: -0.6rem;
   padding-top: 0.7rem;
   padding-bottom: 1rem;
 }
@@ -66,37 +77,38 @@
 
 
 /* Header Search Styles */
-.search-container-header {
+.search-bar-wrapper{
+  margin-right: -1rem;
   width: 15vw;
   height: 2.5rem; /* match input height */
   border-radius: 28px;
   box-sizing: border-box;
+  margin-left: 1rem;
 }
+
 
 #flex-search{
   display: flex;
   gap: 0.5rem;
-  justify-content: center;
-}
-
-.header-icon, .search-header{
   align-items: center;
 }
 
+
 .input-search-header {
-  font-size: 1rem;
   background-color: var(--light-green) !important;
+  color: var(--dark-green);
+  font-size: 1rem;
   border: 2px solid transparent;
   border-radius: 28px;
-  outline: none;
   height: 2rem;
-  color: var(--dark-green);
   padding: 0 0.5rem;
-  box-sizing: border-box;
+  color: var(--dark-green);
   line-height: 2rem;
+  outline: none;
+  box-sizing: border-box;
   vertical-align: middle;
   position: relative;
-  top: -2px;
+  top: 5px;
 }
 /* When the search bar is visible */
 .search-wrapper-header.active .search-container-header {
