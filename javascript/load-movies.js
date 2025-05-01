@@ -62,42 +62,10 @@ function createMovieElement(movie) {
     reviewElement.classList.add("number-of-reviews");
     starContainer.appendChild(reviewElement);
   }
-  if (movie.rating === 5) {
-    fullStar();
-    fullStar();
-    fullStar();
-    fullStar();
-    fullStar();
-    numberOfReviews();
-  } else if (movie.rating === 4) {
-    fullStar();
-    fullStar();
-    fullStar();
-    fullStar();
-    hollowStar();
-    numberOfReviews();
-  } else if (movie.rating === 3) {
-    fullStar();
-    fullStar();
-    fullStar();
-    hollowStar();
-    hollowStar();
-    numberOfReviews();
-  } else if (movie.rating === 2) {
-    fullStar();
-    fullStar();
-    hollowStar();
-    hollowStar();
-    hollowStar();
-    numberOfReviews();
-  } else if (movie.rating === 1) {
-    fullStar();
-    hollowStar();
-    hollowStar();
-    hollowStar();
-    hollowStar();
-    numberOfReviews();
-  }
+
+  Array.from({ length: movie.rating }, () => fullStar());
+  Array.from({ length: 5 - movie.rating }, () => hollowStar());
+  numberOfReviews();
 
   return movieElement;
 }
