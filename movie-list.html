@@ -13,11 +13,11 @@
   <script src="javascript/load-movies.js" defer></script>
   <script src="javascript/search.js" defer></script>
   <script src="javascript/header-search.js" defer></script>
-  <title>Home</title>
+  <title>Movie List</title>
 </head>
   <body class="movie-body">
     <header>
-       <nav class="nav-space">
+      <nav class="nav-space">
         <a href="index.html">
           <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
           <ul>
@@ -51,12 +51,45 @@
       <section class="top-of-page">
         <h1 class="top-of-page-title">MOVIES</h1>
       </section>
+      <section class="filter-buttons">
+        <button class="movie-filter">
+          <a id="movie-filter-comedy" href="movie-list.html?genre=comedy">
+            Comedy
+          </a>
+        </button>
+        <button class="movie-filter">
+          <a id="movie-filter-animation" href="movie-list.html?genre=animation">
+            Animation
+          </a>
+        </button>
+        <button class="movie-filter">
+          <a id="movie-filter-action" href="movie-list.html?genre=action">
+            Action
+          </a>
+        </button>
+        <button class="movie-filter">
+          <a
+            id="movie-filter-scifi"
+            href="movie-list.html?genre=science fiction"
+          >
+            Sci-Fi
+          </a>
+        </button>
+        <button id="movie-filter-clear">
+          <a class="movie-filter-clear" href="movie-list.html">
+            Clear Filter
+          </a>
+        </button>
+      </section>
+      <div class="movie-line"></div>
       <div class="movie-sides">
+        <div class="container" id="movies-comedy-content"></div>
+        <div class="container" id="movies-animation-content"></div>
+        <div class="container" id="movies-action-content"></div>
+        <div class="container" id="movies-scifi-content"></div>
         <div class="container" id="movies_content"></div>
       </div>
     </main>
     <footer></footer>
   </body>
 </html>
-
-
