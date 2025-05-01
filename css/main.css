@@ -82,8 +82,7 @@ h1 {
 
 footer {
   background-color: var(--red);
-  margin-top: 0;
-  padding-top: 0;
+  padding-bottom: 4rem;
 }
 
 .footer-container {
@@ -94,16 +93,33 @@ footer {
 
 .footer-titles {
   margin-bottom: 0;
-  margin-top: 0;
   padding-top: 1rem;
   text-align: center;
 }
 
+.footer-links {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-top: 1rem;
+}
+
 .footer-section {
+  display: flex;
+  flex-direction: column;
   color: var(--off-white);
 }
 
 .footer-section a {
   color: var(--off-white);
   text-decoration: none;
+}
+
+.contact-us-info {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
