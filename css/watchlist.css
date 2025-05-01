@@ -20,3 +20,13 @@ footer {
   background-color: transparent;
   padding: 0;
 }
+
+.footer-line {
+  height: 3px;
+  width: 9rem;
+  background-color: var(--off-white);
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
