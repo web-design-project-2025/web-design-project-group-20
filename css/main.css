@@ -103,8 +103,14 @@ footer {
   padding-left: 0;
 }
 
-.footer-links li {
-  margin-top: 1rem;
+#footer-link1 {
+  margin-top: 0.5rem;
+}
+
+#footer-link2,
+#footer-link3,
+#footer-link4 {
+  margin-top: 1.5rem;
 }
 
 .footer-section {
