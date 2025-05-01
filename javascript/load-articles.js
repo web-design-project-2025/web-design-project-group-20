@@ -15,8 +15,9 @@ async function loadData() {
 }
 
 function createArticleElement(article) {
-  const articleElement = document.createElement("article");
+  const articleElement = document.createElement("a");
   articleElement.classList.add("article-box");
+  articleElement.href = `detail-page-articles.html?id=${article.id}`;
 
   const iconElement = document.createElement("img");
   iconElement.src = article.icon;
@@ -29,7 +30,7 @@ function createArticleElement(article) {
   articleElement.appendChild(articleTitle);
 
   const articleAuthor = document.createElement("p");
-  articleAuthor.innerText = article.authur;
+  articleAuthor.innerText = article.author;
   articleAuthor.classList.add("article-author");
   articleElement.appendChild(articleAuthor);
 

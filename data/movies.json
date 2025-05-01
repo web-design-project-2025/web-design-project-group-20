@@ -5,46 +5,79 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/back-to-the-future.jpg",
+      "alt": "Back to the Future, movie poster",
       "publishing_year": "1985",
-      "genre1": "science fiction",
-      "genre2": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        },
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "Back to the Future is a sci-fi adventure that follows teenager Marty McFly as he's accidentally sent 30 years into the past in a time-traveling DeLorean. With the help of eccentric scientist Doc Brown, Marty must ensure his young parents meet and fall in love, or risk erasing his own existence. Packed with thrilling time-travel twists, humor, and heart, the film explores the impact of our choices across time. Directed by Robert Zemeckis, it's a beloved classic that blends adventure, comedy, and science fiction. Back to the Future is a timeless ride that continues to captivate audiences worldwide."
     },
     {
       "title": "Batman",
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/batman.jpg",
+      "alt": "Batman(1989), movie poster",
       "publishing_year": "1989",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Batman (1989), directed by Tim Burton, brings Gotham City's dark and brooding superhero to life. Michael Keaton stars as the iconic Batman, facing off against the manic villain Joker, played by Jack Nicholson. With striking visuals, a haunting score by Danny Elfman, and a gritty, gothic atmosphere, the film redefined the superhero genre. Burton's unique style creates a world where Batman’s quest for justice meets the chaos of Gotham. Batman is a thrilling, atmospheric action film that remains a defining entry in the comic book movie legacy."
     },
     {
       "title": "Beetlejuice",
       "rating": 4,
       "nr_of_reviews": "2k",
       "image": "movie-img/80s/beetlejuice.jpg",
-      "genre1": "comedy",
+      "alt": "Beetlejuice, movie poster",
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
       "publishing_year": "1988",
-      "description": "insert text"
+      "description": "Beetlejuice, directed by Tim Burton, is a wildly inventive dark comedy about the afterlife. When a young couple dies and finds their home inhabited by new living tenants, they enlist the help of the mischievous and unpredictable ghost, Beetlejuice, to scare them away. With a quirky cast led by Michael Keaton’s unforgettable performance, the film blends bizarre humor, gothic visuals, and surreal fantasy. Burton’s signature style and offbeat storytelling create a one-of-a-kind experience. Beetlejuice is a cult classic that combines laughs, scares, and a whole lot of eccentric charm."
     },
     {
       "title": "Blade Runner",
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/blade-runner.jpg",
-      "genre1": "science fiction",
+      "alt": "Blade Runner, movie poster",
+      "genres": [
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
       "publishing_year": "1982",
-      "description": "insert text"
+      "description": "Blade Runner (1982), directed by Ridley Scott, is a visionary sci-fi set in a dystopian future where synthetic humans, known as replicants, are hunted by special police units. Harrison Ford stars as Rick Deckard, a blade runner tasked with tracking down rogue replicants. With its haunting visuals, and atmospheric score, the film explores themes of identity, morality, and the soul. Blade Runner is a visually stunning, thought-provoking classic that has become a cornerstone of science fiction cinema. Its lasting influence continues to shape the genre to this day."
     },
     {
       "title": "The Breakfast Club",
       "rating": 4,
       "nr_of_reviews": "1k",
       "image": "movie-img/80s/breakfast.jpg",
-      "genre1": "comedy",
+      "alt": "The Breakfast Club, movie poster",
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
       "publishing_year": "1985",
-      "description": "insert text"
+      "description": "The Breakfast Club, directed by John Hughes, is a beloved coming-of-age film that brings together five high school students from different cliques during Saturday detention. Over the course of the day, they break down their stereotypes and form unexpected connections. Starring Emilio Estevez, Molly Ringwald, Judd Nelson, Ally Sheedy, and Anthony Michael Hall, the film explores themes of identity, peer pressure, and personal growth. With sharp dialogue and relatable characters, it captures the struggles of adolescence. The Breakfast Club remains a timeless exploration of the teenage experience."
     },
 
     {
@@ -52,314 +85,543 @@
       "rating": 5,
       "nr_of_reviews": "5k",
       "image": "movie-img/80s/castle-in-sky.jpg",
+      "alt": "Castle in the Sky, movie poster",
       "publishing_year": "1986",
-      "genre1": "animation",
-      "genre2": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        },
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Castle in the Sky is a thrilling animated adventure from Studio Ghibli, directed by Hayao Miyazaki. The film follows Pazu and Sheeta, two young adventurers, on a journey to discover the secrets of the mythical floating island, Laputa. Pursued by pirates and military forces, they uncover powerful mysteries that challenge their courage and friendship. With stunning animation and a timeless story, Castle in the Sky explores the themes of nature, technology, and the consequences of greed. A must-watch for fans of breathtaking animation and captivating storytelling."
     },
     {
       "title": "Die Hard",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/die-hard.jpg",
+      "alt": "Die Hard, movie poster",
       "publishing_year": "1988",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Die Hard (1988), directed by John McTiernan, is an action-packed film that redefined the genre. Bruce Willis stars as NYPD officer John McClane, who must single-handedly take down a group of terrorists holding hostages in a Los Angeles skyscraper. With sharp dialogue, high-stakes tension, and thrilling action sequences, the film became an instant classic. Featuring standout performances, especially from Willis and Alan Rickman as the charismatic villain, Die Hard is both a gripping action film and a holiday favorite. It's a relentless, iconic ride that continues to inspire action movies today."
     },
     {
       "title": "Diva",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/diva.jpg",
+      "alt": "Diva, movie poster",
       "publishing_year": "1981",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Diva (1981), directed by Jean-Jacques Beineix, is a French action movie that blends mystery, romance, and suspense. The story follows a young, passionate opera fan, Jules, who illegally records a performance of his favorite diva, leading him into a dangerous world of criminal intrigue. With its striking visual style, evocative soundtrack, and unique blend of genres, Diva became a cult classic. The film features standout performances, particularly from Wilhelmenia Wiggins Fernandez as the opera singer. Diva is a stylish and gripping film that explores obsession, art, and the consequences of living in a world of excess."
     },
     {
       "title": "E.T.",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ET.jpg",
+      "alt": "E.T., movie poster",
       "publishing_year": "1982",
-      "genre1": "science fiction",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "E.T. the Extra-Terrestrial (1982), directed by Steven Spielberg, is a heartwarming sci-fi classic about a young boy named Elliott who befriends a stranded alien. As the two form an emotional bond, Elliott and his siblings work to help E.T. return home while evading government authorities. The film’s mix of adventure, friendship, and wonder captivated audiences worldwide. With iconic scenes, a memorable score by John Williams, and a powerful message of compassion, E.T. became a cultural touchstone. It's a timeless story that continues to resonate with viewers of all ages."
     },
     {
       "title": "Ghostbusters",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ghostbusters.jpg",
+      "alt": "Ghostbusters, movie poster",
       "publishing_year": "1984",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Ghostbusters (1984), directed by Ivan Reitman, is a hilarious and supernatural comedy that follows a group of eccentric scientists who start a business capturing ghosts in New York City. Starring Bill Murray, Dan Aykroyd, and Harold Ramis, the film blends witty humor with thrilling paranormal action. As a supernatural threat grows, the Ghostbusters must use their unique gadgets and quick wit to save the city. With its unforgettable characters and iconic lines, Ghostbusters became a pop culture phenomenon. It's a fun and timeless adventure that continues to entertain audiences of all ages."
     },
     {
       "title": "The Karate Kid",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/karate-kid.jpg",
+      "alt": "The Karate Kid, movie poster",
       "publishing_year": "1984",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "The Karate Kid, directed by John G. Avildsen, is an inspiring coming-of-age drama about a young boy named Daniel who learns karate to defend himself from bullies. Under the guidance of Mr. Miyagi, a wise and quirky mentor, Daniel discovers life lessons that go beyond martial arts. The film explores themes of perseverance, self-discipline, and friendship. With memorable performances from Ralph Macchio and Pat Morita, The Karate Kid became a beloved classic. Its timeless message and iconic moments continue to resonate with audiences worldwide."
     },
     {
       "title": "The Little Mermaid",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/little-mermaid.jpg",
+      "alt": "The Little Mermaid (1989), movie poster",
       "publishing_year": "1989",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "The Little Mermaid (1989), directed by Ron Clements and John Musker, is a magical Disney animated classic that follows Ariel, a curious young mermaid who dreams of living on land. After making a dangerous deal with the sea witch Ursula, Ariel embarks on an unforgettable adventure to win the heart of Prince Eric. With beautiful animation, memorable songs like Under the Sea, and a heartwarming story, the film captured the hearts of audiences worldwide. The film explores themes of love, identity, and sacrifice. The Little Mermaid helped spark the Disney Renaissance and remains a beloved family favorite."
     },
     {
       "title": "Moonstruck",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/moonstruck.jpg",
+      "alt": "Moonstruck, movie poster",
       "publishing_year": "1987",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Moonstruck (1987), directed by Norman Jewison, is a romantic comedy that explores love, family, and fate. Cher stars as Loretta Castorini, a widow who unexpectedly falls in love with her fiancé’s passionate and unpredictable brother, played by Nicolas Cage. Set in the vibrant Italian-American community of Brooklyn, the film is filled with charm, wit, and heartfelt moments. Cher's iconic performance earned her an Academy Award, and the movie’s quirky characters and memorable dialogue have made it a beloved classic. Moonstruck is a delightful, funny exploration of romance and self-discovery."
     },
     {
       "title": "1984",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/nineteen-eighty-four.jpg",
+      "alt": "1984, movie poster",
       "publishing_year": "1984",
-      "genre1": "science fiction",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "1984 (1984), directed by Michael Radford, is a dystopian adaptation of George Orwell’s iconic novel. Set in a totalitarian society ruled by the oppressive figure Big Brother, the film follows Winston Smith, played by John Hurt, as he struggles against the government’s constant surveillance and mind control. The chilling, bleak atmosphere captures the novel’s themes of censorship, freedom, and the loss of individuality. With strong performances and a haunting portrayal of a world devoid of personal freedom, 1984 remains a powerful commentary on totalitarianism. It’s a thought-provoking, unsettling film that resonates with audiences today."
     },
     {
       "title": "Scarface",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/scarface.jpg",
+      "alt": "Scarface, movie poster",
       "publishing_year": "1983",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Scarface (1983), directed by Brian De Palma, is a gripping action film that chronicles the rise and fall of Tony Montana, a ruthless Cuban immigrant who becomes a powerful drug lord in Miami. Starring Al Pacino in an iconic performance, the film explores themes of ambition, power, and corruption. With its intense violence, sharp dialogue, and unforgettable scenes, Scarface has become a cultural phenomenon. The film's portrayal of excess and its exploration of the American Dream have made it a defining entry in gangster cinema. Scarface remains a timeless, controversial classic."
     },
     {
       "title": "Supergirl",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/supergirl.jpg",
+      "alt": "Supergirl, movie poster",
       "publishing_year": "1984",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Supergirl (1984), directed by Jeannot Szwarc, is a superhero fantasy film that follows Kara Zor-El, Superman’s cousin, as she discovers her powers on Earth. After accidentally losing a powerful energy sphere, Kara must battle the evil sorceress Selena, played by Faye Dunaway, who seeks to use its power for destruction. With Helen Slater in the title role, the film combines action, adventure, and fantasy elements as Kara learns what it means to be a hero. Though often campy, Supergirl has gained a cult following for its fun, colorful charm. It’s an entertaining and lighthearted addition to the Superman saga."
     },
     {
       "title": "The Terminator",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/the-terminator.jpg",
+      "alt": "The Terminator, movie poster",
       "publishing_year": "1984",
       "genre1": "action",
-      "genre2": "science fiction",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "The Terminator (1984), directed by James Cameron, is a groundbreaking sci-fi action film that introduced audiences to the relentless cyborg assassin from the future. Arnold Schwarzenegger stars as the iconic Terminator, sent back in time to kill Sarah Connor, whose unborn son will one day lead the human resistance. With its tense atmosphere, thrilling action sequences, and visionary storytelling, the film explores themes of technology, fate, and survival. Linda Hamilton delivers a powerful performance as Sarah Connor, transforming from a vulnerable woman to a determined survivor. The Terminator became a cultural milestone and launched a legendary franchise."
     },
     {
       "title": "My Neighbor Totoro",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/totoro.jpg",
+      "alt": "My Neighbor Totoro, movie poster",
       "publishing_year": "1988",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "My Neighbor Totoro, directed by Hayao Miyazaki, is a heartwarming animated film about two young sisters, Satsuki and Mei, who move to the countryside and discover magical creatures. The gentle, forest spirit Totoro becomes their friend and protector as they navigate life’s joys and challenges. With its stunning animation, peaceful atmosphere, and memorable characters, the film celebrates childhood, nature, and imagination. My Neighbor Totoro has become a beloved classic of Studio Ghibli, known for its innocence and sense of wonder. It’s a timeless tale that resonates with audiences of all ages."
     },
     {
       "title": "10 Things I Hate About You",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/10-things.jpg",
+      "alt": "10 Things I Hate About You, movie poster",
       "publishing_year": "1999",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "10 Things I Hate About You, directed by Gil Junger, is a modern, witty take on Shakespeare’s The Taming of the Shrew. Set in a high school, the film follows the complicated romance between the rebellious Kat Stratford, played by Julia Stiles, and the charming bad boy Patrick Verona, portrayed by Heath Ledger. With sharp humor, memorable characters, and a standout soundtrack, the film explores themes of love, independence, and societal expectations. 10 Things I Hate About You became a beloved teen classic, thanks to its clever dialogue and heartfelt moments. It remains a favorite for its irresistible mix of romance and comedy."
     },
     {
       "title": "Bad Boys",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bad-boys.jpg",
+      "alt": "Bad Boys, movie poster",
       "publishing_year": "1995",
-      "genre1": "comedy",
-      "genre2": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        },
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Bad Boys (1995), directed by Michael Bay, is a high-octane action-comedy that follows two Miami detectives, Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence), as they investigate a stolen drug shipment. The duo’s contrasting personalities and hilarious banter bring a unique energy to their crime-fighting partnership. With explosive action sequences, fast-paced direction, and sharp humor, the film became an instant hit. Will Smith and Martin Lawrence deliver unforgettable performances as the charismatic, mismatched team. Bad Boys set the stage for a successful franchise and remains a beloved action classic."
     },
     {
       "title": "Buffy the Vampire Slayer",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/buffy.jpg",
+      "alt": "Buffy the Vampire Slayer, movie poster",
       "publishing_year": "1992",
-      "genre1": "action",
-      "genre2": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        },
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Buffy the Vampire Slayer (1992), directed by Fran Rubel Kuzui, is a cult classic that blends horror, comedy, and teen drama. Kristy Swanson stars as Buffy Summers, a high school cheerleader who discovers she’s destined to battle vampires and other supernatural creatures. With its quirky humor, campy action, and 90s charm, the film is both entertaining and self-aware. While it differs from the beloved TV series that followed, it introduces audiences to Buffy’s iconic character and world. Buffy the Vampire Slayer remains a fun, lighthearted take on the vampire genre."
     },
     {
       "title": "A Bug's Life",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bugs-life.jpg",
+      "alt": "A Bug's Life, movie poster",
       "publishing_year": "1998",
-      "genre1": "animation",
-      "genre2": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        },
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "A Bug's Life, directed by John Lasseter, is a charming animated adventure from Pixar. The film follows Flik, an inventive ant who sets out to find warriors to help his colony fight off a group of menacing grasshoppers. Along the way, he befriends a misfit group of circus bugs who help him take on the bully-like grasshoppers. With vibrant animation, memorable characters, and a heartwarming story, the film explores themes of courage, teamwork, and standing up to oppression. A Bug's Life is a delightful family film that continues to entertain with its humor and creativity."
     },
     {
       "title": "Clueless",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/clueless.jpg",
+      "alt": "Clueless, movie poster",
       "publishing_year": "1995",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Clueless, directed by Amy Heckerling, is a witty and stylish teen comedy inspired by Jane Austen’s Emma. Alicia Silverstone stars as Cher Horowitz, a wealthy, fashion-obsessed high school student who plays matchmaker while navigating her own complicated love life. Set in Beverly Hills, the film explores themes of friendship, self-discovery, and social status with sharp humor and iconic characters. With its unforgettable fashion and clever dialogue, Clueless has become a cultural touchstone. It remains a beloved classic for its lighthearted take on teenage life and relationships."
     },
     {
       "title": "Dumb and Dumber",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/dumb-and-dumber.jpg",
+      "alt": "Dumb and Dumber, movie poster",
       "publishing_year": "1994",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Dumb and Dumber, directed by Peter Farrelly, is a hilarious buddy comedy that follows the absurd adventures of two well-meaning but dim-witted friends, Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels). When Lloyd accidentally loses a briefcase full of money, the duo embarks on a cross-country journey to return it, encountering one ridiculous situation after another. Known for its over-the-top humor and memorable gags, the film became a cult classic. Carrey and Daniels’ comedic chemistry delivers non-stop laughs throughout. Dumb and Dumber is a lighthearted, slapstick romp that continues to entertain audiences with its silly charm."
     },
     {
       "title": "Fallen Angels",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fallen-angels.jpg",
+      "alt": "Fallen Angels, movie poster",
       "publishing_year": "1995",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Fallen Angels, directed by Wong Kar-wai, is a visually stunning and atmospheric film that explores the lives of lonely individuals in the vibrant streets of Hong Kong. The film intertwines the stories of a hitman, a mute woman, and their complex, fleeting relationships. With its moody cinematography, unconventional narrative, and unique blend of romance and noir, Fallen Angels captures a sense of longing and alienation. The film’s dreamlike quality and poetic style make it a standout in Wong Kar-wai’s body of work. Fallen Angels remains a captivating exploration of love, loss, and urban isolation."
     },
     {
       "title": "Fight Club",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fight-club.jpg",
+      "alt": "Fight Club, movie poster",
       "publishing_year": "1999",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Fight Club, directed by David Fincher, is a dark and provocative drama that explores themes of consumerism, identity, and self-destruction. Edward Norton stars as the unnamed narrator, a frustrated office worker who forms an underground fight club with the charismatic and anarchistic Tyler Durden, played by Brad Pitt. As the club grows into something much more dangerous, the film dives deep into the psyche of its characters. With its gritty visuals, sharp dialogue, and unforgettable twists, Fight Club has become a cult classic. Its exploration of masculinity, chaos, and rebellion continues to resonate with audiences today."
     },
     {
       "title": "Forrest Gump",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/forrest-gump.jpg",
+      "alt": "Forrest Gump, movie poster",
       "publishing_year": "1994",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Forrest Gump (1994), directed by Robert Zemeckis, is a heartfelt drama that follows the extraordinary life of Forrest Gump, a kind and simple man from Alabama, played by Tom Hanks. Through love, loss, and historical moments, Forrest unwittingly influences major events while staying true to his pure-hearted nature. The film blends humor, emotion, and history with unforgettable performances and iconic quotes. With its moving story and powerful message about destiny and perseverance, Forrest Gump became a beloved classic. It’s a timeless tale that continues to inspire audiences around the world."
     },
     {
       "title": "Home Alone",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/home-alone.jpg",
+      "alt": "Home Alone, movie poster",
       "publishing_year": "1990",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Home Alone, directed by Chris Columbus, is a beloved holiday comedy about Kevin McCallister, an 8-year-old boy accidentally left behind when his family leaves for Christmas vacation. Played by Macaulay Culkin, Kevin enjoys his freedom until he must outwit two bumbling burglars with clever traps and hilarious tricks. Packed with heart, laughs, and holiday spirit, the film has become a seasonal favorite for families. Its mix of slapstick comedy and touching moments makes it endlessly rewatchable. Home Alone is a festive classic that captures the magic and mischief of the holiday season."
     },
     {
       "title": "Jurassic Park",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/jurassic-park.jpg",
+      "alt": "Jurassic Park, movie poster",
       "publishing_year": "1993",
-      "genre1": "science fiction",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "Jurassic Park (1993), directed by Steven Spielberg, is a groundbreaking science fiction adventure that brings dinosaurs back to life with stunning realism. When a group of scientists and visitors are invited to a remote island theme park, things quickly spiral out of control as the prehistoric creatures escape containment. Featuring iconic visual effects, thrilling suspense, and a memorable score by John Williams, the film redefined blockbuster cinema. With strong performances and edge-of-your-seat moments, Jurassic Park captivated audiences worldwide. It remains a thrilling classic that continues to inspire awe and excitement."
     },
     {
       "title": "The Nightmare Before Christmas",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/nightmare-before.jpg",
+      "alt": "The Nightmare Before Christmas, movie poster",
       "publishing_year": "1993",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "The Nightmare Before Christmas, directed by Henry Selick and produced by Tim Burton, is a stop-motion animated musical that blends Halloween spookiness with Christmas cheer. The story follows Jack Skellington, the Pumpkin King of Halloween Town, who stumbles upon Christmas Town and decides to bring his own twist to the holiday. With its unique visual style, hauntingly catchy songs, and imaginative storytelling, the film has become a holiday classic. It explores themes of identity, curiosity, and the search for meaning in a delightfully dark yet heartwarming way. The Nightmare Before Christmas is a timeless favorite for both Halloween and Christmas lovers alike."
     },
     {
       "title": "The Parent Trap",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/parent-trap.jpg",
+      "alt": "The Parent Trap, movie poster",
       "publishing_year": "1998",
-      "genre1": "comedy",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "The Parent Trap, directed by Nancy Meyers, is a heartwarming family comedy about identical twin sisters, Annie and Hallie, played by Lindsay Lohan in a breakout dual role. Separated at birth and raised on opposite sides of the world, the girls meet for the first time at summer camp and hatch a plan to reunite their long-lost parents. With charm, humor, and plenty of mischief, the film explores themes of family, identity, and second chances. Supported by a delightful cast and a feel-good story, it became a beloved favorite for all ages. The Parent Trap is a fun and touching tale about love and the bonds that bring people together."
     },
     {
       "title": "Pocahontas",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pocahontas.jpg",
+      "alt": "Pocahontas, movie poster",
       "publishing_year": "1995",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "Pocahontas (1995), produced by Walt Disney Animation Studios, is a beautifully animated musical inspired by the true story of a Native American woman and an English settler. The film follows Pocahontas, a spirited and curious young woman, as she meets Captain John Smith and seeks to bridge the gap between two very different worlds. With its stunning visuals, memorable songs like “Colors of the Wind,” and themes of peace, understanding, and respect for nature, the movie delivers a powerful message. The film explores cultural differences and the importance of listening with an open heart. Pocahontas remains a touching and visually captivating Disney classic."
     },
     {
       "title": "Pokémon: The First Movie",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pokemon.jpg",
+      "alt": "Pokémon: The First Movie, movie poster",
       "publishing_year": "1998",
-      "genre1": "animation",
-      "genre2": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        },
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "Pokémon: The First Movie, directed by Kunihiko Yuyama, brings the beloved Pokémon universe to the big screen in an epic adventure. The film follows Ash, Pikachu, and friends as they face off against Mewtwo, a powerful genetically-engineered Pokémon struggling with its purpose and identity. As the battle intensifies, the film explores themes of friendship, empathy, and the value of all living beings. With emotional moments, exciting battles, and fan-favorite characters, it became a milestone for Pokémon fans worldwide. Pokémon: The First Movie is a nostalgic and action-packed journey for audiences of all ages."
     },
     {
       "title": "Princess Mononoke",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/princess-mononoke.jpg",
+      "alt": "Princess Mononoke, movie poster",
       "publishing_year": "1997",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "Princess Mononoke, directed by Hayao Miyazaki, is an epic animated fantasy that explores the conflict between nature and human industry. The story follows Ashitaka, a young warrior cursed by a demon, who becomes entangled in a battle between forest spirits and a mining colony. Along the way, he meets San, a fierce girl raised by wolves, who fights to protect the forest. With breathtaking animation, complex characters, and deep environmental themes, the film is a masterpiece of storytelling. Princess Mononoke is a powerful, thought-provoking adventure that continues to captivate audiences around the world."
     },
     {
       "title": "Pulp Fiction",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pulp-ficton.jpg",
+      "alt": "Pulp Fiction, movie poster",
       "publishing_year": "1994",
-      "genre1": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        }
+      ],
+      "description": "Pulp Fiction, directed by Quentin Tarantino, is a stylish and unconventional crime film that weaves together multiple interconnected stories in Los Angeles's underworld. Featuring an ensemble cast including John Travolta, Uma Thurman, and Samuel L. Jackson, the film blends sharp dialogue, dark humor, and sudden violence with a nonlinear narrative. Each storyline adds depth to its unforgettable characters and explores themes of redemption, chance, and morality. With its iconic scenes and groundbreaking structure, Pulp Fiction redefined independent cinema. It remains a cultural landmark and one of the most influential films of the 1990s."
     },
     {
       "title": "Sailor Moon",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/sailor-moon.jpg",
+      "alt": "Sailor Moon, movie poster",
       "publishing_year": "1994",
-      "genre1": "animation",
-      "genre2": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        },
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
+      "description": "Sailor Moon (1994), directed by Junichi Sato, is an animated film based on the beloved Japanese anime and manga series. The movie follows Usagi Tsukino, aka Sailor Moon, as she and her team of Sailor Scouts must protect the Earth from a powerful new enemy, the mysterious Princess Kaguya. Combining magical battles, heartfelt moments, and themes of friendship and love, the film captures the essence of the series. With vibrant animation, iconic characters, and a thrilling storyline, Sailor Moon appeals to both fans and newcomers alike. It's a magical adventure that celebrates heroism and the strength of unity."
     },
     {
       "title": "The Matrix",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/the-matrix.jpg",
+      "alt": "The Matrix, movie poster",
       "publishing_year": "1999",
-      "genre1": "science fiction",
-      "genre2": "action",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "action"
+        },
+        {
+          "type": "genre",
+          "text": "science fiction"
+        }
+      ],
+      "description": "The Matrix, directed by the Wachowskis, is a groundbreaking sci-fi action film that explores the nature of reality and human consciousness. The story follows Neo, played by Keanu Reeves, a hacker who discovers that the world he knows is a simulated illusion controlled by intelligent machines. With mind-bending visuals, iconic slow-motion action sequences, and philosophical themes, the film redefined the genre. The Matrix blends high-tech thrills with deep questions about free will and perception. Its innovative special effects and gripping storyline have made it a cultural touchstone and a genre-defining classic."
     },
     {
       "title": "Trigun",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/trigun.jpg",
+      "alt": "Trigun, movie poster",
       "publishing_year": "1998",
-      "genre1": "animation",
-      "description": "insert text"
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        },
+        {
+          "type": "genre",
+          "text": "comedy"
+        }
+      ],
+      "description": "Trigun, directed by Satoshi Nishimura, is a visually striking anime series set in a futuristic, wild west-inspired world. The story follows Vash the Stampede, a carefree gunslinger with a mysterious past and a massive bounty on his head, as he navigates a dangerous desert planet. Despite his reputation for destruction, Vash is determined to avoid killing and seeks peace in a chaotic world. With its mix of action, humor, and philosophical themes, Trigun explores the nature of morality, redemption, and human connection. The series has earned a cult following for its memorable characters and gripping narrative."
     },
     {
       "title": "Gulliver's Travels",
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/gullivers-travels.jpg",
-      "genre1": "animation",
+      "alt": "Gulliver's Travels, movie poster",
+      "genres": [
+        {
+          "type": "genre",
+          "text": "animation"
+        }
+      ],
       "publishing_year": "1939",
-      "description": "insert text"
+      "description": "Gulliver's Travels (1939), directed by Dave Fleischer, is an animated fantasy film based on Jonathan Swift’s classic novel. The story follows Lemuel Gulliver, a shipwrecked sailor who finds himself in the land of Lilliput, where he is a giant among tiny people. The film blends adventure, satire, and humor, as Gulliver navigates political intrigue and tries to find a way home. With its groundbreaking animation and timeless themes, the movie captivates both children and adults. Gulliver's Travels remains a charming and influential piece of early animation history."
     }
   ]
 }

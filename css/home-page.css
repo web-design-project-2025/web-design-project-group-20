@@ -2,18 +2,63 @@
 .home-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }
 
 /* hero img */
 .home-hero {
-  background-color: rgb(83, 77, 69);
+  background-color: black;
+  position: relative;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+  height: 100%;
+  max-height: 40vw;
 }
+#hero-image {
+  width: 80vw;
+  color: white;
+  overflow: hidden;
+  margin-top: -50vh;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  mask-image: linear-gradient(to right, black -10% , transparent 90%);
+  /* sourse for image gradient
+  https://www.youtube.com/watch?v=Ca8L8iqnmdw */
+}
+.fade-out {
+  opacity: 0;
+}
+
+/*image text*/
+#movie-details-home{
+  position: absolute; /*to have the text on top*/
+  z-index: 1001;
+  top: 20%;
+  left: 75%;
+  color: var(--off-white);
+}
+/*movie hero title*/
+h3{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#genre-text{
+  font-weight: 200;
+}
+
+#read-more-button-home{
+  margin-top: 14vh;
+  width: 8rem;
+}
+/*image text ect*/
 
 /* recommended movies */
 .home-movies {
   background-color: var(--off-white);
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .home-movies-title {

@@ -36,14 +36,25 @@ nav ul {
   justify-content: flex-end;
 }
 
-nav li {
-  margin-right: 3rem;
+.header-list {
+  margin-right: 4rem;
   margin-top: 1rem;
 }
 
-.account-icon {
-  width: 3vh;
+.icon {
+  width: 2.8rem;
   height: auto;
+  margin-top: .2rem;
+  margin-right: 1rem;
+  margin-left: -1rem;
+}
+.icon, .search-header{
+  align-items: center;
+}
+/*search icon*/
+#icon{
+margin-left: 1rem;
+margin-right: 1.8rem;
 }
 
 .cinema-logo {

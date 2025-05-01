@@ -15,11 +15,13 @@ async function loadData() {
 }
 
 function createMovieElement(movie) {
-  const movieElement = document.createElement("article");
+  const movieElement = document.createElement("a");
   movieElement.classList.add("movie-box");
+  movieElement.href = `detail-page.html?title=${movie.title}`;
 
   const imageElement = document.createElement("img");
   imageElement.src = movie.image;
+  imageElement.alt = movie.alt;
   imageElement.classList.add("posters");
   movieElement.appendChild(imageElement);
 
@@ -50,7 +52,7 @@ function createMovieElement(movie) {
   function numberOfReviews() {
     const reviewElement = document.createElement("p");
     reviewElement.innerHTML = movie.nr_of_reviews;
-    reviewElement.classList.add("numberOfReviews");
+    reviewElement.classList.add("number-of-reviews");
     starContainer.appendChild(reviewElement);
   }
   if (movie.rating === 5) {
