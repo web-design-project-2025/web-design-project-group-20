@@ -93,14 +93,16 @@ footer {
 
 .footer-titles {
   margin-bottom: 0;
-  padding-top: 1rem;
+  padding-top: 0rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .footer-links {
   list-style: none;
   text-align: center;
   padding-left: 0;
+  font-size: 1.1rem;
 }
 
 #footer-link1 {
@@ -132,4 +134,5 @@ footer {
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
