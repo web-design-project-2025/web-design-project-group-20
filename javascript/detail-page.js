@@ -51,42 +51,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       filmTitle.innerText = film.title;
       filmDescription.innerText = film.description;
 
-      if (film.rating === 1) {
-        filmFullStar();
-        filmHollowStar();
-        filmHollowStar();
-        filmHollowStar();
-        filmHollowStar();
-        numberOfReviews();
-      } else if (film.rating === 2) {
-        filmFullStar();
-        filmFullStar();
-        filmHollowStar();
-        filmHollowStar();
-        filmHollowStar();
-        numberOfReviews();
-      } else if (film.rating === 3) {
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        filmHollowStar();
-        filmHollowStar();
-        numberOfReviews();
-      } else if (film.rating === 4) {
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        filmHollowStar();
-        numberOfReviews();
-      } else if (film.rating === 5) {
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        filmFullStar();
-        numberOfReviews();
-      }
+      Array.from({ length: film.rating }, () => filmFullStar());
+      Array.from({ length: 5 - film.rating }, () => filmHollowStar());
+      numberOfReviews();
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data
