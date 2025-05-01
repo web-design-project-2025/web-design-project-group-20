@@ -9,7 +9,7 @@ fetch('data/movies.json')
     const movies = data.movies;
 
     // Choose 3 movies by index (posible to ad mor just ad a ", ")
-    const selectedMovieIndexes = [37, 6, 5];
+    const selectedMovieIndexes = [7, 37, 6, 5];
     let currentIndex = 0; 
 
     const imageElement = document.getElementById("hero-image");
