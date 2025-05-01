@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <link rel="stylesheet" href="./css/article-list.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/detail-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/load-movies.js" defer></script>
+    <script src="javascript/load-articles.js" defer></script>
+    <script src="javascript/search.js" defer></script>
+    <script src="javascript/header-search.js" defer></script>
+    <script src="javascript/hero.js" defer></script>
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/home-page.css" />
-  <link rel="stylesheet" href="./css/movie-list.css" />
-  <link rel="stylesheet" href="./css/article-list.css" />
-  <link rel="stylesheet" href="./css/search.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <script src="javascript/load-movies.js" defer></script>
-  <script src="javascript/load-articles.js" defer></script>
-  <script src="javascript/search.js" defer></script>
-  <script src="javascript/header-search.js" defer></script>
-  <script src="javascript/hero.js" defer></script>
-  <title>Home</title>
-</head>
-
-<body>
-  <header>
-    <nav class="nav-space">
-      <a href="index.html">
-        <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
-      <ul>
-        <li class="header-list"><a href="index.html">Home</a></li>
-        <li class="header-list"><a href="movie-list.html">Movies</a></li>
-        <li class="header-list"><a href="article-list.html">Articles</a></li>
-        <li class="header-list"><a href="login.html">Login</a></li>
-        <li class="header-list"><a href="watch-list.html">Watch-list</a></li>
-        <li><a href="account.html"><img src="icons/account-icon.svg" alt="account-icon" class="icon" /></a></li>
-        <li id="flex-search"><div id="search-wrapper-header"></div><label for="search-header"><img src="icons/search-icon.svg" alt="search-icon" class="icon" id="icon"/></label></li>
-    </ul>
-    </nav>
-  </header>
-  <main class="home-container">
-    <section class="home-hero">
-      <img id="hero-image" src="" alt=""> <!--hero image-->
-          <!--search bar things-->
-      <div class="search-wrapper-home">
-        <div class="search-container">
-          <label for="search"><img class="icon" id="search-img" src="icons/search-icon-black.svg" alt="search icon"></label>
-          <input class="input-search" type="search" id="search" data-search="home">
-          <div class="search-show-home" data-show-container>
+  <body>
+    <header>
+      <nav class="nav-space">
+        <a href="index.html">
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
+        <ul>
+          <li class="header-list"><a href="index.html">Home</a></li>
+          <li class="header-list"><a href="movie-list.html">Movies</a></li>
+          <li class="header-list"><a href="article-list.html">Articles</a></li>
+          <li class="header-list"><a href="login.html">Login</a></li>
+          <li class="header-list"><a href="watch-list.html">Watch-list</a></li>
+          <li>
+            <a href="account.html"
+              ><img
+                src="icons/account-icon.svg"
+                alt="account-icon"
+                class="icon"
+            /></a>
+          </li>
+          <li id="flex-search">
+            <div id="search-wrapper-header"></div>
+            <label for="search-header"
+              ><img
+                src="icons/search-icon.svg"
+                alt="search-icon"
+                class="icon"
+                id="icon"
+            /></label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="home-container">
+      <section class="home-hero">
+        <img id="hero-image" src="" alt="" />
+        <!--hero image-->
+        <!--search bar things-->
+        <div class="search-wrapper-home">
+          <div class="search-container">
+            <label for="search"
+              ><img
+                class="icon"
+                id="search-img"
+                src="icons/search-icon-black.svg"
+                alt="search icon"
+            /></label>
+            <input
+              class="input-search"
+              type="search"
+              id="search"
+              data-search="home"
+            />
+            <div class="search-show-home" data-show-container></div>
           </div>
         </div>
-      </div>
-      <template data-content-template>
-        <div class="title-content-home">
-          <a href="" class="search-result-home" id="home-search-result" data-title> </a>
+        <template data-content-template>
+          <div class="title-content-home">
+            <a
+              href=""
+              class="search-result-home"
+              id="home-search-result"
+              data-title
+            >
+            </a>
+          </div>
+        </template>
+        <!--search bar things end-->
+        <!--hero image text-->
+        <div id="movie-details-home">
+          <h3 movie-title></h3>
+          <div rating class="hero-rating"></div>
+          <div id="genre-text" genres></div>
+          <p description></p>
+          <a link-to-detail href=""
+            ><img
+              id="read-more-button-home"
+              src="icons/read-more-button.png"
+              alt="link to learn more about te movie"
+          /></a>
         </div>
-      </template>
-      <!--search bar things end-->
-      <!--hero image text-->
-      <div id="movie-details-home">
-        <h3 movie-title></h3>
-        <div rating></div>
-        <div id="genre-text" genres></div>
-        <p description></p>
-        <a link-to-detail href=""><img id="read-more-button-home" src="icons/read-more-button.png" alt="link to learn more about te movie"></a>
-      </div>
-      <!--hero image text end-->
-    </section>
-    <section class="home-movies">
-      <p class="home-movies-title">RECOMMENDED MOVIES</p>
-      <div class="home-movies-container" id="home-movie-content"></div>
-    </section>
-    <section class="home-articles">
-      <p class="home-articles-title">RECOMMENDED ARTICLES</p>
-      <div class="home-articles-container" id="home-articles-content"></div>
-    </section>
-  </main>
-  <footer></footer>
-</body>
-
+        <!--hero image text end-->
+      </section>
+      <section class="home-movies">
+        <p class="home-movies-title">RECOMMENDED MOVIES</p>
+        <div class="home-movies-container" id="home-movie-content"></div>
+      </section>
+      <section class="home-articles">
+        <p class="home-articles-title">RECOMMENDED ARTICLES</p>
+        <div class="home-articles-container" id="home-articles-content"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

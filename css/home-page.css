@@ -22,7 +22,7 @@
   margin-top: -50vh;
   opacity: 1;
   transition: opacity 2s ease-in-out;
-  mask-image: linear-gradient(to right, black -10% , transparent 90%);
+  mask-image: linear-gradient(to right, black -10%, transparent 90%);
   /* sourse for image gradient
   https://www.youtube.com/watch?v=Ca8L8iqnmdw */
 }
@@ -31,7 +31,7 @@
 }
 
 /*image text*/
-#movie-details-home{
+#movie-details-home {
   position: absolute; /*to have the text on top*/
   z-index: 1001;
   top: 20%;
@@ -39,20 +39,27 @@
   color: var(--off-white);
 }
 /*movie hero title*/
-h3{
+h3 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#genre-text{
+#genre-text {
   font-weight: 200;
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
 }
 
-#read-more-button-home{
-  margin-top: 14vh;
+#read-more-button-home {
+  margin-top: 10vh;
   width: 8rem;
 }
+
+.hero-rating {
+  display: flex;
+}
+
 /*image text ect*/
 
 /* recommended movies */

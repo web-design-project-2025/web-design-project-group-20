@@ -38,12 +38,17 @@ body {
   height: 2rem;
 }
 
-.film-number-of-reviews {
+.film-number-of-reviews,
+.hero-number-of-reviews {
   font-size: 1rem;
   color: var(--brown);
   margin-left: 1rem;
   margin-bottom: auto;
   margin-top: auto;
+}
+
+.hero-number-of-reviews {
+  color: var(--off-white);
 }
 
 .review-box-right {

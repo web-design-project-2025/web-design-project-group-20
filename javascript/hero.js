@@ -42,20 +42,28 @@ fetch("data/movies.json")
             ratingQuery.innerHTML = "";
             Array.from({ length: movie.rating }, () => fullStarHero());
             Array.from({ length: 5 - movie.rating }, () => hollowStarHero());
+            numberOfReviewsHero();
           }
 
           function fullStarHero() {
             const starElementHero = document.createElement("img");
-            starElementHero.classList.add("stars");
+            starElementHero.classList.add("film-stars");
             starElementHero.src = "icons/star-full.svg";
             ratingQuery.appendChild(starElementHero);
           }
 
           function hollowStarHero() {
             const hollowStarElementHero = document.createElement("img");
-            hollowStarElementHero.classList.add("stars");
+            hollowStarElementHero.classList.add("film-stars");
             hollowStarElementHero.src = "icons/star-hallow.svg";
             ratingQuery.appendChild(hollowStarElementHero);
+          }
+
+          function numberOfReviewsHero() {
+            const reviewElementHero = document.createElement("p");
+            reviewElementHero.innerHTML = movie.nr_of_reviews;
+            reviewElementHero.classList.add("hero-number-of-reviews");
+            ratingQuery.appendChild(reviewElementHero);
           }
 
           if (genreQuery) {
