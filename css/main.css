@@ -121,6 +121,10 @@ footer {
 
 .footer-section a {
   color: var(--off-white);
+}
+
+.footer-section a:hover {
+  color: var(--off-white);
   text-decoration: none;
 }
 
