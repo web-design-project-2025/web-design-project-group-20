@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/signup.js" defer></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Home</title>
+  </head>
 
-  <title>Home</title>
-</head>
+  <body>
+    <header>
+      <nav class="nav-space">
+        <a href="index.html">
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="article-list.html">Articles</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="watch-list.html">temporary(Watch-list)</a></li>
+          <li>
+            <a href="account.html">
+              <img
+                src="icons/account-icon.svg"
+                alt="account-icon"
+                class="account-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="top-of-page">
+      <h1 class="top-of-page-title">SIGNUP</h1>
+    </section>
+    <main class="sign-in-box">
+      <section class="sign-in-text">
+        <label for="email"> Email</label>
+        <input type="text" id="email" />
+        <br />
+        <label for="name1"> Name</label>
+        <input type="text" id="name1" />
+        <br />
+        <label for="username"> Username</label>
+        <input type="text" id="username" />
+        <br />
+        <label for="password"> Password</label>
+        <input type="text" id="password" />
+        <br />
+        <div class="re-enter-move-group">
+          <label for="re-enter-password"> Re-enter Password</label>
+          <input type="text" id="re-enter-password" />
+        </div>
+      </section>
 
-<body>
-  <header>
-    <nav class="nav-space">
-      <a href="index.html">
-        <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="movie-list.html">Movies</a></li>
-        <li><a href="article-list.html">Articles</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="watch-list.html">temporary(Watch-list)</a></li>
-        <li>
-          <a href="account.html">
-            <img src="icons/account-icon.svg" alt="account-icon" class="account-icon" /></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>SIGNUP</h1>
-  </main>
-  <footer></footer>
-</body>
+      <button class="red-signin" id="sign-up-button">Sign in</button>
+    </main>
 
+    <footer></footer>
+  </body>
 </html>

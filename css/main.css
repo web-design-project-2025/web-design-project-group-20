@@ -4,6 +4,7 @@
   --light-green: #dee195;
   --yellow: #f8af3a;
   --dark-green: #4f867e;
+  --darker-green: #2e6960;
   --off-white: #fbf1cd;
   --light-brown: #bc7d57;
   --brown: #624330;
@@ -42,7 +43,7 @@ nav li {
 }
 
 .account-icon {
-  width: 3vh;
+  width: 2rem;
   height: auto;
 }
 

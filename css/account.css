@@ -3,6 +3,10 @@ img {
   width: 150px;
 }
 
+body {
+  background-color: var(--off-white);
+}
+
 .list-account {
   list-style: none;
   margin-left: 5vw;
@@ -15,6 +19,44 @@ img {
   justify-content: center;
   margin: 0px;
   padding: 0px;
+}
+
+.account-detail-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vw;
+  margin-left: 15rem;
+}
+
+.button-click {
+  background-color: var(--red);
+  border: 2px solid var(--dark-red);
+  color: var(--off-white);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+#show-password {
+  width: 9rem;
+  height: 2.3rem;
+}
+
+#log-out {
+  width: 6rem;
+  height: 2.3rem;
+}
+.account-text-color {
+  color: var(--dark-green);
+}
+
+.account-here {
+  color: var(--dark-red);
+  text-decoration: none;
+}
+
+.account-here:hover {
+  text-decoration: underline;
 }
 
 /*account list end*/
@@ -50,6 +92,12 @@ img {
   gap: 5px;
 }
 
+#bowl-logged-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #settings-list3,
 #settings-list4,
 #settings-list5 {
@@ -68,6 +116,7 @@ img {
 /*icons end*/
 h2 {
   text-align: center;
+  color: var(--dark-green);
 }
 
 h5 {
