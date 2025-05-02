@@ -170,3 +170,86 @@ footer {
   margin-left: 1.6rem;
 }
 
+/* responcive things */
+/* menue  */
+#drop-down-icon{
+  display: none; /* hide it for default, large screens */
+  width: 30px;
+  margin-top: 2rem;
+}
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+}
+.header-ul-menu{
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vw;
+  background-color: var(--red);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+}
+
+.menu-container{
+  position: relative;
+}
+.header-list-menu {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+/* menue  */
+
+@media only screen and (max-width: 980px){
+  .cinema-logo{
+    width: 185px;
+    margin-top: .8rem;
+    margin-left: .5rem;
+  }
+  header{
+    min-height: 4rem;
+    height: auto;
+  }
+  .header-list{
+   margin-right: 2rem;
+  }
+  
+  .icon{
+    margin: .2rem;
+    margin-right: -.2rem;
+    position: relative;
+    z-index: 1003;
+
+  }
+  #icon{
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 800px){
+  .dropdown-wrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px){
+  .icon{
+    width: 43px;
+    margin: .2rem;
+    margin-right: -.5rem;
+    margin-top: 0.2rem;
+  }
+  .header-list{
+    font-size: 1rem;
+    display: none;
+  }
+  #drop-down-icon{
+    display: block; 
+  }
+}
