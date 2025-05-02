@@ -63,6 +63,7 @@ margin-right: 1.8rem;
   height: auto;
   margin-top: 8px;
   margin-left: 1rem;
+  font-family: none;
 }
 
 body {
@@ -91,15 +92,66 @@ h1 {
 /* Title for pages */
 
 /* responcive things */
-/* menue button */
-@media only screen and (max-width: 400px){
+/* menue  */
+.header-container{
+  position: absolute;
+  left: 50%;
+}
+/* menue  */
+
+@media only screen and (max-width: 980px){
   .cinema-logo{
-    width: 138px;
+    width: 185px;
     margin-top: .8rem;
     margin-left: .5rem;
   }
   header{
-    height: 4.5rem;
+    min-height: 4rem;
+    height: auto;
+  }
+  .header-list{
+   margin-right: 2rem;
+  }
+  
+  .icon{
+    margin: .2rem;
+    margin-right: -.5rem;
+  }
+  #icon{
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 800px){
+  .icon{
+    width: 43px;
+    margin: .2rem;
+    margin-right: -.5rem;
+    margin-top: 0.2rem;
+  }
+  .header-list{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .cinema-logo{
+    width: 135px;
+    margin-top: .8rem;
+    margin-left: .5rem;
+  }
+  header{
+    min-height: 4rem;
+    height: auto;
+  }
+  
+  .icon{
+    width: 40px;
+    margin: .2rem;
+    margin-right: -.5rem;
+    margin-top: 0rem;
+  }
+  #icon{
+    margin-right: 1rem;
   }
 
 }
