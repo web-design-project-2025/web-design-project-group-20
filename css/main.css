@@ -151,6 +151,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-right: 1rem;
 }
 
 .instagram-logo,
@@ -158,6 +159,6 @@ footer {
 .x-logo {
   width: 40px;
   height: auto;
-  margin-top: 0.5rem;
-  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+  margin-left: 1.6rem;
 }
