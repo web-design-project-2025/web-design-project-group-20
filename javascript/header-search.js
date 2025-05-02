@@ -10,18 +10,20 @@ iconElement.addEventListener("click", () => {
   } else {
     isVisible = true;
     wrapperElement.innerHTML = `
-       <div class="search-bar-wrapper">
+  <div class="search-wrapper-combined">
     <div class="search-container-header">
       <input class="input-search-header" type="search" id="search-header" data-search="header">
     </div>
+    <div class="search-show-header" data-show-container></div>
   </div>
-      <div class="search-show-header" data-show-container></div>
-       <template data-content-template>
-        <div class="title-content-header">
-          <a href="" class="search-result-header" id="header-search-result" data-title> </a>
-        </div>
-      </template>
-    `;
+  <template data-content-template>
+    <div class="title-content-header">
+      <a href="" class="search-result-header" id="header-search-result" data-title> </a>
+    </div>
+  </template>
+`;
+
+
 
     // AFTER inserting the HTML
     const dataContentTemplate = wrapperElement.querySelector("[data-content-template]");

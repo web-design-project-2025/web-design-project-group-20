@@ -8,9 +8,9 @@
         stroke: #fbf1ce;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 2px;
+        stroke-width: 3px;
       }
     </style>
   </defs>
-  <polyline class="st0" points="3.59 10.32 13.93 22.02 24.76 10.32"/>
+  <polyline class="st0" points="2.3 10.38 14.09 17.97 26.04 10.38"/>
 </svg>

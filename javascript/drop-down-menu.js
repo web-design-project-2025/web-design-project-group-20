@@ -1,16 +1,31 @@
-const containerElement = document.getElementById("header-container");
-const headerListElements = document.querySelectorAll(".header-list");
+const iconElementMenu = document.getElementById("drop-down-icon");
+const containerQuery = document.querySelector("[data-enter-list-items]")
 
-function originalNav() {
-  headerListElements.forEach((element) => {
-    if (window.matchMedia('(max-width: 785px)').matches) {
-      element.style.display = 'none';
-    } else {
-      element.style.display = 'list-item'; // or 'block', depending on your layout
-    }
-  });
+function listItems (){
+    containerQuery.innerHTML =`
+    <ul class="header-ul-menu">
+            <li class="header-list-menu"><a href="index.html">Home</a></li>
+            <li class="header-list-menu"><a href="movie-list.html">Movies</a></li>
+            <li class="header-list-menu"><a href="article-list.html">Articles</a></li>
+            <li class="header-list-menu"><a href="login.html">Login</a></li>
+            <li class="header-list-menu"><a href="watch-list.html">Watch List</a></li>
+    </ul>
+    `;
+}
+function listEmpty (){
+    containerQuery.innerHTML =``;
 }
 
-originalNav(); // Run on page load
-window.addEventListener('resize', originalNav); // Listen for resize
 
+
+let menuActive = false;
+
+iconElementMenu.addEventListener ("click", function (event){
+    if(!menuActive){
+       listItems();
+
+    } else{
+        listEmpty();
+    }
+    menuActive = !menuActive;
+});
