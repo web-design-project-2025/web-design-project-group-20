@@ -64,3 +64,24 @@ body {
   width: 95%;
   height: 30rem;
 }
+
+#user-box,
+#user-box-two,
+#user-box-three,
+#user-box-four,
+#user-box-five {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.user-image {
+  display: inline;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.username {
+  font-weight: 600;
+}

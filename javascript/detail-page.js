@@ -10,9 +10,30 @@ document.addEventListener("DOMContentLoaded", async function () {
   const articleAuthor = document.getElementById("detail-article-author");
   const articleBox = document.getElementById("detail-article-div");
 
+  // users
+  const userBox = document.getElementById("user-box");
+  const userBoxTwo = document.getElementById("user-box-two");
+  const userBoxThree = document.getElementById("user-box-three");
+  const userBoxFour = document.getElementById("user-box-four");
+  const userBoxFive = document.getElementById("user-box-five");
+
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
     return urlParams.get(param);
+  }
+
+  function createParagraphElement(c, text, container) {
+    const para = document.createElement("p");
+    para.classList.add(c);
+    para.innerText = text;
+    container.appendChild(para);
+  }
+
+  function createImageElement(source, container, c) {
+    const image = document.createElement("img");
+    image.classList.add(c);
+    image.src = source;
+    container.appendChild(image);
   }
 
   if (document.getElementById("details")) {
@@ -24,20 +45,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     films = filmJSON.movies;
 
     const film = films.find((m) => m.title == whatFilm);
-
-    function filmFullStar() {
-      const filmFullStar = document.createElement("img");
-      filmFullStar.classList.add("film-stars");
-      filmFullStar.src = "icons/star-full.svg";
-      filmStars.appendChild(filmFullStar);
-    }
-
-    function filmHollowStar() {
-      const filmHollowStar = document.createElement("img");
-      filmHollowStar.classList.add("film-stars");
-      filmHollowStar.src = "icons/star-hallow.svg";
-      filmStars.appendChild(filmHollowStar);
-    }
 
     function numberOfReviews() {
       const reviewElement = document.createElement("p");
@@ -51,9 +58,62 @@ document.addEventListener("DOMContentLoaded", async function () {
       filmTitle.innerText = film.title;
       filmDescription.innerText = film.description;
 
-      Array.from({ length: film.rating }, () => filmFullStar());
-      Array.from({ length: 5 - film.rating }, () => filmHollowStar());
+      Array.from({ length: film.rating }, () =>
+        createImageElement("icons/star-full.svg", filmStars, "film-stars")
+      );
+      Array.from({ length: 5 - film.rating }, () =>
+        createImageElement("icons/star-hallow.svg", filmStars, "film-stars")
+      );
       numberOfReviews();
+
+      async function getRandomUser() {
+        const response = await fetch("https://randomuser.me/api/?results=5");
+        const data = await response.json();
+
+        const user = data.results[0];
+        createImageElement(user.picture.medium, userBox, "user-image");
+        createParagraphElement("username", `${user.login.username}`, userBox);
+
+        const userTwo = data.results[1];
+        createImageElement(userTwo.picture.medium, userBoxTwo, "user-image");
+        createParagraphElement(
+          "username",
+          `${userTwo.login.username}`,
+          userBoxTwo
+        );
+
+        const userThree = data.results[2];
+        createImageElement(
+          userThree.picture.medium,
+          userBoxThree,
+          "user-image"
+        );
+        createParagraphElement(
+          "username",
+          `${userThree.login.username}`,
+          userBoxThree
+        );
+
+        const userFour = data.results[3];
+        createImageElement(userFour.picture.medium, userBoxFour, "user-image");
+        createParagraphElement(
+          "username",
+          `${userFour.login.username}`,
+          userBoxFour
+        );
+
+        const userFive = data.results[4];
+        createImageElement(userFive.picture.medium, userBoxFive, "user-image");
+        createParagraphElement(
+          "username",
+          `${userFive.login.username}`,
+          userBoxFive
+        );
+
+        console.log(user);
+      }
+
+      getRandomUser();
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data
@@ -67,19 +127,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const art = article.content;
 
-    function createParagraphElement(c, text) {
-      const para = document.createElement("p");
-      para.classList.add(c);
-      para.innerText = text;
-      articleBox.appendChild(para);
-    }
-
-    function createImageElement(source) {
-      const image = document.createElement("img");
-      image.src = source;
-      articleBox.appendChild(image);
-    }
-
     if (article) {
       articleTitle.innerText = article.title;
       articleAuthor.innerText = article.author;
@@ -91,12 +138,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         let text = art[i].text;
 
         if (type == "image") {
-          createImageElement(text);
+          createImageElement(text, articleBox);
         }
         if (type == "paragraph" || type == "header1") {
-          createParagraphElement(classes, text);
+          createParagraphElement(classes, text, articleBox);
         }
       }
     }
   }
 });
+
+// https://www.youtube.com/watch?v=gD2gY2YjgyE&t=2s
