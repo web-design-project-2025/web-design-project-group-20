@@ -1,0 +1,66 @@
+body {
+  background-color: var(--off-white);
+}
+
+.detail-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+#details {
+  display: block;
+  width: 22rem;
+  margin-top: 4rem;
+  margin-left: auto;
+}
+
+#detail-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+#detail-description {
+  width: 30rem;
+  margin-top: 0.7rem;
+}
+
+#detail-star-container {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.film-stars {
+  width: 2rem;
+  height: 2rem;
+}
+
+.film-number-of-reviews,
+.hero-number-of-reviews {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-left: 1rem;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.hero-number-of-reviews {
+  color: var(--off-white);
+}
+
+.review-box-right {
+  background-color: var(--light-green);
+  margin-left: auto;
+  width: 95%;
+  height: 30rem;
+}
+
+.review-box-left {
+  background-color: var(--light-green);
+  margin-right: auto;
+  width: 95%;
+  height: 30rem;
+}

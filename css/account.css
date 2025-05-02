@@ -64,10 +64,6 @@ body {
 /*account content*/
 /*icons*/
 
-.account-icons {
-  width: 50px;
-}
-
 #bowl {
   display: grid;
   flex-direction: column;
@@ -108,14 +104,14 @@ body {
 #dark {
   margin-left: 2.15vw;
 }
-
-.account-icons {
+#light{
   margin-left: 2vw;
 }
 
 /*icons end*/
 h2 {
   text-align: center;
+  color: var(--dark-green);
 }
 
 h5 {
