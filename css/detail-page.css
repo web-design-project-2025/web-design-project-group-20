@@ -70,7 +70,8 @@ body {
 #user-box-three,
 #user-box-four,
 #user-box-five {
-  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -84,4 +85,21 @@ body {
 
 .username {
   font-weight: 600;
+}
+
+.user-text-box {
+  margin-left: 2rem;
+  background-color: var(--off-white);
+  height: fit-content;
+  padding: 0.5rem;
+  width: 90%;
+  border-radius: 0.5rem;
+}
+
+.user-review-title {
+  margin-top: 0;
+}
+
+.user-review {
+  margin-bottom: 0;
 }
