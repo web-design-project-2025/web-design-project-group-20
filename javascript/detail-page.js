@@ -96,16 +96,12 @@ document.addEventListener("DOMContentLoaded", async function () {
           userOneReview
         );
         Array.from({ length: filmReviews[0].rating }, () =>
-          createImageElement(
-            "icons/star-full.svg",
-            reviewStarsTwo,
-            "review-stars"
-          )
+          createImageElement("icons/star-full.svg", reviewStars, "review-stars")
         );
         Array.from({ length: 5 - filmReviews[0].rating }, () =>
           createImageElement(
             "icons/star-hallow.svg",
-            reviewStarsTwo,
+            reviewStars,
             "review-stars"
           )
         );
@@ -128,12 +124,16 @@ document.addEventListener("DOMContentLoaded", async function () {
           userTwoReview
         );
         Array.from({ length: filmReviews[1].rating }, () =>
-          createImageElement("icons/star-full.svg", reviewStars, "review-stars")
+          createImageElement(
+            "icons/star-full.svg",
+            reviewStarsTwo,
+            "review-stars"
+          )
         );
         Array.from({ length: 5 - filmReviews[1].rating }, () =>
           createImageElement(
             "icons/star-hallow.svg",
-            reviewStars,
+            reviewStarsTwo,
             "review-stars"
           )
         );

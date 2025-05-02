@@ -37,11 +37,6 @@
           "rating": 3,
           "title": "Funny sometimes",
           "text": "Some parts were cool, like the time travel and the music. But it definitely feels like an '80s movie, for better or worse."
-        },
-        {
-          "rating": 4,
-          "title": "Really fun movie!",
-          "text": "I liked it a lot! The characters were funny and the story was exciting. I would totally watch it again."
         }
       ],
       "description": "Back to the Future is a sci-fi adventure that follows teenager Marty McFly as he's accidentally sent 30 years into the past in a time-traveling DeLorean. With the help of eccentric scientist Doc Brown, Marty must ensure his young parents meet and fall in love, or risk erasing his own existence. Packed with thrilling time-travel twists, humor, and heart, the film explores the impact of our choices across time. Directed by Robert Zemeckis, it's a beloved classic that blends adventure, comedy, and science fiction. Back to the Future is a timeless ride that continues to captivate audiences worldwide."
@@ -59,6 +54,28 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Pretty good, not amazing",
+          "text": "Jack Nicholson as the Joker was great, and Gotham looked sick, but some parts felt old and cheesy."
+        },
+        {
+          "rating": 4,
+          "title": "ATMOSPHERE",
+          "text": "Super moody and stylish, the music, the sets, and especially the Joker. More screen time for Batman next time, it is his movie!!"
+        },
+        {
+          "rating": 3,
+          "title": "Cool but kinda slow",
+          "text": "I liked the Joker and the dark vibe, but the pacing felt off and some scenes dragged. It’s stylish for sure, just didn’t fully click for me."
+        },
+        {
+          "rating": 3,
+          "title": "Batman... but make it vibess",
+          "text": "This movie is 50% Batman, 50% smoke machines, and 100% Prince music. I liked it, but sometimes I felt like I was watching a really intense music video with a side of crime-fighting."
+        }
+      ],
       "description": "Batman (1989), directed by Tim Burton, brings Gotham City's dark and brooding superhero to life. Michael Keaton stars as the iconic Batman, facing off against the manic villain Joker, played by Jack Nicholson. With striking visuals, a haunting score by Danny Elfman, and a gritty, gothic atmosphere, the film redefined the superhero genre. Burton's unique style creates a world where Batman’s quest for justice meets the chaos of Gotham. Batman is a thrilling, atmospheric action film that remains a defining entry in the comic book movie legacy."
     },
     {
@@ -71,6 +88,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Weird but entertaining",
+          "text": "I was confused half the time, but I laughed a lot. Not bad, not amazing."
+        },
+        {
+          "rating": 4,
+          "title": "Super fun",
+          "text": "It’s chaotic in the best way. Really enjoyed the energy and the weirdness."
+        },
+        {
+          "rating": 4,
+          "title": "So weird but so good?",
+          "text": "It’s totally bizarre but somehow it works. I didn’t know what was going on half the time but I was into it!!"
+        },
+        {
+          "rating": 5,
+          "title": "perfectly unhinged",
+          "text": "this movie makes no sense and i love that for it, instant favorite"
         }
       ],
       "publishing_year": "1988",
@@ -88,6 +127,28 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 2,
+          "title": "slow.exe has crashed",
+          "text": "this movie is like... vibes only. plot? who is she. i respect the aesthetic but my brain started buffering 20 minutes in."
+        },
+        {
+          "rating": 3,
+          "title": "cyberpunk but sad",
+          "text": "Felt like scrolling Tumblr at 2am in 2014."
+        },
+        {
+          "rating": 2,
+          "title": "aesthetic overdrive, brain underload",
+          "text": "Looked amazing, sounded cool, but I had no idea what was going on and I stopped caring 40 minutes in. It’s giving ✨mid✨ but make it artsy."
+        },
+        {
+          "rating": 2,
+          "title": "Mood: Confusion",
+          "text": "I was promised cyberpunk and got a slow burn existential crisis with voiceover. Literally had to Google what even happened after."
+        }
+      ],
       "publishing_year": "1982",
       "description": "Blade Runner (1982), directed by Ridley Scott, is a visionary sci-fi set in a dystopian future where synthetic humans, known as replicants, are hunted by special police units. Harrison Ford stars as Rick Deckard, a blade runner tasked with tracking down rogue replicants. With its haunting visuals, and atmospheric score, the film explores themes of identity, morality, and the soul. Blade Runner is a visually stunning, thought-provoking classic that has become a cornerstone of science fiction cinema. Its lasting influence continues to shape the genre to this day."
     },
@@ -101,6 +162,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "just a bunch of sad teens being sad",
+          "text": "i didn’t expect to feel things but... i felt things. big ‘what if we kissed in Saturday detention’ energy. 10/10 angsty vibes."
+        },
+        {
+          "rating": 3,
+          "title": "Trauma bonding: the movie",
+          "text": "They went from strangers to trauma dumping besties in like 30 minutes. Kind of relatable. Kind of chaotic. The dancing scene lives rent-free though."
+        },
+        {
+          "rating": 1,
+          "title": "This isn't therapy, it's detention",
+          "text": "They cry, yell, trauma dump, and suddenly they’re besties?? Nah. Felt like watching five stereotypes try to out-sad each other for 90 minutes. I wanted teen comedy, not emotional whiplash."
+        },
+        {
+          "rating": 4,
+          "title": "detention never looked this dramatic",
+          "text": "they literally sat in a room all day and somehow unlocked emotional trauma like it was a side quest"
         }
       ],
       "publishing_year": "1985",
@@ -124,11 +207,33 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "This movie hugged my soul <3",
+          "text": " It’s like if magic and kindness had a baby and raised it in the clouds. I want to live in this movie forever. Absolute comfort watch."
+        },
+        {
+          "rating": 4,
+          "title": "Studio Ghibli said ✨vibes✨",
+          "text": "There’s a robot, there’s a crystal, there’s a whole castle in the SKY. I have no idea how this was for kids, I was stressed in a whimsical way."
+        },
+        {
+          "rating": 5,
+          "title": "This movie healed my inner child",
+          "text": "A girl floats down from the sky with a magic crystal and suddenly I’m 7 years old again and believing in airships. No notes. Just vibes and tears."
+        },
+        {
+          "rating": 5,
+          "title": "robots > people",
+          "text": "The flying scenes? Gorgeous. The music? Literal perfection. The big gentle robot? My emotional support king. Studio Ghibli just gets it."
+        }
+      ],
       "description": "Castle in the Sky is a thrilling animated adventure from Studio Ghibli, directed by Hayao Miyazaki. The film follows Pazu and Sheeta, two young adventurers, on a journey to discover the secrets of the mythical floating island, Laputa. Pursued by pirates and military forces, they uncover powerful mysteries that challenge their courage and friendship. With stunning animation and a timeless story, Castle in the Sky explores the themes of nature, technology, and the consequences of greed. A must-watch for fans of breathtaking animation and captivating storytelling."
     },
     {
       "title": "Die Hard",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/die-hard.jpg",
       "alt": "Die Hard, movie poster",
@@ -139,11 +244,33 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "yippee ki-yay, mid-lord",
+          "text": "It’s fun, I guess. The action is cool but it’s super dude-bro energy. Kinda felt like an ad for tank tops and broken windows."
+        },
+        {
+          "rating": 2,
+          "title": "Just loud dudes and glass",
+          "text": "It’s a bunch of yelling, shooting, and one guy crawling through vents. I know it’s a “classic” but my attention span said nope."
+        },
+        {
+          "rating": 3,
+          "title": "Christmass?? kinda??",
+          "text": "Everyone says it’s a Christmas movie but like… there’s no joy. Just bullets and bad decisions. Still kinda entertaining tho."
+        },
+        {
+          "rating": 4,
+          "title": "Main Character Energy",
+          "text": "John McClane really said “I’m built different” for two hours straight. Dumb but fun, in a ‘watch this with your dad’ kind of way."
+        }
+      ],
       "description": "Die Hard (1988), directed by John McTiernan, is an action-packed film that redefined the genre. Bruce Willis stars as NYPD officer John McClane, who must single-handedly take down a group of terrorists holding hostages in a Los Angeles skyscraper. With sharp dialogue, high-stakes tension, and thrilling action sequences, the film became an instant classic. Featuring standout performances, especially from Willis and Alan Rickman as the charismatic villain, Die Hard is both a gripping action film and a holiday favorite. It's a relentless, iconic ride that continues to inspire action movies today."
     },
     {
       "title": "Diva",
-      "rating": 4,
+      "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/diva.jpg",
       "alt": "Diva, movie poster",
@@ -152,6 +279,28 @@
         {
           "type": "genre",
           "text": "action"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 1,
+          "title": "i have no idea what just happened",
+          "text": "it was giving art film but i was just confused. opera + gangsters + snail mail? my brain tapped out halfway through."
+        },
+        {
+          "rating": 4,
+          "title": "Chaotic in a Chic way",
+          "text": "It’s stylish, strange, and kind of hypnotic. Like if an ‘80s fashion mag turned into a crime movie. I didn’t always follow it, but I liked the ride."
+        },
+        {
+          "rating": 2,
+          "title": "pretty, but huh??",
+          "text": "The movie looks amazing but the plot felt like someone hit shuffle on a thriller and a perfume commercial. Vibes: 10/10. Comprehension: 2/10."
+        },
+        {
+          "rating": 1,
+          "title": "vibes: immaculate, plot: incomprehensible",
+          "text": "Felt like I was watching a perfume ad stretched into two hours of artsy chaos. Zero clue what was going on, but at least it looked expensive."
         }
       ],
       "description": "Diva (1981), directed by Jean-Jacques Beineix, is a French action movie that blends mystery, romance, and suspense. The story follows a young, passionate opera fan, Jules, who illegally records a performance of his favorite diva, leading him into a dangerous world of criminal intrigue. With its striking visual style, evocative soundtrack, and unique blend of genres, Diva became a cult classic. The film features standout performances, particularly from Wilhelmenia Wiggins Fernandez as the opera singer. Diva is a stylish and gripping film that explores obsession, art, and the consequences of living in a world of excess."
@@ -169,6 +318,28 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "Childhood in one movie",
+          "text": "It’s got bikes, aliens, friendship, and feelings. Felt like the ‘80s gave me a hug and then left me sad. Solid classic."
+        },
+        {
+          "rating": 3,
+          "title": "emotional damage",
+          "text": "didn’t expect to almost cry over a squishy space potato, but here we are. cute movie, just a bit slow for my brain."
+        },
+        {
+          "rating": 5,
+          "title": "Ugly cried and I'm fine with that!",
+          "text": "This movie destroyed me in the best way. E.T. is a weird little guy and I would die for him. Instant comfort film."
+        },
+        {
+          "rating": 4,
+          "title": "He phone home and broke my heart",
+          "text": " I came for the alien, stayed for the wholesome chaos. Spielberg really said 'let’s emotionally wreck children but gently.'"
+        }
+      ],
       "description": "E.T. the Extra-Terrestrial (1982), directed by Steven Spielberg, is a heartwarming sci-fi classic about a young boy named Elliott who befriends a stranded alien. As the two form an emotional bond, Elliott and his siblings work to help E.T. return home while evading government authorities. The film’s mix of adventure, friendship, and wonder captivated audiences worldwide. With iconic scenes, a memorable score by John Williams, and a powerful message of compassion, E.T. became a cultural touchstone. It's a timeless story that continues to resonate with viewers of all ages."
     },
     {
@@ -182,6 +353,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Fun but kinda corny",
+          "text": "It’s super funny, but also very ‘80s in that goofy, over-the-top way. I liked it, but I wasn’t totally sold on the whole ghost-hunting business."
+        },
+        {
+          "rating": 4,
+          "title": "ghosts + comedy = perfect mix",
+          "text": "A classic for a reason. It’s funny, action-packed, and still holds up today. The chemistry between the guys is hilarious, and who doesn’t love a good proton pack?"
+        },
+        {
+          "rating": 4,
+          "title": "who you gonna call? someone with a good sense of humor!",
+          "text": "Super entertaining and surprisingly quotable. A mix of spooky and funny that’s hard to beat. I need more movies like this."
+        },
+        {
+          "rating": 3,
+          "title": "Catchy theme song, Questionable ghost logic",
+          "text": "The movie’s fun and the song gets stuck in your head forever, but I was lowkey confused by the ghost rules. Still, I’d watch it again just for the vibes."
         }
       ],
       "description": "Ghostbusters (1984), directed by Ivan Reitman, is a hilarious and supernatural comedy that follows a group of eccentric scientists who start a business capturing ghosts in New York City. Starring Bill Murray, Dan Aykroyd, and Harold Ramis, the film blends witty humor with thrilling paranormal action. As a supernatural threat grows, the Ghostbusters must use their unique gadgets and quick wit to save the city. With its unforgettable characters and iconic lines, Ghostbusters became a pop culture phenomenon. It's a fun and timeless adventure that continues to entertain audiences of all ages."
@@ -199,11 +392,33 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "I am now a karate master",
+          "text": "I’m not saying this movie made me want to kick people, but it definitely made me want to learn karate and work on my patience. Mr. Miyagi is the real MVP."
+        },
+        {
+          "rating": 5,
+          "title": "Feels like a hug",
+          "text": "This movie never gets old. Mr. Miyagi is life goals, and the whole believe in yourself message hit way harder than I expected. Pure '80s magic."
+        },
+        {
+          "rating": 1,
+          "title": "Wax on, but I’m still bored",
+          "text": "I don’t get it. The whole movie was just a bunch of slow training and a weird rivalry. Mr. Miyagi is cool, but the rest of it was super cheesy and not in a fun way."
+        },
+        {
+          "rating": 4,
+          "title": "I want to be waxed, not roasted!",
+          "text": "The whole “Daniel-san” thing is iconic. Loved the training, the rivalry, and of course the epic crane kick. A lil predictable, but still a classic."
+        }
+      ],
       "description": "The Karate Kid, directed by John G. Avildsen, is an inspiring coming-of-age drama about a young boy named Daniel who learns karate to defend himself from bullies. Under the guidance of Mr. Miyagi, a wise and quirky mentor, Daniel discovers life lessons that go beyond martial arts. The film explores themes of perseverance, self-discipline, and friendship. With memorable performances from Ralph Macchio and Pat Morita, The Karate Kid became a beloved classic. Its timeless message and iconic moments continue to resonate with audiences worldwide."
     },
     {
       "title": "The Little Mermaid",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/little-mermaid.jpg",
       "alt": "The Little Mermaid (1989), movie poster",
@@ -214,11 +429,33 @@
           "text": "animation"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Sea creatures > Humans",
+          "text": "Ursula is a mood, but everything else? Meh. The music’s catchy, but some of the storyline was a little rushed. Still fun to watch when you’re in the mood for a classic."
+        },
+        {
+          "rating": 2,
+          "title": "under the sea... but not my vibe",
+          "text": "The music was cute, but the plot made no sense and I wasn’t really rooting for Ariel. Why would she trade her voice for a guy she barely knows?"
+        },
+        {
+          "rating": 3,
+          "title": "It’s fine, I guess",
+          "text": "The animation was beautiful, and 'Part of Your World' is iconic. But I just wasn’t that into Ariel’s whole 'I wanna be human' thing. It’s a bit too much for me, but I get the hype."
+        },
+        {
+          "rating": 4,
+          "title": "Ariel, the original dreamer",
+          "text": "Okay, I love this movie. The music slaps, the animation is gorgeous, and Ariel is goals. I get that she made some questionable choices, but it's Disney magic, you know? The underwater world was super cool too."
+        }
+      ],
       "description": "The Little Mermaid (1989), directed by Ron Clements and John Musker, is a magical Disney animated classic that follows Ariel, a curious young mermaid who dreams of living on land. After making a dangerous deal with the sea witch Ursula, Ariel embarks on an unforgettable adventure to win the heart of Prince Eric. With beautiful animation, memorable songs like Under the Sea, and a heartwarming story, the film captured the hearts of audiences worldwide. The film explores themes of love, identity, and sacrifice. The Little Mermaid helped spark the Disney Renaissance and remains a beloved family favorite."
     },
     {
       "title": "Moonstruck",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/moonstruck.jpg",
       "alt": "Moonstruck, movie poster",
@@ -227,6 +464,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "it's fine, but i didn't love it",
+          "text": "the characters are wild and over-the-top, but honestly, i didn’t really connect with the story. it’s funny sometimes, but a bit too much drama for me."
+        },
+        {
+          "rating": 1,
+          "title": "too much drama, not enough plot",
+          "text": "Everyone's yelling at each other, and I’m just here like… what’s actually happening? It’s supposed to be a romantic comedy, but the whole thing felt like a chaotic soap opera."
+        },
+        {
+          "rating": 3,
+          "title": "Charming, but a little slow",
+          "text": "Cher is great, and the chemistry with Nicolas Cage is something, but the pacing felt kinda off."
+        },
+        {
+          "rating": 3,
+          "title": "Cute but kinda weird",
+          "text": "The whole movie feels like it’s trying to be quirky and cute, but it’s also a bit too dramatic. Still, the characters are fun and it has its moments."
         }
       ],
       "description": "Moonstruck (1987), directed by Norman Jewison, is a romantic comedy that explores love, family, and fate. Cher stars as Loretta Castorini, a widow who unexpectedly falls in love with her fiancé’s passionate and unpredictable brother, played by Nicolas Cage. Set in the vibrant Italian-American community of Brooklyn, the film is filled with charm, wit, and heartfelt moments. Cher's iconic performance earned her an Academy Award, and the movie’s quirky characters and memorable dialogue have made it a beloved classic. Moonstruck is a delightful, funny exploration of romance and self-discovery."
@@ -244,6 +503,28 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "this movie was a mood",
+          "text": "Honestly, I loved it. It’s dystopian, dark, and just feels like a big metaphor for society. Orwell’s world is haunting and thought-provoking, and the tension kept me hooked the entire time. Definitely not for everyone, but I’m obsessed."
+        },
+        {
+          "rating": 3,
+          "title": "Interesting, but a bit heavy",
+          "text": "The story is cool, but it’s pretty intense and kinda hard to get through. Not the kind of movie you can casually watch, but I guess it does make you think."
+        },
+        {
+          "rating": 3,
+          "title": "Fascinating but draining",
+          "text": "I get what they were going for, but I was emotionally exhausted by the end. It’s clever and all, just not a movie I’d rewatch for fun."
+        },
+        {
+          "rating": 3,
+          "title": "Deep but tough to watch",
+          "text": "The idea behind it is super interesting, but the pacing was so slow and the atmosphere was really heavy. It makes a point, for sure, but not something I’d put on for a chill night."
+        }
+      ],
       "description": "1984 (1984), directed by Michael Radford, is a dystopian adaptation of George Orwell’s iconic novel. Set in a totalitarian society ruled by the oppressive figure Big Brother, the film follows Winston Smith, played by John Hurt, as he struggles against the government’s constant surveillance and mind control. The chilling, bleak atmosphere captures the novel’s themes of censorship, freedom, and the loss of individuality. With strong performances and a haunting portrayal of a world devoid of personal freedom, 1984 remains a powerful commentary on totalitarianism. It’s a thought-provoking, unsettling film that resonates with audiences today."
     },
     {
@@ -259,11 +540,33 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Just Too Much",
+          "text": "It’s definitely gripping and Pacino’s performance is wild, but the violence was a lot. I get why people love it, but it didn’t fully click with me."
+        },
+        {
+          "rating": 5,
+          "title": "Masterpiece of excess",
+          "text": "Scarface isn’t just a movie, it’s a whole vibe. The acting, the story, the wild ride, it’s pure cinematic gold. I’m still not over the final scene. A classic for a reason."
+        },
+        {
+          "rating": 5,
+          "title": "Say hello to my little friend... and my obsession",
+          "text": "This movie is iconic. Tony Montana is just the character, and the soundtrack? Absolute fire. It’s violent, chaotic, and so addictive. I’m still quoting this months later."
+        },
+        {
+          "rating": 4,
+          "title": "glamorous chaos",
+          "text": "It’s intense, it's over-the-top, and you can’t look away. Tony Montana’s rise and fall is crazy to watch, and Al Pacino is perfect for the role. A bit much at times, but still a must-watch."
+        }
+      ],
       "description": "Scarface (1983), directed by Brian De Palma, is a gripping action film that chronicles the rise and fall of Tony Montana, a ruthless Cuban immigrant who becomes a powerful drug lord in Miami. Starring Al Pacino in an iconic performance, the film explores themes of ambition, power, and corruption. With its intense violence, sharp dialogue, and unforgettable scenes, Scarface has become a cultural phenomenon. The film's portrayal of excess and its exploration of the American Dream have made it a defining entry in gangster cinema. Scarface remains a timeless, controversial classic."
     },
     {
       "title": "Supergirl",
-      "rating": 4,
+      "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/supergirl.jpg",
       "alt": "Supergirl, movie poster",
@@ -272,6 +575,28 @@
         {
           "type": "genre",
           "text": "action"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 2,
+          "title": "sooo... not it",
+          "text": "i wanted to like it, but the story is all over the place and the acting was cringey. the villain’s motivation was weird, and supergirl herself felt kinda... boring? i don’t get the hype at all."
+        },
+        {
+          "rating": 5,
+          "title": "What even was this?",
+          "text": "The special effects look like something out of a 1970s TV show, and the plot? Yikes. Supergirl deserves better than this cheesy, low-budget mess. Didn’t care about anything that happened."
+        },
+        {
+          "rating": 3,
+          "title": "It's cute",
+          "text": "It’s definitely not as good as the other superhero movies, but it’s kinda fun in a 'guilty pleasure' way. The effects are bad, but I didn’t totally hate it. Could’ve been a lot better, though."
+        },
+        {
+          "rating": 2,
+          "title": "Supergirl? More like SuperYawn",
+          "text": "The plot was confusing and not exciting enough to make up for the bad acting. Some of the action scenes were fun, but overall, it felt like a superhero movie on a really tight budget."
         }
       ],
       "description": "Supergirl (1984), directed by Jeannot Szwarc, is a superhero fantasy film that follows Kara Zor-El, Superman’s cousin, as she discovers her powers on Earth. After accidentally losing a powerful energy sphere, Kara must battle the evil sorceress Selena, played by Faye Dunaway, who seeks to use its power for destruction. With Helen Slater in the title role, the film combines action, adventure, and fantasy elements as Kara learns what it means to be a hero. Though often campy, Supergirl has gained a cult following for its fun, colorful charm. It’s an entertaining and lighthearted addition to the Superman saga."
@@ -290,6 +615,28 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "Killer cyborg energy",
+          "text": "Arnold is literally the perfect cyborg: no emotions, just destruction. The tension is insane, and the action holds up even today. It’s a little slow at times, but I still can’t stop watching."
+        },
+        {
+          "rating": 4,
+          "title": "Iconic but kinda cheesy",
+          "text": "The Terminator is a must-see, for sure. The plot’s simple but effective, and the effects are dated but still fun. Arnold is terrifying in the best way, but some of the pacing could’ve been tighter."
+        },
+        {
+          "rating": 3,
+          "title": "Good but not great",
+          "text": "I get why people love it, but honestly, it felt a bit slow at parts. The action is solid and Arnold is a legend, but I was kinda hoping for more. Still worth the watch, though!"
+        },
+        {
+          "rating": 4,
+          "title": "Robot Apocalypse",
+          "text": "This movie is legit intense. Arnold doesn’t stop, and the action is non-stop. It’s a bit dated, but honestly, that’s part of the charm."
+        }
+      ],
       "description": "The Terminator (1984), directed by James Cameron, is a groundbreaking sci-fi action film that introduced audiences to the relentless cyborg assassin from the future. Arnold Schwarzenegger stars as the iconic Terminator, sent back in time to kill Sarah Connor, whose unborn son will one day lead the human resistance. With its tense atmosphere, thrilling action sequences, and visionary storytelling, the film explores themes of technology, fate, and survival. Linda Hamilton delivers a powerful performance as Sarah Connor, transforming from a vulnerable woman to a determined survivor. The Terminator became a cultural milestone and launched a legendary franchise."
     },
     {
@@ -303,6 +650,28 @@
         {
           "type": "genre",
           "text": "animation"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "love it",
+          "text": "totoro is everything i didn’t know I needed, it’s so warm and comforting. totoro himself is just the cutest, and the whole vibe made me feel like a kid again."
+        },
+        {
+          "rating": 4,
+          "title": "Totoro = Comfort",
+          "text": "This movie is straight-up comfort food in movie form. It’s so simple but also beautiful. I didn’t need a complex plot because it’s all about the feeling of childhood wonder."
+        },
+        {
+          "rating": 3,
+          "title": "Cute, but kinda slow",
+          "text": "It’s super cute, but I was kinda bored through parts of it. The animation is beautiful, and Totoro is iconic, but I was hoping for a little more plot. Still, I’d watch it again for the vibes."
+        },
+        {
+          "rating": 4,
+          "title": "Wholesome and weirly charming",
+          "text": "Not a lot happens, but that’s kinda the charm? It’s just two kids and a giant forest spirit having a chill time. It’s cute and kinda nostalgic, but I was expecting more adventure, honestly."
         }
       ],
       "description": "My Neighbor Totoro, directed by Hayao Miyazaki, is a heartwarming animated film about two young sisters, Satsuki and Mei, who move to the countryside and discover magical creatures. The gentle, forest spirit Totoro becomes their friend and protector as they navigate life’s joys and challenges. With its stunning animation, peaceful atmosphere, and memorable characters, the film celebrates childhood, nature, and imagination. My Neighbor Totoro has become a beloved classic of Studio Ghibli, known for its innocence and sense of wonder. It’s a timeless tale that resonates with audiences of all ages."
@@ -320,11 +689,33 @@
           "text": "comedy"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Cute but not my fave",
+          "text": "It’s a fun rom-com and I get why people love it, but I didn’t totally vibe with the story. The banter’s great, but the whole 'bad boy falling for the girl' thing is kinda played out. Still, Heath Ledger’s charm is undeniable."
+        },
+        {
+          "rating": 3,
+          "title": "a bit cheesy but fun!",
+          "text": "it’s cute, don’t get me wrong, but it feels a little too predictable at times. some of the lines are cringe-worthy, but the cast has good chemistry and it’s still a solid teen movie to watch when you're bored."
+        },
+        {
+          "rating": 4,
+          "title": "Classic teen romance",
+          "text": "This movie is definitely a vibe. The chemistry between the leads is amazing, and it’s got that perfect mix of humor and romance."
+        },
+        {
+          "rating": 4,
+          "title": "way better than expected",
+          "text": "okay, I get the hype now. it’s a little cheesy, but in a good way. heath ledger is perfect, and the banter is actually hilarious."
+        }
+      ],
       "description": "10 Things I Hate About You, directed by Gil Junger, is a modern, witty take on Shakespeare’s The Taming of the Shrew. Set in a high school, the film follows the complicated romance between the rebellious Kat Stratford, played by Julia Stiles, and the charming bad boy Patrick Verona, portrayed by Heath Ledger. With sharp humor, memorable characters, and a standout soundtrack, the film explores themes of love, independence, and societal expectations. 10 Things I Hate About You became a beloved teen classic, thanks to its clever dialogue and heartfelt moments. It remains a favorite for its irresistible mix of romance and comedy."
     },
     {
       "title": "Bad Boys",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bad-boys.jpg",
       "alt": "Bad Boys, movie poster",
@@ -337,6 +728,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Fun, but a little loud",
+          "text": "It’s a good time, the action’s fun, Will Smith and Martin Lawrence have great chemistry, but honestly, it gets a little too chaotic and loud for me."
+        },
+        {
+          "rating": 3,
+          "title": "too much explosion, not enough plot",
+          "text": "the movie’s a blast if you’re into non-stop action, but the plot feels kind of like an afterthought. "
+        },
+        {
+          "rating": 2,
+          "title": "Too much",
+          "text": "I really wanted to like this, but it was just too loud and chaotic. The action scenes are cool, but the plot is pretty weak and the whole thing felt a bit over the top. Will and Martin have good chemistry, but that’s about it."
+        },
+        {
+          "rating": 3,
+          "title": "Great for a quick action fix",
+          "text": "Bad Boys is a fun ride, but it doesn’t have much substance beyond the action. It's a good movie if you just want some mindless action."
         }
       ],
       "description": "Bad Boys (1995), directed by Michael Bay, is a high-octane action-comedy that follows two Miami detectives, Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence), as they investigate a stolen drug shipment. The duo’s contrasting personalities and hilarious banter bring a unique energy to their crime-fighting partnership. With explosive action sequences, fast-paced direction, and sharp humor, the film became an instant hit. Will Smith and Martin Lawrence deliver unforgettable performances as the charismatic, mismatched team. Bad Boys set the stage for a successful franchise and remains a beloved action classic."
@@ -358,11 +771,33 @@
           "text": "comedy"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "campy fun",
+          "text": "It’s cheesy, it’s campy, and it’s a total blast. Buffy is badass, and the mix of horror and humor is perfect for a fun, guilty pleasure watch. The special effects are totally ‘90s, but it just adds to the charm."
+        },
+        {
+          "rating": 4,
+          "title": "totally iconic",
+          "text": "i get why people love this movie. buffy is the queen, and the whole thing is just so fun to watch. it’s a little corny at times, but the energy and attitude are what make it stand out. plus, the vampire fight scenes are legit!"
+        },
+        {
+          "rating": 3,
+          "title": "Cute, but kinda cheesy",
+          "text": "It’s a fun watch, but it definitely feels a bit outdated. Buffy’s cool, and there are some fun moments, but the plot’s a little too cheesy for me. "
+        },
+        {
+          "rating": 4,
+          "title": "Better than expected",
+          "text": "Wasn’t sure what to expect, but this movie is a total ride. It’s got that perfect ‘90s vibe and some pretty funny moments. Buffy’s definitely got the best one-liners, and the story is way more fun than I thought it’d be."
+        }
+      ],
       "description": "Buffy the Vampire Slayer (1992), directed by Fran Rubel Kuzui, is a cult classic that blends horror, comedy, and teen drama. Kristy Swanson stars as Buffy Summers, a high school cheerleader who discovers she’s destined to battle vampires and other supernatural creatures. With its quirky humor, campy action, and 90s charm, the film is both entertaining and self-aware. While it differs from the beloved TV series that followed, it introduces audiences to Buffy’s iconic character and world. Buffy the Vampire Slayer remains a fun, lighthearted take on the vampire genre."
     },
     {
       "title": "A Bug's Life",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bugs-life.jpg",
       "alt": "A Bug's Life, movie poster",
@@ -375,6 +810,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "Underrated classic!",
+          "text": "Honestly, A Bug’s Life is so much fun. The animation still holds up, the characters are super lovable, and the story is pretty epic. It’s got that perfect balance of humor for kids and adults."
+        },
+        {
+          "rating": 2,
+          "title": "Kind of a snooze fest",
+          "text": "I get that it’s for kids, but I just couldn’t get into it. The plot felt kinda slow, and none of the characters really stood out."
+        },
+        {
+          "rating": 3,
+          "title": "Cute, but predictable",
+          "text": "It’s cute, but honestly, the story was super predictable. The animation is amazing, and the voice acting is great, but I was hoping for more excitement."
+        },
+        {
+          "rating": 3,
+          "title": "Fun, but not THE Pixar movie",
+          "text": "It’s definitely fun, but it doesn’t hit the same way as other Pixar classics. It’s a nice watch, but I wasn’t as invested in the characters or the story. Still, I love the creativity behind it!"
         }
       ],
       "description": "A Bug's Life, directed by John Lasseter, is a charming animated adventure from Pixar. The film follows Flik, an inventive ant who sets out to find warriors to help his colony fight off a group of menacing grasshoppers. Along the way, he befriends a misfit group of circus bugs who help him take on the bully-like grasshoppers. With vibrant animation, memorable characters, and a heartwarming story, the film explores themes of courage, teamwork, and standing up to oppression. A Bug's Life is a delightful family film that continues to entertain with its humor and creativity."
@@ -390,6 +847,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "A total 90s vibe",
+          "text": "Clueless is everything. Cher is an icon, and the whole movie is just pure ‘90s magic. It’s funny, stylish, and lowkey perfect. Also, the soundtrack? "
+        },
+        {
+          "rating": 3,
+          "title": "Cute but kinda shallow",
+          "text": "It’s cute, but I feel like there’s not much depth to it. Cher’s character is funny, and there are some great lines, but the plot feels kind of surface-level."
+        },
+        {
+          "rating": 4,
+          "title": "Fun and fashionable",
+          "text": "Such a fun, feel-good movie! Cher’s totally clueless, but in the best way. The fashion is iconic, and the humor is spot-on."
+        },
+        {
+          "rating": 4,
+          "title": "The ultimate teen movie",
+          "text": "Clueless is the ultimate teen flick, no doubt. Cher is hilarious, and the whole “being rich and clueless” thing is actually kinda relatable in a weird way. It’s funny, stylish, and a great throwback to the ‘90s!"
         }
       ],
       "description": "Clueless, directed by Amy Heckerling, is a witty and stylish teen comedy inspired by Jane Austen’s Emma. Alicia Silverstone stars as Cher Horowitz, a wealthy, fashion-obsessed high school student who plays matchmaker while navigating her own complicated love life. Set in Beverly Hills, the film explores themes of friendship, self-discovery, and social status with sharp humor and iconic characters. With its unforgettable fashion and clever dialogue, Clueless has become a cultural touchstone. It remains a beloved classic for its lighthearted take on teenage life and relationships."

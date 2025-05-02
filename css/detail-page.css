@@ -111,7 +111,7 @@ body {
   margin-right: 1rem;
   background-color: var(--off-white);
   height: fit-content;
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: 85%;
   border-radius: 0.5rem;
 }
@@ -137,5 +137,5 @@ body {
 #review-stars-three,
 #review-stars-four {
   margin-left: auto;
-  margin-right: 3rem;
+  margin-right: 9%;
 }
