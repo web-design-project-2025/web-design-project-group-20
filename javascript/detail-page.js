@@ -15,7 +15,17 @@ document.addEventListener("DOMContentLoaded", async function () {
   const userBoxTwo = document.getElementById("user-box-two");
   const userBoxThree = document.getElementById("user-box-three");
   const userBoxFour = document.getElementById("user-box-four");
-  const userBoxFive = document.getElementById("user-box-five");
+
+  // reviews
+  const userOneReview = document.getElementById("user-one-review");
+  const userTwoReview = document.getElementById("user-two-review");
+  const userThreeReview = document.getElementById("user-three-review");
+  const userFourReview = document.getElementById("user-four-review");
+
+  const reviewStars = document.getElementById("review-stars");
+  const reviewStarsTwo = document.getElementById("review-stars-two");
+  const reviewStarsThree = document.getElementById("review-stars-three");
+  const reviewStarsFour = document.getElementById("review-stars-four");
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
@@ -67,12 +77,38 @@ document.addEventListener("DOMContentLoaded", async function () {
       numberOfReviews();
 
       async function getRandomUser() {
-        const response = await fetch("https://randomuser.me/api/?results=5");
+        const response = await fetch("https://randomuser.me/api/?results=4");
         const data = await response.json();
+
+        const filmReviews = film.reviews;
 
         const user = data.results[0];
         createImageElement(user.picture.medium, userBox, "user-image");
         createParagraphElement("username", `${user.login.username}`, userBox);
+        createParagraphElement(
+          "user-review-title",
+          filmReviews[0].title,
+          userOneReview
+        );
+        createParagraphElement(
+          "user-review-text",
+          filmReviews[0].text,
+          userOneReview
+        );
+        Array.from({ length: filmReviews[0].rating }, () =>
+          createImageElement(
+            "icons/star-full.svg",
+            reviewStarsTwo,
+            "review-stars"
+          )
+        );
+        Array.from({ length: 5 - filmReviews[0].rating }, () =>
+          createImageElement(
+            "icons/star-hallow.svg",
+            reviewStarsTwo,
+            "review-stars"
+          )
+        );
 
         const userTwo = data.results[1];
         createImageElement(userTwo.picture.medium, userBoxTwo, "user-image");
@@ -80,6 +116,26 @@ document.addEventListener("DOMContentLoaded", async function () {
           "username",
           `${userTwo.login.username}`,
           userBoxTwo
+        );
+        createParagraphElement(
+          "user-review-title",
+          filmReviews[1].title,
+          userTwoReview
+        );
+        createParagraphElement(
+          "user-review-text",
+          filmReviews[1].text,
+          userTwoReview
+        );
+        Array.from({ length: filmReviews[1].rating }, () =>
+          createImageElement("icons/star-full.svg", reviewStars, "review-stars")
+        );
+        Array.from({ length: 5 - filmReviews[1].rating }, () =>
+          createImageElement(
+            "icons/star-hallow.svg",
+            reviewStars,
+            "review-stars"
+          )
         );
 
         const userThree = data.results[2];
@@ -93,6 +149,30 @@ document.addEventListener("DOMContentLoaded", async function () {
           `${userThree.login.username}`,
           userBoxThree
         );
+        createParagraphElement(
+          "user-review-title",
+          filmReviews[2].title,
+          userThreeReview
+        );
+        createParagraphElement(
+          "user-review-text",
+          filmReviews[2].text,
+          userThreeReview
+        );
+        Array.from({ length: filmReviews[2].rating }, () =>
+          createImageElement(
+            "icons/star-full.svg",
+            reviewStarsThree,
+            "review-stars"
+          )
+        );
+        Array.from({ length: 5 - filmReviews[2].rating }, () =>
+          createImageElement(
+            "icons/star-hallow.svg",
+            reviewStarsThree,
+            "review-stars"
+          )
+        );
 
         const userFour = data.results[3];
         createImageElement(userFour.picture.medium, userBoxFour, "user-image");
@@ -101,13 +181,29 @@ document.addEventListener("DOMContentLoaded", async function () {
           `${userFour.login.username}`,
           userBoxFour
         );
-
-        const userFive = data.results[4];
-        createImageElement(userFive.picture.medium, userBoxFive, "user-image");
         createParagraphElement(
-          "username",
-          `${userFive.login.username}`,
-          userBoxFive
+          "user-review-title",
+          filmReviews[3].title,
+          userFourReview
+        );
+        createParagraphElement(
+          "user-review-text",
+          filmReviews[3].text,
+          userFourReview
+        );
+        Array.from({ length: filmReviews[3].rating }, () =>
+          createImageElement(
+            "icons/star-full.svg",
+            reviewStarsFour,
+            "review-stars"
+          )
+        );
+        Array.from({ length: 5 - filmReviews[3].rating }, () =>
+          createImageElement(
+            "icons/star-hallow.svg",
+            reviewStarsFour,
+            "review-stars"
+          )
         );
 
         console.log(user);

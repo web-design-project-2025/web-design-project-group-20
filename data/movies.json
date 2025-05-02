@@ -17,6 +17,33 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "TOTAL classic",
+          "text": "Loved it from start to finish, Marty and Doc are iconic, the story is clever, and it’s just a good time. Easily one of my favorites."
+        },
+        {
+          "rating": 4,
+          "title": "Could this be real life?",
+          "text": "I really do believe that in the distant future, we could also go back to the future.."
+        },
+        {
+          "rating": 4,
+          "title": "felt like i there",
+          "text": "the humor was exactly my style"
+        },
+        {
+          "rating": 3,
+          "title": "Funny sometimes",
+          "text": "Some parts were cool, like the time travel and the music. But it definitely feels like an '80s movie, for better or worse."
+        },
+        {
+          "rating": 4,
+          "title": "Really fun movie!",
+          "text": "I liked it a lot! The characters were funny and the story was exciting. I would totally watch it again."
+        }
+      ],
       "description": "Back to the Future is a sci-fi adventure that follows teenager Marty McFly as he's accidentally sent 30 years into the past in a time-traveling DeLorean. With the help of eccentric scientist Doc Brown, Marty must ensure his young parents meet and fall in love, or risk erasing his own existence. Packed with thrilling time-travel twists, humor, and heart, the film explores the impact of our choices across time. Directed by Robert Zemeckis, it's a beloved classic that blends adventure, comedy, and science fiction. Back to the Future is a timeless ride that continues to captivate audiences worldwide."
     },
     {
