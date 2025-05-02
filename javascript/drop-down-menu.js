@@ -1,0 +1,1 @@
+const containerElement = document.getElementById("header-container")

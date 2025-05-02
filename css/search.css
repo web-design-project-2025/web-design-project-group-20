@@ -111,7 +111,7 @@
   top: 5px;
 }
 /* When the search bar is visible */
-.search-wrapper-header.active .search-container-header {
+.search-wrapper-header .active .search-container-header {
   display: block; /* Make it visible when active */
 }
 /* Search Results contaner*/

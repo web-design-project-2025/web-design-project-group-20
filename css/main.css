@@ -88,3 +88,24 @@ h1 {
   font-size: 2.4rem;
   color: var(--dark-green);
 }
+/* Title for pages */
+
+/* responcive things */
+/* menue button */
+@media only screen and (max-width: 400px){
+  .cinema-logo{
+    width: 138px;
+    margin-top: .8rem;
+    margin-left: .5rem;
+  }
+  header{
+    height: 4.5rem;
+  }
+
+}
+  
+
+/* responcive things */
+
+
+
