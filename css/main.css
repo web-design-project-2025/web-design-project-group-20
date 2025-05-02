@@ -103,16 +103,12 @@ footer {
   text-align: center;
   padding-left: 0;
   font-size: 1.1rem;
+  margin-top: 1rem;
 }
-
-#footer-link1 {
-  margin-top: 0.5rem;
-}
-
 #footer-link2,
 #footer-link3,
 #footer-link4 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .footer-section {
@@ -132,7 +128,7 @@ footer {
 
 .contact-us-info {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-size: 1.1rem;
 }
@@ -159,6 +155,6 @@ footer {
 .x-logo {
   width: 40px;
   height: auto;
-  margin-top: 1.5rem;
+  margin-top: 1.1rem;
   margin-left: 1.6rem;
 }
