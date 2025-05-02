@@ -93,10 +93,7 @@ h1 {
 
 /* responcive things */
 /* menue  */
-.header-container{
-  position: absolute;
-  left: 50%;
-}
+
 /* menue  */
 
 @media only screen and (max-width: 980px){
