@@ -875,7 +875,7 @@
     },
     {
       "title": "Dumb and Dumber",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/dumb-and-dumber.jpg",
       "alt": "Dumb and Dumber, movie poster",
@@ -884,6 +884,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 1,
+          "title": "nah this ain’t it 💀",
+          "text": "bruh i watched this thinking it was gonna be hilarious bc everyone hyped it up and… idk man. maybe i’m just not built for this kind of humor."
+        },
+        {
+          "rating": 3,
+          "title": "So dumb it’s kind of impressive",
+          "text": "It commits hard to the bit, and that weirdly works? Not high art, but if you want to turn your brain off and vibe with nonsense, it delivers."
+        },
+        {
+          "rating": 2,
+          "title": "It’s chaos, but not fun chaos",
+          "text": "Some jokes landed, but most of it felt like a fever dream I didn’t sign up for. Wild energy, just not my kind of wild."
+        },
+        {
+          "rating": 2,
+          "title": "ok i see the vision but also pls no",
+          "text": "ok i’ll admit i laughed… once or twice. it’s got that chaotic energy where you’re like “why am i still watching this??” but you keep going anyway. not sure if it’s comedy gold or just straight-up nonsense. i respect the commitment to being dumb tho."
         }
       ],
       "description": "Dumb and Dumber, directed by Peter Farrelly, is a hilarious buddy comedy that follows the absurd adventures of two well-meaning but dim-witted friends, Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels). When Lloyd accidentally loses a briefcase full of money, the duo embarks on a cross-country journey to return it, encountering one ridiculous situation after another. Known for its over-the-top humor and memorable gags, the film became a cult classic. Carrey and Daniels’ comedic chemistry delivers non-stop laughs throughout. Dumb and Dumber is a lighthearted, slapstick romp that continues to entertain audiences with its silly charm."
@@ -901,6 +923,28 @@
           "text": "action"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Didn’t get all of it, but kinda obsessed anyway",
+          "text": "This movie feels like scrolling through someone’s late-night thoughts in slow motion. I didn’t always follow what was happening, but the mood? Immaculate."
+        },
+        {
+          "rating": 5,
+          "title": "This movie feels like falling in love and missing someone at the same time",
+          "text": "A full-body experience. It’s chaotic and tender, messy and romantic. The diner girl, the hitman, the mute guy, all just floating through Hong Kong nights, trying to connect. 10/10 emotional damage."
+        },
+        {
+          "rating": 4,
+          "title": "the aesthetic?? unreal.",
+          "text": "Wong Kar-wai really said: “what if heartbreak was a music video?” every frame is art. you feel the disconnection, the missed chances, the weird little lives. it's dreamy and devastating."
+        },
+        {
+          "rating": 4,
+          "title": "Melancholy but make it cinematic",
+          "text": "Made me want to smoke a cigarette and rethink my life."
+        }
+      ],
       "description": "Fallen Angels, directed by Wong Kar-wai, is a visually stunning and atmospheric film that explores the lives of lonely individuals in the vibrant streets of Hong Kong. The film intertwines the stories of a hitman, a mute woman, and their complex, fleeting relationships. With its moody cinematography, unconventional narrative, and unique blend of romance and noir, Fallen Angels captures a sense of longing and alienation. The film’s dreamlike quality and poetic style make it a standout in Wong Kar-wai’s body of work. Fallen Angels remains a captivating exploration of love, loss, and urban isolation."
     },
     {
@@ -914,6 +958,28 @@
         {
           "type": "genre",
           "text": "action"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Cool movie, weird fanbase",
+          "text": "The plot twist still slaps, the vibes are gritty, and the editing? Insane. But I can’t ignore that some people watched this and thought, “Yeah, let’s start a soap-based revolution.”"
+        },
+        {
+          "rating": 4,
+          "title": "Still hits, but in a different way now",
+          "text": "Watched this at 16 and thought it was deep. Watched it again as an adult and realized it’s a satire of guys who think it’s deep. Layers on layers."
+        },
+        {
+          "rating": 4,
+          "title": "It’s giving toxic masculinity... but make it art",
+          "text": "This is like rage culture distilled into a beautiful, chaotic fever dream."
+        },
+        {
+          "rating": 5,
+          "title": "literally changed my life and then i realized i missed the entire point",
+          "text": "thought it was about punching your boss. turns out it’s about late-stage capitalism and identity crisis. anyway, brb starting a soap business."
         }
       ],
       "description": "Fight Club, directed by David Fincher, is a dark and provocative drama that explores themes of consumerism, identity, and self-destruction. Edward Norton stars as the unnamed narrator, a frustrated office worker who forms an underground fight club with the charismatic and anarchistic Tyler Durden, played by Brad Pitt. As the club grows into something much more dangerous, the film dives deep into the psyche of its characters. With its gritty visuals, sharp dialogue, and unforgettable twists, Fight Club has become a cult classic. Its exploration of masculinity, chaos, and rebellion continues to resonate with audiences today."
@@ -931,6 +997,28 @@
           "text": "comedy"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "cinematic comfort food",
+          "text": "it’s sappy, sure, but sometimes you need that. tom hanks is insanely charming, the soundtrack is elite, and it hits all the nostalgia buttons like a jukebox of feelings."
+        },
+        {
+          "rating": 5,
+          "title": "life is like a box of trauma, nostalgia, and oscar bait",
+          "text": "this movie had me laughing, crying, contemplating history, and wanting to hug my mom. is it emotionally manipulative? yes. did i eat it up anyway? also yes"
+        },
+        {
+          "rating": 5,
+          "title": "Not everything has to be edgy to matter",
+          "text": "Yeah, it’s sentimental. Yeah, it’s kinda on-the-nose. But sometimes a movie just works. It’s hopeful, kind, and unexpectedly profound. Made me feel stuff I didn’t know I needed to feel."
+        },
+        {
+          "rating": 2,
+          "title": "Thought it was gonna be deep, but ended up kinda... meh",
+          "text": "I really wanted to love this, I really did. But instead of feeling inspired, I just felt exhausted. It’s like it tried too hard to be profound and ended up being more cheesy than meaningful."
+        }
+      ],
       "description": "Forrest Gump (1994), directed by Robert Zemeckis, is a heartfelt drama that follows the extraordinary life of Forrest Gump, a kind and simple man from Alabama, played by Tom Hanks. Through love, loss, and historical moments, Forrest unwittingly influences major events while staying true to his pure-hearted nature. The film blends humor, emotion, and history with unforgettable performances and iconic quotes. With its moving story and powerful message about destiny and perseverance, Forrest Gump became a beloved classic. It’s a timeless tale that continues to inspire audiences around the world."
     },
     {
@@ -944,6 +1032,28 @@
         {
           "type": "genre",
           "text": "comedy"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "A Classic, But Kinda Feels Like a One-Note Joke",
+          "text": "I get it, it’s a holiday classic and Macaulay Culkin is iconic. But after a while, the whole ‘traps vs. burglars’ thing starts to feel a bit repetitive."
+        },
+        {
+          "rating": 4,
+          "title": "Feel-Good and Hilarious",
+          "text": "It’s got heart, humor, and perfect slapstick comedy. Kevin nails it, and the pranks still make me laugh."
+        },
+        {
+          "rating": 4,
+          "title": "Total Holiday Vibe",
+          "text": "Kevin’s antics are chaotic in the best way. Ridiculous premise, but it works. The holiday spirit? On point."
+        },
+        {
+          "rating": 5,
+          "title": "Pure Holiday Magic",
+          "text": "A must-watch every December. Hilarious, heartwarming, and packed with Christmas magic. Kevin vs. the Wet Bandits? Iconic."
         }
       ],
       "description": "Home Alone, directed by Chris Columbus, is a beloved holiday comedy about Kevin McCallister, an 8-year-old boy accidentally left behind when his family leaves for Christmas vacation. Played by Macaulay Culkin, Kevin enjoys his freedom until he must outwit two bumbling burglars with clever traps and hilarious tricks. Packed with heart, laughs, and holiday spirit, the film has become a seasonal favorite for families. Its mix of slapstick comedy and touching moments makes it endlessly rewatchable. Home Alone is a festive classic that captures the magic and mischief of the holiday season."
@@ -961,6 +1071,28 @@
           "text": "science fiction"
         }
       ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "entertaining, but not as mind-blowing as i expected",
+          "text": "the dinosaurs are amazing, no doubt. but the plot? it’s a little predictable. still, it’s fun and has some cool moments."
+        },
+        {
+          "rating": 4,
+          "title": "A Thrilling Ride with Some Flaws",
+          "text": "The effects are groundbreaking and the tension is real. It’s a solid movie, but the pacing feels a bit off at times. Still a must-watch for any fan of sci-fi."
+        },
+        {
+          "rating": 2,
+          "title": "cool dinosaurs, but kinda boring",
+          "text": "i wanted more than just dinosaurs eat people. the visuals are awesome, but the story drags. it’s a classic, but i don’t get the hype."
+        },
+        {
+          "rating": 4,
+          "title": "Iconic, Even After All These Years",
+          "text": "It’s still a visual masterpiece, and the dinosaurs hold up. Some parts are a little slow, but the action and nostalgia make up for it."
+        }
+      ],
       "description": "Jurassic Park (1993), directed by Steven Spielberg, is a groundbreaking science fiction adventure that brings dinosaurs back to life with stunning realism. When a group of scientists and visitors are invited to a remote island theme park, things quickly spiral out of control as the prehistoric creatures escape containment. Featuring iconic visual effects, thrilling suspense, and a memorable score by John Williams, the film redefined blockbuster cinema. With strong performances and edge-of-your-seat moments, Jurassic Park captivated audiences worldwide. It remains a thrilling classic that continues to inspire awe and excitement."
     },
     {
@@ -974,6 +1106,28 @@
         {
           "type": "genre",
           "text": "animation"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "Visually Stunning, But Not My Vibe",
+          "text": "The animation and artistry are next level, no doubt. But the story didn’t fully grab me. I get why it’s a cult classic, but it’s not for everyone."
+        },
+        {
+          "rating": 5,
+          "title": "a holiday masterpiece",
+          "text": "this movie is pure magic. from the visuals to the music to the weird, wonderful story, it’s a halloween-to-christmas crossover dream. i watch it every year without fail."
+        },
+        {
+          "rating": 5,
+          "title": "timeless and enchanting",
+          "text": "it’s weird, dark, and absolutely beautiful. the songs are iconic, the stop-motion animation is flawless, and it manages to capture the perfect mix of spooky and heartwarming."
+        },
+        {
+          "rating": 3,
+          "title": "A Bit Too Weird For Me",
+          "text": "It's creative, for sure, but the whole thing is so strange that I just couldn’t fully get into it. The visuals are amazing though, and I respect the originality."
         }
       ],
       "description": "The Nightmare Before Christmas, directed by Henry Selick and produced by Tim Burton, is a stop-motion animated musical that blends Halloween spookiness with Christmas cheer. The story follows Jack Skellington, the Pumpkin King of Halloween Town, who stumbles upon Christmas Town and decides to bring his own twist to the holiday. With its unique visual style, hauntingly catchy songs, and imaginative storytelling, the film has become a holiday classic. It explores themes of identity, curiosity, and the search for meaning in a delightfully dark yet heartwarming way. The Nightmare Before Christmas is a timeless favorite for both Halloween and Christmas lovers alike."
@@ -991,6 +1145,28 @@
           "text": "comedy"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "Classic 90s Fun",
+          "text": "It’s cheesy, but that’s what makes it fun. Lindsay Lohan is great, and the whole plot is wholesome and hilarious. A little over-the-top, but definitely a comfort watch."
+        },
+        {
+          "rating": 1,
+          "title": "a cringey mess",
+          "text": "i don’t get the hype. the plot is so predictable, and the kids are way too over-the-top for me."
+        },
+        {
+          "rating": 4,
+          "title": "Nostalgic and Heartwarming",
+          "text": "It’s cheesy, sure, but it’s also so heartwarming. The kids are super cute, and the family dynamics are perfect. It’s a classic 90s family flick that’s still fun to watch today."
+        },
+        {
+          "rating": 3,
+          "title": "Entertaining, but not revolutionary",
+          "text": "It’s a fun watch, no doubt, but it doesn’t exactly break new ground. The storyline is classic, the performances are solid, but it never quite goes beyond 'cute' for me."
+        }
+      ],
       "description": "The Parent Trap, directed by Nancy Meyers, is a heartwarming family comedy about identical twin sisters, Annie and Hallie, played by Lindsay Lohan in a breakout dual role. Separated at birth and raised on opposite sides of the world, the girls meet for the first time at summer camp and hatch a plan to reunite their long-lost parents. With charm, humor, and plenty of mischief, the film explores themes of family, identity, and second chances. Supported by a delightful cast and a feel-good story, it became a beloved favorite for all ages. The Parent Trap is a fun and touching tale about love and the bonds that bring people together."
     },
     {
@@ -1006,11 +1182,33 @@
           "text": "animation"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "that soundtrack tho",
+          "text": "honestly, the visuals are gorgeous and ‘colors of the wind’ slaps, but the story felt a bit rushed. still, it’s got that classic disney charm and i’ll def watch it again."
+        },
+        {
+          "rating": 5,
+          "title": "A Hidden Disney Gem",
+          "text": "This movie has everything: amazing animation, legendary music, and an actual message about nature and culture. Pocahontas deserves more credit for being ahead of its time, tbh."
+        },
+        {
+          "rating": 3,
+          "title": "pretty but kinda... empty?",
+          "text": "the animation is stunning and ‘colors of the wind’ is iconic, but the story didn’t really do it for me. it’s just kinda surface-level. still, i get why people love it, i guess."
+        },
+        {
+          "rating": 5,
+          "title": "Underrated Disney Classic",
+          "text": "The visuals and soundtrack alone make this a masterpiece. It’s not perfect, but the themes and emotional depth still resonate. ‘Colors of the Wind’ is the vibe we didn’t know we needed."
+        }
+      ],
       "description": "Pocahontas (1995), produced by Walt Disney Animation Studios, is a beautifully animated musical inspired by the true story of a Native American woman and an English settler. The film follows Pocahontas, a spirited and curious young woman, as she meets Captain John Smith and seeks to bridge the gap between two very different worlds. With its stunning visuals, memorable songs like “Colors of the Wind,” and themes of peace, understanding, and respect for nature, the movie delivers a powerful message. The film explores cultural differences and the importance of listening with an open heart. Pocahontas remains a touching and visually captivating Disney classic."
     },
     {
       "title": "Pokémon: The First Movie",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pokemon.jpg",
       "alt": "Pokémon: The First Movie, movie poster",
@@ -1023,6 +1221,28 @@
         {
           "type": "genre",
           "text": "animation"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 2,
+          "title": "Not What I Expected",
+          "text": "Honestly, I thought this movie was going to be a big deal. But the plot’s kind of weak and the animation feels so dated."
+        },
+        {
+          "rating": 3,
+          "title": "Fine for Pokémon Fans, But Not Much Else",
+          "text": "If you love Pokémon, this is a decent watch. The plot is basic, but the action is fun. For anyone else, it’s just kind of there. Nostalgia carries it more than anything."
+        },
+        {
+          "rating": 4,
+          "title": "classic pokemon movie vibes",
+          "text": "this is a solid pokemon movie. the action scenes are awesome, and i love the whole ‘ash and mewtwo’ dynamic."
+        },
+        {
+          "rating": 3,
+          "title": "Mewtwo, but Make It Drama",
+          "text": "Plot? Predictable. Animation? Kinda dated. But hey, Mewtwo's angry vibes make it worth the watch. Classic nostalgia!"
         }
       ],
       "description": "Pokémon: The First Movie, directed by Kunihiko Yuyama, brings the beloved Pokémon universe to the big screen in an epic adventure. The film follows Ash, Pikachu, and friends as they face off against Mewtwo, a powerful genetically-engineered Pokémon struggling with its purpose and identity. As the battle intensifies, the film explores themes of friendship, empathy, and the value of all living beings. With emotional moments, exciting battles, and fan-favorite characters, it became a milestone for Pokémon fans worldwide. Pokémon: The First Movie is a nostalgic and action-packed journey for audiences of all ages."
@@ -1040,6 +1260,28 @@
           "text": "animation"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "Not Your Average Fairy Tale",
+          "text": "Dark, emotional, and visually stunning. It’s a bit slow at times, but the themes hit hard. A masterpiece for sure."
+        },
+        {
+          "rating": 5,
+          "title": "A Whole Mood",
+          "text": "Stunning animation and unforgettable story. It’s hauntingly beautiful and definitely a must-watch."
+        },
+        {
+          "rating": 4,
+          "title": "Stunning, But Intense",
+          "text": "Visually amazing, but the heavy themes can be overwhelming. Still a must-see for Ghibli fans."
+        },
+        {
+          "rating": 5,
+          "title": "A Timeless Masterpiece",
+          "text": "Princess Mononoke is one of those rare films that sticks with you long after you watch it. The animation is breathtaking, the story is deep, and the way it explores the balance between nature and human progress is so powerful. It’s a film that really makes you think and feel."
+        }
+      ],
       "description": "Princess Mononoke, directed by Hayao Miyazaki, is an epic animated fantasy that explores the conflict between nature and human industry. The story follows Ashitaka, a young warrior cursed by a demon, who becomes entangled in a battle between forest spirits and a mining colony. Along the way, he meets San, a fierce girl raised by wolves, who fights to protect the forest. With breathtaking animation, complex characters, and deep environmental themes, the film is a masterpiece of storytelling. Princess Mononoke is a powerful, thought-provoking adventure that continues to captivate audiences around the world."
     },
     {
@@ -1053,6 +1295,28 @@
         {
           "type": "genre",
           "text": "action"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "title": "style over substance?",
+          "text": "pulp fiction is cool in a way, but it feels like it's more about looking 'edgy' than actually telling a solid story. some moments are awesome, but the plot is kinda all over the place and leaves you scratching your head."
+        },
+        {
+          "rating": 5,
+          "title": "Unforgettable and Brilliant",
+          "text": "Pulp Fiction is one of those films that completely changes the game. Definitely a movie that stands the test of time."
+        },
+        {
+          "rating": 3,
+          "title": "Good, But Kinda Overrated",
+          "text": "Okay, I get why people like it, but it didn’t wow me. The non-linear story is cool, but the pacing is all over the place, and some scenes just dragged. Still, there’s something interesting here."
+        },
+        {
+          "rating": 4,
+          "title": "A Classic, But Can Be Hard to Follow",
+          "text": "Pulp Fiction is a masterpiece in a lot of ways; super sharp writing and unforgettable characters. But the non-linear story can be a bit of a mess, especially on the first watch. Still, it’s so worth it."
         }
       ],
       "description": "Pulp Fiction, directed by Quentin Tarantino, is a stylish and unconventional crime film that weaves together multiple interconnected stories in Los Angeles's underworld. Featuring an ensemble cast including John Travolta, Uma Thurman, and Samuel L. Jackson, the film blends sharp dialogue, dark humor, and sudden violence with a nonlinear narrative. Each storyline adds depth to its unforgettable characters and explores themes of redemption, chance, and morality. With its iconic scenes and groundbreaking structure, Pulp Fiction redefined independent cinema. It remains a cultural landmark and one of the most influential films of the 1990s."
@@ -1074,6 +1338,28 @@
           "text": "animation"
         }
       ],
+      "reviews": [
+        {
+          "rating": 2,
+          "title": "A Little Disappointing",
+          "text": "I really wanted to love Sailor Moon, but it just didn’t hit the way I expected. The characters are sweet, and the themes are nice, but the story feels a bit repetitive and slow at times. It’s not bad, just didn’t live up to the hype for me."
+        },
+        {
+          "rating": 3,
+          "title": "Cute But Kinda Filler-y",
+          "text": "I love the characters and the theme song is iconic, but some episodes drag on way too long and feel like filler. Still, it’s a fun, easy watch that’ll bring back all the feels."
+        },
+        {
+          "rating": 3,
+          "title": "Nostalgia Goggles On",
+          "text": "Sailor Moon is a nostalgic ride, but let’s be real, it’s not the greatest anime ever. Still, it’s a fun watch if you’re in the mood for some magical girl action."
+        },
+        {
+          "rating": 4,
+          "title": "really fun and nostalgic",
+          "text": "sailor moon is super cute, and the characters are all so lovable. the story can be a little repetitive, but it’s still a fun watch with great messages about friendship and love. definitely a classic!"
+        }
+      ],
       "description": "Sailor Moon (1994), directed by Junichi Sato, is an animated film based on the beloved Japanese anime and manga series. The movie follows Usagi Tsukino, aka Sailor Moon, as she and her team of Sailor Scouts must protect the Earth from a powerful new enemy, the mysterious Princess Kaguya. Combining magical battles, heartfelt moments, and themes of friendship and love, the film captures the essence of the series. With vibrant animation, iconic characters, and a thrilling storyline, Sailor Moon appeals to both fans and newcomers alike. It's a magical adventure that celebrates heroism and the strength of unity."
     },
     {
@@ -1091,6 +1377,28 @@
         {
           "type": "genre",
           "text": "science fiction"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "Mind-Blowing Masterpiece",
+          "text": "The Matrix is everything. It changed the game with its concepts, action, and visuals. A movie that rewrote the rules of cinema. 10/10 would watch again."
+        },
+        {
+          "rating": 2,
+          "title": "Confusing and Overhyped",
+          "text": "Everyone talks about The Matrix like it’s some sort of holy grail, but honestly? I was lost half the time. The action’s cool, but the plot was just... too much for me."
+        },
+        {
+          "rating": 5,
+          "title": "it’s a whole vibe",
+          "text": "this movie is art. it’s not just a mind-bending action film, it’s an experience. the plot, the fight scenes, the questions it raises about reality? revolutionary. still holds up 100%."
+        },
+        {
+          "rating": 2,
+          "title": "What Did I Just Watch?",
+          "text": "I was so confused the entire time."
         }
       ],
       "description": "The Matrix, directed by the Wachowskis, is a groundbreaking sci-fi action film that explores the nature of reality and human consciousness. The story follows Neo, played by Keanu Reeves, a hacker who discovers that the world he knows is a simulated illusion controlled by intelligent machines. With mind-bending visuals, iconic slow-motion action sequences, and philosophical themes, the film redefined the genre. The Matrix blends high-tech thrills with deep questions about free will and perception. Its innovative special effects and gripping storyline have made it a cultural touchstone and a genre-defining classic."
@@ -1112,6 +1420,27 @@
           "text": "comedy"
         }
       ],
+      "reviews": [
+        {
+          "rating": 4,
+          "title": "Definitely Worth Watching",
+          "text": "Trigun has a solid mix of comedy and action, and the characters are fun to follow. It’s not the fastest-paced anime, but it definitely has charm."
+        },
+        {
+          "rating": 5,
+          "title": "iconic and unforgettable",
+          "text": "i can’t believe i slept on trigun for so long. it’s a total classic. the humor, the action, and the emotional depth are all on point. one of my favorite anime series for sure."
+        },
+        {
+          "title": "Not As Cool As I Hoped",
+          "text": "Wasn’t super into it. The pacing’s slow, and the plot didn’t grab me. It had some cool moments, but overall, kinda boring."
+        },
+        {
+          "rating": 3,
+          "title": "Fun, But Not Amazing",
+          "text": "It’s okay. The characters are fun, but the story drags. Not bad, just not as great as I thought."
+        }
+      ],
       "description": "Trigun, directed by Satoshi Nishimura, is a visually striking anime series set in a futuristic, wild west-inspired world. The story follows Vash the Stampede, a carefree gunslinger with a mysterious past and a massive bounty on his head, as he navigates a dangerous desert planet. Despite his reputation for destruction, Vash is determined to avoid killing and seeks peace in a chaotic world. With its mix of action, humor, and philosophical themes, Trigun explores the nature of morality, redemption, and human connection. The series has earned a cult following for its memorable characters and gripping narrative."
     },
     {
@@ -1124,6 +1453,28 @@
         {
           "type": "genre",
           "text": "animation"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "title": "Super Impressive For 1939",
+          "text": "Honestly, Gulliver’s Travels is amazing for a 1939 movie. The animation is crazy for its time, and the story is timeless. It’s a total hidden gem that I can’t believe more people don’t talk about!"
+        },
+        {
+          "rating": 2,
+          "title": "Kinda Boring",
+          "text": "I really wanted to like it, but it was super slow. The animation’s old, and the story didn’t hook me."
+        },
+        {
+          "rating": 3,
+          "title": "interesting, but slow",
+          "text": "it’s cool for its time, but the pacing drags. animation is nice, but i wasn’t super into the story."
+        },
+        {
+          "rating": 3,
+          "title": "has its moments",
+          "text": "the animation’s cool for its time, but the story felt a little all over the place. still, there are some fun moments and it’s worth watching once."
         }
       ],
       "publishing_year": "1939",
