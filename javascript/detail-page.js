@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const userThreeReview = document.getElementById("user-three-review");
   const userFourReview = document.getElementById("user-four-review");
 
+  // stars for each review
   const reviewStars = document.getElementById("review-stars");
   const reviewStarsTwo = document.getElementById("review-stars-two");
   const reviewStarsThree = document.getElementById("review-stars-three");
@@ -77,6 +78,10 @@ document.addEventListener("DOMContentLoaded", async function () {
       numberOfReviews();
 
       async function getRandomUser() {
+        /*
+        used the following video to get started with the api, fetching and accessing the elements
+        https://www.youtube.com/watch?v=gD2gY2YjgyE&t=2s
+        */
         const response = await fetch("https://randomuser.me/api/?results=4");
         const data = await response.json();
 
@@ -243,5 +248,3 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   }
 });
-
-// https://www.youtube.com/watch?v=gD2gY2YjgyE&t=2s

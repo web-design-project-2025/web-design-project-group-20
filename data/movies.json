@@ -1060,7 +1060,7 @@
     },
     {
       "title": "Jurassic Park",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/jurassic-park.jpg",
       "alt": "Jurassic Park, movie poster",
@@ -1134,7 +1134,7 @@
     },
     {
       "title": "The Parent Trap",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/parent-trap.jpg",
       "alt": "The Parent Trap, movie poster",
@@ -1323,7 +1323,7 @@
     },
     {
       "title": "Sailor Moon",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/sailor-moon.jpg",
       "alt": "Sailor Moon, movie poster",
@@ -1432,6 +1432,7 @@
           "text": "i can’t believe i slept on trigun for so long. it’s a total classic. the humor, the action, and the emotional depth are all on point. one of my favorite anime series for sure."
         },
         {
+          "rating": 2,
           "title": "Not As Cool As I Hoped",
           "text": "Wasn’t super into it. The pacing’s slow, and the plot didn’t grab me. It had some cool moments, but overall, kinda boring."
         },
@@ -1445,7 +1446,7 @@
     },
     {
       "title": "Gulliver's Travels",
-      "rating": 4,
+      "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/gullivers-travels.jpg",
       "alt": "Gulliver's Travels, movie poster",

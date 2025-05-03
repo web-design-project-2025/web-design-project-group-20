@@ -62,8 +62,40 @@
         <div id="detail-star-container"></div>
         <p id="detail-description"></p>
       </div>
-      <section class="review-box-left"></section>
+      <section class="review-box-left">
+        <h1 class="review-header">WRITE A REVIEW</h1>
+        <div>
+          <form action="">
+            <p class="write-review-title">
+              <label for="rtitle">Title for your review</label>
+            </p>
+            <input
+              type="text"
+              id="rtitle"
+              class="write-review-box"
+              maxlength="70"
+            />
+            <p class="write-review-title">
+              <label for="write-review">Your review</label>
+            </p>
+            <textarea
+              name=""
+              id="write-review"
+              rows="10"
+              maxlength="300"
+              class="write-review-box-area"
+            ></textarea>
+            <input
+              type="image"
+              src="icons/settings-red.png"
+              alt="submit"
+              id="submit-button"
+            />
+          </form>
+        </div>
+      </section>
       <section class="review-box-right">
+        <h1 class="review-header">REVIEWS</h1>
         <div class="user-container">
           <div id="user-box">
             <div id="review-stars"></div>
