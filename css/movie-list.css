@@ -127,3 +127,17 @@ a {
 #movies-scifi-content {
   display: none;
 }
+
+/* Watchlist icon */
+
+.movie-watchlist {
+  display: flex;
+  align-items: right;
+}
+
+.watchlist-icon {
+  width: 1.7rem;
+  height: auto;
+  margin-left: auto;
+  padding-right: 0.6rem;
+}

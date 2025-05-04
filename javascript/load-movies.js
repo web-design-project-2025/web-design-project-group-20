@@ -32,10 +32,23 @@ function createMovieElement(movie) {
   imageElement.classList.add("posters");
   movieElement.appendChild(imageElement);
 
+  const movieWatchlist = document.createElement("div");
+  movieWatchlist.classList.add("movie-watchlist");
+
   const movieName = document.createElement("p");
   movieName.innerText = movie.title;
   movieName.classList.add("movie-name");
   movieElement.appendChild(movieName);
+
+  const watchlistIcon = document.createElement("img");
+  watchlistIcon.src = "icons/watchlist-icon.svg";
+  watchlistIcon.alt = "add to watchlist button";
+  watchlistIcon.classList.add("watchlist-icon");
+  movieElement.appendChild(watchlistIcon);
+
+  movieWatchlist.appendChild(movieName);
+  movieWatchlist.appendChild(watchlistIcon);
+  movieElement.appendChild(movieWatchlist);
 
   const starContainer = document.createElement("div");
   starContainer.innerHTML = "";
