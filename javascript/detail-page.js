@@ -1,5 +1,6 @@
 let films = [];
 let articles = [];
+let reviews = JSON.parse(localStorage.getItem("review")) || [];
 
 document.addEventListener("DOMContentLoaded", async function () {
   const filmImg = document.getElementById("details");
@@ -27,6 +28,10 @@ document.addEventListener("DOMContentLoaded", async function () {
   const reviewStarsTwo = document.getElementById("review-stars-two");
   const reviewStarsThree = document.getElementById("review-stars-three");
   const reviewStarsFour = document.getElementById("review-stars-four");
+
+  const submitButton = document.getElementById("submit-button");
+  const writeReviewArea = document.getElementById("write-review");
+  const writeReviewTitle = document.getElementById("rtitle");
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
@@ -88,28 +93,39 @@ document.addEventListener("DOMContentLoaded", async function () {
         const filmReviews = film.reviews;
 
         const user = data.results[0];
-        createImageElement(user.picture.medium, userBox, "user-image");
-        createParagraphElement("username", `${user.login.username}`, userBox);
-        createParagraphElement(
-          "user-review-title",
-          filmReviews[0].title,
-          userOneReview
-        );
-        createParagraphElement(
-          "user-review-text",
-          filmReviews[0].text,
-          userOneReview
-        );
-        Array.from({ length: filmReviews[0].rating }, () =>
-          createImageElement("icons/star-full.svg", reviewStars, "review-stars")
-        );
-        Array.from({ length: 5 - filmReviews[0].rating }, () =>
-          createImageElement(
-            "icons/star-hallow.svg",
-            reviewStars,
-            "review-stars"
-          )
-        );
+
+        const active = reviews.find((m) => m.movie === whatFilm);
+
+        console.log(active);
+
+        if (!active) {
+          createImageElement(user.picture.medium, userBox, "user-image");
+          createParagraphElement("username", `${user.login.username}`, userBox);
+          createParagraphElement(
+            "user-review-title",
+            filmReviews[0].title,
+            userOneReview
+          );
+          createParagraphElement(
+            "user-review-text",
+            filmReviews[0].text,
+            userOneReview
+          );
+          Array.from({ length: filmReviews[0].rating }, () =>
+            createImageElement(
+              "icons/star-full.svg",
+              reviewStars,
+              "review-stars"
+            )
+          );
+          Array.from({ length: 5 - filmReviews[0].rating }, () =>
+            createImageElement(
+              "icons/star-hallow.svg",
+              reviewStars,
+              "review-stars"
+            )
+          );
+        }
 
         const userTwo = data.results[1];
         createImageElement(userTwo.picture.medium, userBoxTwo, "user-image");
@@ -215,6 +231,96 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
 
       getRandomUser();
+
+      const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+      if (loggedInUser === null) {
+        submitButton.addEventListener("click", function () {
+          alert("Please log in before writing a review.");
+        });
+      } else if (loggedInUser) {
+        console.log(loggedInUser);
+
+        console.log(writeReviewTitle.checkValidity());
+
+        submitButton.addEventListener("click", function () {
+          if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
+            const newReview = {
+              username: loggedInUser.username,
+              title: writeReviewTitle.value,
+              text: writeReviewArea.value,
+              movie: film.title,
+            };
+
+            reviews.push(newReview);
+            console.log(reviews);
+
+            localStorage.setItem("review", JSON.stringify(reviews));
+
+            userBox.innerHTML = "";
+            userOneReview.innerHTML = "";
+            reviewStars.innerHTML = "";
+
+            star = document.createElement("div");
+            userBox.appendChild(star);
+            star.setAttribute("id", "review-stars");
+
+            createImageElement("icons/star-hallow.svg", userBox, "user-image");
+            createParagraphElement("username", newReview.username, userBox);
+            createParagraphElement(
+              "user-review-title",
+              newReview.title,
+              userOneReview
+            );
+            createParagraphElement(
+              "user-review-text",
+              newReview.text,
+              userOneReview
+            );
+            Array.from({ length: 3 }, () =>
+              createImageElement("icons/star-full.svg", star, "review-stars")
+            );
+            Array.from({ length: 2 }, () =>
+              createImageElement("icons/star-hallow.svg", star, "review-stars")
+            );
+          } else {
+            alert("Fill in both boxes.");
+          }
+        });
+      }
+
+      for (let i = 0; i < reviews.length; i++) {
+        if (reviews[i].movie === film.title) {
+          createReview(
+            "icons/star-full.svg",
+            userBox,
+            userOneReview,
+            reviews[i],
+            4,
+            reviewStars
+          );
+        }
+      }
+
+      function createReview(
+        imagesrc,
+        container,
+        textContainer,
+        user,
+        rating,
+        starCon
+      ) {
+        createImageElement(imagesrc, container, "user-image");
+        createParagraphElement("username", user.username, container);
+        createParagraphElement("user-review-title", user.title, textContainer);
+        createParagraphElement("user-review-text", user.text, textContainer);
+        Array.from({ length: rating }, () =>
+          createImageElement("icons/star-full.svg", starCon, "review-stars")
+        );
+        Array.from({ length: 5 - rating }, () =>
+          createImageElement("icons/star-hallow.svg", starCon, "review-stars")
+        );
+      }
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data

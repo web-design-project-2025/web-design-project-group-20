@@ -65,7 +65,7 @@
       <section class="review-box-left">
         <h1 class="review-header">WRITE A REVIEW</h1>
         <div>
-          <form action="">
+          <form action="" id="review-form">
             <p class="write-review-title">
               <label for="rtitle">Title for your review</label>
             </p>
@@ -74,6 +74,7 @@
               id="rtitle"
               class="write-review-box"
               maxlength="70"
+              required
             />
             <p class="write-review-title">
               <label for="write-review">Your review</label>
@@ -84,13 +85,11 @@
               rows="10"
               maxlength="300"
               class="write-review-box-area"
+              required
             ></textarea>
-            <input
-              type="image"
-              src="icons/settings-red.png"
-              alt="submit"
-              id="submit-button"
-            />
+            <button type="reset" id="submit-button" form="review-form">
+              <img src="icons/settings-red.png" alt="Submit button" />
+            </button>
           </form>
         </div>
       </section>
