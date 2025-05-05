@@ -57,6 +57,14 @@ function createMovieElement(movie) {
   movieWatchlist.appendChild(watchlistIcon);
   movieElement.appendChild(movieWatchlist);
 
+  watchlistIcon.addEventListener("click", function () {
+    if (watchlistIcon.src.includes("watchlist-icon.svg")) {
+      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+    } else {
+      watchlistIcon.src = "icons/watchlist-icon.svg";
+    }
+  });
+
   const starContainer = document.createElement("div");
   starContainer.innerHTML = "";
   starContainer.classList.add("movie-stars");
