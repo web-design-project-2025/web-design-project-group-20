@@ -1,6 +1,7 @@
 let films = [];
 let articles = [];
 let reviews = JSON.parse(localStorage.getItem("review")) || [];
+let writeReviewStars = [];
 
 document.addEventListener("DOMContentLoaded", async function () {
   const filmImg = document.getElementById("details");
@@ -29,9 +30,12 @@ document.addEventListener("DOMContentLoaded", async function () {
   const reviewStarsThree = document.getElementById("review-stars-three");
   const reviewStarsFour = document.getElementById("review-stars-four");
 
+  // variables for wrting a review
   const submitButton = document.getElementById("submit-button");
   const writeReviewArea = document.getElementById("write-review");
   const writeReviewTitle = document.getElementById("rtitle");
+
+  const writeStars = document.getElementsByClassName("write-review-star");
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
@@ -148,7 +152,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       getRandomUser();
 
       const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-      //const users = JSON.parse(localStorage.getItem("users"));
 
       if (loggedInUser === null) {
         submitButton.addEventListener("click", function () {
@@ -157,6 +160,11 @@ document.addEventListener("DOMContentLoaded", async function () {
       } else if (loggedInUser) {
         submitButton.addEventListener("click", function () {
           if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
+            /* 
+            if active doesn't find a review with the same movie as
+            whats currently being displayed, you can write a review. 
+            else, you get an alert.
+            */
             if (!active) {
               const newReview = {
                 username: loggedInUser.username,
@@ -198,6 +206,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
       }
 
+      Array.from(writeStars).forEach((star) => {
+        star.addEventListener("mouseenter", () => {
+          star.src = "icons/star-full.svg";
+        });
+      });
+
       document
         .getElementById("image-button")
         .addEventListener("mouseenter", function () {
@@ -212,6 +226,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             "icons/settings-red.png";
         });
 
+      // active finds the first review that was written for the current movie
       if (active) {
         createReview(
           "icons/star-full.svg",

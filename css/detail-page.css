@@ -172,7 +172,6 @@ body {
 .write-review-title {
   margin-left: 5%;
   margin-top: 1.5rem;
-
   font-weight: bold;
 }
 
@@ -188,4 +187,15 @@ body {
 
 #image-button {
   width: 100%;
+}
+
+.write-review-div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.write-review-stars {
+  margin-left: auto;
+  margin-right: 10%;
 }
