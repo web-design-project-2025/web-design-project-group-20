@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
       numberOfReviews();
 
+      const active = reviews.find((m) => m.movie === whatFilm);
+
       async function getRandomUser() {
         /*
         used the following video to get started with the api, fetching and accessing the elements
@@ -90,149 +92,63 @@ document.addEventListener("DOMContentLoaded", async function () {
         const response = await fetch("https://randomuser.me/api/?results=4");
         const data = await response.json();
 
-        const filmReviews = film.reviews;
+        let filmReviews = [];
+        filmReviews = film.reviews;
 
         const user = data.results[0];
 
-        const active = reviews.find((m) => m.movie === whatFilm);
-
-        console.log(active);
+        console.log(filmReviews);
 
         if (!active) {
-          createImageElement(user.picture.medium, userBox, "user-image");
-          createParagraphElement("username", `${user.login.username}`, userBox);
-          createParagraphElement(
-            "user-review-title",
-            filmReviews[0].title,
-            userOneReview
-          );
-          createParagraphElement(
-            "user-review-text",
-            filmReviews[0].text,
-            userOneReview
-          );
-          Array.from({ length: filmReviews[0].rating }, () =>
-            createImageElement(
-              "icons/star-full.svg",
-              reviewStars,
-              "review-stars"
-            )
-          );
-          Array.from({ length: 5 - filmReviews[0].rating }, () =>
-            createImageElement(
-              "icons/star-hallow.svg",
-              reviewStars,
-              "review-stars"
-            )
+          createReview(
+            user.picture.medium,
+            userBox,
+            userOneReview,
+            user.login,
+            filmReviews[0],
+            filmReviews[0],
+            reviewStars
           );
         }
 
         const userTwo = data.results[1];
-        createImageElement(userTwo.picture.medium, userBoxTwo, "user-image");
-        createParagraphElement(
-          "username",
-          `${userTwo.login.username}`,
-          userBoxTwo
-        );
-        createParagraphElement(
-          "user-review-title",
-          filmReviews[1].title,
-          userTwoReview
-        );
-        createParagraphElement(
-          "user-review-text",
-          filmReviews[1].text,
-          userTwoReview
-        );
-        Array.from({ length: filmReviews[1].rating }, () =>
-          createImageElement(
-            "icons/star-full.svg",
-            reviewStarsTwo,
-            "review-stars"
-          )
-        );
-        Array.from({ length: 5 - filmReviews[1].rating }, () =>
-          createImageElement(
-            "icons/star-hallow.svg",
-            reviewStarsTwo,
-            "review-stars"
-          )
+        createReview(
+          userTwo.picture.medium,
+          userBoxTwo,
+          userTwoReview,
+          userTwo.login,
+          filmReviews[1],
+          filmReviews[1],
+          reviewStarsTwo
         );
 
         const userThree = data.results[2];
-        createImageElement(
+        createReview(
           userThree.picture.medium,
           userBoxThree,
-          "user-image"
-        );
-        createParagraphElement(
-          "username",
-          `${userThree.login.username}`,
-          userBoxThree
-        );
-        createParagraphElement(
-          "user-review-title",
-          filmReviews[2].title,
-          userThreeReview
-        );
-        createParagraphElement(
-          "user-review-text",
-          filmReviews[2].text,
-          userThreeReview
-        );
-        Array.from({ length: filmReviews[2].rating }, () =>
-          createImageElement(
-            "icons/star-full.svg",
-            reviewStarsThree,
-            "review-stars"
-          )
-        );
-        Array.from({ length: 5 - filmReviews[2].rating }, () =>
-          createImageElement(
-            "icons/star-hallow.svg",
-            reviewStarsThree,
-            "review-stars"
-          )
+          userThreeReview,
+          userThree.login,
+          filmReviews[2],
+          filmReviews[2],
+          reviewStarsThree
         );
 
         const userFour = data.results[3];
-        createImageElement(userFour.picture.medium, userBoxFour, "user-image");
-        createParagraphElement(
-          "username",
-          `${userFour.login.username}`,
-          userBoxFour
+        createReview(
+          userFour.picture.medium,
+          userBoxFour,
+          userFourReview,
+          userFour.login,
+          filmReviews[3],
+          filmReviews[3],
+          reviewStarsFour
         );
-        createParagraphElement(
-          "user-review-title",
-          filmReviews[3].title,
-          userFourReview
-        );
-        createParagraphElement(
-          "user-review-text",
-          filmReviews[3].text,
-          userFourReview
-        );
-        Array.from({ length: filmReviews[3].rating }, () =>
-          createImageElement(
-            "icons/star-full.svg",
-            reviewStarsFour,
-            "review-stars"
-          )
-        );
-        Array.from({ length: 5 - filmReviews[3].rating }, () =>
-          createImageElement(
-            "icons/star-hallow.svg",
-            reviewStarsFour,
-            "review-stars"
-          )
-        );
-
-        console.log(user);
       }
 
       getRandomUser();
 
       const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+      //const users = JSON.parse(localStorage.getItem("users"));
 
       if (loggedInUser === null) {
         submitButton.addEventListener("click", function () {
@@ -241,65 +157,62 @@ document.addEventListener("DOMContentLoaded", async function () {
       } else if (loggedInUser) {
         console.log(loggedInUser);
 
-        console.log(writeReviewTitle.checkValidity());
+        let check = false;
 
         submitButton.addEventListener("click", function () {
           if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
-            const newReview = {
-              username: loggedInUser.username,
-              title: writeReviewTitle.value,
-              text: writeReviewArea.value,
-              movie: film.title,
-            };
+            if (!active) {
+              const newReview = {
+                username: loggedInUser.username,
+                title: writeReviewTitle.value,
+                text: writeReviewArea.value,
+                movie: film.title,
+              };
 
-            reviews.push(newReview);
-            console.log(reviews);
+              reviews.push(newReview);
+              console.log(reviews);
 
-            localStorage.setItem("review", JSON.stringify(reviews));
+              localStorage.setItem("review", JSON.stringify(reviews));
 
-            userBox.innerHTML = "";
-            userOneReview.innerHTML = "";
-            reviewStars.innerHTML = "";
+              userBox.innerHTML = "";
+              userOneReview.innerHTML = "";
+              reviewStars.innerHTML = "";
 
-            star = document.createElement("div");
-            userBox.appendChild(star);
-            star.setAttribute("id", "review-stars");
+              star = document.createElement("div");
+              userBox.appendChild(star);
+              star.setAttribute("id", "review-stars");
 
-            createImageElement("icons/star-hallow.svg", userBox, "user-image");
-            createParagraphElement("username", newReview.username, userBox);
-            createParagraphElement(
-              "user-review-title",
-              newReview.title,
-              userOneReview
-            );
-            createParagraphElement(
-              "user-review-text",
-              newReview.text,
-              userOneReview
-            );
-            Array.from({ length: 3 }, () =>
-              createImageElement("icons/star-full.svg", star, "review-stars")
-            );
-            Array.from({ length: 2 }, () =>
-              createImageElement("icons/star-hallow.svg", star, "review-stars")
-            );
+              createReview(
+                "icons/star-full.svg",
+                userBox,
+                userOneReview,
+                newReview,
+                newReview,
+                4,
+                star
+              );
+              window.location.href = window.location.href;
+            } else {
+              alert("You have already reviewed this movie.");
+            }
           } else {
             alert("Fill in both boxes.");
           }
         });
       }
 
-      for (let i = 0; i < reviews.length; i++) {
-        if (reviews[i].movie === film.title) {
-          createReview(
-            "icons/star-full.svg",
-            userBox,
-            userOneReview,
-            reviews[i],
-            4,
-            reviewStars
-          );
-        }
+      console.log(active);
+
+      if (active) {
+        createReview(
+          "icons/star-full.svg",
+          userBox,
+          userOneReview,
+          active,
+          active,
+          4,
+          reviewStars
+        );
       }
 
       function createReview(
@@ -307,13 +220,18 @@ document.addEventListener("DOMContentLoaded", async function () {
         container,
         textContainer,
         user,
+        review,
         rating,
         starCon
       ) {
         createImageElement(imagesrc, container, "user-image");
         createParagraphElement("username", user.username, container);
-        createParagraphElement("user-review-title", user.title, textContainer);
-        createParagraphElement("user-review-text", user.text, textContainer);
+        createParagraphElement(
+          "user-review-title",
+          review.title,
+          textContainer
+        );
+        createParagraphElement("user-review-text", review.text, textContainer);
         Array.from({ length: rating }, () =>
           createImageElement("icons/star-full.svg", starCon, "review-stars")
         );
