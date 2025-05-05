@@ -169,6 +169,9 @@ a {
     justify-self: center;
     width: 15rem;
   }
+  .filter-buttons{
+    display: block;
+  }
 }
 @media only screen and (max-width: 540px){
   .movie-box {
@@ -187,10 +190,26 @@ a {
     justify-self: center;
     width: 20rem;
   }
+  
+  .movie-filter{
+    margin: .1rem;
+    margin-top: .5rem;
+  }
+  #movie-filter-clear{
+    margin-top: .5rem;
+  }
+  
 }
 @media only screen and (max-width: 400px){
   .movie-box {
     justify-self: center;
     width: 17rem;
+    margin-bottom: .8rem;
+  }
+ 
+}
+@media only screen and (max-width: 400px){
+  .movie-filter{
+    width: 30%;
   }
 }

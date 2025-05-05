@@ -321,18 +321,20 @@ footer {
     width: 40vw;
    }
 }
-@media only screen and (max-width: 330px){
+@media only screen and (max-width: 340px){
   .cinema-logo{
-    width: 150px;
+    width: 130px;
   }
   .dropdown-wrapper{
     margin-top: 2.5rem;
+    margin-left: .1rem;
+
    }
    header{
     height: 6.5rem;
    }
   #icon{
-    margin-right: 2rem;
+    margin-right: 2.5rem;
    }
    .icon{
     width: 13vw;
