@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     return urlParams.get(param);
   }
 
+  // creating <p> and <img> to use for movie detail and article detail
   function createParagraphElement(c, text, container) {
     const para = document.createElement("p");
     para.classList.add(c);
@@ -56,6 +57,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     container.appendChild(image);
   }
 
+  // if detail-page for movies is active
   if (document.getElementById("details")) {
     const whatFilm = getQueryParam("title");
     console.log(whatFilm);
@@ -86,8 +88,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
       numberOfReviews();
 
-      const active = reviews.find((m) => m.movie === whatFilm);
-
       async function getRandomUser() {
         /*
         used the following video to get started with the api, fetching and accessing the elements
@@ -99,18 +99,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         let filmReviews = [];
         filmReviews = film.reviews;
 
-        const user = data.results[0];
-
-        console.log(filmReviews);
-
         if (!active) {
+          const user = data.results[0];
           createReview(
             user.picture.medium,
             userBox,
             userOneReview,
             user.login,
             filmReviews[0],
-            filmReviews[0],
+            filmReviews[0].rating,
             reviewStars
           );
         }
@@ -122,7 +119,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           userTwoReview,
           userTwo.login,
           filmReviews[1],
-          filmReviews[1],
+          filmReviews[1].rating,
           reviewStarsTwo
         );
 
@@ -133,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           userThreeReview,
           userThree.login,
           filmReviews[2],
-          filmReviews[2],
+          filmReviews[2].rating,
           reviewStarsThree
         );
 
@@ -144,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           userFourReview,
           userFour.login,
           filmReviews[3],
-          filmReviews[3],
+          filmReviews[3].rating,
           reviewStarsFour
         );
       }
@@ -152,6 +149,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       getRandomUser();
 
       const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+      const active = reviews.find((m) => m.movie === whatFilm);
+
+      const activeUser = reviews.find(
+        (m) => m.movie === whatFilm && m.username === loggedInUser.username
+      );
 
       if (loggedInUser === null) {
         submitButton.addEventListener("click", function () {
@@ -165,7 +168,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             whats currently being displayed, you can write a review. 
             else, you get an alert.
             */
-            if (!active) {
+            if (!active || loggedInUser.username != active.username) {
               const newReview = {
                 username: loggedInUser.username,
                 title: writeReviewTitle.value,
@@ -196,6 +199,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 star
               );
 
+              // reloading page on submit to prevent user from reviewing the same movie twice
               window.location.href = window.location.href;
             } else {
               alert("You have already reviewed this movie.");
@@ -226,8 +230,22 @@ document.addEventListener("DOMContentLoaded", async function () {
             "icons/settings-red.png";
         });
 
-      // active finds the first review that was written for the current movie
-      if (active) {
+      /* 
+      active finds the first review that was written for the current movie 
+      activeUser finds the first review that was written by the current user & movie
+      if the loggedInUser has written a review for the movie, it will be displayed for them
+      */
+      if (activeUser) {
+        createReview(
+          "icons/star-full.svg",
+          userBox,
+          userOneReview,
+          activeUser,
+          activeUser,
+          4,
+          reviewStars
+        );
+      } else if (active) {
         createReview(
           "icons/star-full.svg",
           userBox,
@@ -238,6 +256,8 @@ document.addEventListener("DOMContentLoaded", async function () {
           reviewStars
         );
       }
+      console.log(active);
+      console.log(activeUser);
 
       function createReview(
         imagesrc,
