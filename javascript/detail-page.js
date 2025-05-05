@@ -155,10 +155,6 @@ document.addEventListener("DOMContentLoaded", async function () {
           alert("Please log in before writing a review.");
         });
       } else if (loggedInUser) {
-        console.log(loggedInUser);
-
-        let check = false;
-
         submitButton.addEventListener("click", function () {
           if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
             if (!active) {
@@ -191,6 +187,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 4,
                 star
               );
+
               window.location.href = window.location.href;
             } else {
               alert("You have already reviewed this movie.");
@@ -201,7 +198,19 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
       }
 
-      console.log(active);
+      document
+        .getElementById("image-button")
+        .addEventListener("mouseenter", function () {
+          document.getElementById("image-button").src =
+            "icons/settings-yellow.png";
+        });
+
+      document
+        .getElementById("image-button")
+        .addEventListener("mouseleave", function () {
+          document.getElementById("image-button").src =
+            "icons/settings-red.png";
+        });
 
       if (active) {
         createReview(
