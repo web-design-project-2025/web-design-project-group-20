@@ -21,16 +21,24 @@ async function loadData() {
   }
 }
 
+/* With the help of chatgpt I added lines 32-33 and 40-41 
+(and changed the <a> to a <div> in movie element) : 
+https://chatgpt.com/share/6818ac61-8934-800a-aa6d-3a57c3cc048f */
+
 function createMovieElement(movie) {
   const movieElement = document.createElement("a");
   movieElement.classList.add("movie-box");
-  movieElement.href = `detail-page.html?title=${movie.title}`;
+
+  const detailLinkElement = document.createElement("a");
+  detailLinkElement.href = `detail-page.html?title=${movie.title}`;
 
   const imageElement = document.createElement("img");
   imageElement.src = movie.image;
   imageElement.alt = movie.alt;
   imageElement.classList.add("posters");
-  movieElement.appendChild(imageElement);
+
+  detailLinkElement.appendChild(imageElement);
+  movieElement.appendChild(detailLinkElement);
 
   const movieWatchlist = document.createElement("div");
   movieWatchlist.classList.add("movie-watchlist");
