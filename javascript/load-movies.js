@@ -58,6 +58,13 @@ function createMovieElement(movie) {
   movieElement.appendChild(movieWatchlist);
 
   watchlistIcon.addEventListener("click", function () {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (!loggedInUser) {
+      alert("You need to log in to add movies to the watchlist");
+      return;
+    }
+
     if (watchlistIcon.src.includes("watchlist-icon.svg")) {
       watchlistIcon.src = "icons/watchlist-icon-full.svg";
     } else {
