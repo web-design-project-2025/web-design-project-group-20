@@ -76,7 +76,6 @@ h2 {
   margin-left: 4rem;
   margin-bottom: 3rem;
 }
-
 .home-movies-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -300,10 +299,20 @@ h2 {
 }
 @media only screen and (max-width: 400px){
   #movie-details-home{
-    left: 72%;
+    left: 10%;
+    top: 3%;
+    width: 100%;
+    max-width: 100vw;
+  }
+  #hero-image{
+    margin-left: 25%;
+    mask-image: linear-gradient(to left, black -5%, transparent 95%);
   }
   #genre-text{
     font-size: .65rem;
+  }
+  #read-more-button-home {
+    margin-top: 0;
   }
   .movie-box {
     width: 17rem;
@@ -311,4 +320,9 @@ h2 {
   }
   
 }
+@media only screen and (max-width: 380px){
 
+.home-articles-title,.home-articles-title{
+  margin-left: 1rem;
+}
+}

@@ -283,7 +283,6 @@ footer {
   }
   .dropdown-wrapper{
   margin-top: 3.5rem;
-  margin-left: -1.4rem;
  }
  .icon{
   width: 11vw;
@@ -298,6 +297,17 @@ footer {
   width: 29vw;
  }
 }
+@media only screen and (max-width: 450px){
+  .dropdown-wrapper{
+    margin-top: 4rem;
+    align-content: center;
+    margin-left: -2rem;
+   } 
+   header{
+    height: 8.5rem;
+   }
+}
+
 @media only screen and (max-width: 380px){
   .cinema-logo{
     width: 170px;
@@ -308,9 +318,6 @@ footer {
    }
    .icon{
     width: 13vw;
-   }
-   .menu-container{
-    margin-top: -1.3rem;
    }
    .header-ul-menu{
     width: 40vw;

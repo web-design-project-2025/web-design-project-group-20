@@ -208,16 +208,11 @@
 }
 @media only screen and (max-width: 450px){
   .search-wrapper-combined{
-    top: 6.7%;
-  }
-}
-@media only screen and (max-width: 400px){
-  .search-wrapper-combined{
-    top: 6.5%;
+    top: 7.8%;
   }
 }
 @media only screen and (max-width: 340px){
   .search-wrapper-combined{
-    top: 5.8%;
+    top: 5.7%;
   }
 }
