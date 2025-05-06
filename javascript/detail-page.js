@@ -2,6 +2,7 @@ let films = [];
 let articles = [];
 let reviews = JSON.parse(localStorage.getItem("review")) || [];
 let writeReviewStars = [];
+let ratingReview = 0;
 
 document.addEventListener("DOMContentLoaded", async function () {
   const filmImg = document.getElementById("details");
@@ -163,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             userBox,
             userOneReview,
             active,
-            active,
+            active.rating,
             4,
             reviewStars
           );
@@ -173,8 +174,25 @@ document.addEventListener("DOMContentLoaded", async function () {
           (m) => m.movie === whatFilm && m.username === loggedInUser.username
         );
 
+        function rate(id, rating) {
+          document.getElementById(id).addEventListener("click", function () {
+            ratingReview = rating;
+            console.log(ratingReview);
+          });
+        }
+
+        rate("write-review-rating-one", 1);
+        rate("write-review-rating-two", 2);
+        rate("write-review-rating-three", 3);
+        rate("write-review-rating-four", 4);
+        rate("write-review-rating-five", 5);
+
         submitButton.addEventListener("click", function () {
-          if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
+          if (
+            writeReviewArea.value != "" &&
+            writeReviewTitle.value != "" &&
+            ratingReview != 0
+          ) {
             /* 
             if active doesn't find a review with the same movie as
             whats currently being displayed, you can write a review. 
@@ -186,10 +204,10 @@ document.addEventListener("DOMContentLoaded", async function () {
                 title: writeReviewTitle.value,
                 text: writeReviewArea.value,
                 movie: film.title,
+                rating: ratingReview,
               };
 
               reviews.push(newReview);
-              console.log(reviews);
 
               localStorage.setItem("review", JSON.stringify(reviews));
 
@@ -207,7 +225,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 userOneReview,
                 newReview,
                 newReview,
-                4,
+                newReview.rating,
                 star
               );
 
@@ -217,9 +235,15 @@ document.addEventListener("DOMContentLoaded", async function () {
               alert("You have already reviewed this movie.");
             }
           } else {
-            alert("Fill in both boxes.");
+            alert("Fill in both boxes, and rate the movie.");
           }
         });
+
+        /* 
+      active finds the first review that was written for the current movie 
+      activeUser finds the first review that was written by the current user & movie
+      if the loggedInUser has written a review for the movie, it will be displayed for them
+       */
 
         if (activeUser) {
           createReview(
@@ -228,7 +252,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             userOneReview,
             activeUser,
             activeUser,
-            4,
+            activeUser.rating,
             reviewStars
           );
         } else if (active) {
@@ -237,18 +261,26 @@ document.addEventListener("DOMContentLoaded", async function () {
             userBox,
             userOneReview,
             active,
-            active,
+            active.rating,
             4,
             reviewStars
           );
         }
       }
 
+      /*
       Array.from(writeStars).forEach((star) => {
-        star.addEventListener("mouseenter", () => {
+        star.addEventListener("mouseover", () => {
           star.src = "icons/star-full.svg";
         });
       });
+
+      Array.from(writeStars).forEach((star) => {
+        star.addEventListener("mouseout", () => {
+          star.src = "icons/star-hallow.svg";
+        });
+      });
+      */
 
       document
         .getElementById("image-button")
@@ -263,15 +295,6 @@ document.addEventListener("DOMContentLoaded", async function () {
           document.getElementById("image-button").src =
             "icons/post-icon-red.png";
         });
-
-      /* 
-      active finds the first review that was written for the current movie 
-      activeUser finds the first review that was written by the current user & movie
-      if the loggedInUser has written a review for the movie, it will be displayed for them
-      */
-
-      console.log(active);
-      //console.log(activeUser);
 
       function createReview(
         imagesrc,

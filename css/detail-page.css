@@ -130,7 +130,8 @@ body {
   margin-top: 0;
 }
 
-.review-stars {
+.review-stars,
+.write-review-star {
   width: 1.5rem;
   padding-top: 0.8rem;
 }
@@ -198,4 +199,6 @@ body {
 .write-review-stars {
   margin-left: auto;
   margin-right: 10%;
+  display: flex;
+  gap: 0.05rem;
 }
