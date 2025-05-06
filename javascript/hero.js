@@ -47,14 +47,14 @@ fetch("data/movies.json")
 
           function fullStarHero() {
             const starElementHero = document.createElement("img");
-            starElementHero.classList.add("hero-film-stars");
+            starElementHero.classList.add("film-stars");
             starElementHero.src = "icons/star-full.svg";
             ratingQuery.appendChild(starElementHero);
           }
 
           function hollowStarHero() {
             const hollowStarElementHero = document.createElement("img");
-            hollowStarElementHero.classList.add("hero-film-stars");
+            hollowStarElementHero.classList.add("film-stars");
             hollowStarElementHero.src = "icons/star-hallow.svg";
             ratingQuery.appendChild(hollowStarElementHero);
           }

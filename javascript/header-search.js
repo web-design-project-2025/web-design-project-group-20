@@ -24,7 +24,6 @@ iconElement.addEventListener("click", () => {
 `;
 
 
-
     // AFTER inserting the HTML
     const dataContentTemplate = wrapperElement.querySelector("[data-content-template]");
     const dataShowContainer = wrapperElement.querySelector("[data-show-container]");

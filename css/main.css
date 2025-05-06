@@ -44,19 +44,23 @@ nav ul {
 
 .icon {
   width: 2.8rem;
-  height: auto;
+  width: 2.8rem;
   margin-top: .2rem;
   margin-right: 1rem;
   margin-left: -1rem;
 }
+/*search icon*/
+#icon{
+  position: relative;
+  z-index: 1060;
+  margin-left: .5rem;
+  margin-right: 1.8rem;
+  }
+
 .icon, .search-header{
   align-items: center;
 }
-/*search icon*/
-#icon{
-margin-left: 1rem;
-margin-right: 1.8rem;
-}
+
 
 .cinema-logo {
   width: 190px;
@@ -173,8 +177,10 @@ footer {
 /* menue  */
 #drop-down-icon{
   display: none; /* hide it for default, large screens */
-  width: 30px;
+  width: 2rem;
   margin-top: 2rem;
+  position: relative;
+  z-index: 2070;
 }
 .dropdown-wrapper {
   position: relative;
@@ -184,10 +190,6 @@ footer {
 
 }
 .header-ul-menu{
-  position: absolute;
-  top: 100%; 
-  left: 50%;
-  transform: translateX(-50%);
   width: 23vw;
   background-color: var(--red);
   padding: 1rem;
@@ -196,6 +198,11 @@ footer {
   display: flex;
   flex-direction: column;
   transition: opacity 0.3s ease;
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  z-index: 2000;
+  transform: translateX(-50%);
 }
 
 .menu-container{
@@ -229,9 +236,7 @@ footer {
   
   .icon{
     margin: .2rem;
-    margin-right: -.2rem;
     position: relative;
-    z-index: 1003;
   }
   #icon{
     margin-right: 1rem;
@@ -241,13 +246,11 @@ footer {
 
 @media only screen and (max-width: 800px){
   .icon{
-    width: 43px;
-    margin: .2rem;
+    width: 3rem;
     margin-right: -.5rem;
-    margin-top: 0.2rem;
   }
+  /*makes original header disapere*/
   .header-list{
-    font-size: 1rem;
     display: none;
   }
   #drop-down-icon{
@@ -259,6 +262,7 @@ footer {
   .facebook-logo,
   .x-logo { 
     width: 30px;
+    margin-top: 1rem;
   }
 }
 
@@ -284,12 +288,16 @@ footer {
   .dropdown-wrapper{
   margin-top: 3.5rem;
  }
- .icon{
-  width: 11vw;
- }
  #icon{
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.29rem;
+  margin-right: 1rem;
  }
+ .icon{
+  margin-top: .1rem;
+  width: 3.5rem;
+  margin-left: -1rem;
+ }
+ 
  .menu-container{
   margin-top: -1.3rem;
  }
@@ -298,48 +306,38 @@ footer {
  }
 }
 @media only screen and (max-width: 450px){
+  .cinema-logo{
+    width: 170px;
+  }
   .dropdown-wrapper{
     margin-top: 4rem;
     align-content: center;
-    margin-left: -2rem;
    } 
    header{
     height: 8.5rem;
    }
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px){
   .cinema-logo{
-    width: 170px;
+    width: 140px;
   }
-  #icon{
-    margin-bottom: 2.29rem;
-    margin-right: 1rem;
-   }
-   .icon{
-    width: 13vw;
-   }
    .header-ul-menu{
     width: 40vw;
    }
-}
-@media only screen and (max-width: 340px){
-  .cinema-logo{
-    width: 130px;
-  }
-  .dropdown-wrapper{
+   .dropdown-wrapper{
     margin-top: 2.5rem;
-    margin-left: .1rem;
-
    }
    header{
     height: 6.5rem;
    }
   #icon{
-    margin-right: 2.5rem;
+    margin-right: 1rem;
    }
    .icon{
-    width: 13vw;
+    margin-top: 0;
+    width: 2.9rem;
+    margin-left: -2rem;
    }
    .header-ul-menu{
     width: 45vw;
