@@ -207,6 +207,11 @@ footer {
   font-size: 1.2rem;
 }
 /* menue  */
+@media only screen and (max-width: 1200px){
+  .header-list{
+    margin-right: 3rem;
+  }
+}
 
 @media only screen and (max-width: 980px){
   .cinema-logo{
