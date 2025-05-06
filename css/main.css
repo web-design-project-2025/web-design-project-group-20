@@ -192,7 +192,7 @@ footer {
   background-color: var(--red);
   padding: 1rem;
   border-radius: 0.5rem;
-  z-index: 10;
+  z-index: 1002;
   display: flex;
   flex-direction: column;
   transition: opacity 0.3s ease;
@@ -290,7 +290,7 @@ footer {
   margin-top: -1.3rem;
  }
  .header-ul-menu{
-  width: 35vw;
+  width: 29vw;
  }
 }
 @media only screen and (max-width: 380px){

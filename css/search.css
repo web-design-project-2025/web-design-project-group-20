@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center; /* Vertically centers items */
   position: absolute;
-  top: 6%;
+  top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -150,34 +150,23 @@
 }
 /* Visibility Controls */
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .search-wrapper-home {
     left: 48.5%;
-    top: 9%;
+    top: 14%;
     transform: translate(-50%, -50%);
   }
 }
 @media only screen and (max-width: 1200px) {
   .search-wrapper-home {
-    left: 44%;
-    top: 11%;
-    transform: translate(-50%, -50%);
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .search-wrapper-home {
-    left: 39%;
-    top: 12%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media only screen and (max-width: 1000px){
-  .search-wrapper-home {
     display: none !important;
     position: absolute;  
 
   }
+}
+
+@media only screen and (max-width: 1000px){
+ 
   .search-wrapper-combined {
     background-color: var(--red);
     padding: 1.3rem;

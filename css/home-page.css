@@ -12,7 +12,7 @@
   text-align: left;
   color: white;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 40vw;
 }
 #hero-image {
@@ -129,7 +129,6 @@ h2 {
   .home-movies-container {
     grid-template-columns: auto auto;
   }
-  
   .home-articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -143,15 +142,23 @@ h2 {
     margin-top: -20vh;
   }
   h2{
-    max-width: 45vw;
+    max-width: 35vw;
     font-size: 2.2rem;
   }
-  
+  #read-more-button-home {
+    margin-top: 4vh;
+  }
 }
+@media only screen and (max-width: 1100px){
+  #read-more-button-home {
+    margin-top: 3.5vh;
+  }
+}
+
 @media only screen and (max-width: 1000px){
   #movie-details-home {
     top: 15%;
-    left: 63%;
+    left: 65%;
   }
   .home-hero {
     height: 60vw;
@@ -170,23 +177,37 @@ h2 {
     grid-auto-rows: auto;
   }
 }
+@media only screen and (max-width: 900px){
+  .hero-film-stars{
+    width: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 800px){
   .movie-box {
     margin: 0;
   }
   #movie-details-home {
     top: 10%;
+    left: 68%;
   }
   #hero-image{
     width: 75vw;
     margin-top: -10vh;
     mask-image: linear-gradient(to right, black -15%, transparent 85%);
   }
+  .home-hero{
+    height: 75rem;
+  }
   #read-more-button-home {
-    margin-top: 1vh;
+    margin-top: 3vh;
     width: 6rem;
   }
+  h2{
+    max-width: 25vw;
+  }
 }
+
 @media only screen and (max-width: 750px){
   .movie-box {
     width: 4rem;
@@ -199,10 +220,26 @@ h2 {
     grid-template-columns: 1fr ;
     grid-auto-rows: auto;
   }
+
 }
 @media only screen and (max-width: 670px){
   .movie-box {
     width: 17rem;
+  }
+  .home-hero{
+    height: 78rem;
+  }
+  #movie-details-home{
+    max-width: 30vw;
+  }
+  #read-more-button-home{
+    margin-top: 1.3vh;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  .hero-film-stars{
+    width: 1.3rem;
   }
   
 }
@@ -218,9 +255,26 @@ h2 {
   .home-hero{
     height: 95vw;
   }
+  #movie-details-home{
+    max-width: 26vw;
+  }
+  h2{
+    font-size: 1.6rem;
+  }
+  #genre-text{
+    font-size: 1rem;
+  }
   
 }
 @media only screen and (max-width: 500px){
+  #movie-details-home{
+    left: 70%;
+    top: 7%;
+  }
+  .home-hero{
+    height: 50rem;
+  }
+  
   .movie-box {
     width: 20rem;
   }
@@ -228,8 +282,29 @@ h2 {
     margin-top: .5vh;
     width: 5rem;
   }
+  #genre-text{
+    font-size: .8rem;
+  }
+}
+@media only screen and (max-width: 430px){
+  #movie-details-home{
+    left: 71%;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  .hero-film-stars{
+    width: 1rem;
+  }
+  
 }
 @media only screen and (max-width: 400px){
+  #movie-details-home{
+    left: 72%;
+  }
+  #genre-text{
+    font-size: .65rem;
+  }
   .movie-box {
     width: 17rem;
     margin-bottom: .8rem;
