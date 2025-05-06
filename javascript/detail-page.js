@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const filmTitle = document.getElementById("detail-title");
   const filmDescription = document.getElementById("detail-description");
   const filmStars = document.getElementById("detail-star-container");
+  const filmGenres = document.getElementById("detail-genres");
   const articleTitle = document.getElementById("detail-article-title");
   const articleAuthor = document.getElementById("detail-article-author");
   const articleBox = document.getElementById("detail-article-div");
@@ -69,6 +70,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const film = films.find((m) => m.title == whatFilm);
 
+    const genres = film.genres;
+
+    console.log(genres);
+
     function numberOfReviews() {
       const reviewElement = document.createElement("p");
       reviewElement.innerHTML = film.nr_of_reviews;
@@ -80,6 +85,16 @@ document.addEventListener("DOMContentLoaded", async function () {
       filmImg.src = film.image;
       filmTitle.innerText = film.title;
       filmDescription.innerText = film.description;
+
+      if (filmGenres) {
+        filmGenres.innerHTML = genres
+          .map(
+            (genre) =>
+              genre.text.charAt(0).toUpperCase() +
+              genre.text.slice(1).toLowerCase()
+          )
+          .join("&nbsp;&nbsp;");
+      }
 
       Array.from({ length: film.rating }, () =>
         createImageElement("icons/star-full.svg", filmStars, "film-stars")

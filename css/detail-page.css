@@ -51,6 +51,12 @@ body {
   color: var(--off-white);
 }
 
+#detail-genres {
+  font-weight: 600;
+  color: var(--brown);
+  margin-top: 0.7rem;
+}
+
 .review-box-right {
   background-color: var(--light-green);
   margin-left: auto;
@@ -87,6 +93,7 @@ body {
   padding-left: 0.5rem;
 }
 
+/* makes the stars sit on the right of username and img */
 #user-box :nth-child(1) {
   order: 3;
 }
