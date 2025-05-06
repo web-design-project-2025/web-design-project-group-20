@@ -152,15 +152,27 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       const active = reviews.find((m) => m.movie === whatFilm);
 
-      const activeUser = reviews.find(
-        (m) => m.movie === whatFilm && m.username === loggedInUser.username
-      );
-
       if (loggedInUser === null) {
         submitButton.addEventListener("click", function () {
           alert("Please log in before writing a review.");
         });
+
+        if (active) {
+          createReview(
+            "icons/user.jpg",
+            userBox,
+            userOneReview,
+            active,
+            active,
+            4,
+            reviewStars
+          );
+        }
       } else if (loggedInUser) {
+        const activeUser = reviews.find(
+          (m) => m.movie === whatFilm && m.username === loggedInUser.username
+        );
+
         submitButton.addEventListener("click", function () {
           if (writeReviewArea.value != "" && writeReviewTitle.value != "") {
             /* 
@@ -190,7 +202,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               star.setAttribute("id", "review-stars");
 
               createReview(
-                "icons/star-full.svg",
+                "icons/user.jpg",
                 userBox,
                 userOneReview,
                 newReview,
@@ -208,6 +220,28 @@ document.addEventListener("DOMContentLoaded", async function () {
             alert("Fill in both boxes.");
           }
         });
+
+        if (activeUser) {
+          createReview(
+            "icons/user.jpg",
+            userBox,
+            userOneReview,
+            activeUser,
+            activeUser,
+            4,
+            reviewStars
+          );
+        } else if (active) {
+          createReview(
+            "icons/user.jpg",
+            userBox,
+            userOneReview,
+            active,
+            active,
+            4,
+            reviewStars
+          );
+        }
       }
 
       Array.from(writeStars).forEach((star) => {
@@ -220,14 +254,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         .getElementById("image-button")
         .addEventListener("mouseenter", function () {
           document.getElementById("image-button").src =
-            "icons/settings-yellow.png";
+            "icons/post-icon-yellow.png";
         });
 
       document
         .getElementById("image-button")
         .addEventListener("mouseleave", function () {
           document.getElementById("image-button").src =
-            "icons/settings-red.png";
+            "icons/post-icon-red.png";
         });
 
       /* 
@@ -235,29 +269,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       activeUser finds the first review that was written by the current user & movie
       if the loggedInUser has written a review for the movie, it will be displayed for them
       */
-      if (activeUser) {
-        createReview(
-          "icons/star-full.svg",
-          userBox,
-          userOneReview,
-          activeUser,
-          activeUser,
-          4,
-          reviewStars
-        );
-      } else if (active) {
-        createReview(
-          "icons/star-full.svg",
-          userBox,
-          userOneReview,
-          active,
-          active,
-          4,
-          reviewStars
-        );
-      }
+
       console.log(active);
-      console.log(activeUser);
+      //console.log(activeUser);
 
       function createReview(
         imagesrc,
