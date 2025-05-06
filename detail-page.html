@@ -66,11 +66,20 @@
         <h1 class="review-header">WRITE A REVIEW</h1>
         <div>
           <form action="" id="review-form">
+            <p class="write-review-title">
+              <label id="title-label" for="rtitle">Title for Your Review</label>
+            </p>
+
+            <input
+              type="text"
+              id="rtitle"
+              class="write-review-box"
+              maxlength="70"
+              required
+            />
             <div class="write-review-div">
               <p class="write-review-title">
-                <label id="title-label" for="rtitle"
-                  >Title for your review</label
-                >
+                <label for="write-review">Your Review</label>
               </p>
               <div class="write-review-stars">
                 <img
@@ -105,17 +114,6 @@
                 />
               </div>
             </div>
-
-            <input
-              type="text"
-              id="rtitle"
-              class="write-review-box"
-              maxlength="70"
-              required
-            />
-            <p class="write-review-title">
-              <label for="write-review">Your review</label>
-            </p>
             <textarea
               name=""
               id="write-review"

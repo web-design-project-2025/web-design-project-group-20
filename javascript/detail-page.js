@@ -268,19 +268,86 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       }
 
-      /*
-      Array.from(writeStars).forEach((star) => {
-        star.addEventListener("mouseover", () => {
-          star.src = "icons/star-full.svg";
+      document
+        .getElementById("write-review-rating-one")
+        .addEventListener("click", function () {
+          starChange("write-review-rating-one", true);
+          starChange("write-review-rating-two", false);
+          starChange("write-review-rating-three", false);
+          starChange("write-review-rating-four", false);
+          starChange("write-review-rating-five", false);
         });
-      });
 
-      Array.from(writeStars).forEach((star) => {
-        star.addEventListener("mouseout", () => {
-          star.src = "icons/star-hallow.svg";
+      document
+        .getElementById("write-review-rating-two")
+        .addEventListener("click", function () {
+          starChange("write-review-rating-one", true);
+          starChange("write-review-rating-two", true);
+          starChange("write-review-rating-three", false);
+          starChange("write-review-rating-four", false);
+          starChange("write-review-rating-five", false);
         });
-      });
-      */
+
+      document
+        .getElementById("write-review-rating-three")
+        .addEventListener("click", function () {
+          starChange("write-review-rating-one", true);
+          starChange("write-review-rating-two", true);
+          starChange("write-review-rating-three", true);
+          starChange("write-review-rating-four", false);
+          starChange("write-review-rating-five", false);
+        });
+
+      document
+        .getElementById("write-review-rating-four")
+        .addEventListener("click", function () {
+          starChange("write-review-rating-one", true);
+          starChange("write-review-rating-two", true);
+          starChange("write-review-rating-three", true);
+          starChange("write-review-rating-four", true);
+          starChange("write-review-rating-five", false);
+        });
+
+      document
+        .getElementById("write-review-rating-five")
+        .addEventListener("click", function () {
+          starChange("write-review-rating-one", true);
+          starChange("write-review-rating-two", true);
+          starChange("write-review-rating-three", true);
+          starChange("write-review-rating-four", true);
+          starChange("write-review-rating-five", true);
+        });
+
+      if (ratingReview === 0) {
+        starChange("write-review-rating-one", false);
+        starChange("write-review-rating-two", false);
+        starChange("write-review-rating-three", false);
+        starChange("write-review-rating-four", false);
+        starChange("write-review-rating-five", false);
+      }
+
+      function starChange(id, full) {
+        if (full) {
+          document.getElementById(id).src = "icons/star-full.svg";
+        } else if (!full) {
+          document.getElementById(id).src = "icons/star-hallow.svg";
+        }
+      }
+
+      /*
+        Array.from(writeStars).forEach((star) => {
+          star.addEventListener("mouseover", () => {
+            star.src = "icons/star-full.svg";
+          });
+        });
+
+        Array.from(writeStars).forEach((star) => {
+          star.addEventListener("mouseout", () => {
+            star.src = "icons/star-hallow.svg";
+          });
+        });
+      }
+        */
 
       document
         .getElementById("image-button")
