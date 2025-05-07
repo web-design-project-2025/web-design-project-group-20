@@ -169,7 +169,7 @@ body {
 }
 @media only screen and (max-width: 600px){
   .list-account img{
-    width: 9rem ;
+    width: 8.5rem ;
   }
   .list-account{
     margin: 3vw;
