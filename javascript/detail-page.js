@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const writeReviewArea = document.getElementById("write-review");
   const writeReviewTitle = document.getElementById("rtitle");
 
-  const writeStars = document.getElementsByClassName("write-review-star");
+  //const writeStars = document.getElementsByClassName("write-review-star");
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
@@ -286,46 +286,41 @@ document.addEventListener("DOMContentLoaded", async function () {
       document
         .getElementById("write-review-rating-one")
         .addEventListener("click", function () {
+          resetStar();
           starChange("write-review-rating-one", true);
-          starChange("write-review-rating-two", false);
-          starChange("write-review-rating-three", false);
-          starChange("write-review-rating-four", false);
-          starChange("write-review-rating-five", false);
         });
 
       document
         .getElementById("write-review-rating-two")
         .addEventListener("click", function () {
+          resetStar();
           starChange("write-review-rating-one", true);
           starChange("write-review-rating-two", true);
-          starChange("write-review-rating-three", false);
-          starChange("write-review-rating-four", false);
-          starChange("write-review-rating-five", false);
         });
 
       document
         .getElementById("write-review-rating-three")
         .addEventListener("click", function () {
+          resetStar();
           starChange("write-review-rating-one", true);
           starChange("write-review-rating-two", true);
           starChange("write-review-rating-three", true);
-          starChange("write-review-rating-four", false);
-          starChange("write-review-rating-five", false);
         });
 
       document
         .getElementById("write-review-rating-four")
         .addEventListener("click", function () {
+          resetStar();
           starChange("write-review-rating-one", true);
           starChange("write-review-rating-two", true);
           starChange("write-review-rating-three", true);
           starChange("write-review-rating-four", true);
-          starChange("write-review-rating-five", false);
         });
 
       document
         .getElementById("write-review-rating-five")
         .addEventListener("click", function () {
+          resetStar();
           starChange("write-review-rating-one", true);
           starChange("write-review-rating-two", true);
           starChange("write-review-rating-three", true);
@@ -333,20 +328,20 @@ document.addEventListener("DOMContentLoaded", async function () {
           starChange("write-review-rating-five", true);
         });
 
-      if (ratingReview === 0) {
-        starChange("write-review-rating-one", false);
-        starChange("write-review-rating-two", false);
-        starChange("write-review-rating-three", false);
-        starChange("write-review-rating-four", false);
-        starChange("write-review-rating-five", false);
-      }
-
       function starChange(id, full) {
         if (full) {
           document.getElementById(id).src = "icons/star-full.svg";
         } else if (!full) {
           document.getElementById(id).src = "icons/star-hallow.svg";
         }
+      }
+
+      function resetStar() {
+        starChange("write-review-rating-one", false);
+        starChange("write-review-rating-two", false);
+        starChange("write-review-rating-three", false);
+        starChange("write-review-rating-four", false);
+        starChange("write-review-rating-five", false);
       }
 
       /*
