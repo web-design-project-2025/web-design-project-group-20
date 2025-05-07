@@ -57,6 +57,12 @@ function createMovieElement(movie) {
   movieWatchlist.appendChild(watchlistIcon);
   movieElement.appendChild(movieWatchlist);
 
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (loggedInUser) {
+    const userEmail = loggedInUser.email;
+    const saveWatchlist = localStorage.getItem(userEmail);
+  }
+
   watchlistIcon.addEventListener("click", function () {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
