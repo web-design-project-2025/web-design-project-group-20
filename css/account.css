@@ -6,7 +6,16 @@ img {
 body {
   background-color: var(--off-white);
 }
-
+#account-content{
+  min-height: 19.5rem;
+}
+/*button flex*/
+#button-list {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
 .list-account {
   list-style: none;
   margin-left: 5vw;
@@ -14,19 +23,13 @@ body {
   margin-top: 3vw;
 }
 
-#button-list {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
-}
-
 .account-detail-buttons {
   display: flex;
   flex-direction: column;
-  margin-top: 3vw;
+  margin-top: 3rem;
   margin-left: 15rem;
 }
+/*button flex end*/
 
 .button-click {
   background-color: var(--red);
@@ -34,7 +37,7 @@ body {
   color: var(--off-white);
   border-radius: 0.5rem;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 #show-password {
@@ -58,12 +61,10 @@ body {
 .account-here:hover {
   text-decoration: underline;
 }
-
 /*account list end*/
 
 /*account content*/
 /*icons*/
-
 #bowl {
   display: grid;
   flex-direction: column;
@@ -97,7 +98,7 @@ body {
 #settings-list3,
 #settings-list4,
 #settings-list5 {
-  margin-top: 4vw;
+  margin-top: 2rem;
   gap: 0px;
 }
 
@@ -121,7 +122,6 @@ h5 {
 p {
   margin-left: 0.5vw;
 }
-
 /*account content end*/
 
 footer {
@@ -136,11 +136,12 @@ body {
 }
 
 .footer-container {
-  position: absolute;
   bottom: 0;
   background-color: var(--red);
   width: 100%;
   padding-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 
 .footer-line {
@@ -151,4 +152,27 @@ body {
   border-radius: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media only screen and (max-width: 900px){
+  #settings-list3,
+  #settings-list4,
+  #settings-list5{
+    margin-top: 1rem;
+  }
+  #settings-list1,
+  #settings-list2,
+  #settings-list3,
+  #settings-list4,
+  #settings-list5{
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 600px){
+  .list-account img{
+    width: 9rem ;
+  }
+  .list-account{
+    margin: 3vw;
+    margin-bottom: 0;
+  }
 }

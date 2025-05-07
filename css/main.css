@@ -15,6 +15,10 @@
 html {
   font-family: "Kumbh Sans";
 }
+main{
+  min-width: 20rem;
+  height: calc(fit-content+5rem);
+}
 
 header {
   background-color: var(--red);

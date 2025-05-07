@@ -1,7 +1,9 @@
 body {
   background-color: var(--off-white);
 }
-
+main{
+  min-height: 19.5rem;
+}
 #email {
   margin-left: 4rem;
   margin-top: 1rem;
@@ -48,7 +50,7 @@ body {
   width: 26rem;
   height: auto;
   padding: 1rem;
-  padding-bottom: 1.3rem;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
@@ -77,11 +79,11 @@ body {
 }
 
 .footer-container {
-  position: absolute;
   bottom: 0;
   background-color: var(--red);
   width: 100%;
   padding-bottom: 1rem;
+  margin-top: 7rem;
 }
 footer {
   background-color: transparent;
