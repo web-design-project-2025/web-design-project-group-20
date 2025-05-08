@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/log-in.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/header-search.js" defer></script>
+    <script src="javascript/login.js" defer></script>
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/log-in.css" />
-  <link rel="stylesheet" href="./css/search.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <script src="javascript/header-search.js" defer></script>
-  <script src="javascript/login.js" defer></script>
-  <title>Home</title>
-</head>
-
-<body>
-  <header>
-    <nav class="nav-space">
-      <a href="index.html">
-        <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
+  <body>
+    <header>
+      <nav class="nav-space">
+        <a href="index.html">
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
         <ul>
-          <li class="header-list"><a href="index.html">Home</a></li>
-          <li class="header-list"><a href="movie-list.html">Movies</a></li>
-          <li class="header-list"><a href="article-list.html">Articles</a></li>
-          <li class="header-list"><a href="login.html">Login</a></li>
-          <li class="header-list"><a href="watch-list.html">Watch List</a></li>
+          <li class="header-list">
+            <a class="header-text" href="index.html">Home</a>
+          </li>
+          <li class="header-list">
+            <a class="header-text" href="movie-list.html">Movies</a>
+          </li>
+          <li class="header-list">
+            <a class="header-text" href="article-list.html">Articles</a>
+          </li>
+          <li class="header-list" id="header-login">
+            <a class="header-text" href="login.html">Login</a>
+          </li>
+          <li class="header-list" id="header-watchlist">
+            <a class="header-text" href="watch-list.html">Watch List</a>
+          </li>
           <li>
             <a href="account.html"
               ><img
@@ -45,35 +61,35 @@
             /></label>
           </li>
         </ul>
-    </nav>
-  </header>
-  
-  <main >
-    <section class="top-of-page">
-      <h1 class="top-of-page-title">LOGIN</h1>
-    </section>
-    <div class="log-in-box">
-      <section class="log-in-text">
-        <label for="email"> Email</label>
-        <input type="text" id="email" />
-  
-        <br />
-  
-        <label for="password"> Password</label>
-        <input type="text" id="password" />
+      </nav>
+    </header>
+
+    <main>
+      <section class="top-of-page">
+        <h1 class="top-of-page-title">LOGIN</h1>
       </section>
-  
-      <div id="login container">
-        <section><!--login forms and stuff--></section>
-        <div class="signup-text">
-          <p class="white-account-text">Don't have an account?</p>
-          <a href="signup.html" class="sign-yellow">Sign up here.</a>
+      <div class="log-in-box">
+        <section class="log-in-text">
+          <label for="email"> Email</label>
+          <input type="text" id="email" />
+
+          <br />
+
+          <label for="password"> Password</label>
+          <input type="text" id="password" />
+        </section>
+
+        <div id="login container">
+          <section><!--login forms and stuff--></section>
+          <div class="signup-text">
+            <p class="white-account-text">Don't have an account?</p>
+            <a href="signup.html" class="sign-yellow">Sign up here.</a>
+          </div>
         </div>
+
+        <button class="red-login" id="login-button">Log in</button>
       </div>
-  
-      <button class="red-login" id="login-button">Log in</button>
-    </div>
-  </main>
+    </main>
 
     <footer>
       <section class="footer-container">

@@ -40,22 +40,36 @@ nav ul {
 .header-list {
   margin-right: 4rem;
   margin-top: 1rem;
+  width: 2.5rem;
+}
+
+#header-watchlist {
+  width: 5rem;
+}
+
+#header-login {
+  margin-right: 3rem;
+}
+
+.header-text:hover {
+  font-weight: 600;
 }
 
 .icon {
   width: 2.8rem;
   height: auto;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   margin-right: 1rem;
   margin-left: -1rem;
 }
-.icon, .search-header{
+.icon,
+.search-header {
   align-items: center;
 }
 /*search icon*/
-#icon{
-margin-left: 1rem;
-margin-right: 1.8rem;
+#icon {
+  margin-left: 1rem;
+  margin-right: 1.8rem;
 }
 
 .cinema-logo {
