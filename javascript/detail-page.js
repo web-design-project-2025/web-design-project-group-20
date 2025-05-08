@@ -37,8 +37,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   const writeReviewArea = document.getElementById("write-review");
   const writeReviewTitle = document.getElementById("rtitle");
 
-  //const writeStars = document.getElementsByClassName("write-review-star");
-
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(document.location.search);
     return urlParams.get(param);
@@ -52,11 +50,32 @@ document.addEventListener("DOMContentLoaded", async function () {
     container.appendChild(para);
   }
 
-  function createImageElement(source, container, c) {
+  function createImageElement(c, source, container) {
     const image = document.createElement("img");
     image.classList.add(c);
     image.src = source;
     container.appendChild(image);
+  }
+
+  function createReview(
+    imagesrc,
+    container,
+    textContainer,
+    user,
+    review,
+    rating,
+    starCon
+  ) {
+    createImageElement("user-image", imagesrc, container);
+    createParagraphElement("username", user.username, container);
+    createParagraphElement("user-review-title", review.title, textContainer);
+    createParagraphElement("user-review-text", review.text, textContainer);
+    Array.from({ length: rating }, () =>
+      createImageElement("review-stars", "icons/star-full.svg", starCon)
+    );
+    Array.from({ length: 5 - rating }, () =>
+      createImageElement("review-stars", "icons/star-hallow.svg", starCon)
+    );
   }
 
   // if detail-page for movies is active
@@ -71,15 +90,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const film = films.find((m) => m.title == whatFilm);
 
     const genres = film.genres;
-
-    console.log(genres);
-
-    function numberOfReviews() {
-      const reviewElement = document.createElement("p");
-      reviewElement.innerHTML = film.nr_of_reviews;
-      reviewElement.classList.add("film-number-of-reviews");
-      filmStars.appendChild(reviewElement);
-    }
 
     if (film) {
       filmImg.src = film.image;
@@ -97,12 +107,17 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
 
       Array.from({ length: film.rating }, () =>
-        createImageElement("icons/star-full.svg", filmStars, "film-stars")
+        createImageElement("film-stars", "icons/star-full.svg", filmStars)
       );
       Array.from({ length: 5 - film.rating }, () =>
-        createImageElement("icons/star-hallow.svg", filmStars, "film-stars")
+        createImageElement("film-stars", "icons/star-hallow.svg", filmStars)
       );
-      numberOfReviews();
+
+      createParagraphElement(
+        "film-number-of-reviews",
+        film.nr_of_reviews,
+        filmStars
+      );
 
       async function getRandomUser() {
         /*
@@ -192,7 +207,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         function rate(id, rating) {
           document.getElementById(id).addEventListener("click", function () {
             ratingReview = rating;
-            console.log(ratingReview);
           });
         }
 
@@ -283,6 +297,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       }
 
+      // makes the stars fill when clicking on them
       document
         .getElementById("write-review-rating-one")
         .addEventListener("click", function () {
@@ -344,21 +359,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         starChange("write-review-rating-five", false);
       }
 
-      /*
-        Array.from(writeStars).forEach((star) => {
-          star.addEventListener("mouseover", () => {
-            star.src = "icons/star-full.svg";
-          });
-        });
-
-        Array.from(writeStars).forEach((star) => {
-          star.addEventListener("mouseout", () => {
-            star.src = "icons/star-hallow.svg";
-          });
-        });
-      }
-        */
-
+      // post button changes colour on hover
       document
         .getElementById("image-button")
         .addEventListener("mouseenter", function () {
@@ -372,31 +373,6 @@ document.addEventListener("DOMContentLoaded", async function () {
           document.getElementById("image-button").src =
             "icons/post-icon-red.png";
         });
-
-      function createReview(
-        imagesrc,
-        container,
-        textContainer,
-        user,
-        review,
-        rating,
-        starCon
-      ) {
-        createImageElement(imagesrc, container, "user-image");
-        createParagraphElement("username", user.username, container);
-        createParagraphElement(
-          "user-review-title",
-          review.title,
-          textContainer
-        );
-        createParagraphElement("user-review-text", review.text, textContainer);
-        Array.from({ length: rating }, () =>
-          createImageElement("icons/star-full.svg", starCon, "review-stars")
-        );
-        Array.from({ length: 5 - rating }, () =>
-          createImageElement("icons/star-hallow.svg", starCon, "review-stars")
-        );
-      }
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data
@@ -414,14 +390,14 @@ document.addEventListener("DOMContentLoaded", async function () {
       articleTitle.innerText = article.title;
       articleAuthor.innerText = article.author;
 
-      //going through the JSON array and creating elements in order
+      // going through the JSON array and creating elements in order
       for (let i = 0; i < art.length; i++) {
         let type = art[i].type;
         let classes = art[i].class;
         let text = art[i].text;
 
         if (type == "image") {
-          createImageElement(text, articleBox);
+          createImageElement(classes, text, articleBox);
         }
         if (type == "paragraph" || type == "header1") {
           createParagraphElement(classes, text, articleBox);

@@ -1,10 +1,6 @@
 let movies = [];
 
 const contentElement = document.getElementById("movies_content");
-const comedyContent = document.getElementById("movies-comedy-content");
-const animationContent = document.getElementById("movies-animation-content");
-const actionContent = document.getElementById("movies-action-content");
-const scifiContent = document.getElementById("movies-scifi-content");
 const clearFilter = document.getElementById("movie-filter-clear");
 
 const homeContentElement = document.getElementById("home-movie-content");
