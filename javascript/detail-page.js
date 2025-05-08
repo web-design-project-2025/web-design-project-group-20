@@ -194,8 +194,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             userBox,
             userOneReview,
             active,
+            active,
             active.rating,
-            4,
             reviewStars
           );
         }
@@ -290,8 +290,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             userBox,
             userOneReview,
             active,
+            active,
             active.rating,
-            4,
             reviewStars
           );
         }
