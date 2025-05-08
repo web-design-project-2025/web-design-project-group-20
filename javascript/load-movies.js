@@ -1,10 +1,6 @@
 let movies = [];
 
 const contentElement = document.getElementById("movies_content");
-const comedyContent = document.getElementById("movies-comedy-content");
-const animationContent = document.getElementById("movies-animation-content");
-const actionContent = document.getElementById("movies-action-content");
-const scifiContent = document.getElementById("movies-scifi-content");
 const clearFilter = document.getElementById("movie-filter-clear");
 
 const homeContentElement = document.getElementById("home-movie-content");
@@ -42,18 +38,11 @@ function createMovieElement(movie) {
   starContainer.classList.add("movie-stars");
   movieElement.appendChild(starContainer);
 
-  function fullStar() {
-    const starElement = document.createElement("img");
-    starElement.classList.add("stars");
-    starElement.src = "icons/star-full.svg";
-    starContainer.appendChild(starElement);
-  }
-
-  function hollowStar() {
-    const starElement = document.createElement("img");
-    starElement.classList.add("stars");
-    starElement.src = "icons/star-hallow.svg";
-    starContainer.appendChild(starElement);
+  function createImageElement(c, source, container) {
+    const image = document.createElement("img");
+    image.classList.add(c);
+    image.src = source;
+    container.appendChild(image);
   }
 
   function numberOfReviews() {
@@ -63,8 +52,12 @@ function createMovieElement(movie) {
     starContainer.appendChild(reviewElement);
   }
 
-  Array.from({ length: movie.rating }, () => fullStar());
-  Array.from({ length: 5 - movie.rating }, () => hollowStar());
+  Array.from({ length: movie.rating }, () =>
+    createImageElement("stars", "icons/star-full.svg", starContainer)
+  );
+  Array.from({ length: 5 - movie.rating }, () =>
+    createImageElement("stars", "icons/star-hallow.svg", starContainer)
+  );
   numberOfReviews();
 
   return movieElement;
@@ -75,79 +68,39 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
-function filterMovie(movie) {
-  const genre = getQueryParam("genre");
-  const filter = movie.genres;
-
-  if (genre === "comedy") {
-    contentElement.style.display = "none";
-    comedyContent.style.display = "grid";
-    clearFilter.style.visibility = "visible";
-    const comedy = filter.filter((filter) => filter.text === "comedy");
-
-    // for of loop or the one on animation?
-    for (let m of comedy) {
-      const movieElement = createMovieElement(movie);
-      comedyContent.appendChild(movieElement);
-    }
-
-    document.getElementById("movie-filter-comedy").href = `movie-list.html`;
-    document.getElementById("movie-filter-comedy").style.fontWeight = "bold";
-  }
-
-  if (genre === "animation") {
-    contentElement.style.display = "none";
-    animationContent.style.display = "grid";
-    clearFilter.style.visibility = "visible";
-    const animation = filter.filter((filter) => filter.text === "animation");
-
-    for (let i = 0; i < animation.length; i++) {
-      const movieElement = createMovieElement(movie);
-      animationContent.appendChild(movieElement);
-    }
-
-    document.getElementById("movie-filter-animation").href = `movie-list.html`;
-    document.getElementById("movie-filter-animation").style.fontWeight = "bold";
-  }
-
-  if (genre === "action") {
-    contentElement.style.display = "none";
-    actionContent.style.display = "grid";
-    clearFilter.style.visibility = "visible";
-    const action = filter.filter((filter) => filter.text === "action");
-
-    for (let m of action) {
-      const movieElement = createMovieElement(movie);
-      actionContent.appendChild(movieElement);
-    }
-
-    document.getElementById("movie-filter-action").href = `movie-list.html`;
-    document.getElementById("movie-filter-action").style.fontWeight = "bold";
-  }
-
-  if (genre === "science fiction") {
-    contentElement.style.display = "none";
-    scifiContent.style.display = "grid";
-    clearFilter.style.visibility = "visible";
-    const scifi = filter.filter((filter) => filter.text === "science fiction");
-
-    for (let m of scifi) {
-      const movieElement = createMovieElement(movie);
-      scifiContent.appendChild(movieElement);
-    }
-
-    document.getElementById("movie-filter-scifi").href = `movie-list.html`;
-    document.getElementById("movie-filter-scifi").style.fontWeight = "bold";
-  }
-}
-
 function renderContent() {
   contentElement.innerHTML = "";
 
-  for (let movie of movies) {
+  const genre = getQueryParam("genre");
+  let movieList = movies;
+  if (genre && genre !== "") {
+    movieList = movies.filter(
+      (m) => m.genres.filter((g) => g.text === genre).length > 0
+    );
+
+    clearFilter.style.visibility = "visible";
+
+    if (genre === "science fiction") {
+      document.getElementById("movie-filter-scifi").href = `movie-list.html`;
+      document.getElementById("movie-filter-scifi").style.fontWeight = "bold";
+    } else if (genre === "action") {
+      document.getElementById("movie-filter-action").href = `movie-list.html`;
+      document.getElementById("movie-filter-action").style.fontWeight = "bold";
+    } else if (genre === "animation") {
+      document.getElementById(
+        "movie-filter-animation"
+      ).href = `movie-list.html`;
+      document.getElementById("movie-filter-animation").style.fontWeight =
+        "bold";
+    } else if (genre === "comedy") {
+      document.getElementById("movie-filter-comedy").href = `movie-list.html`;
+      document.getElementById("movie-filter-comedy").style.fontWeight = "bold";
+    }
+  }
+
+  for (let movie of movieList) {
     const movieElement = createMovieElement(movie);
     contentElement.appendChild(movieElement);
-    filterMovie(movie);
   }
 }
 
