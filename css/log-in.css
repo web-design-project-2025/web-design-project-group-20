@@ -68,3 +68,32 @@ body {
   margin-top: 1.3rem;
   font-size: 0.9rem;
 }
+
+/*footer*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--red);
+  width: 100%;
+  padding-bottom: 1rem;
+}
+footer {
+  background-color: transparent;
+  padding: 0;
+}
+
+.footer-line {
+  height: 3px;
+  width: 9rem;
+  background-color: var(--off-white);
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
