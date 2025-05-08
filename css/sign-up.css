@@ -5,13 +5,13 @@ main{
     min-height: 19.5rem;
 }
 #email {
-  margin-left: 8rem;
+  margin-left: 8.1rem;
   margin-top: 1rem;
   background-color: var(--off-white);
 }
 
 #password {
-  margin-left: 6.2rem;
+  margin-left: 6.3rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
   background-color: var(--off-white);
@@ -19,26 +19,25 @@ main{
 
 #name1 {
   margin-top: 1.2rem;
-  margin-left: 7.8rem;
+  margin-left: 7.9rem;
   background-color: var(--off-white);
 }
 
 #username {
   margin-top: 1.2rem;
-  margin-left: 5.8rem;
+  margin-left: 5.9rem;
   background-color: var(--off-white);
 }
 
 #re-enter-password {
-  margin-top: 0rem;
-  margin-left: 2rem;
+  margin-top: 1.2rem;
+  margin-left: 1.75rem;
   background-color: var(--off-white);
 }
 
 .re-enter-move-group {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
 }
 
 #email,
@@ -110,3 +109,79 @@ footer {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 500px){
+  .sign-in-box{
+    width: 22rem;
+  }
+  .white-account-text{
+    font-size: .78rem;
+  }
+  .sign-yellow{
+    font-size: .9rem;
+  }
+  #email,
+  #password,
+  #name1,
+  #username,
+  #re-enter-password  {
+    width: 20rem;
+    height: 1.2rem;
+    margin-left: 0;
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .red-signin{
+    width: 6rem;
+    height: 2.4rem;
+    margin-left: 15rem;
+    font-size: 1rem;
+  }
+  .sign-in-flex{
+    margin-top: .1rem;
+    margin-left: .5rem;
+  }
+  .sign-in-flex1{
+    margin-top: .7rem;
+    margin-left: .5rem;
+  }
+  
+  }
+  @media only screen and (max-width: 410px){
+  .sign-in-box{
+    width: 20rem;
+  }
+  #email,
+  #password,
+  #name1,
+  #username,
+  #re-enter-password  {
+    width: 18rem;
+  }
+  .red-signin{
+    width: 7rem;
+    height: 2.5rem;
+    margin-left: 12rem;
+    font-size: 1.1rem;
+  }
+  
+  }
+  @media only screen and (max-width: 380px){
+    .sign-in-box{
+      width: 17rem;
+    }
+    .signup-text{
+      margin-left: 2.2rem;
+    }
+    #email,
+    #password,
+    #name1,
+    #username,
+    #re-enter-password{
+      width: 15rem;
+    }
+    .red-signin{
+      margin-left: 9rem;
+    }
+  }

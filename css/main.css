@@ -236,7 +236,7 @@ footer {
     height: auto;
   }
   .header-list{
-   margin-right: 2rem;
+    margin-right: 2rem;
   }
   
   .icon{
@@ -297,24 +297,25 @@ footer {
     width: 200px;
   }
   .dropdown-wrapper{
-  margin-top: 3.5rem;
+    margin-top: 3.5rem;
+    margin-right: 1vw;
+    margin-left: 0;
  }
- #icon{
-  margin-bottom: 2.29rem;
-  margin-right: 1rem;
- }
- .icon{
-  margin-top: .1rem;
-  width: 3.5rem;
-  margin-left: -1rem;
+  #icon{
+    margin-bottom: 2.29rem;
+  }
+  .icon{
+    margin-top: .1rem;
+    width: 3.5rem;
+    margin-left: 1rem;
  }
  
- .menu-container{
-  margin-top: -1.3rem;
- }
- .header-ul-menu{
-  width: 29vw;
- }
+  .menu-container{
+    margin-top: -1.3rem;
+  }
+  .header-ul-menu{
+    width: 29vw;
+  }
 }
 @media only screen and (max-width: 450px){
   .cinema-logo{
@@ -329,7 +330,7 @@ footer {
    }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 410px){
   .cinema-logo{
     width: 140px;
   }
@@ -338,6 +339,8 @@ footer {
    }
    .dropdown-wrapper{
     margin-top: 2.5rem;
+    margin-right: 1vw;
+    margin-left: -2rem;
    }
    header{
     height: 6.5rem;
@@ -348,7 +351,7 @@ footer {
    .icon{
     margin-top: 0;
     width: 2.9rem;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
    }
    .header-ul-menu{
     width: 45vw;
