@@ -224,10 +224,11 @@ document.addEventListener("DOMContentLoaded", async function () {
           ) {
             /* 
             if active doesn't find a review with the same movie as
-            whats currently being displayed, you can write a review. 
+            whats currently being displayed, you can write a review.
+            or if activeUser doesn't find a review with the same movie and username. 
             else, you get an alert.
             */
-            if (!active || loggedInUser.username != active.username) {
+            if (!active || !activeUser) {
               const newReview = {
                 username: loggedInUser.username,
                 title: writeReviewTitle.value,
@@ -273,7 +274,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       activeUser finds the first review that was written by the current user & movie
       if the loggedInUser has written a review for the movie, it will be displayed for them
        */
-
         if (activeUser) {
           createReview(
             "icons/user.jpg",
