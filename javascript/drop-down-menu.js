@@ -22,9 +22,10 @@ let menuActive = false;
 
 iconElementMenu.addEventListener ("click", function (event){
     if(!menuActive){
+        iconElementMenu.classList.add("active");
        listItems();
-
     } else{
+        iconElementMenu.classList.remove("active");
         listEmpty();
     }
     menuActive = !menuActive;

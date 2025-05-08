@@ -99,3 +99,80 @@ footer {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 500px){
+.log-in-box{
+  width: 22rem;
+}
+.signup-text{
+  margin-left: 7rem;
+}
+.white-account-text{
+  font-size: .78rem;
+}
+.sign-yellow{
+  font-size: .9rem;
+}
+#email,
+#password {
+  width: 14rem;
+  height: 1.2rem;
+}
+#password{
+  margin-top: 1.5rem;
+}
+.red-login{
+  width: 6rem;
+  height: 2.4rem;
+  margin-left: 15rem;
+  font-size: 1rem;
+}
+label{
+  margin-left: .2rem;
+}
+}
+@media only screen and (max-width: 410px){
+.log-in-box{
+  width: 20rem;
+}
+.signup-text{
+  margin-left: 4.6rem;
+}
+#email,
+#password {
+  width: 11.5rem;
+}
+.red-login{
+  width: 6.5rem;
+  height: 2.6rem;
+  margin-left: 12.5rem;
+  font-size: 1.1rem;
+}
+label{
+  margin-left: .6rem;
+}
+}
+@media only screen and (max-width: 380px){
+  .log-in-box{
+    width: 17.5rem;
+  }
+  .signup-text{
+    margin-left: 2.2rem;
+  }
+  #email,
+  #password {
+    width: 10.7rem;
+  }
+  #email{
+    margin-left: 3rem;
+  }
+  #password{
+    margin-left: 1.2rem;
+  }
+  label{
+    margin-left: .4rem;
+  }
+  .red-login{
+    margin-left: 10.5rem;
+  }
+}

@@ -112,22 +112,6 @@ a {
   padding-top: 0.6rem;
 }
 
-#movies-comedy-content {
-  display: none;
-}
-
-#movies-animation-content {
-  display: none;
-}
-
-#movies-action-content {
-  display: none;
-}
-
-#movies-scifi-content {
-  display: none;
-}
-
 @media only screen and (max-width: 1410px){
   .container {
     display: grid;

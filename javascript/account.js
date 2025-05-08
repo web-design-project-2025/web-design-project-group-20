@@ -36,29 +36,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (loggedInUser) {
       contentElement.innerHTML = `
-            <section class="account-text-color">
-              <h2>Your Account Details</h2>
-              <div id="bowl2"> 
-                <div id="settings-list3"> 
-                <h5>Your Username:</h5>
-                <p>${loggedInUser.username}</p>
-                </div> 
-                <div id="settings-list4"> 
-                <h5>Your Email:</h5>
-                <p>${loggedInUser.email}</p>
-                </div> 
-                <div id="settings-list5"> 
+        <section class="account-text-color">
+            <h2>Your Account Details</h2>
+            <div id="bowl2"> 
+              <div id="settings-list3"> 
+                  <h5>Your Username:</h5>
+                  <p>${loggedInUser.username}</p>
+              </div> 
+              <div id="settings-list4"> 
+                  <h5>Your Email:</h5>
+                  <p>${loggedInUser.email}</p>
+              </div> 
+              <div id="settings-list5"> 
                 <h5>Your Password:</h5>
                 <p id="password-text">${"*".repeat(
                   loggedInUser.password.length
                 )}</p>
-                </div>
-             
-        <div class="account-detail-buttons">
-       <button id="show-password" class="button-click"> Show Password </button>
-        <button id="log-out" class="button-click"> Log out </button>
+              </div>
+              <button id="show-password" class="button-click"> Show Password </button>
+              <button id="log-out" class="button-click"> Log out </button>
+            </div> 
 
-            </section>
+          </section>
   `;
 
       /* Clicking the buttin will make the password appear, 

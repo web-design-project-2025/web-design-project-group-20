@@ -186,6 +186,7 @@ footer {
   position: relative;
   z-index: 2070;
 }
+
 .dropdown-wrapper {
   position: relative;
   display: flex;
@@ -257,11 +258,17 @@ footer {
   .header-list{
     display: none;
   }
-  #drop-down-icon{
-    display: block; 
+  #drop-down-icon {
+    display: block;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+  }
+  
+  #drop-down-icon.active {
+    transform: rotate(180deg);
   }
  
-  /*footer*/
+    /*footer*/
   .instagram-logo,
   .facebook-logo,
   .x-logo { 
