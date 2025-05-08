@@ -21,32 +21,36 @@
     <header>
       <nav class="nav-space">
         <a href="index.html">
-          <img src="icons/cinema-logo.png" alt="cinema-logo" class="cinema-logo" /></a>
-          <ul>
-            <li class="header-list"><a href="index.html">Home</a></li>
-            <li class="header-list"><a href="movie-list.html">Movies</a></li>
-            <li class="header-list"><a href="article-list.html">Articles</a></li>
-            <li class="header-list"><a href="login.html">Login</a></li>
-            <li class="header-list"><a href="watch-list.html">Watch List</a></li>
-            <li>
-              <a href="account.html"
-                ><img
-                  src="icons/account-icon.svg"
-                  alt="account-icon"
-                  class="icon"
-              /></a>
-            </li>
-            <li id="flex-search">
-              <div id="search-wrapper-header"></div>
-              <label for="search-header"
-                ><img
-                  src="icons/search-icon.svg"
-                  alt="search-icon"
-                  class="icon"
-                  id="icon"
-              /></label>
-            </li>
-          </ul>
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
+        <ul>
+          <li class="header-list"><a href="index.html">Home</a></li>
+          <li class="header-list"><a href="movie-list.html">Movies</a></li>
+          <li class="header-list"><a href="article-list.html">Articles</a></li>
+          <li class="header-list"><a href="login.html">Login</a></li>
+          <li class="header-list"><a href="watch-list.html">Watch List</a></li>
+          <li>
+            <a href="account.html"
+              ><img
+                src="icons/account-icon.svg"
+                alt="account-icon"
+                class="icon"
+            /></a>
+          </li>
+          <li id="flex-search">
+            <div id="search-wrapper-header"></div>
+            <label for="search-header"
+              ><img
+                src="icons/search-icon.svg"
+                alt="search-icon"
+                class="icon"
+                id="icon"
+            /></label>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="detail-main">
@@ -56,10 +60,105 @@
       <div>
         <p id="detail-title"></p>
         <div id="detail-star-container"></div>
+        <p id="detail-genres"></p>
         <p id="detail-description"></p>
       </div>
-      <div class="review-box-left"></div>
-      <div class="review-box-right"></div>
+      <section class="review-box-left">
+        <h1 class="review-header">WRITE A REVIEW</h1>
+        <div>
+          <form action="" id="review-form">
+            <p class="write-review-title">
+              <label id="title-label" for="rtitle">Title for Your Review</label>
+            </p>
+            <input
+              type="text"
+              id="rtitle"
+              class="write-review-box"
+              maxlength="60"
+              required
+            />
+            <div class="write-review-div">
+              <p class="write-review-title">
+                <label for="write-review">Your Review</label>
+              </p>
+              <div class="write-review-stars">
+                <img
+                  src="icons/star-hallow.svg"
+                  class="write-review-star"
+                  id="write-review-rating-one"
+                  alt="rating star"
+                />
+                <img
+                  src="icons/star-hallow.svg"
+                  class="write-review-star"
+                  id="write-review-rating-two"
+                  alt="rating star"
+                />
+                <img
+                  src="icons/star-hallow.svg"
+                  class="write-review-star"
+                  id="write-review-rating-three"
+                  alt="rating star"
+                />
+                <img
+                  src="icons/star-hallow.svg"
+                  class="write-review-star"
+                  id="write-review-rating-four"
+                  alt="rating star"
+                />
+                <img
+                  src="icons/star-hallow.svg"
+                  class="write-review-star"
+                  id="write-review-rating-five"
+                  alt="rating star"
+                />
+              </div>
+            </div>
+            <textarea
+              name=""
+              id="write-review"
+              rows="10"
+              maxlength="600"
+              class="write-review-box-area"
+              required
+            ></textarea>
+            <button type="reset" id="submit-button" form="review-form">
+              <img
+                src="icons/post-icon-red.png"
+                alt="Submit button"
+                id="image-button"
+              />
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="review-box-right">
+        <h1 class="review-header">REVIEWS</h1>
+        <div class="user-container">
+          <div id="user-box">
+            <div id="review-stars"></div>
+          </div>
+          <div class="user-text-box" id="user-one-review"></div>
+        </div>
+        <div class="user-container">
+          <div id="user-box-two">
+            <div id="review-stars-two"></div>
+          </div>
+          <div class="user-text-box" id="user-two-review"></div>
+        </div>
+        <div class="user-container">
+          <div id="user-box-three">
+            <div id="review-stars-three"></div>
+          </div>
+          <div class="user-text-box" id="user-three-review"></div>
+        </div>
+        <div class="user-container">
+          <div id="user-box-four">
+            <div id="review-stars-four"></div>
+          </div>
+          <div class="user-text-box" id="user-four-review"></div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
