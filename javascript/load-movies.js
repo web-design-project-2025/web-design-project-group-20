@@ -53,10 +53,19 @@ function createMovieElement(movie) {
   movieWatchlist.appendChild(watchlistIcon);
   movieElement.appendChild(movieWatchlist);
 
+  /* Added 10 lines (60,64,66,67,79,80,82,83,86,90) from
+chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
+
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  let userWatchlist = [];
+
   if (loggedInUser) {
     const userEmail = loggedInUser.email;
-    const saveWatchlist = localStorage.getItem(userEmail);
+    userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
+
+    if (userWatchlist.includes(movie.id)) {
+      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+    }
   }
 
   watchlistIcon.addEventListener("click", function () {
@@ -67,11 +76,18 @@ function createMovieElement(movie) {
       return;
     }
 
-    if (watchlistIcon.src.includes("watchlist-icon.svg")) {
-      watchlistIcon.src = "icons/watchlist-icon-full.svg";
-    } else {
+    const userEmail = loggedInUser.email;
+    let watchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
+
+    if (watchlist.includes(movie.id)) {
+      watchlist = watchlist.filter((id) => id !== movie.id);
       watchlistIcon.src = "icons/watchlist-icon.svg";
+    } else {
+      watchlist.push(movie.id);
+      watchlistIcon.src = "icons/watchlist-icon-full.svg";
     }
+
+    localStorage.setItem(userEmail, JSON.stringify(watchlist));
   });
 
   const starContainer = document.createElement("div");
