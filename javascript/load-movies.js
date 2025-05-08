@@ -38,18 +38,11 @@ function createMovieElement(movie) {
   starContainer.classList.add("movie-stars");
   movieElement.appendChild(starContainer);
 
-  function fullStar() {
-    const starElement = document.createElement("img");
-    starElement.classList.add("stars");
-    starElement.src = "icons/star-full.svg";
-    starContainer.appendChild(starElement);
-  }
-
-  function hollowStar() {
-    const starElement = document.createElement("img");
-    starElement.classList.add("stars");
-    starElement.src = "icons/star-hallow.svg";
-    starContainer.appendChild(starElement);
+  function createImageElement(c, source, container) {
+    const image = document.createElement("img");
+    image.classList.add(c);
+    image.src = source;
+    container.appendChild(image);
   }
 
   function numberOfReviews() {
@@ -59,8 +52,12 @@ function createMovieElement(movie) {
     starContainer.appendChild(reviewElement);
   }
 
-  Array.from({ length: movie.rating }, () => fullStar());
-  Array.from({ length: 5 - movie.rating }, () => hollowStar());
+  Array.from({ length: movie.rating }, () =>
+    createImageElement("stars", "icons/star-full.svg", starContainer)
+  );
+  Array.from({ length: 5 - movie.rating }, () =>
+    createImageElement("stars", "icons/star-hallow.svg", starContainer)
+  );
   numberOfReviews();
 
   return movieElement;
