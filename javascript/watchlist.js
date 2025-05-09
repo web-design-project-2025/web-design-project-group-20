@@ -1,19 +1,19 @@
 let movies = [];
 
-const watchlistContentElement = document.getElementById("movies-content");
+const watchlistContentElement = document.getElementById("watchlist-content");
 
 async function loadData() {
   const movieResponse = await fetch("data/movies.json");
   const movieJSON = await movieResponse.json();
   movies = movieJSON.movies;
 
-  if (document.getElementById("movies-content")) {
-    renderWatchlistContent();
+  if (document.getElementById("watchlist-content")) {
+    renderContent();
   }
 }
 
 function createMovieElement(movie) {
-  const movieElement = document.createElement("a");
+  const movieElement = document.createElement("div");
   movieElement.classList.add("movie-box");
 
   const detailLinkElement = document.createElement("a");
@@ -33,13 +33,11 @@ function createMovieElement(movie) {
   const movieName = document.createElement("p");
   movieName.innerText = movie.title;
   movieName.classList.add("movie-name");
-  movieElement.appendChild(movieName);
 
   const watchlistIcon = document.createElement("img");
   watchlistIcon.src = "icons/watchlist-icon.svg";
   watchlistIcon.alt = "add to watchlist button";
   watchlistIcon.classList.add("watchlist-icon");
-  movieElement.appendChild(watchlistIcon);
 
   movieWatchlist.appendChild(movieName);
   movieWatchlist.appendChild(watchlistIcon);
@@ -112,23 +110,24 @@ function createMovieElement(movie) {
 function renderContent() {
   watchlistContentElement.innerHTML = "";
 
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!loggedInUser) {
+    watchlistContentElement.innerHTML =
+      "<p> You need to log in to view your watchlist. </p>";
+    return;
+  }
+
+  const userEmail = loggedInUser.email;
+  let userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
+
+  if (userWatchlist.length === 0) {
+    watchlistContentElement.innerHTML = "<p>Your watchlist is empty.</p>";
+    return;
+  }
+
   for (let movie of watchlistMovies) {
     const movieElement = createMovieElement(movie);
     watchlistContentElement.appendChild(movieElement);
-  }
-}
-
-function renderWatchlistContent() {
-  watchlistContentElement.innerHTML = "";
-
-  while (movies.length > 5) {
-    let mov = Math.floor(Math.random() * movies.length);
-    movies.splice(mov, 1);
-  }
-
-  for (let movie of movies) {
-    const movieElement = createMovieElement(movie);
-    homeContentElement.appendChild(movieElement);
   }
 }
 
