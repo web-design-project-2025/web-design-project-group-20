@@ -120,12 +120,14 @@ a {
     gap: 2rem;
   }
 }
+
 @media only screen and (max-width: 1200px){
   .container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 }
+
 @media only screen and (max-width: 750px){
   .container {
     grid-template-columns: 1fr 1fr;
@@ -138,12 +140,14 @@ a {
     width: 19rem;
   }
 }
+
 @media only screen and (max-width: 670px){
   .movie-box {
     justify-self: center;
     width: 17rem;
   }
 }
+
 @media only screen and (max-width: 610px){
   .movie-box {
     justify-self: center;
@@ -153,12 +157,14 @@ a {
     display: block;
   }
 }
+
 @media only screen and (max-width: 540px){
   .movie-box {
     justify-self: center;
     width: 13rem;
   }
 }
+
 @media only screen and (max-width: 500px){
   .container {
     grid-template-columns: 1fr;
@@ -168,7 +174,6 @@ a {
     justify-self: center;
     width: 20rem;
   }
-  
   .movie-filter{
     margin: .1rem;
     margin-top: .5rem;
@@ -176,15 +181,15 @@ a {
   #movie-filter-clear{
     margin-top: .5rem;
   }
-  
 }
+
 @media only screen and (max-width: 400px){
   .movie-box {
     width: 17rem;
     margin-bottom: .8rem;
   }
- 
 }
+
 @media only screen and (max-width: 400px){
   .movie-filter{
     width: 30%;

@@ -44,6 +44,19 @@ nav ul {
 .header-list {
   margin-right: 4rem;
   margin-top: 1rem;
+  width: 2.5rem;
+}
+
+#header-watchlist {
+  width: 5rem;
+}
+
+#header-login {
+  margin-right: 3rem;
+}
+
+.header-text:hover {
+  font-weight: 600;
 }
 
 .icon {

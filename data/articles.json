@@ -10,6 +10,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/fleischer-logo.jpg"
         },
         {
@@ -39,6 +40,7 @@
         {
           "id": "image-1",
           "type": "image",
+          "class": "article-image",
           "text": "articles-images/rotoscope.png"
         },
         {
@@ -101,6 +103,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/e-t.jpeg"
         },
         {
@@ -130,6 +133,7 @@
         {
           "id": "image-et-1",
           "type": "image",
+          "class": "article-image",
           "text": "articles-images/e-t-spaceship.png"
         },
         {
@@ -168,6 +172,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/badfon-mononoke.jpg"
         },
         {
@@ -209,6 +214,7 @@
         {
           "id": "image-mononoke-1",
           "type": "image",
+          "class": "article-image",
           "text": "articles-images/mononoke-fight.png"
         },
         {
@@ -259,6 +265,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/Sailormoon.png"
         },
         {
@@ -288,6 +295,7 @@
         {
           "id": "image-sailor-1",
           "type": "image",
+          "class": "article-image",
           "text": "articles-images/tuxedo-mask.png"
         },
         {
@@ -344,6 +352,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/forest-poster.jpg"
         },
         {
@@ -442,6 +451,7 @@
         {
           "id": "hero-image",
           "type": "image",
+          "class": "article-hero",
           "text": "articles-images/castle-sky.png"
         },
         {
@@ -471,6 +481,7 @@
         {
           "id": "image-castle-1",
           "type": "image",
+          "class": "article-image",
           "text": "articles-images/laputa-fight.png"
         },
         {
