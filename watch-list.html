@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/search.css" />
-  <link rel="stylesheet" href="./css/watchlist.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <script src="javascript/header-search.js" defer></script>
-  <script src="javascript/drop-down-menu.js" defer></script>
-  <title>Home</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/watchlist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/header-search.js" defer></script>
+    <script src="javascript/drop-down-menu.js" defer></script>
+    <title>Home</title>
+  </head>
 
-<body>
-  <header>
-    <nav class="nav-space">
-      <a href="index.html">
-        <img
-          src="icons/cinema-logo.png"
-          alt="cinema-logo"
-          class="cinema-logo"
-      /></a>
-      <div class="dropdown-wrapper">
-        <img id="drop-down-icon" src="icons/drop-down-icon.svg" alt="dropdown icon">
-        <div class="menu-container" data-enter-list-items></div>
-      </div>
+  <body>
+    <header>
+      <nav class="nav-space">
+        <a href="index.html">
+          <img
+            src="icons/cinema-logo.png"
+            alt="cinema-logo"
+            class="cinema-logo"
+        /></a>
+        <div class="dropdown-wrapper">
+          <img
+            id="drop-down-icon"
+            src="icons/drop-down-icon.svg"
+            alt="dropdown icon"
+          />
+          <div class="menu-container" data-enter-list-items></div>
+        </div>
         <ul>
-          <li class="header-list"><a href="index.html">Home</a></li>
-          <li class="header-list"><a href="movie-list.html">Movies</a></li>
-          <li class="header-list"><a href="article-list.html">Articles</a></li>
-          <li class="header-list"><a href="login.html">Login</a></li>
-          <li class="header-list"><a href="watch-list.html">Watch List</a></li>
+          <li class="header-list">
+            <a class="header-text" href="index.html">Home</a>
+          </li>
+          <li class="header-list">
+            <a class="header-text" href="movie-list.html">Movies</a>
+          </li>
+          <li class="header-list">
+            <a class="header-text" href="article-list.html">Articles</a>
+          </li>
+          <li class="header-list" id="header-login">
+            <a class="header-text" href="login.html">Login</a>
+          </li>
+          <li class="header-list" id="header-watchlist">
+            <a class="header-text" href="watch-list.html">Watch List</a>
+          </li>
           <li>
             <a href="account.html"
               ><img
@@ -53,14 +69,14 @@
             /></label>
           </li>
         </ul>
-    </nav>
-  </header>
-  <main>
-<section class="top-of-page">
+      </nav>
+    </header>
+    <main>
+      <section class="top-of-page">
         <h1 class="top-of-page-title">WATCHLIST</h1>
       </section>
-  </main>
-<footer>
+    </main>
+    <footer>
       <section class="footer-container">
         <div class="footer-section">
           <h3 class="footer-titles">Quicklinks</h3>
@@ -99,7 +115,5 @@
         </div>
       </section>
     </footer>
-</body>
-
+  </body>
 </html>
-
