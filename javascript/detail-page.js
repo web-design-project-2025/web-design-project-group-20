@@ -50,10 +50,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     container.appendChild(para);
   }
 
-  function createImageElement(c, source, container) {
+  function createImageElement(c, source, container, alt) {
     const image = document.createElement("img");
     image.classList.add(c);
     image.src = source;
+    image.alt = alt;
     container.appendChild(image);
   }
 
@@ -66,15 +67,30 @@ document.addEventListener("DOMContentLoaded", async function () {
     rating,
     starCon
   ) {
-    createImageElement("user-image", imagesrc, container);
+    createImageElement(
+      "user-image",
+      imagesrc,
+      container,
+      "User profile picture"
+    );
     createParagraphElement("username", user.username, container);
     createParagraphElement("user-review-title", review.title, textContainer);
     createParagraphElement("user-review-text", review.text, textContainer);
     Array.from({ length: rating }, () =>
-      createImageElement("review-stars", "icons/star-full.svg", starCon)
+      createImageElement(
+        "review-stars",
+        "icons/star-full.svg",
+        starCon,
+        "Filled in star"
+      )
     );
     Array.from({ length: 5 - rating }, () =>
-      createImageElement("review-stars", "icons/star-hallow.svg", starCon)
+      createImageElement(
+        "review-stars",
+        "icons/star-hallow.svg",
+        starCon,
+        "Hollow Star"
+      )
     );
   }
 
@@ -107,10 +123,20 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
 
       Array.from({ length: film.rating }, () =>
-        createImageElement("film-stars", "icons/star-full.svg", filmStars)
+        createImageElement(
+          "film-stars",
+          "icons/star-full.svg",
+          filmStars,
+          "Filled in star"
+        )
       );
       Array.from({ length: 5 - film.rating }, () =>
-        createImageElement("film-stars", "icons/star-hallow.svg", filmStars)
+        createImageElement(
+          "film-stars",
+          "icons/star-hallow.svg",
+          filmStars,
+          "Hollow star"
+        )
       );
 
       createParagraphElement(
@@ -395,9 +421,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         let type = art[i].type;
         let classes = art[i].class;
         let text = art[i].text;
+        let alt = art[i].alt;
 
         if (type == "image") {
-          createImageElement(classes, text, articleBox);
+          createImageElement(classes, text, articleBox, alt);
         }
         if (type == "paragraph" || type == "header1") {
           createParagraphElement(classes, text, articleBox);
