@@ -125,6 +125,13 @@ function renderContent() {
     return;
   }
 
+  /*Added line 129-130 with the help of chatgpt :
+  https://chatgpt.com/share/681e592e-23b0-800a-a0c0-b218e1c47eb5 */
+
+  const watchlistMovies = movies.filter((movie) =>
+    userWatchlist.includes(movie.id)
+  );
+
   for (let movie of watchlistMovies) {
     const movieElement = createMovieElement(movie);
     watchlistContentElement.appendChild(movieElement);
