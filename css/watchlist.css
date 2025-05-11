@@ -59,6 +59,12 @@ body {
 .movie-sides {
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 4.5%;
+}
+
+.watchlist-text-container {
+  margin-bottom: 40vh;
+  color: var(--dark-green);
 }
 
 .movie-body {

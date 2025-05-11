@@ -113,7 +113,7 @@ function renderContent() {
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!loggedInUser) {
     watchlistContentElement.innerHTML =
-      "<p> You need to log in to view your watchlist. </p>";
+      "<div class='watchlist-text-container'><p>You need to log in to view your watchlist.</p></div>";
     return;
   }
 
@@ -121,7 +121,8 @@ function renderContent() {
   let userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
   if (userWatchlist.length === 0) {
-    watchlistContentElement.innerHTML = "<p>Your watchlist is empty.</p>";
+    watchlistContentElement.innerHTML =
+      "<div class='watchlist-text-container'><p>Your watchlist is empty.</p></div>";
     return;
   }
 
