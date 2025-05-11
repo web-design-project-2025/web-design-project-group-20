@@ -151,6 +151,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* dark mode*/
+body.dark-mode{
+  background-color: black;
+}
+
 @media only screen and (max-width: 900px){
   #settings-list1,
   #settings-list2,

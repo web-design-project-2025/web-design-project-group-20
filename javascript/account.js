@@ -115,7 +115,7 @@ and clicking it again will make it dissapear */
               <div id="bowl"> 
                 <div id="settings-list1"> 
                   <h5>Light mode:</h5> 
-                  <img class="icon"" id="light" src="icons/sun-green.svg" alt="light mode button">
+                  <img class="icon" id="light" src="icons/sun-green.svg" alt="light mode button">
                 </div> 
                 <div id="settings-list2"> 
                   <h5>Dark mode:</h5> 
@@ -124,7 +124,33 @@ and clicking it again will make it dissapear */
               </div> 
             </section>
   `;
+        const lightModeButton = document.getElementById("light");
+        const darkModeButton = document.getElementById("dark");
 
-    //change icons to light and dark mode icons
-  });
+        console.log("Light button:", lightModeButton);
+        console.log("Dark button:", darkModeButton);
+    
+        if (localStorage.getItem("darkMode") === "enabled") {
+          enableDarkMode();
+        }
+  
+        lightModeButton.addEventListener("click", () => {
+          disableDarkMode();
+        });
+
+        darkModeButton.addEventListener("click", () => {
+          enableDarkMode();
+
+        });
+
+        function enableDarkMode() {
+          document.body.classList.add("dark-mode");
+          localStorage.setItem("darkMode", "enabled");
+        }
+
+        function disableDarkMode() {
+          document.body.classList.remove("dark-mode");
+          localStorage.setItem("darkMode", "disabled");
+        }
+     });
 });
