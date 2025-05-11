@@ -67,7 +67,7 @@ body {
   margin-left: auto;
   margin-top: 5rem;
   width: 95%;
-  height: 60rem;
+  height: 62rem;
 }
 
 .review-box-left {
@@ -75,7 +75,7 @@ body {
   margin-right: auto;
   margin-top: 5rem;
   width: 95%;
-  height: 60rem;
+  height: 62rem;
 }
 
 .review-header {
@@ -324,6 +324,9 @@ body {
   .film-stars{
     width: 2rem;
     height: 2rem;
+  }
+  .review-box-right{
+    height: 65rem;
   }
 }
 @media only screen and (max-width: 400px){
