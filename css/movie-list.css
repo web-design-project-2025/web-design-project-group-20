@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: auto;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .movie-box {
@@ -18,9 +19,11 @@
 .movie-name {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
+  margin-bottom: 0;
   padding-right: 3rem;
   color: black;
   font-weight: bold;
+  height: 40px;
 }
 
 .movie-sides {
@@ -34,6 +37,7 @@
 
 .movie-stars {
   margin-left: 0.5rem;
+  height: 2rem;
   display: flex;
   gap: 0.1rem;
 }
@@ -46,6 +50,8 @@
   font-size: 1rem;
   color: var(--brown);
   margin-left: 6rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
 }
 
 a {
@@ -110,6 +116,21 @@ a {
   height: 100%;
   width: 100%;
   padding-top: 0.6rem;
+}
+/* Watchlist icon */
+
+.movie-watchlist {
+  display: flex;
+}
+
+.watchlist-icon {
+  width: 1.7rem;
+  height: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  padding-right: 0.6rem;
+  padding-bottom: 1.5rem;
+
 }
 
 @media only screen and (max-width: 1410px){
@@ -194,4 +215,3 @@ a {
   .movie-filter{
     width: 30%;
   }
-}

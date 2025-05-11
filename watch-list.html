@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/search.css" />
     <link rel="stylesheet" href="./css/watchlist.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <link rel="stylesheet" href="./css/search.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +16,8 @@
     />
     <script src="javascript/header-search.js" defer></script>
     <script src="javascript/drop-down-menu.js" defer></script>
-    <title>Home</title>
+        <script src="javascript/header-search.js" defer></script>
+    <title>Watch List</title>
   </head>
 
   <body>
@@ -26,6 +29,7 @@
             alt="cinema-logo"
             class="cinema-logo"
         /></a>
+
         <div class="dropdown-wrapper">
           <img
             id="drop-down-icon"
@@ -71,12 +75,18 @@
         </ul>
       </nav>
     </header>
+    
     <main>
       <section class="top-of-page">
         <h1 class="top-of-page-title">WATCHLIST</h1>
       </section>
+
+      <div class="watchlist-movie-sides">
+        <div class="watchlist-container" id="watchlist-content"></div>
+      </div>
     </main>
-    <footer>
+    
+    <footer class="footer-watchlist">
       <section class="footer-container">
         <div class="footer-section">
           <h3 class="footer-titles">Quicklinks</h3>
