@@ -6,7 +6,7 @@ img {
 body {
   background-color: var(--off-white);
 }
-#account-content{
+#account-content {
   min-height: 19.5rem;
 }
 /*button flex*/
@@ -23,6 +23,9 @@ body {
   margin-top: 3vw;
 }
 
+#bowl-logged-out {
+  text-align: center;
+}
 
 /*button flex end*/
 
@@ -82,11 +85,11 @@ body {
 #settings-list3,
 #settings-list4,
 #settings-list5,
-.button-click{
+.button-click {
   margin-left: 25vw;
 }
 #settings-list3,
-#settings-list4{
+#settings-list4 {
   margin-bottom: 1rem;
 }
 #bowl2 {
@@ -151,51 +154,50 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   #settings-list1,
   #settings-list2,
   #settings-list3,
   #settings-list4,
-  #settings-list5
-  {
+  #settings-list5 {
     font-size: 1.4rem;
   }
-  .button-click{
+  .button-click {
     margin-top: 1.5rem;
   }
 }
-@media only screen and (max-width: 600px){
-  .list-account img{
-    width: 8.5rem ;
+@media only screen and (max-width: 600px) {
+  .list-account img {
+    width: 8.5rem;
   }
-  .list-account{
+  .list-account {
     margin: 3vw;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 490px){
-  .list-account img{
-    width: 8rem ;
+@media only screen and (max-width: 490px) {
+  .list-account img {
+    width: 8rem;
   }
-  .list-account{
+  .list-account {
     margin: 2.5vw;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 430px){
-  .list-account img{
-    width: 7.5rem ;
+@media only screen and (max-width: 430px) {
+  .list-account img {
+    width: 7.5rem;
   }
-  .list-account{
+  .list-account {
     margin: 2.3vw;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 395px){
-  .list-account img{
-    width: 6.2rem ;
+@media only screen and (max-width: 395px) {
+  .list-account img {
+    width: 6.2rem;
   }
-  .list-account{
+  .list-account {
     margin: 2.2vw;
     margin-bottom: 0;
   }
