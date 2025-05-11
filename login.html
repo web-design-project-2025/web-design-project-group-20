@@ -14,6 +14,7 @@
     />
     <script src="javascript/header-search.js" defer></script>
     <script src="javascript/login.js" defer></script>
+    <script src="javascript/drop-down-menu.js" defer></script>
     <title>Home</title>
   </head>
 
@@ -26,6 +27,14 @@
             alt="cinema-logo"
             class="cinema-logo"
         /></a>
+        <div class="dropdown-wrapper">
+          <img
+            id="drop-down-icon"
+            src="icons/drop-down-icon.svg"
+            alt="dropdown icon"
+          />
+          <div class="menu-container" data-enter-list-items></div>
+        </div>
         <ul>
           <li class="header-list">
             <a class="header-text" href="index.html">Home</a>
@@ -70,13 +79,14 @@
       </section>
       <div class="log-in-box">
         <section class="log-in-text">
-          <label for="email"> Email</label>
-          <input type="text" id="email" />
-
-          <br />
-
-          <label for="password"> Password</label>
-          <input type="text" id="password" />
+          <div class="sign-in-flex1">
+            <label class="label" class="label" for="email"> Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="sign-in-flex">
+            <label class="label" class="label" for="password"> Password</label>
+            <input type="text" id="password" />
+          </div>
         </section>
 
         <div id="login container">

@@ -13,6 +13,7 @@
     />
     <script src="javascript/search-results.js" defer></script>
     <script src="javascript/header-search.js" defer></script>
+    <script src="javascript/drop-down-menu.js" defer></script>
     <title>Search results</title>
   </head>
   <body>
@@ -24,6 +25,14 @@
             alt="cinema-logo"
             class="cinema-logo"
         /></a>
+        <div class="dropdown-wrapper">
+          <img
+            id="drop-down-icon"
+            src="icons/drop-down-icon.svg"
+            alt="dropdown icon"
+          />
+          <div class="menu-container" data-enter-list-items></div>
+        </div>
         <ul>
           <li class="header-list">
             <a class="header-text" href="index.html">Home</a>

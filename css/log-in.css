@@ -1,7 +1,9 @@
 body {
   background-color: var(--off-white);
 }
-
+main{
+  min-height: 19.5rem;
+}
 #email {
   margin-left: 4rem;
   margin-top: 1rem;
@@ -48,7 +50,7 @@ body {
   width: 26rem;
   height: auto;
   padding: 1rem;
-  padding-bottom: 1.3rem;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
@@ -77,11 +79,11 @@ body {
 }
 
 .footer-container {
-  position: absolute;
   bottom: 0;
   background-color: var(--red);
   width: 100%;
   padding-bottom: 1rem;
+  margin-top: 7rem;
 }
 footer {
   background-color: transparent;
@@ -96,4 +98,79 @@ footer {
   border-radius: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px){
+.log-in-box{
+  width: 22rem;
+}
+.signup-text{
+  margin-left: 6rem;
+  margin-top: -1rem;
+}
+.white-account-text{
+  font-size: .78rem;
+}
+.sign-yellow{
+  font-size: .9rem;
+}
+#email,
+#password {
+  width: 20rem;
+  height: 1.2rem;
+  margin-left: 0;
+  margin-top: .1rem;
+  margin-bottom: 1rem;
+}
+
+.red-login{
+  width: 6rem;
+  height: 2.4rem;
+  margin-left: 15rem;
+  font-size: 1rem;
+}
+.sign-in-flex{
+  margin-top: .1rem;
+  margin-left: .5rem;
+}
+.sign-in-flex1{
+  margin-top: .7rem;
+  margin-left: .5rem;
+}
+}
+@media only screen and (max-width: 410px){
+.log-in-box{
+  width: 20rem;
+}
+
+.signup-text{
+  margin-left: 3.8rem;
+}
+#email,
+#password {
+  width: 18rem;
+}
+.red-login{
+  width: 7rem;
+  height: 2.5rem;
+  margin-left: 12rem;
+  font-size: 1.1rem;
+}
+
+}
+@media only screen and (max-width: 380px){
+  .log-in-box{
+    width: 17rem;
+  }
+  .signup-text{
+    margin-left: 1rem;
+  }
+  #email,
+  #password {
+    width: 15rem;
+  }
+
+  .red-login{
+    margin-left: 9rem;
+  }
 }
