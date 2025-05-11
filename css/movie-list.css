@@ -130,11 +130,11 @@ a {
   margin-top: 0.5rem;
   padding-right: 0.6rem;
   padding-bottom: 1.5rem;
-
 }
 
-@media only screen and (max-width: 1410px){
-  .container {
+@media only screen and (max-width: 1410px) {
+  .container,
+  #watchlist-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
@@ -142,52 +142,55 @@ a {
   }
 }
 
-@media only screen and (max-width: 1200px){
-  .container {
+@media only screen and (max-width: 1200px) {
+  .container,
+  #watchlist-content {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 }
 
-@media only screen and (max-width: 750px){
-  .container {
+@media only screen and (max-width: 750px) {
+  .container,
+  #watchlist-content {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   .movie-box {
     justify-self: center;
     width: 19rem;
   }
 }
 
-@media only screen and (max-width: 670px){
+@media only screen and (max-width: 670px) {
   .movie-box {
     justify-self: center;
     width: 17rem;
   }
 }
 
-@media only screen and (max-width: 610px){
+@media only screen and (max-width: 610px) {
   .movie-box {
     justify-self: center;
     width: 15rem;
   }
-  .filter-buttons{
+  .filter-buttons {
     display: block;
   }
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 540px) {
   .movie-box {
     justify-self: center;
     width: 13rem;
   }
 }
 
-@media only screen and (max-width: 500px){
-  .container {
+@media only screen and (max-width: 500px) {
+  .container,
+  #watchlist-content {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
@@ -195,24 +198,24 @@ a {
     justify-self: center;
     width: 20rem;
   }
-  .movie-filter{
-    margin: .1rem;
-    margin-top: .5rem;
+  .movie-filter {
+    margin: 0.1rem;
+    margin-top: 0.5rem;
   }
-  #movie-filter-clear{
-    margin-top: .5rem;
+  #movie-filter-clear {
+    margin-top: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   .movie-box {
     width: 17rem;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 400px){
-  .movie-filter{
+@media only screen and (max-width: 400px) {
+  .movie-filter {
     width: 30%;
   }
 }
