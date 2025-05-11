@@ -1,7 +1,7 @@
 body {
   background-color: var(--off-white);
 }
-main{
+main {
   min-height: 27rem;
 }
 #email {
@@ -100,69 +100,68 @@ footer {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 500px){
-.log-in-box{
-  width: 22rem;
-}
-.signup-text{
-  margin-left: 6rem;
-  margin-top: -1rem;
-}
-.white-account-text{
-  font-size: .78rem;
-}
-.sign-yellow{
-  font-size: .9rem;
-}
-#email,
-#password {
-  width: 20rem;
-  height: 1.2rem;
-  margin-left: 0;
-  margin-top: .1rem;
-  margin-bottom: 1rem;
-}
+@media only screen and (max-width: 500px) {
+  .log-in-box {
+    width: 22rem;
+  }
+  .signup-text {
+    margin-left: 6rem;
+    margin-top: -1rem;
+  }
+  .white-account-text {
+    font-size: 0.78rem;
+  }
+  .sign-yellow {
+    font-size: 0.9rem;
+  }
+  #email,
+  #password {
+    width: 20rem;
+    height: 1.2rem;
+    margin-left: 0;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
 
-.red-login{
-  width: 6rem;
-  height: 2.4rem;
-  margin-left: 15rem;
-  font-size: 1rem;
+  .red-login {
+    width: 6rem;
+    height: 2.4rem;
+    margin-left: 15rem;
+    font-size: 1rem;
+  }
+  .sign-in-flex {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+  }
+  .sign-in-flex1 {
+    margin-top: 0.7rem;
+    margin-left: 0.5rem;
+  }
 }
-.sign-in-flex{
-  margin-top: .1rem;
-  margin-left: .5rem;
-}
-.sign-in-flex1{
-  margin-top: .7rem;
-  margin-left: .5rem;
-}
-}
-@media only screen and (max-width: 410px){
-.log-in-box{
-  width: 20rem;
-}
+@media only screen and (max-width: 410px) {
+  .log-in-box {
+    width: 20rem;
+  }
 
-.signup-text{
-  margin-left: 3.8rem;
+  .signup-text {
+    margin-left: 3.8rem;
+  }
+  #email,
+  #password {
+    width: 18rem;
+  }
+  .red-login {
+    width: 7rem;
+    height: 2.5rem;
+    margin-left: 12rem;
+    font-size: 1.1rem;
+  }
 }
-#email,
-#password {
-  width: 18rem;
-}
-.red-login{
-  width: 7rem;
-  height: 2.5rem;
-  margin-left: 12rem;
-  font-size: 1.1rem;
-}
-
-}
-@media only screen and (max-width: 380px){
-  .log-in-box{
+@media only screen and (max-width: 380px) {
+  .log-in-box {
     width: 17rem;
   }
-  .signup-text{
+  .signup-text {
     margin-left: 1rem;
   }
   #email,
@@ -170,7 +169,7 @@ footer {
     width: 15rem;
   }
 
-  .red-login{
+  .red-login {
     margin-left: 9rem;
   }
 }
