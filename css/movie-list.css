@@ -111,3 +111,17 @@ a {
   width: 100%;
   padding-top: 0.6rem;
 }
+
+/* Watchlist icon */
+
+.movie-watchlist {
+  display: flex;
+  align-items: right;
+}
+
+.watchlist-icon {
+  width: 1.7rem;
+  height: auto;
+  margin-left: auto;
+  padding-right: 0.6rem;
+}

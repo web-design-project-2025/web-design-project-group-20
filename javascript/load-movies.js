@@ -17,21 +17,78 @@ async function loadData() {
   }
 }
 
+/* added/changed lines 31-32, 39-40 with 
+the help of chatgpt: https://chatgpt.com/share/6818ac61-8934-800a-aa6d-3a57c3cc048f  */
+
 function createMovieElement(movie) {
   const movieElement = document.createElement("a");
   movieElement.classList.add("movie-box");
-  movieElement.href = `detail-page.html?title=${movie.title}`;
+
+  const detailLinkElement = document.createElement("a");
+  detailLinkElement.href = `detail-page.html?title=${movie.title}`;
 
   const imageElement = document.createElement("img");
   imageElement.src = movie.image;
   imageElement.alt = movie.alt;
   imageElement.classList.add("posters");
-  movieElement.appendChild(imageElement);
+
+  detailLinkElement.appendChild(imageElement);
+  movieElement.appendChild(detailLinkElement);
+
+  const movieWatchlist = document.createElement("div");
+  movieWatchlist.classList.add("movie-watchlist");
 
   const movieName = document.createElement("p");
   movieName.innerText = movie.title;
   movieName.classList.add("movie-name");
   movieElement.appendChild(movieName);
+
+  const watchlistIcon = document.createElement("img");
+  watchlistIcon.src = "icons/watchlist-icon.svg";
+  watchlistIcon.alt = "add to watchlist button";
+  watchlistIcon.classList.add("watchlist-icon");
+  movieElement.appendChild(watchlistIcon);
+
+  movieWatchlist.appendChild(movieName);
+  movieWatchlist.appendChild(watchlistIcon);
+  movieElement.appendChild(movieWatchlist);
+
+  /* Added 10 lines (60,64,66,67,79,80,82,83,86,90) from
+chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
+
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  let userWatchlist = [];
+
+  if (loggedInUser) {
+    const userEmail = loggedInUser.email;
+    userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
+
+    if (userWatchlist.includes(movie.id)) {
+      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+    }
+  }
+
+  watchlistIcon.addEventListener("click", function () {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (!loggedInUser) {
+      alert("You need to log in to add movies to the watchlist");
+      return;
+    }
+
+    const userEmail = loggedInUser.email;
+    let watchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
+
+    if (watchlist.includes(movie.id)) {
+      watchlist = watchlist.filter((id) => id !== movie.id);
+      watchlistIcon.src = "icons/watchlist-icon.svg";
+    } else {
+      watchlist.push(movie.id);
+      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+    }
+
+    localStorage.setItem(userEmail, JSON.stringify(watchlist));
+  });
 
   const starContainer = document.createElement("div");
   starContainer.innerHTML = "";
