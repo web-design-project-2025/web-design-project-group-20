@@ -39,24 +39,7 @@ body {
   gap: 2rem;
 }
 
-.movie-box {
-  justify-self: center;
-  width: 15rem;
-}
-
-.posters {
-  width: 100%;
-}
-
-.movie-name {
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  padding-right: 3rem;
-  color: black;
-  font-weight: bold;
-}
-
-.movie-sides {
+.watchlist-movie-sides {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4.5%;
@@ -65,42 +48,4 @@ body {
 .watchlist-text-container {
   margin-bottom: 40vh;
   color: var(--dark-green);
-}
-
-.movie-body {
-  background-color: var(--off-white);
-}
-
-.movie-stars {
-  margin-left: 0.5rem;
-  display: flex;
-  gap: 0.1rem;
-}
-
-.stars {
-  width: 1.2rem;
-}
-
-.number-of-reviews {
-  font-size: 1rem;
-  color: var(--brown);
-  margin-left: 6rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Watchlist icon */
-
-.movie-watchlist {
-  display: flex;
-  align-items: right;
-}
-
-.watchlist-icon {
-  width: 1.7rem;
-  height: auto;
-  margin-left: auto;
-  padding-right: 0.6rem;
 }
