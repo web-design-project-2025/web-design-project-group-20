@@ -113,7 +113,7 @@ function renderContent() {
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!loggedInUser) {
     watchlistContentElement.innerHTML =
-      "<div class='watchlist-text-container'><p>You need to log in to view your watchlist.</p></div>";
+      "<div class='watchlist-text-container'><p>Log in to view your watchlist.</p></div>";
     return;
   }
 
