@@ -2,7 +2,7 @@ body {
   background-color: var(--off-white);
 }
 main{
-  min-height: 19.5rem;
+  min-height: 27rem;
 }
 #email {
   margin-left: 4rem;
