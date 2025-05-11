@@ -230,6 +230,10 @@ body {
     margin-top: 0.7rem;
     font-size: 1.1rem;
   }
+  .review-box-right,
+  .review-box-left{
+    height: 70rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -238,7 +242,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   #detail-description {
     font-size: 1rem;
   }
@@ -248,6 +252,10 @@ body {
   }
   .details-container {
     margin-top: 13%;
+  }
+  .review-box-right,
+  .review-box-left{
+    height: 80rem;
   }
 }
 
