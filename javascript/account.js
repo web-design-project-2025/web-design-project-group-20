@@ -124,33 +124,32 @@ and clicking it again will make it dissapear */
               </div> 
             </section>
   `;
-        const lightModeButton = document.getElementById("light");
-        const darkModeButton = document.getElementById("dark");
+         // code from previus project
+          const lightModeButton = document.getElementById("light");
+          const darkModeButton = document.getElementById("dark");
 
-        console.log("Light button:", lightModeButton);
-        console.log("Dark button:", darkModeButton);
-    
-        if (localStorage.getItem("darkMode") === "enabled") {
-          enableDarkMode();
-        }
-  
-        lightModeButton.addEventListener("click", () => {
-          disableDarkMode();
-        });
+          if (localStorage.getItem("darkMode") === "enabled") {
+            enableDarkMode();
+          }
 
-        darkModeButton.addEventListener("click", () => {
-          enableDarkMode();
+          lightModeButton.addEventListener("click", () => {
+            disableDarkMode();
+          });
 
-        });
+          darkModeButton.addEventListener("click", () => {
+            enableDarkMode();
 
-        function enableDarkMode() {
-          document.body.classList.add("dark-mode");
-          localStorage.setItem("darkMode", "enabled");
-        }
+          });
 
-        function disableDarkMode() {
-          document.body.classList.remove("dark-mode");
-          localStorage.setItem("darkMode", "disabled");
-        }
+          function enableDarkMode() {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("darkMode", "enabled");
+          }
+
+          function disableDarkMode() {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("darkMode", "disabled");
+          }
      });
+
 });

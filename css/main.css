@@ -6,9 +6,15 @@
   --dark-green: #4f867e;
   --darker-green: #2e6960;
   --off-white: #fbf1cd;
-  --light-brown: #bc7d57;
   --brown: #624330;
   --dark-red: #953635;
+}
+:root {
+  --off-white-dm: #e1d7b6;
+  --red-dm: #4e161c;
+  --light-red-dm: #982727;
+  --green-dm: #1e4741;
+  --dark-green-dm: #103535;
 }
 
 /* Header (links/buttons and logo */
@@ -23,6 +29,10 @@ main{
 header {
   background-color: var(--red);
   height: 5rem;
+}
+body.dark-mode header{
+  background-color: var(--red-dm);
+  color: var(--off-white-dm);
 }
 
 nav a {
@@ -77,7 +87,12 @@ nav ul {
 .icon, .search-header{
   align-items: center;
 }
-
+body.dark-mode #account-icon{
+  src: url(../icons/account-icon-dm.svg);
+}
+body.dark-mode #icon{
+  src: url(../icons/search-icon-dm.svg);
+}
 
 .cinema-logo {
   width: 190px;
@@ -102,7 +117,9 @@ h1 {
   margin-bottom: 3rem;
   margin-top: 0;
 }
-
+body.dark-mode .top-of-page{
+  background-color: var(--green-dm);
+}
 .top-of-page-title {
   text-align: center;
   margin-top: 0;
@@ -110,11 +127,18 @@ h1 {
   font-size: 2.4rem;
   color: var(--dark-green);
 }
+body.dark-mode .top-of-page-title{
+  color: var(--off-white-dm);
+}
 
 /* Footer */
 footer {
   background-color: var(--red);
   padding-bottom: 1rem;
+}
+body.dark-mode footer{
+  background-color: var(--red-dm);
+  color: var(--off-white-dm);
 }
 
 .footer-container {
@@ -199,6 +223,9 @@ footer {
   position: relative;
   z-index: 2070;
 }
+body.dark-mode #drop-down-icon{
+  src: url(../icons/drop-down-icon-dm.svg);
+}
 
 .dropdown-wrapper {
   position: relative;
@@ -221,6 +248,9 @@ footer {
   left: 50%;
   z-index: 2000;
   transform: translateX(-50%);
+}
+body.dark-mode .header-ul-menu{
+  background-color: var(--red-dm);
 }
 
 .menu-container{

@@ -25,6 +25,9 @@
   font-weight: bold;
   height: 40px;
 }
+body.dark-mode .movie-name{
+  color: var(--off-white-dm);
+}
 
 .movie-sides {
   margin-left: 5%;
@@ -33,6 +36,9 @@
 
 .movie-body {
   background-color: var(--off-white);
+}
+body.dark-mode{
+  background-color: var(--dark-green-dm);
 }
 
 .movie-stars {
@@ -53,15 +59,17 @@
   margin-top: 0.4rem;
   margin-bottom: 0;
 }
-
-a {
-  text-decoration: none;
+body.dark-mode .number-of-reviews {
+  color: var(--off-white-dm);
 }
 
 .movie-line {
-  height: 0.2rem;
+  height: 0.3rem;
   background-color: var(--dark-green);
   margin-bottom: 2rem;
+}
+body.dark-mode .movie-line{
+  background-color: var(--green-dm);
 }
 
 .filter-buttons {
@@ -82,6 +90,10 @@ a {
   background-color: var(--red);
   transition-duration: 0.2s;
 }
+body.dark-mode .movie-filter {
+  background-color: var(--light-red-dm);
+  border-color: var(--light-red-dm);
+}
 
 .movie-filter:hover {
   font-weight: bold;
@@ -100,10 +112,18 @@ a {
   visibility: hidden;
   transition-duration: 0.3s;
 }
+body.dark-mode #movie-filter-clear {
+  background-color: var(--darker-green);
+  border-color: var(--darker-green);
+}
 
 #movie-filter-clear:hover {
   background-color: var(--red);
   border-color: var(--red);
+}
+body.dark-mode #movie-filter-clear:hover {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
 }
 
 #movie-filter-comedy,
@@ -116,7 +136,9 @@ a {
   height: 100%;
   width: 100%;
   padding-top: 0.6rem;
+  text-decoration: none;
 }
+
 /* Watchlist icon */
 
 .movie-watchlist {

@@ -6,6 +6,10 @@ img {
 body {
   background-color: var(--off-white);
 }
+
+body.dark-mode{
+  background-color: var(--dark-green-dm);
+}
 #account-content{
   min-height: 19.5rem;
 }
@@ -25,7 +29,6 @@ body {
 
 
 /*button flex end*/
-
 .button-click {
   background-color: var(--red);
   border: 2px solid var(--dark-red);
@@ -151,10 +154,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* dark mode*/
-body.dark-mode{
-  background-color: black;
-}
+
 
 @media only screen and (max-width: 900px){
   #settings-list1,
@@ -185,6 +185,9 @@ body.dark-mode{
   .list-account{
     margin: 2.5vw;
     margin-bottom: 0;
+  }
+  #button-list{
+    display: block;
   }
 }
 @media only screen and (max-width: 430px){

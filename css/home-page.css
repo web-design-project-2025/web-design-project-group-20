@@ -68,6 +68,9 @@ h2 {
   background-color: var(--off-white);
   padding-bottom: 3rem;
 }
+body.dark-mode .home-movies{
+  background-color: var(--green-dm);
+}
 
 .home-movies-title {
   color: var(--dark-green);
@@ -75,6 +78,10 @@ h2 {
   font-size: 2rem;
   margin-left: 4rem;
   margin-bottom: 3rem;
+}
+body.dark-mode .home-movies-title, 
+body.dark-mode .home-articles-title{
+  color: var(--off-white-dm);
 }
 .home-movies-container {
   display: grid;
@@ -89,12 +96,19 @@ h2 {
   background-color: var(--light-green);
   padding-bottom: 3rem;
 }
+body.dark-mode .home-articles{
+  background-color: var(--dark-green-dm);
+}
 
 .home-articles-title {
   color: black;
   font-weight: bold;
   font-size: 2rem;
   margin-left: 4rem;
+}
+body.dark-mode .home-movies-title, 
+body.dark-mode .home-articles-title{
+  color: var(--off-white-dm);
 }
 
 .home-articles-container {
