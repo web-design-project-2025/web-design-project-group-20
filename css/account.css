@@ -31,11 +31,17 @@ body {
 
 .button-click {
   background-color: var(--red);
-  border: 2px solid var(--dark-red);
+  border: none;
   color: var(--off-white);
   border-radius: 0.5rem;
   font-size: 0.9rem;
   margin-top: 1rem;
+  font-family: "Kumbh Sans";
+  transition-duration: 0.2s;
+}
+
+.button-click:hover {
+  font-weight: bold;
 }
 
 #show-password {

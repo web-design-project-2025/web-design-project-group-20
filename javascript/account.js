@@ -72,8 +72,10 @@ and clicking it again will make it dissapear */
           passwordText.textContent === "*".repeat(loggedInUser.password.length)
         ) {
           passwordText.textContent = loggedInUser.password;
+          showPasswordButton.style.fontWeight = "bold";
         } else {
           passwordText.textContent = "*".repeat(loggedInUser.password.length);
+          showPasswordButton.style.fontWeight = "";
         }
       });
 
