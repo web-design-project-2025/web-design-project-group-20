@@ -15,6 +15,12 @@ async function loadData() {
   } else if (document.getElementById("home-movie-content")) {
     homeRenderContent();
   }
+  if (localStorage.getItem("darkMode") === "enabled") {
+    // Re-apply dark mode to update dynamically loaded icons
+    if (typeof enableDarkMode === "function") {
+      enableDarkMode();
+    }
+  }
 }
 
 /* added/changed lines 31-32, 39-40 with 

@@ -144,11 +144,23 @@ and clicking it again will make it dissapear */
           function enableDarkMode() {
             document.body.classList.add("dark-mode");
             localStorage.setItem("darkMode", "enabled");
+
+            const lightIcon = document.getElementById("light");
+            const darkIcon = document.getElementById("dark");
+          
+            if (lightIcon) lightIcon.src = "icons/sun-dm.svg";
+            if (darkIcon) darkIcon.src = "icons/moon-dm.svg";
           }
 
           function disableDarkMode() {
             document.body.classList.remove("dark-mode");
             localStorage.setItem("darkMode", "disabled");
+
+            const lightIcon = document.getElementById("light");
+            const darkIcon = document.getElementById("dark");
+          
+            if (lightIcon) lightIcon.src = "icons/sun-green.svg";
+            if (darkIcon) darkIcon.src = "icons/moon-green.svg";
           }
      });
 

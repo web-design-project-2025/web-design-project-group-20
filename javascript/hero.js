@@ -1,3 +1,10 @@
+/*sourses for hero image logic
+https://chatgpt.com/share/682223e3-cbf8-8002-adf3-b7413f273aae 
+
+smal thing for the animation, (sory for part of it being in Swedish)
+https://chatgpt.com/share/6822246f-dcac-8002-864a-ec974decf569
+*/
+
 fetch("data/movies.json")
   .then((response) => {
     if (!response.ok) {

@@ -30,6 +30,7 @@ header {
   background-color: var(--red);
   height: 5rem;
 }
+
 body.dark-mode header{
   background-color: var(--red-dm);
   color: var(--off-white-dm);
@@ -86,12 +87,6 @@ nav ul {
 
 .icon, .search-header{
   align-items: center;
-}
-body.dark-mode #account-icon{
-  src: url(../icons/account-icon-dm.svg);
-}
-body.dark-mode #icon{
-  src: url(../icons/search-icon-dm.svg);
 }
 
 .cinema-logo {
