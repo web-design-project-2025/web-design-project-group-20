@@ -1,5 +1,6 @@
 let movies = [];
 
+const watchlistWarningElement = document.getElementById("watchlist-warning");
 const watchlistContentElement = document.getElementById("watchlist-content");
 
 async function loadData() {
@@ -112,8 +113,8 @@ function renderContent() {
 
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!loggedInUser) {
-    watchlistContentElement.innerHTML =
-      "<div class='watchlist-text-container'><p>Log in to view your watchlist.</p></div>";
+    watchlistWarningElement.innerHTML =
+      "<p class='watchlist-text-container'>Log in to view your watchlist.</p>";
     return;
   }
 
@@ -121,8 +122,8 @@ function renderContent() {
   let userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
   if (userWatchlist.length === 0) {
-    watchlistContentElement.innerHTML =
-      "<div class='watchlist-text-container'><p>Your watchlist is empty.</p></div>";
+    watchlistWarningElement.innerHTML =
+      "<p class='watchlist-text-container'>Your watchlist is empty.</p>";
     return;
   }
 
