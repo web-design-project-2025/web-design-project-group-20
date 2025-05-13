@@ -75,7 +75,6 @@ function getQueryParam() {
         return { title: movie.title, element: dataContent };
       });
     
-      //test to maybe fix
       queueMicrotask(() => performSearch(query));
 
       })

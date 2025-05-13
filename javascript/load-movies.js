@@ -202,6 +202,18 @@ function homeRenderContent() {
 
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
+  
+    // Changeing box style
+    movieElement.classList.remove("movie-box");
+    movieElement.classList.add("movie-box-home");
+  
+    // find existing number-of-reviews element inside movieElement
+    const reviewElement = movieElement.querySelector(".number-of-reviews");
+    if (reviewElement) {
+      reviewElement.classList.remove("number-of-reviews");
+      reviewElement.classList.add("number-of-reviews-home");
+    }
+  
     homeContentElement.appendChild(movieElement);
   }
 }
