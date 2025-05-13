@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const settingsElement = document.getElementById("settings");
   const contentElement = document.getElementById("account-content");
 
+  
   const images = {
     account: {
       inactive: "icons/account-red.png",
@@ -61,8 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 
       /* Clicking the buttin will make the password appear, 
-and clicking it again will make it dissapear */
-
+      and clicking it again will make it dissapear */
       const showPasswordButton = document.getElementById("show-password");
       const logoutButton = document.getElementById("log-out");
       const passwordText = document.getElementById("password-text");

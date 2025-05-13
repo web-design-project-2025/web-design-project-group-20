@@ -1,4 +1,4 @@
- // code from previus project
+ // code mostly from a previus project
  document.addEventListener("DOMContentLoaded", () => {
 
  const lightModeButton = document.getElementById("light");

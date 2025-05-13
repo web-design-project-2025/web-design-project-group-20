@@ -61,7 +61,7 @@ searchInput.addEventListener("input", (e) => {
   console.log(articleTitle, movieTitle)
 })
 
-    // ENTER to redirect
+    // enter to redirect
     searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const query = searchInput.value.trim();
@@ -71,7 +71,7 @@ searchInput.addEventListener("input", (e) => {
     }
   });
 
-    // Fetch data
+    // fetch data
     fetch("data/articles.json")
   .then(res => res.json())
   .then(data => {
