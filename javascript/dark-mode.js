@@ -16,9 +16,11 @@
   const accountIconImg = document.getElementById("icon-link-account");
   const searchIconImg = document.getElementById("icon-search-header");
   const searchIconHeroImg = document.getElementById("search-icon-hero");
+  const dropDownIconImg = document.getElementById("drop-down-icon");
   if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
   if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
   if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero-dm.svg";
+  if (dropDownIconImg) dropDownIconImg.querySelector("img").src = "icons/drop-down-icon-dm.svg";
 
 
 
@@ -32,10 +34,12 @@
    const accountIconImg = document.getElementById("icon-link-account");
    const searchIconImg = document.getElementById("icon-search-header");
    const searchIconHeroImg = document.getElementById("search-icon-hero");
+   const dropDownIconImg = document.getElementById("drop-down-icon");
    if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon.svg";
    if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
    if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
- 
+   if (dropDownIconImg) dropDownIconImg.querySelector("img").src = "icons/drop-down-icon.svg";
+
 
  }
 });

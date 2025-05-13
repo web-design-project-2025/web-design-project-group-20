@@ -29,6 +29,7 @@ main{
 header {
   background-color: var(--red);
   height: 5rem;
+  width: 100%;
 }
 
 body.dark-mode header{
@@ -217,9 +218,6 @@ body.dark-mode footer{
   margin-top: 2rem;
   position: relative;
   z-index: 2070;
-}
-body.dark-mode #drop-down-icon{
-  src: url(../icons/drop-down-icon-dm.svg);
 }
 
 .dropdown-wrapper {

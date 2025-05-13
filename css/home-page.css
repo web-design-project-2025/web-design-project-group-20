@@ -72,6 +72,22 @@ body.dark-mode .home-movies{
   background-color: var(--green-dm);
 }
 
+.movie-box-home {
+  justify-self: center;
+  width: 15rem;
+  margin-top: 1rem;
+}
+.number-of-reviews-home {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-left: 6rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+body.dark-mode .number-of-reviews-home {
+  color: var(--off-white-dm);
+}
+
 .home-movies-title {
   color: var(--dark-green);
   font-weight: bold;
@@ -119,9 +135,10 @@ body.dark-mode .home-articles-title{
   justify-items: center;
 }
 
-@media only screen and (max-width: 1410px){
+@media only screen and (max-width: 1440px){
   .home-movies-container {
     grid-template-columns: auto auto auto;
+    gap: .5rem;
   }
   .home-hero {
     height: 40rem;
@@ -132,17 +149,23 @@ body.dark-mode .home-articles-title{
   #movie-details-home {
     left: 70%;
   }
+  .movie-box-home{
+    width: 17rem;
+  }
+  .number-of-reviews-home{
+    margin-left: 8rem;
+  }
 }
 
-@media only screen and (max-width: 1200px){
-  .home-movies-container {
-    grid-template-columns: auto auto;
-  }
+@media only screen and (max-width: 1300px){
   .home-articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
   }
+}
+
+@media only screen and (max-width: 1200px){
   #hero-image {
     width: 55rem;
     margin-top: -13rem;
@@ -159,6 +182,13 @@ body.dark-mode .home-articles-title{
 }
 
 @media only screen and (max-width: 1000px){
+  .home-movies-container {
+    grid-template-columns: auto auto;
+  }
+  .movie-box-home{
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
   #movie-details-home {
     left: 68%;
   }
@@ -178,11 +208,20 @@ body.dark-mode .home-articles-title{
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
   }
+  .number-of-reviews-home{
+    margin-left: 9rem;
+  }
 }
 
 @media only screen and (max-width: 750px){
   .home-movies-container {
     grid-template-columns: auto;
+  }
+  .movie-box-home{
+    width: 24rem;
+  }
+  .number-of-reviews-home{
+    margin-left: 15rem;
   }
   .home-articles-container {
     display: grid;
@@ -233,6 +272,31 @@ body.dark-mode .home-articles-title{
   }
   .home-movies-title,.home-articles-title{
     margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 480px){
+  .home-movies-title,.home-articles-title{
+    width: 80%;
+    text-align: center;
+  }
+  .movie-box-home{
+    width: 20rem;
+  }
+  .number-of-reviews-home{
+    margin-left: 11rem;
+  }
+}
+@media only screen and (max-width: 400px){
+  .movie-box-home{
+    width: 18rem;
+  }
+  .number-of-reviews-home{
+    margin-left: 9rem;
+  }
+}
+@media only screen and (max-width: 380px){
+  .home-movies-title,.home-articles-title{
+    margin-left: 2.2rem;
   }
 }
 

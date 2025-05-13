@@ -145,22 +145,24 @@ and clicking it again will make it dissapear */
             document.body.classList.add("dark-mode");
             localStorage.setItem("darkMode", "enabled");
 
-            const lightIcon = document.getElementById("light");
-            const darkIcon = document.getElementById("dark");
-          
-            if (lightIcon) lightIcon.src = "icons/sun-dm.svg";
-            if (darkIcon) darkIcon.src = "icons/moon-dm.svg";
+            const accountIconImg = document.getElementById("icon-link-account");
+            const searchIconImg = document.getElementById("icon-search-header");
+            const searchIconHeroImg = document.getElementById("search-icon-hero");
+            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
+            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
+            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero-dm.svg";
           }
 
           function disableDarkMode() {
             document.body.classList.remove("dark-mode");
             localStorage.setItem("darkMode", "disabled");
 
-            const lightIcon = document.getElementById("light");
-            const darkIcon = document.getElementById("dark");
-          
-            if (lightIcon) lightIcon.src = "icons/sun-green.svg";
-            if (darkIcon) darkIcon.src = "icons/moon-green.svg";
+            const accountIconImg = document.getElementById("icon-link-account");
+            const searchIconImg = document.getElementById("icon-search-header");
+            const searchIconHeroImg = document.getElementById("search-icon-hero");
+            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon.svg";
+            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
+            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
           }
      });
 
