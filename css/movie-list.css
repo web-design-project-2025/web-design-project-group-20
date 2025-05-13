@@ -5,11 +5,24 @@
   grid-auto-rows: auto;
   gap: 2rem;
   margin-bottom: 4rem;
+  min-height: 80vh;
 }
 
 .movie-box {
   justify-self: center;
   width: 15rem;
+  animation-name: fade-in;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 10%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .posters {
