@@ -23,7 +23,7 @@ async function loadData() {
   }
 }
 
-/* added/changed lines 31-32, 39-40 with 
+/* added/changed lines 33-34, 41-42 with 
 the help of chatgpt: https://chatgpt.com/share/6818ac61-8934-800a-aa6d-3a57c3cc048f  */
 
 function createMovieElement(movie) {
