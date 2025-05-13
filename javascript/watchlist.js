@@ -36,13 +36,18 @@ function createMovieElement(movie) {
   movieName.classList.add("movie-name");
 
   const watchlistIcon = document.createElement("img");
-  watchlistIcon.src = "icons/watchlist-icon.svg";
   watchlistIcon.alt = "add to watchlist button";
   watchlistIcon.classList.add("watchlist-icon");
 
-  movieWatchlist.appendChild(movieName);
-  movieWatchlist.appendChild(watchlistIcon);
-  movieElement.appendChild(movieWatchlist);
+  /* Added 15 lines (45,46,48,49,60,61,83,84,85,91,92,93,99,100,101)
+  from chatgpt: https://chatgpt.com/share/682321f8-2e70-800a-9288-e4debaf2ce09 */
+
+  let isDarkMode = false;
+  let watchlistIconDarkMode = "icons/watchlist-icon-dark.svg";
+
+  if (localStorage.getItem("darkMode") === "enabled") {
+    isDarkMode = true;
+  }
 
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   let userWatchlist = [];
@@ -52,9 +57,17 @@ function createMovieElement(movie) {
     userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
     if (userWatchlist.includes(movie.id)) {
-      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      if (isDarkMode) {
+        watchlistIcon.src = "icons/watchlist-icon-full-white.svg";
+      } else {
+        watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      }
     }
   }
+
+  movieWatchlist.appendChild(movieName);
+  movieWatchlist.appendChild(watchlistIcon);
+  movieElement.appendChild(movieWatchlist);
 
   watchlistIcon.addEventListener("click", function () {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -67,12 +80,27 @@ function createMovieElement(movie) {
     const userEmail = loggedInUser.email;
     let watchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
+    let darkModeActivate = false;
+    if (localStorage.getItem("darkMode") === "enabled") {
+      darkModeActivate = true;
+    }
+
     if (watchlist.includes(movie.id)) {
       watchlist = watchlist.filter((id) => id !== movie.id);
-      watchlistIcon.src = "icons/watchlist-icon.svg";
+
+      if (darkModeActivate) {
+        watchlistIcon.src = "icons/watchlist-icon-white.svg";
+      } else {
+        watchlistIcon.src = "icons/watchlist-icon.svg";
+      }
     } else {
       watchlist.push(movie.id);
-      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+
+      if (darkModeActivate) {
+        watchlistIcon.src = "icons/watchlist-icon-full-white.svg";
+      } else {
+        watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      }
     }
 
     localStorage.setItem(userEmail, JSON.stringify(watchlist));

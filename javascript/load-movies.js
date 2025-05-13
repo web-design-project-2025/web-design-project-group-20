@@ -56,11 +56,11 @@ function createMovieElement(movie) {
 Added 15 lines (59,60,62,63,64,78,79,86,103,107,108,109,114,115,116)
 from chatgpt: https://chatgpt.com/share/682321f8-2e70-800a-9288-e4debaf2ce09 */
 
-  let darkModeOn = false;
+  let isDarkMode = false;
   let watchlistIconDarkMode = "icons/watchlist-icon.svg";
 
   if (localStorage.getItem("darkMode") === "enabled") {
-    darkModeOn = true;
+    isDarkMode = true;
     watchlistIconDarkMode = "icons/watchlist-icon-white.svg";
   }
 
@@ -75,7 +75,7 @@ chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
     userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
     if (userWatchlist.includes(movie.id)) {
-      if (darkModeOn) {
+      if (isDarkMode) {
         watchlistIconDarkMode = "icons/watchlist-icon-full-white.svg";
       } else {
         watchlistIconDarkMode = "icons/watchlist-icon-full.svg";
@@ -100,18 +100,18 @@ chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
     const userEmail = loggedInUser.email;
     let watchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
-    const darkModeOn = localStorage.getItem("darkMode") === "enabled";
+    const isDarkMode = localStorage.getItem("darkMode") === "enabled";
 
     if (watchlist.includes(movie.id)) {
       watchlist = watchlist.filter((id) => id !== movie.id);
-      if (darkModeOn) {
+      if (isDarkMode) {
         watchlistIcon.src = "icons/watchlist-icon-white.svg";
       } else {
         watchlistIcon.src = "icons/watchlist-icon.svg";
       }
     } else {
       watchlist.push(movie.id);
-      if (darkModeOn) {
+      if (isDarkMode) {
         watchlistIcon.src = "icons/watchlist-icon-full-white.svg";
       } else {
         watchlistIcon.src = "icons/watchlist-icon-full.svg";
@@ -202,18 +202,18 @@ function homeRenderContent() {
 
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
-  
+
     // Changeing box style
     movieElement.classList.remove("movie-box");
     movieElement.classList.add("movie-box-home");
-  
+
     // find existing number-of-reviews element inside movieElement
     const reviewElement = movieElement.querySelector(".number-of-reviews");
     if (reviewElement) {
       reviewElement.classList.remove("number-of-reviews");
       reviewElement.classList.add("number-of-reviews-home");
     }
-  
+
     homeContentElement.appendChild(movieElement);
   }
 }
