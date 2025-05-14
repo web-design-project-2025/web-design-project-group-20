@@ -5,6 +5,7 @@ Hello! Welcome to the Web Design Project of group 20.
 We have made a movie review site, focused on classic movies from the 20th century!
 
 Features on our site consists of:
+
 ♦ A search-bar on the home page hero image, and a smaller search-bar dynamically inserted in the header. You can search
 for the titles of movies and articles.
 
