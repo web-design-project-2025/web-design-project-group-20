@@ -46,7 +46,5 @@ body {
 .watchlist-text-container {
   margin-bottom: 40vh;
   color: var(--dark-green);
-  grid-column: 2/5;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }

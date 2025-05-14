@@ -55,24 +55,31 @@ body.dark-mode #name1,
 body.dark-mode #username,
 body.dark-mode #re-enter-password {
   background-color: var(--off-white-dm);
-  border-color: var(--off-white-dm);/*maybe, maybe not*/
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Kumbh Sans";
+  font-size: 1rem;
+  height: 1.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .sign-in-text {
   color: var(--off-white);
   margin-left: 5px;
+  font-size: 1rem;
 }
 
 .sign-in-box {
   background-color: var(--dark-green);
   width: 30rem;
   height: auto;
-  padding: 1rem;
-  padding-bottom: 1.3rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
-  border: 4px solid var(--darker-green);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   border-radius: 0.5rem;
 }
 body.dark-mode .sign-in-box{
@@ -86,11 +93,12 @@ body.dark-mode .sign-in-box{
   box-shadow: none;
   border: 2px solid var(--dark-red);
   border-radius: 0.5rem;
-  width: 5rem;
-  height: 2rem;
-  margin-left: 24.5rem;
+  width: 5.2rem;
+  height: 2.5rem;
+  margin-left: 24.2rem;
   margin-top: 1.3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: "Kumbh Sans";
 }
 
 body.dark-mode .red-signin{
@@ -126,78 +134,76 @@ footer {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 500px){
-  .sign-in-box{
+@media only screen and (max-width: 500px) {
+  .sign-in-box {
     width: 22rem;
   }
-  .white-account-text{
-    font-size: .78rem;
+  .white-account-text {
+    font-size: 0.78rem;
   }
-  .sign-yellow{
-    font-size: .9rem;
+  .sign-yellow {
+    font-size: 0.9rem;
   }
   #email,
   #password,
   #name1,
   #username,
-  #re-enter-password  {
+  #re-enter-password {
     width: 20rem;
-    height: 1.2rem;
+    height: 1.4rem;
     margin-left: 0;
-    margin-top: .1rem;
+    margin-top: 0.1rem;
     margin-bottom: 1rem;
   }
-  
-  .red-signin{
+
+  .red-signin {
     width: 6rem;
     height: 2.4rem;
     margin-left: 15rem;
     font-size: 1rem;
   }
-  .sign-in-flex{
-    margin-top: .1rem;
-    margin-left: .5rem;
+  .sign-in-flex {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
   }
-  .sign-in-flex1{
-    margin-top: .7rem;
-    margin-left: .5rem;
+  .sign-in-flex1 {
+    margin-top: 0.7rem;
+    margin-left: 0.5rem;
   }
-  
-  }
-  @media only screen and (max-width: 410px){
-  .sign-in-box{
+}
+@media only screen and (max-width: 410px) {
+  .sign-in-box {
     width: 20rem;
   }
   #email,
   #password,
   #name1,
   #username,
-  #re-enter-password  {
+  #re-enter-password {
     width: 18rem;
   }
-  .red-signin{
+  .red-signin {
     width: 7rem;
     height: 2.5rem;
     margin-left: 12rem;
     font-size: 1.1rem;
   }
-  
+}
+@media only screen and (max-width: 380px) {
+  .sign-in-box {
+    width: 17rem;
   }
-  @media only screen and (max-width: 380px){
-    .sign-in-box{
-      width: 17rem;
-    }
-    .signup-text{
-      margin-left: 2.2rem;
-    }
-    #email,
-    #password,
-    #name1,
-    #username,
-    #re-enter-password{
-      width: 15rem;
-    }
-    .red-signin{
-      margin-left: 9rem;
-    }
+  .signup-text {
+    margin-left: 2.2rem;
   }
+  #email,
+  #password,
+  #name1,
+  #username,
+  #re-enter-password {
+    width: 15rem;
+  }
+  .red-signin {
+    margin-left: 9rem;
+  }
+}

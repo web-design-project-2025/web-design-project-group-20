@@ -20,7 +20,7 @@
 html {
   font-family: "Kumbh Sans";
 }
-main{
+main {
   min-width: 20rem;
   height: calc(fit-content+5rem);
 }
@@ -73,19 +73,20 @@ nav ul {
 .icon {
   width: 2.8rem;
   width: 2.8rem;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   margin-right: 1rem;
   margin-left: -1rem;
 }
 /*search icon*/
-#icon{
+#icon {
   position: relative;
   z-index: 1060;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   margin-right: 1.8rem;
-  }
+}
 
-.icon, .search-header{
+.icon,
+.search-header {
   align-items: center;
 }
 
@@ -211,7 +212,7 @@ body.dark-mode footer{
 
 /* responcive things */
 /* menue  */
-#drop-down-icon{
+#drop-down-icon {
   display: none; /* hide it for default, large screens */
   width: 2rem;
   margin-top: 2rem;
@@ -223,10 +224,9 @@ body.dark-mode footer{
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-
+  align-items: center;
 }
-.header-ul-menu{
+.header-ul-menu {
   width: 23vw;
   background-color: var(--red);
   padding: 1rem;
@@ -236,7 +236,7 @@ body.dark-mode footer{
   flex-direction: column;
   transition: opacity 0.3s ease;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 50%;
   z-index: 2000;
   transform: translateX(-50%);
@@ -245,7 +245,7 @@ body.dark-mode .header-ul-menu{
   background-color: var(--red-dm);
 }
 
-.menu-container{
+.menu-container {
   position: relative;
 }
 .header-list-menu {
@@ -254,43 +254,42 @@ body.dark-mode .header-ul-menu{
   font-size: 1.2rem;
 }
 /* menue  */
-@media only screen and (max-width: 1200px){
-  .header-list{
+@media only screen and (max-width: 1200px) {
+  .header-list {
     margin-right: 3rem;
   }
 }
 
-@media only screen and (max-width: 980px){
-  .cinema-logo{
+@media only screen and (max-width: 980px) {
+  .cinema-logo {
     width: 185px;
-    margin-top: .8rem;
-    margin-left: .5rem;
+    margin-top: 0.8rem;
+    margin-left: 0.5rem;
   }
-  header{
+  header {
     min-height: 4rem;
     height: auto;
   }
-  .header-list{
+  .header-list {
     margin-right: 2rem;
   }
-  
-  .icon{
-    margin: .2rem;
+
+  .icon {
+    margin: 0.2rem;
     position: relative;
   }
-  #icon{
+  #icon {
     margin-right: 1rem;
   }
- 
 }
 
-@media only screen and (max-width: 800px){
-  .icon{
+@media only screen and (max-width: 800px) {
+  .icon {
     width: 3rem;
-    margin-right: -.5rem;
+    margin-right: -0.5rem;
   }
   /*makes original header disapere*/
-  .header-list{
+  .header-list {
     display: none;
   }
   #drop-down-icon {
@@ -298,22 +297,21 @@ body.dark-mode .header-ul-menu{
     transition: transform 0.5s ease;
     transform-origin: center;
   }
-  
+
   #drop-down-icon.active {
     transform: rotate(180deg);
   }
- 
-    /*footer*/
+
+  /*footer*/
   .instagram-logo,
   .facebook-logo,
-  .x-logo { 
+  .x-logo {
     width: 30px;
     margin-top: 1rem;
   }
 }
 
-
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .footer-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -321,74 +319,73 @@ body.dark-mode .header-ul-menu{
   }
   .instagram-logo,
   .facebook-logo,
-  .x-logo { 
+  .x-logo {
     width: 40px;
     margin-bottom: 5vw;
   }
-  
 }
-@media only screen and (max-width: 500px){
-  .cinema-logo{
+@media only screen and (max-width: 500px) {
+  .cinema-logo {
     width: 200px;
   }
-  .dropdown-wrapper{
+  .dropdown-wrapper {
     margin-top: 3.5rem;
     margin-right: 1vw;
     margin-left: 0;
- }
-  #icon{
+  }
+  #icon {
     margin-bottom: 2.29rem;
   }
-  .icon{
-    margin-top: .1rem;
+  .icon {
+    margin-top: 0.1rem;
     width: 3.5rem;
     margin-left: 1rem;
- }
- 
-  .menu-container{
+  }
+
+  .menu-container {
     margin-top: -1.3rem;
   }
-  .header-ul-menu{
+  .header-ul-menu {
     width: 29vw;
   }
 }
-@media only screen and (max-width: 450px){
-  .cinema-logo{
+@media only screen and (max-width: 450px) {
+  .cinema-logo {
     width: 170px;
   }
-  .dropdown-wrapper{
+  .dropdown-wrapper {
     margin-top: 4rem;
     align-content: center;
-   } 
-   header{
+  }
+  header {
     height: 8.5rem;
-   }
+  }
 }
 
-@media only screen and (max-width: 410px){
-  .cinema-logo{
+@media only screen and (max-width: 410px) {
+  .cinema-logo {
     width: 140px;
   }
-   .header-ul-menu{
+  .header-ul-menu {
     width: 40vw;
-   }
-   .dropdown-wrapper{
+  }
+  .dropdown-wrapper {
     margin-top: 2.5rem;
     margin-right: 1vw;
     margin-left: -2rem;
-   }
-   header{
+  }
+  header {
     height: 6.5rem;
-   }
-  #icon{
+  }
+  #icon {
     margin-right: 1rem;
-   }
-   .icon{
+  }
+  .icon {
     margin-top: 0;
     width: 2.9rem;
     margin-left: -2.5rem;
-   }
-   .header-ul-menu{
+  }
+  .header-ul-menu {
     width: 45vw;
-   }
+  }
 }

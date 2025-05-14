@@ -26,14 +26,17 @@ main{
 #email,
 #password {
   width: 18rem;
-  border: 2px solid var(--darker-green);
-  border-radius: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Kumbh Sans";
+  font-size: 1rem;
+  height: 1.6rem;
+  margin-bottom: 0.5rem;
 }
 
 body.dark-mode #email, 
 body.dark-mode #password{
   background-color: var(--off-white-dm); 
-  border-color: var(--off-white-dm);/*maybe, maybe not*/
 }
 
 .log-in-text {
@@ -64,11 +67,13 @@ body.dark-mode #password{
   height: auto;
   padding: 1rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
   border-radius: 0.5rem;
-  border: 4px solid var(--darker-green);
+  border: none;
 }
 
 body.dark-mode .log-in-box {
@@ -82,11 +87,12 @@ body.dark-mode .log-in-box {
   box-shadow: none;
   border: 2px solid var(--dark-red);
   border-radius: 0.5rem;
-  width: 5rem;
-  height: 2rem;
-  margin-left: 20rem;
+  width: 5.2rem;
+  height: 2.5rem;
+  margin-left: 19.6rem;
   margin-top: 1.3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: "Kumbh Sans";
 }
 
 body.dark-mode .red-login{
@@ -122,69 +128,68 @@ footer {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 500px){
-.log-in-box{
-  width: 22rem;
-}
-.signup-text{
-  margin-left: 6rem;
-  margin-top: -1rem;
-}
-.white-account-text{
-  font-size: .78rem;
-}
-.sign-yellow{
-  font-size: .9rem;
-}
-#email,
-#password {
-  width: 20rem;
-  height: 1.2rem;
-  margin-left: 0;
-  margin-top: .1rem;
-  margin-bottom: 1rem;
-}
+@media only screen and (max-width: 500px) {
+  .log-in-box {
+    width: 22rem;
+  }
+  .signup-text {
+    margin-left: 6rem;
+    margin-top: -1rem;
+  }
+  .white-account-text {
+    font-size: 0.78rem;
+  }
+  .sign-yellow {
+    font-size: 0.9rem;
+  }
+  #email,
+  #password {
+    width: 20rem;
+    height: 1.4rem;
+    margin-left: 0;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
 
-.red-login{
-  width: 6rem;
-  height: 2.4rem;
-  margin-left: 15rem;
-  font-size: 1rem;
+  .red-login {
+    width: 6rem;
+    height: 2.4rem;
+    margin-left: 15rem;
+    font-size: 1rem;
+  }
+  .sign-in-flex {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+  }
+  .sign-in-flex1 {
+    margin-top: 0.7rem;
+    margin-left: 0.5rem;
+  }
 }
-.sign-in-flex{
-  margin-top: .1rem;
-  margin-left: .5rem;
-}
-.sign-in-flex1{
-  margin-top: .7rem;
-  margin-left: .5rem;
-}
-}
-@media only screen and (max-width: 410px){
-.log-in-box{
-  width: 20rem;
-}
+@media only screen and (max-width: 410px) {
+  .log-in-box {
+    width: 20rem;
+  }
 
-.signup-text{
-  margin-left: 3.8rem;
+  .signup-text {
+    margin-left: 3.8rem;
+  }
+  #email,
+  #password {
+    width: 18rem;
+  }
+  .red-login {
+    width: 7rem;
+    height: 2.5rem;
+    margin-left: 12rem;
+    font-size: 1.1rem;
+  }
 }
-#email,
-#password {
-  width: 18rem;
-}
-.red-login{
-  width: 7rem;
-  height: 2.5rem;
-  margin-left: 12rem;
-  font-size: 1.1rem;
-}
-
-}
-@media only screen and (max-width: 380px){
-  .log-in-box{
+@media only screen and (max-width: 380px) {
+  .log-in-box {
     width: 17rem;
   }
-  .signup-text{
+  .signup-text {
     margin-left: 1rem;
   }
   #email,
@@ -192,7 +197,7 @@ footer {
     width: 15rem;
   }
 
-  .red-login{
+  .red-login {
     margin-left: 9rem;
   }
 }

@@ -34,11 +34,17 @@ body.dark-mode #watchlist-button{
 /*button flex end*/
 .button-click {
   background-color: var(--red);
-  border: 2px solid var(--dark-red);
+  border: none;
   color: var(--off-white);
   border-radius: 0.5rem;
   font-size: 0.9rem;
   margin-top: 1rem;
+  font-family: "Kumbh Sans";
+  transition-duration: 0.2s;
+}
+
+.button-click:hover {
+  font-weight: bold;
 }
 
 body.dark-mode .button-click{
@@ -99,11 +105,11 @@ color: var(--off-white-dm);
 #settings-list3,
 #settings-list4,
 #settings-list5,
-.button-click{
+.button-click {
   margin-left: 25vw;
 }
 #settings-list3,
-#settings-list4{
+#settings-list4 {
   margin-bottom: 1rem;
 }
 #bowl2 {
@@ -168,50 +174,49 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   #settings-list1,
   #settings-list2,
   #settings-list3,
   #settings-list4,
-  #settings-list5
-  {
+  #settings-list5 {
     font-size: 1.4rem;
   }
-  .button-click{
+  .button-click {
     margin-top: 1.5rem;
   }
 }
-@media only screen and (max-width: 600px){
-  .list-account img{
-    width: 8.5rem ;
+@media only screen and (max-width: 600px) {
+  .list-account img {
+    width: 8.5rem;
   }
-  .list-account{
+  .list-account {
     margin: 3vw;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 490px){
-  .list-account img{
+@media only screen and (max-width: 490px) {
+  .list-account img {
     width: 11rem ;
   }
-  .list-account{
+  .list-account {
     margin: 2.5vw;
     margin-bottom: 0;
   }
-  #button-list{
+  #button-list {
     display: block;
     margin-left: 28%;  
   }
   h5 {
-    
     font-weight: 600;
   }
 
 }
-@media only screen and (max-width: 430px){
-  .list-account{
+@media only screen and (max-width: 430px) {
+  .list-account img {
+    width: 7.5rem;
+  }
+  .list-account {
     margin: 2.3vw;
     margin-bottom: 0;
   }
@@ -220,8 +225,11 @@ body {
     margin-left: 27%;  
   }
 }
-@media only screen and (max-width: 395px){
-  .list-account{
+@media only screen and (max-width: 395px) {
+  .list-account img {
+    width: 6.2rem;
+  }
+  .list-account {
     margin: 2.2vw;
     margin-bottom: 0;
   }

@@ -5,11 +5,24 @@
   grid-auto-rows: auto;
   gap: 2rem;
   margin-bottom: 4rem;
+  min-height: 80vh;
 }
 
 .movie-box {
   justify-self: center;
   width: 15rem;
+  animation-name: fade-in;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 10%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .posters {
@@ -55,9 +68,10 @@ body.dark-mode{
 .number-of-reviews {
   font-size: 1rem;
   color: var(--brown);
-  margin-left: 6rem;
+  margin-left: auto;
   margin-top: 0.4rem;
   margin-bottom: 0;
+  margin-right: 0.7rem;
 }
 body.dark-mode .number-of-reviews {
   color: var(--off-white-dm);
