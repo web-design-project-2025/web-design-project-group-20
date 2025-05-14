@@ -67,6 +67,7 @@ body.dark-mode .button-click {
 }
 body.dark-mode .account-text-color {
   color: var(--off-white-dm);
+  text-align: center;
 }
 
 body.dark-mode .account-here {
