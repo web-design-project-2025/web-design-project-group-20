@@ -5,7 +5,7 @@
   align-items: center; /* Vertically centers items */
   position: absolute;
   top: 1rem;
-  margin-left: 30%;
+  margin-left: 35%;
 }
 
 .input-search {
@@ -128,7 +128,23 @@ body.dark-mode .input-search-header {
   padding: 1.2rem;
 }
 /*search results-------*/
+/* Search result */
+main{
+  background-color: var(--off-white);
+}
+body.dark-mode main{
+  background-color: var(--dark-green-dm);
+}
+.search-wrapper-result {
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers items */
+ margin-top: 1.5rem;
+  margin-left: 35%;
+}
 
+/* Search result end*/
 
 /* Visibility Controls */
 .hide {

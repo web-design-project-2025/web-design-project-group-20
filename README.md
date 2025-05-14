@@ -41,10 +41,10 @@ where you can add images, and text in different paragraphs.
 If you want to experience the website as a user, you should:
 
 1. create an account.
-2. sign in.
+2. log in.
 3. add your favorite movies to your watch list.
 4. watch them!
 5. then review the movie as you wish.
 6. if the movie was to your liking, look if there is a matching article to read further.
 
-Thank you!☻
+Thank you!😉
