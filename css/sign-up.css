@@ -93,6 +93,12 @@ body.dark-mode .sign-in-box{
   font-size: 0.9rem;
 }
 
+body.dark-mode .red-signin{
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+  color: var(--dark-green-dm);
+}
+
 /* footer */
 html,
 body {

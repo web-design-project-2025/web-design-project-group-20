@@ -40,6 +40,7 @@ body.dark-mode #password{
   color: var(--off-white);
 }
 
+
 .sign-yellow {
   color: var(--yellow);
   text-decoration: none;
@@ -86,6 +87,12 @@ body.dark-mode .log-in-box {
   margin-left: 20rem;
   margin-top: 1.3rem;
   font-size: 0.9rem;
+}
+
+body.dark-mode .red-login{
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+  color: var(--dark-green-dm);
 }
 
 /*footer*/
