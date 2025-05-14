@@ -6,7 +6,7 @@ body.dark-mode {
   background-color: var(--dark-green-dm);
 }
 
-main{
+main {
   min-height: 27rem;
 }
 #email {
@@ -22,7 +22,6 @@ main{
   background-color: var(--off-white);
 }
 
-
 #email,
 #password {
   width: 18rem;
@@ -34,15 +33,14 @@ main{
   margin-bottom: 0.5rem;
 }
 
-body.dark-mode #email, 
-body.dark-mode #password{
-  background-color: var(--off-white-dm); 
+body.dark-mode #email,
+body.dark-mode #password {
+  background-color: var(--off-white-dm);
 }
 
 .log-in-text {
   color: var(--off-white);
 }
-
 
 .sign-yellow {
   color: var(--yellow);
@@ -72,6 +70,7 @@ body.dark-mode #password{
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
+  margin-bottom: 7rem;
   border-radius: 0.5rem;
   border: none;
 }
@@ -95,37 +94,10 @@ body.dark-mode .log-in-box {
   font-family: "Kumbh Sans";
 }
 
-body.dark-mode .red-login{
+body.dark-mode .red-login {
   background-color: var(--off-white-dm);
   border-color: var(--dark-green-dm);
   color: var(--dark-green-dm);
-}
-
-/*footer*/
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-.footer-container {
-  bottom: 0;
-  width: 100%;
-  padding-bottom: 1rem;
-  margin-top: 7rem;
-}
-footer {
-  background-color: transparent;
-  padding: 0;
-}
-
-.footer-line {
-  height: 3px;
-  width: 9rem;
-  margin: auto;
-  border-radius: 0.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 500px) {
