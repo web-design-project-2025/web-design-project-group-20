@@ -97,6 +97,9 @@ nav ul {
   margin-left: 1rem;
   font-family: none;
 }
+body.dark-mode .cinema-logo{
+  content: url(../icons/cinema-logo-dm.png);
+}
 
 body {
   margin: 0;
