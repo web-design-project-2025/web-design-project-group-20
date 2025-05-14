@@ -21,7 +21,7 @@ body {
   margin-top: 20%;
 }
 #detail-title {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
 }
@@ -61,7 +61,6 @@ body.dark-mode #detail-description {
   font-weight: 350;
 }
 
-
 .hero-number-of-reviews {
   color: var(--off-white);
 }
@@ -89,7 +88,7 @@ body.dark-mode #detail-description {
   height: 62rem;
 }
 body.dark-mode .review-box-left,
-body.dark-mode .review-box-right{
+body.dark-mode .review-box-right {
   background-color: var(--green-dm);
 }
 
@@ -100,7 +99,7 @@ body.dark-mode .review-box-right{
 }
 body.dark-mode .review-header,
 body.dark-mode #title-label,
-body.dark-mode #your-review{
+body.dark-mode #your-review {
   color: var(--off-white-dm);
 }
 
@@ -263,7 +262,7 @@ body.dark-mode #image-button:hover {
     font-size: 1.1rem;
   }
   .review-box-right,
-  .review-box-left{
+  .review-box-left {
     height: 70rem;
   }
 }
@@ -286,7 +285,7 @@ body.dark-mode #image-button:hover {
     margin-top: 13%;
   }
   .review-box-right,
-  .review-box-left{
+  .review-box-left {
     height: 80rem;
   }
 }
@@ -365,11 +364,11 @@ body.dark-mode #image-button:hover {
     width: 2rem;
     height: 2rem;
   }
-  .review-box-right{
+  .review-box-right {
     height: 65rem;
   }
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
   #user-box,
   #user-box-two,
   #user-box-three,
@@ -400,10 +399,7 @@ body.dark-mode #image-button:hover {
     width: 1.2rem;
   }
 
-  .write-review-star {
-    width: 1.2rem;
-  }
-  .review-box-right{
+  .review-box-right {
     height: 78rem;
   }
 }
