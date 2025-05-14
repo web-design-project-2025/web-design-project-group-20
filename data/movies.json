@@ -6,7 +6,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/back-to-the-future.jpg",
-      "alt": "Back to the Future, movie poster",
+      "alt": "Back to the Future, movie poster, cars, flaming wheel tracks, suprised main charecter looking at clock",
       "publishing_year": "1985",
       "genres": [
         {
@@ -48,7 +48,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/batman.jpg",
-      "alt": "Batman(1989), movie poster",
+      "alt": "Batman(1989), movie poster, large batman symbol with golden oval backgrond",
       "publishing_year": "1989",
       "genres": [
         {
@@ -86,7 +86,7 @@
       "rating": 4,
       "nr_of_reviews": "2k",
       "image": "movie-img/80s/beetlejuice.jpg",
-      "alt": "Beetlejuice, movie poster",
+      "alt": "Beetlejuice, movie poster, three characters (one is beetlejuice, siting on the house) bigger than a weird house, small people looking at the people/house",
       "genres": [
         {
           "type": "genre",
@@ -124,7 +124,7 @@
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/blade-runner.jpg",
-      "alt": "Blade Runner, movie poster",
+      "alt": "Blade Runner, movie poster, cool ilustration of two characters and skyskrapers",
       "genres": [
         {
           "type": "genre",
@@ -162,7 +162,7 @@
       "rating": 4,
       "nr_of_reviews": "1k",
       "image": "movie-img/80s/breakfast.jpg",
-      "alt": "The Breakfast Club, movie poster",
+      "alt": "The Breakfast Club, movie poster, group photo on a light background",
       "genres": [
         {
           "type": "genre",
@@ -201,7 +201,7 @@
       "rating": 5,
       "nr_of_reviews": "5k",
       "image": "movie-img/80s/castle-in-sky.jpg",
-      "alt": "Castle in the Sky, movie poster",
+      "alt": "Castle in the Sky, movie poster, main characters floating above a plane and an industrial town",
       "publishing_year": "1986",
       "genres": [
         {
@@ -243,7 +243,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/die-hard.jpg",
-      "alt": "Die Hard, movie poster",
+      "alt": "Die Hard, movie poster, helicopter hiting a building",
       "publishing_year": "1988",
       "genres": [
         {
@@ -281,7 +281,7 @@
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/diva.jpg",
-      "alt": "Diva, movie poster",
+      "alt": "Diva, movie poster, ilustration with a dramatic composition",
       "publishing_year": "1981",
       "genres": [
         {
@@ -319,7 +319,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ET.jpg",
-      "alt": "E.T., movie poster",
+      "alt": "E.T., movie poster, a flying bike, over a verry large blue moon",
       "publishing_year": "1982",
       "genres": [
         {
@@ -357,7 +357,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/ghostbusters.jpg",
-      "alt": "Ghostbusters, movie poster",
+      "alt": "Ghostbusters, movie poster, black background with gost busters symbol (a cartoon gost stiking out of of the 'not alllowd' symbol)",
       "publishing_year": "1984",
       "genres": [
         {
@@ -395,7 +395,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/karate-kid.jpg",
-      "alt": "The Karate Kid, movie poster",
+      "alt": "The Karate Kid, movie poster, master and kid gaxing at eatchother, karate pose on beach",
       "publishing_year": "1984",
       "genres": [
         {
@@ -433,7 +433,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/little-mermaid.jpg",
-      "alt": "The Little Mermaid (1989), movie poster",
+      "alt": "The Little Mermaid (1989), movie poster, ariel siting on a rock in the ocean",
       "publishing_year": "1989",
       "genres": [
         {
@@ -471,7 +471,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/moonstruck.jpg",
-      "alt": "Moonstruck, movie poster",
+      "alt": "Moonstruck, movie poster, theatrical composition of a woman doing a happy/relieved pose",
       "publishing_year": "1987",
       "genres": [
         {
@@ -509,7 +509,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/nineteen-eighty-four.jpg",
-      "alt": "1984, movie poster",
+      "alt": "1984, movie poster, dramatic, serious and, sad people ",
       "publishing_year": "1984",
       "genres": [
         {
@@ -547,7 +547,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/scarface.jpg",
-      "alt": "Scarface, movie poster",
+      "alt": "Scarface, movie poster, cool black and white (exept title) ilustration of a man with a gun",
       "publishing_year": "1983",
       "genres": [
         {
@@ -585,7 +585,7 @@
       "rating": 2,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/supergirl.jpg",
-      "alt": "Supergirl, movie poster",
+      "alt": "Supergirl, movie poster, Supergirl flying towards uss, with the statue of liberty and new york skyline",
       "publishing_year": "1984",
       "genres": [
         {
@@ -623,7 +623,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/the-terminator.jpg",
-      "alt": "The Terminator, movie poster",
+      "alt": "The Terminator, movie poster, cool and muskular man with sunglasses pointing a gun at the ceiling",
       "publishing_year": "1984",
       "genre1": "action",
       "genres": [
@@ -662,7 +662,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/80s/totoro.jpg",
-      "alt": "My Neighbor Totoro, movie poster",
+      "alt": "My Neighbor Totoro, movie poster, totoro and littel girl standing at a bus stop in the rain",
       "publishing_year": "1988",
       "genres": [
         {
@@ -700,7 +700,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/10-things.jpg",
-      "alt": "10 Things I Hate About You, movie poster",
+      "alt": "10 Things I Hate About You, movie poster, girl siting in a furr chair, boy leaning on it",
       "publishing_year": "1999",
       "genres": [
         {
@@ -738,7 +738,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bad-boys.jpg",
-      "alt": "Bad Boys, movie poster",
+      "alt": "Bad Boys, movie poster, two police oficers and a girl walking towards uss",
       "publishing_year": "1995",
       "genres": [
         {
@@ -780,7 +780,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/buffy.jpg",
-      "alt": "Buffy the Vampire Slayer, movie poster",
+      "alt": "Buffy the Vampire Slayer, movie poster, cheerleader holding a wodden stake",
       "publishing_year": "1992",
       "genres": [
         {
@@ -822,7 +822,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/bugs-life.jpg",
-      "alt": "A Bug's Life, movie poster",
+      "alt": "A Bug's Life, movie poster, cartoon bugs looking at us thrugh a leef with a hole",
       "publishing_year": "1998",
       "genres": [
         {
@@ -864,7 +864,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/clueless.jpg",
-      "alt": "Clueless, movie poster",
+      "alt": "Clueless, movie poster, three wommen with preppy/formal clothing posing on the stairs",
       "publishing_year": "1995",
       "genres": [
         {
@@ -902,7 +902,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/dumb-and-dumber.jpg",
-      "alt": "Dumb and Dumber, movie poster",
+      "alt": "Dumb and Dumber, movie poster, two men posing in a funny way",
       "publishing_year": "1994",
       "genres": [
         {
@@ -940,7 +940,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fallen-angels.jpg",
-      "alt": "Fallen Angels, movie poster",
+      "alt": "Fallen Angels, movie poster, edgy, serious, green",
       "publishing_year": "1995",
       "genres": [
         {
@@ -978,7 +978,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/fight-club.jpg",
-      "alt": "Fight Club, movie poster",
+      "alt": "Fight Club, movie poster, two men looking at uss, one holding upp a bar of pink soap with the title on it",
       "publishing_year": "1999",
       "genres": [
         {
@@ -1016,7 +1016,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/forrest-gump.jpg",
-      "alt": "Forrest Gump, movie poster",
+      "alt": "Forrest Gump, movie poster, Forest sitting on a bench, gazing of in space",
       "publishing_year": "1994",
       "genres": [
         {
@@ -1054,7 +1054,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/home-alone.jpg",
-      "alt": "Home Alone, movie poster",
+      "alt": "Home Alone, movie poster, christmas, intruders looking in, kevin looking suprised and sccared",
       "publishing_year": "1990",
       "genres": [
         {
@@ -1092,7 +1092,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/jurassic-park.jpg",
-      "alt": "Jurassic Park, movie poster",
+      "alt": "Jurassic Park, movie poster, jurassic parc logo, terex skeleton",
       "publishing_year": "1993",
       "genres": [
         {
@@ -1130,7 +1130,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/nightmare-before.jpg",
-      "alt": "The Nightmare Before Christmas, movie poster",
+      "alt": "The Nightmare Before Christmas, movie poster, wimsical and spooky pumpkin patch and, jack skellington stryking a sinnging pose on a hill",
       "publishing_year": "1993",
       "genres": [
         {
@@ -1168,7 +1168,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/parent-trap.jpg",
-      "alt": "The Parent Trap, movie poster",
+      "alt": "The Parent Trap, movie poster, the main characters with printed photos behind them",
       "publishing_year": "1998",
       "genres": [
         {
@@ -1206,7 +1206,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pocahontas.jpg",
-      "alt": "Pocahontas, movie poster",
+      "alt": "Pocahontas, movie poster,pocahontas rowing a canoe",
       "publishing_year": "1995",
       "genres": [
         {
@@ -1244,7 +1244,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pokemon.jpg",
-      "alt": "Pokémon: The First Movie, movie poster",
+      "alt": "Pokémon: The First Movie, movie poster, lots of pokemon, but with mewtwo in focus",
       "publishing_year": "1998",
       "genres": [
         {
@@ -1286,7 +1286,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/princess-mononoke.jpg",
-      "alt": "Princess Mononoke, movie poster",
+      "alt": "Princess Mononoke, movie poster, Mononoke standing with blood on her face, wolf in the background",
       "publishing_year": "1997",
       "genres": [
         {
@@ -1324,7 +1324,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/pulp-ficton.jpg",
-      "alt": "Pulp Fiction, movie poster",
+      "alt": "Pulp Fiction, movie poster, Woman laying on her stomach on a bet, smoking, gun and comic book",
       "publishing_year": "1994",
       "genres": [
         {
@@ -1362,7 +1362,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/sailor-moon.jpg",
-      "alt": "Sailor Moon, movie poster",
+      "alt": "Sailor Moon, movie poster, sailor moon and the sailor scouts group pose",
       "publishing_year": "1994",
       "genres": [
         {
@@ -1404,7 +1404,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/the-matrix.jpg",
-      "alt": "The Matrix, movie poster",
+      "alt": "The Matrix, movie poster, dark, gritty, with vertical text in the background (techy-impresion)",
       "publishing_year": "1999",
       "genres": [
         {
@@ -1446,7 +1446,7 @@
       "rating": 4,
       "nr_of_reviews": "4k",
       "image": "movie-img/90s/trigun.jpg",
-      "alt": "Trigun, movie poster",
+      "alt": "Trigun, movie poster, 90s anime style, Vach staring at uss with one eye, pointing a silver revolver upp at the sky",
       "publishing_year": "1998",
       "genres": [
         {
@@ -1488,7 +1488,7 @@
       "rating": 3,
       "nr_of_reviews": "4k",
       "image": "movie-img/gullivers-travels.jpg",
-      "alt": "Gulliver's Travels, movie poster",
+      "alt": "Gulliver's Travels, movie poster, 1934 illustration, gulliver towering above every one from Lilliput",
       "genres": [
         {
           "type": "genre",
