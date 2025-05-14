@@ -33,7 +33,7 @@
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   margin-bottom: 0;
-  padding-right: 0;
+  padding-right: 1rem;
   color: black;
   font-weight: bold;
   height: 40px;
@@ -240,6 +240,9 @@ body.dark-mode .movie-filter-clear {
   .number-of-reviews {
     margin-left: 6rem;
   }
+  .movie-name {
+    padding-right: 0.2rem;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -275,6 +278,7 @@ body.dark-mode .movie-filter-clear {
   }
   .movie-name {
     font-size: 1.3rem;
+    padding-right: 1rem;
   }
 }
 
