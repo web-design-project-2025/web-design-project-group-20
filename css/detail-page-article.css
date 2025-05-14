@@ -5,8 +5,8 @@ html {
 body {
   background-color: var(--off-white);
 }
-  
-#detail-article-title{
+
+#detail-article-title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -20,11 +20,11 @@ body {
 }
 
 body.dark-mode #detail-article-title,
-body.dark-mode #detail-article-author{
-color: var(--off-white);
+body.dark-mode #detail-article-author {
+  color: var(--off-white);
 }
 
-#detail-article-author{
+#detail-article-author {
   text-align: center;
   color: var(--dark-green);
   font-size: 1.2rem;
@@ -32,12 +32,12 @@ color: var(--off-white);
   grid-area: author;
 }
 
-.top-of-page-article{
+.top-of-page-article {
   background-color: var(--light-green);
   width: 100%;
   margin-bottom: 1rem;
 }
-body.dark-mode .top-of-page-article{
+body.dark-mode .top-of-page-article {
   background-color: var(--green-dm);
 }
 
@@ -67,7 +67,7 @@ body.dark-mode .top-of-page-article{
   color: var(--brown);
 }
 body.dark-mode .header-class {
-color: var(--off-white);
+  color: var(--off-white);
 }
 
 .paragraph-class {
@@ -77,11 +77,11 @@ color: var(--off-white);
   font-size: 1.4rem;
 }
 
-body.dark-mode .paragraph-class{
+body.dark-mode .paragraph-class {
   color: var(--off-white);
 }
 
-.article-hero{
+.article-hero {
   display: block;
   width: 60%;
   margin-top: 1.2rem;
@@ -96,63 +96,63 @@ body.dark-mode .paragraph-class{
   margin-left: auto;
   margin-right: auto;
 }
-footer{
+footer {
   margin-top: 5rem;
 }
 
-@media only screen and (max-width: 1200px){
-  #detail-article-title{
+@media only screen and (max-width: 1200px) {
+  #detail-article-title {
     font-size: 3rem;
   }
-  #detail-article-author{
+  #detail-article-author {
     font-size: 1.5rem;
   }
-  .article-hero{
+  .article-hero {
     width: 55%;
   }
-  .article-image{
+  .article-image {
     width: 45%;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 52%;
   }
   .header-class {
     font-size: 2.7rem;
   }
 }
-@media only screen and (max-width: 1000px){
-  .paragraph-class{
+@media only screen and (max-width: 1000px) {
+  .paragraph-class {
     width: 55%;
   }
 }
-@media only screen and (max-width: 900px){
-  .article-hero{
+@media only screen and (max-width: 900px) {
+  .article-hero {
     width: 60%;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 60%;
     font-size: 1.3rem;
   }
 }
-@media only screen and (max-width: 800px){
-  .article-hero{
+@media only screen and (max-width: 800px) {
+  .article-hero {
     width: 67%;
   }
-  .article-image{
+  .article-image {
     width: 50%;
   }
   .header-class {
     font-size: 2.4rem;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 65%;
   }
-  .article-image{
+  .article-image {
     width: 50%;
   }
 }
-@media only screen and (max-width: 700px){
-  .paragraph-class{
+@media only screen and (max-width: 700px) {
+  .paragraph-class {
     width: 72%;
     font-weight: 350;
   }
@@ -161,14 +161,14 @@ footer{
     width: 55%;
   }
 }
-@media only screen and (max-width: 600px){
-  .article-hero{
+@media only screen and (max-width: 600px) {
+  .article-hero {
     width: 80%;
   }
-  .article-image{
+  .article-image {
     width: 70%;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 75%;
     font-size: 1.4rem;
   }
@@ -177,55 +177,55 @@ footer{
     width: 80%;
   }
 }
-@media only screen and (max-width: 540px){
-  #detail-article-title{
+@media only screen and (max-width: 540px) {
+  #detail-article-title {
     margin-left: 10%;
-    margin-right: 10%;  
+    margin-right: 10%;
     font-size: 2.4rem;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 86%;
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 400px){
-  #detail-article-title{
+@media only screen and (max-width: 400px) {
+  #detail-article-title {
     margin-left: 10%;
-    margin-right: 10%;  
+    margin-right: 10%;
     font-size: 2.2rem;
   }
-  #detail-article-author{
+  #detail-article-author {
     font-size: 1.2rem;
   }
-  .article-hero{
+  .article-hero {
     width: 90%;
   }
-  .article-image{
+  .article-image {
     width: 75%;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 85%;
     font-size: 1.1rem;
   }
   .header-class {
     width: 80%;
-    margin-bottom: -.8rem;
+    margin-bottom: -0.8rem;
     font-size: 1.8rem;
   }
 }
-@media only screen and (max-width: 380px){
-  #detail-article-title{
+@media only screen and (max-width: 380px) {
+  #detail-article-title {
     margin-left: 5%;
-    margin-right: 5%;  
+    margin-right: 5%;
   }
-  .paragraph-class{
+  .paragraph-class {
     width: 85%;
     font-size: 1.05rem;
   }
   .header-class {
     font-size: 1.7rem;
   }
-  footer{
+  footer {
     margin-top: 3rem;
   }
 }

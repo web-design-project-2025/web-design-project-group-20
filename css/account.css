@@ -65,9 +65,13 @@ body.dark-mode .button-click {
 .account-text-color {
   color: var(--dark-green);
 }
-body.dark-mode .account-text-color,
-body.dark-mode .account-here {
+body.dark-mode .account-text-color {
   color: var(--off-white-dm);
+  text-align: center;
+}
+
+body.dark-mode .account-here {
+  color: var(--yellow);
 }
 
 .account-here {
