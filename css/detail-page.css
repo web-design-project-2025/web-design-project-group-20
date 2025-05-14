@@ -227,6 +227,15 @@ body.dark-mode #submit-button {
 #image-button {
   width: 100%;
 }
+#image-button:hover {
+  content: url("../icons/post-icon-yellow.png");
+}
+body.dark-mode #image-button {
+  content: url("../icons/post-icon-dm.png");
+}
+body.dark-mode #image-button:hover {
+  content: url("../icons/post-icon-yellow.png");
+}
 
 .write-review-div {
   display: flex;

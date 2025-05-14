@@ -91,7 +91,7 @@ body.dark-mode .log-in-box {
 
 body.dark-mode .red-login{
   background-color: var(--off-white-dm);
-  border-color: var(--off-white-dm);
+  border-color: var(--dark-green-dm);
   color: var(--dark-green-dm);
 }
 

@@ -2,30 +2,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailElement = document.getElementById("account-details");
   const settingsElement = document.getElementById("settings");
   const contentElement = document.getElementById("account-content");
-
   
   const images = {
     account: {
       inactive: "icons/account-red.png",
+      dark: "icons/account-dm.png",
       active: "icons/account-yellow.png",
     },
     settings: {
       inactive: "icons/settings-red.png",
+      dark: "icons/settings-dm.png",
       active: "icons/settings-yellow.png",
     },
   };
 
+    setInitialButtonImages();
+
   function clearActiveButtons() {
-    document.querySelectorAll(".list-account").forEach((el) => {
-      el.classList.remove("active");
-      const img = el.querySelector("img");
-      if (el.id === "account-details") {
-        img.src = images.account.inactive;
-      } else if (el.id === "settings") {
-        img.src = images.settings.inactive;
-      }
-    });
-  }
+  const isDark = localStorage.getItem("darkMode") === "enabled";
+
+  document.querySelectorAll(".list-account").forEach((el) => {
+    el.classList.remove("active");
+    const img = el.querySelector("img");
+    if (!img) return;
+
+    if (el.id === "account-details") {
+      img.src = isDark ? images.account.dark : images.account.inactive;
+    } else if (el.id === "settings") {
+      img.src = isDark ? images.settings.dark : images.settings.inactive;
+    }
+  });
+}
+function setInitialButtonImages() {
+  const isDark = localStorage.getItem("darkMode") === "enabled";
+
+  document.querySelectorAll(".list-account").forEach((el) => {
+    const img = el.querySelector("img");
+    if (!img) return;
+
+    if (el.id === "account-details") {
+      img.src = isDark ? images.account.dark : images.account.inactive;
+    } else if (el.id === "settings") {
+      img.src = isDark ? images.settings.dark : images.settings.inactive;
+    }
+  });
+}
 
   //this inserts html when pressing a button
   detailElement.addEventListener("click", function (event) {
@@ -156,6 +177,8 @@ document.addEventListener("DOMContentLoaded", () => {
           function enableDarkMode() {
             document.body.classList.add("dark-mode");
             localStorage.setItem("darkMode", "enabled");
+              setInitialButtonImages();
+              clearActiveButtons();
 
             const accountIconImg = document.getElementById("icon-link-account");
             const searchIconImg = document.getElementById("icon-search-header");
@@ -169,6 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
           function disableDarkMode() {
             document.body.classList.remove("dark-mode");
             localStorage.setItem("darkMode", "disabled");
+              setInitialButtonImages();
+              clearActiveButtons();
 
             const accountIconImg = document.getElementById("icon-link-account");
             const searchIconImg = document.getElementById("icon-search-header");

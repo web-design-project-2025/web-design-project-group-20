@@ -95,7 +95,7 @@ body.dark-mode .sign-in-box{
 
 body.dark-mode .red-signin{
   background-color: var(--off-white-dm);
-  border-color: var(--off-white-dm);
+  border-color: var(--dark-green-dm);
   color: var(--dark-green-dm);
 }
 

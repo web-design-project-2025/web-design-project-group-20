@@ -56,6 +56,9 @@ h2 {
   margin-top: 7vh;
   width: 8rem;
 }
+body.dark-mode #read-more-button-home {
+  content: url("../icons/read-more-dm.png");
+}
 
 .hero-rating {
   display: flex;

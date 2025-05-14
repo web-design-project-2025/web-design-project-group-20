@@ -20,6 +20,9 @@ body.dark-mode{
   margin: 0px;
   padding: 0px;
 }
+body.dark-mode #watchlist-button{
+    content: url("../icons/watchlist-dm.png");
+}
 
 .list-account {
   list-style: none;

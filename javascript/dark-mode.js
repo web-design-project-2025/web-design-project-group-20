@@ -23,7 +23,6 @@
   if (dropDownIconImg) dropDownIconImg.querySelector("img").src = "icons/drop-down-icon-dm.svg";
 
 
-
  }
 
  function disableDarkMode() {
@@ -39,7 +38,5 @@
    if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
    if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
    if (dropDownIconImg) dropDownIconImg.querySelector("img").src = "icons/drop-down-icon.svg";
-
-
  }
 });
