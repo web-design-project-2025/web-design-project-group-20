@@ -154,6 +154,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const lightModeIconImg = document.getElementById("light");
     const darkModeIconImg = document.getElementById("dark");
+    const isDark = localStorage.getItem("darkMode") === "enabled";
+    if (!isDark) {
+      lightModeIconImg.src = "icons/sun-green.svg";
+      darkModeIconImg.src = "icons/moon-green.svg";
+    }
+    if (isDark) {
+      lightModeIconImg.src = "icons/sun-dm.svg";
+      darkModeIconImg.src = "icons/moon-dm.svg";
+    }
 
     lightModeButton.addEventListener("click", () => {
       disableDarkMode();
