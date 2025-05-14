@@ -69,6 +69,9 @@ body.dark-mode .account-text-color {
   color: var(--off-white-dm);
   text-align: center;
 }
+.account-text-color {
+  text-align: center;
+}
 
 body.dark-mode .account-here {
   color: var(--yellow);
