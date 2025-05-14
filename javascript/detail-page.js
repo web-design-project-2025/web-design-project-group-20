@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   // if detail-page for movies is active
   if (document.getElementById("details")) {
     const whatFilm = getQueryParam("title");
-    console.log(whatFilm);
 
     const filmResponse = await fetch("data/movies.json");
     const filmJSON = await filmResponse.json();
@@ -109,6 +108,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     if (film) {
       filmImg.src = film.image;
+      filmImg.alt = film.alt;
       filmTitle.innerText = film.title;
       filmDescription.innerText = film.description;
 
@@ -384,7 +384,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         starChange("write-review-rating-four", false);
         starChange("write-review-rating-five", false);
       }
-
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data
