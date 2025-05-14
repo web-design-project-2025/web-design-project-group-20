@@ -46,3 +46,5 @@ If you want to experience the website as a user, you should:
 4. watch them!
 5. then review the movie as you wish.
 6. if the movie was to your liking, look if there is a matching article to read further.
+
+Thank you!☻
