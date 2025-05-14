@@ -130,15 +130,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (localStorage.getItem("darkMode") === "enabled") {
             enableDarkMode();
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-dm.svg";
+            darkModeIconImg.src = "icons/moon-dm.svg"; 
           }
 
           lightModeButton.addEventListener("click", () => {
             disableDarkMode();
-          });
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-green.svg";   
+            darkModeIconImg.src = "icons/moon-green.svg";  
+            
+            });
 
           darkModeButton.addEventListener("click", () => {
             enableDarkMode();
-
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-dm.svg";
+            darkModeIconImg.src = "icons/moon-dm.svg"; 
           });
 
           function enableDarkMode() {
@@ -151,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
             if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
             if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero-dm.svg";
+
           }
 
           function disableDarkMode() {
@@ -163,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon.svg";
             if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
             if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
+
           }
      });
 

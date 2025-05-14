@@ -38,6 +38,13 @@ body.dark-mode{
   margin-top: 1rem;
 }
 
+body.dark-mode .button-click{
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+  color: var(--dark-green-dm);
+}
+
+
 #show-password {
   width: 9rem;
   height: 2.3rem;
