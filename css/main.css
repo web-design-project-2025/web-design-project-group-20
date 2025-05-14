@@ -173,6 +173,7 @@ body.dark-mode footer {
 
 .footer-section a {
   color: var(--off-white);
+  text-decoration: underline;
 }
 
 .footer-section a:hover {
