@@ -76,35 +76,41 @@
       <section class="top-of-page">
         <h1 class="top-of-page-title">SEARCH</h1>
       </section>
-      <div class="search-wrapper-result">
-        <div class="search-container">
-          <label for="search" id="search-icon-hero"
-            ><img
-              class="icon"
-              id="search-img"
-              src="icons/search-icon-black.svg"
-              alt="search icon"
-          /></label>
-          <input
-            class="input-search"
-            type="search"
-            id="search"
-            data-search="home"
-          />
-          <div class="search-show-home" data-show-container></div>
+      <section id="search-body">
+        <div class="search-wrapper-result">
+          <div class="search-container">
+            <label for="search" id="search-icon-hero"
+              ><img
+                class="icon"
+                id="search-img"
+                src="icons/search-icon-black.svg"
+                alt="search icon"
+            /></label>
+            <input
+              class="input-search-result"
+              type="search"
+              id="search"
+              data-search="home"
+            />
+            <div
+              id="result-container"
+              class="search-show-result"
+              data-show-container
+            ></div>
+          </div>
         </div>
-      </div>
-      <template data-content-template>
-        <div class="title-content-home">
-          <a
-            href=""
-            class="search-result-home"
-            id="home-search-result"
-            data-title
-          >
-          </a>
-        </div>
-      </template>
+        <template data-content-template>
+          <div class="title-content-home">
+            <a
+              href=""
+              class="search-result-home"
+              id="home-search-result"
+              data-title
+            >
+            </a>
+          </div>
+        </template>
+      </section>
     </main>
     <footer>
       <section class="footer-container">
