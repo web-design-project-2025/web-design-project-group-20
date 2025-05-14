@@ -33,12 +33,12 @@
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   margin-bottom: 0;
-  padding-right: 3rem;
+  padding-right: 0;
   color: black;
   font-weight: bold;
   height: 40px;
 }
-body.dark-mode .movie-name{
+body.dark-mode .movie-name {
   color: var(--off-white-dm);
 }
 
@@ -50,7 +50,7 @@ body.dark-mode .movie-name{
 .movie-body {
   background-color: var(--off-white);
 }
-body.dark-mode{
+body.dark-mode {
   background-color: var(--dark-green-dm);
 }
 
@@ -82,7 +82,7 @@ body.dark-mode .number-of-reviews {
   background-color: var(--dark-green);
   margin-bottom: 2rem;
 }
-body.dark-mode .movie-line{
+body.dark-mode .movie-line {
   background-color: var(--green-dm);
 }
 
@@ -166,8 +166,6 @@ body.dark-mode .movie-filter-clear {
   color: var(--off-white-dm);
 }
 
-
-
 /* Watchlist icon */
 
 .movie-watchlist {
@@ -226,7 +224,7 @@ body.dark-mode .movie-filter-clear {
   .number-of-reviews {
     margin-left: 8rem;
   }
-  .movie-name{
+  .movie-name {
     font-size: 1.2rem;
   }
 }
@@ -275,7 +273,7 @@ body.dark-mode .movie-filter-clear {
   .number-of-reviews {
     margin-left: 11rem;
   }
-  .movie-name{
+  .movie-name {
     font-size: 1.3rem;
   }
 }
