@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailElement = document.getElementById("account-details");
   const settingsElement = document.getElementById("settings");
   const contentElement = document.getElementById("account-content");
-  
+
   const images = {
     account: {
       inactive: "icons/account-red.png",
@@ -16,37 +16,37 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-    setInitialButtonImages();
+  setInitialButtonImages();
 
   function clearActiveButtons() {
-  const isDark = localStorage.getItem("darkMode") === "enabled";
+    const isDark = localStorage.getItem("darkMode") === "enabled";
 
-  document.querySelectorAll(".list-account").forEach((el) => {
-    el.classList.remove("active");
-    const img = el.querySelector("img");
-    if (!img) return;
+    document.querySelectorAll(".list-account").forEach((el) => {
+      el.classList.remove("active");
+      const img = el.querySelector("img");
+      if (!img) return;
 
-    if (el.id === "account-details") {
-      img.src = isDark ? images.account.dark : images.account.inactive;
-    } else if (el.id === "settings") {
-      img.src = isDark ? images.settings.dark : images.settings.inactive;
-    }
-  });
-}
-function setInitialButtonImages() {
-  const isDark = localStorage.getItem("darkMode") === "enabled";
+      if (el.id === "account-details") {
+        img.src = isDark ? images.account.dark : images.account.inactive;
+      } else if (el.id === "settings") {
+        img.src = isDark ? images.settings.dark : images.settings.inactive;
+      }
+    });
+  }
+  function setInitialButtonImages() {
+    const isDark = localStorage.getItem("darkMode") === "enabled";
 
-  document.querySelectorAll(".list-account").forEach((el) => {
-    const img = el.querySelector("img");
-    if (!img) return;
+    document.querySelectorAll(".list-account").forEach((el) => {
+      const img = el.querySelector("img");
+      if (!img) return;
 
-    if (el.id === "account-details") {
-      img.src = isDark ? images.account.dark : images.account.inactive;
-    } else if (el.id === "settings") {
-      img.src = isDark ? images.settings.dark : images.settings.inactive;
-    }
-  });
-}
+      if (el.id === "account-details") {
+        img.src = isDark ? images.account.dark : images.account.inactive;
+      } else if (el.id === "settings") {
+        img.src = isDark ? images.settings.dark : images.settings.inactive;
+      }
+    });
+  }
 
   //this inserts html when pressing a button
   detailElement.addEventListener("click", function (event) {
@@ -132,6 +132,7 @@ function setInitialButtonImages() {
     clearActiveButtons();
     settingsElement.classList.add("active");
     settingsElement.querySelector("img").src = images.settings.active;
+
     contentElement.innerHTML = `
             <section>
               <h2>Settings</h2>
@@ -147,64 +148,64 @@ function setInitialButtonImages() {
               </div> 
             </section>
   `;
-         // code from previus project
-          const lightModeButton = document.getElementById("light");
-          const darkModeButton = document.getElementById("dark");
+    // code from previus project
+    const lightModeButton = document.getElementById("light");
+    const darkModeButton = document.getElementById("dark");
 
-          if (localStorage.getItem("darkMode") === "enabled") {
-            enableDarkMode();
-            const lightModeIconImg = document.getElementById("light");
-            const darkModeIconImg = document.getElementById("dark");
-            lightModeIconImg.src = "icons/sun-dm.svg";
-            darkModeIconImg.src = "icons/moon-dm.svg"; 
-          }
+    const lightModeIconImg = document.getElementById("light");
+    const darkModeIconImg = document.getElementById("dark");
 
-          lightModeButton.addEventListener("click", () => {
-            disableDarkMode();
-            const lightModeIconImg = document.getElementById("light");
-            const darkModeIconImg = document.getElementById("dark");
-            lightModeIconImg.src = "icons/sun-green.svg";   
-            darkModeIconImg.src = "icons/moon-green.svg";  
-            
-            });
+    lightModeButton.addEventListener("click", () => {
+      disableDarkMode();
+      lightModeIconImg.src = "icons/sun-green.svg";
+      darkModeIconImg.src = "icons/moon-green.svg";
+    });
 
-          darkModeButton.addEventListener("click", () => {
-            enableDarkMode();
-            const lightModeIconImg = document.getElementById("light");
-            const darkModeIconImg = document.getElementById("dark");
-            lightModeIconImg.src = "icons/sun-dm.svg";
-            darkModeIconImg.src = "icons/moon-dm.svg"; 
-          });
+    darkModeButton.addEventListener("click", () => {
+      enableDarkMode();
+      lightModeIconImg.src = "icons/sun-dm.svg";
+      darkModeIconImg.src = "icons/moon-dm.svg";
+    });
+  });
 
-          function enableDarkMode() {
-            document.body.classList.add("dark-mode");
-            localStorage.setItem("darkMode", "enabled");
-              setInitialButtonImages();
-              clearActiveButtons();
+  if (localStorage.getItem("darkMode") === "enabled") {
+    enableDarkMode();
+    lightModeIconImg.src = "icons/sun-dm.svg";
+    darkModeIconImg.src = "icons/moon-dm.svg";
+  }
 
-            const accountIconImg = document.getElementById("icon-link-account");
-            const searchIconImg = document.getElementById("icon-search-header");
-            const searchIconHeroImg = document.getElementById("search-icon-hero");
-            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
-            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
-            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero-dm.svg";
+  function enableDarkMode() {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("darkMode", "enabled");
+    setInitialButtonImages();
+    // clearActiveButtons();
 
-          }
+    const accountIconImg = document.getElementById("icon-link-account");
+    const searchIconImg = document.getElementById("icon-search-header");
+    const searchIconHeroImg = document.getElementById("search-icon-hero");
+    if (accountIconImg)
+      accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
+    if (searchIconImg)
+      searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
+    if (searchIconHeroImg)
+      searchIconHeroImg.querySelector("img").src =
+        "icons/search-icon-hero-dm.svg";
+  }
 
-          function disableDarkMode() {
-            document.body.classList.remove("dark-mode");
-            localStorage.setItem("darkMode", "disabled");
-              setInitialButtonImages();
-              clearActiveButtons();
+  function disableDarkMode() {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("darkMode", "disabled");
+    setInitialButtonImages();
+    // clearActiveButtons();
 
-            const accountIconImg = document.getElementById("icon-link-account");
-            const searchIconImg = document.getElementById("icon-search-header");
-            const searchIconHeroImg = document.getElementById("search-icon-hero");
-            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon.svg";
-            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
-            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
-
-          }
-     });
-
+    const accountIconImg = document.getElementById("icon-link-account");
+    const searchIconImg = document.getElementById("icon-search-header");
+    const searchIconHeroImg = document.getElementById("search-icon-hero");
+    if (accountIconImg)
+      accountIconImg.querySelector("img").src = "icons/account-icon.svg";
+    if (searchIconImg)
+      searchIconImg.querySelector("img").src = "icons/search-icon.svg";
+    if (searchIconHeroImg)
+      searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
+  }
 });
