@@ -15,9 +15,15 @@ async function loadData() {
   } else if (document.getElementById("home-movie-content")) {
     homeRenderContent();
   }
+  if (localStorage.getItem("darkMode") === "enabled") {
+    // Re-apply dark mode to update dynamically loaded icons
+    if (typeof enableDarkMode === "function") {
+      enableDarkMode();
+    }
+  }
 }
 
-/* added/changed lines 31-32, 39-40 with 
+/* added/changed lines 33-34, 41-42 with 
 the help of chatgpt: https://chatgpt.com/share/6818ac61-8934-800a-aa6d-3a57c3cc048f  */
 
 function createMovieElement(movie) {
@@ -41,17 +47,22 @@ function createMovieElement(movie) {
   const movieName = document.createElement("p");
   movieName.innerText = movie.title;
   movieName.classList.add("movie-name");
-  movieElement.appendChild(movieName);
 
   const watchlistIcon = document.createElement("img");
-  watchlistIcon.src = "icons/watchlist-icon.svg";
   watchlistIcon.alt = "add to watchlist button";
   watchlistIcon.classList.add("watchlist-icon");
-  movieElement.appendChild(watchlistIcon);
 
-  movieWatchlist.appendChild(movieName);
-  movieWatchlist.appendChild(watchlistIcon);
-  movieElement.appendChild(movieWatchlist);
+  /* 
+Added 15 lines (59,60,62,63,64,78,79,86,103,107,108,109,114,115,116)
+from chatgpt: https://chatgpt.com/share/682321f8-2e70-800a-9288-e4debaf2ce09 */
+
+  let isDarkMode = false;
+  let watchlistIconDarkMode = "icons/watchlist-icon.svg";
+
+  if (localStorage.getItem("darkMode") === "enabled") {
+    isDarkMode = true;
+    watchlistIconDarkMode = "icons/watchlist-icon-white.svg";
+  }
 
   /* Added 10 lines (60,64,66,67,79,80,82,83,86,90) from
 chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
@@ -64,9 +75,19 @@ chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
     userWatchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
     if (userWatchlist.includes(movie.id)) {
-      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      if (isDarkMode) {
+        watchlistIconDarkMode = "icons/watchlist-icon-full-white.svg";
+      } else {
+        watchlistIconDarkMode = "icons/watchlist-icon-full.svg";
+      }
     }
   }
+
+  watchlistIcon.src = watchlistIconDarkMode;
+
+  movieWatchlist.appendChild(movieName);
+  movieWatchlist.appendChild(watchlistIcon);
+  movieElement.appendChild(movieWatchlist);
 
   watchlistIcon.addEventListener("click", function () {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -79,12 +100,22 @@ chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
     const userEmail = loggedInUser.email;
     let watchlist = JSON.parse(localStorage.getItem(userEmail)) || [];
 
+    const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+
     if (watchlist.includes(movie.id)) {
       watchlist = watchlist.filter((id) => id !== movie.id);
-      watchlistIcon.src = "icons/watchlist-icon.svg";
+      if (isDarkMode) {
+        watchlistIcon.src = "icons/watchlist-icon-white.svg";
+      } else {
+        watchlistIcon.src = "icons/watchlist-icon.svg";
+      }
     } else {
       watchlist.push(movie.id);
-      watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      if (isDarkMode) {
+        watchlistIcon.src = "icons/watchlist-icon-full-white.svg";
+      } else {
+        watchlistIcon.src = "icons/watchlist-icon-full.svg";
+      }
     }
 
     localStorage.setItem(userEmail, JSON.stringify(watchlist));
@@ -171,6 +202,18 @@ function homeRenderContent() {
 
   for (let movie of movies) {
     const movieElement = createMovieElement(movie);
+
+    // Changeing box style
+    movieElement.classList.remove("movie-box");
+    movieElement.classList.add("movie-box-home");
+
+    // find existing number-of-reviews element inside movieElement
+    const reviewElement = movieElement.querySelector(".number-of-reviews");
+    if (reviewElement) {
+      reviewElement.classList.remove("number-of-reviews");
+      reviewElement.classList.add("number-of-reviews-home");
+    }
+
     homeContentElement.appendChild(movieElement);
   }
 }

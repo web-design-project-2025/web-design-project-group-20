@@ -15,6 +15,7 @@
     <script src="javascript/signup.js" defer></script>
     <script src="javascript/header-search.js" defer></script>
     <script src="javascript/drop-down-menu.js" defer></script>
+    <script src="javascript/dark-mode.js" defer></script>
     <title>Home</title>
   </head>
   <body>
@@ -56,6 +57,7 @@
                 src="icons/account-icon.svg"
                 alt="account-icon"
                 class="icon"
+                id="account-icon"
             /></a>
           </li>
           <li id="flex-search">
@@ -92,13 +94,13 @@
           </div>
           <div class="sign-in-flex">
             <label class="label" for="password"> Password</label>
-            <input type="text" id="password" />
+            <input type="password" id="password" />
           </div>
           <div class="sign-in-flex">
             <label class="label" for="re-enter-password">
               Re-enter Password</label
             >
-            <input type="text" id="re-enter-password" />
+            <input type="password" id="re-enter-password" />
           </div>
         </section>
         <button class="red-signin" id="sign-up-button">Sign in</button>

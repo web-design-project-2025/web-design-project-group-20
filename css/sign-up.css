@@ -1,38 +1,36 @@
 body {
   background-color: var(--off-white);
 }
-main {
+body.dark-mode{
+  background-color: var(--dark-green-dm);
+}
+main{
   min-height: 27rem;
 }
 #email {
   margin-left: 8.1rem;
   margin-top: 1rem;
-  background-color: var(--off-white);
 }
 
 #password {
   margin-left: 6.3rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
-  background-color: var(--off-white);
 }
 
 #name1 {
   margin-top: 1.2rem;
   margin-left: 7.9rem;
-  background-color: var(--off-white);
 }
 
 #username {
   margin-top: 1.2rem;
   margin-left: 5.9rem;
-  background-color: var(--off-white);
 }
 
 #re-enter-password {
   margin-top: 1.2rem;
   margin-left: 1.75rem;
-  background-color: var(--off-white);
 }
 
 .re-enter-move-group {
@@ -46,6 +44,17 @@ main {
 #username,
 #re-enter-password {
   width: 18rem;
+  border-radius: 0.2rem;
+  border: 2px solid var(--darker-green);
+  background-color: var(--off-white);
+}
+
+body.dark-mode #email,
+body.dark-mode #password,
+body.dark-mode #name1,
+body.dark-mode #username,
+body.dark-mode #re-enter-password {
+  background-color: var(--off-white-dm);
   border: none;
   border-radius: 0.5rem;
   font-family: "Kumbh Sans";
@@ -73,6 +82,10 @@ main {
   padding-top: 1rem;
   border-radius: 0.5rem;
 }
+body.dark-mode .sign-in-box{
+  background-color: var(--green-dm);
+  border-color: var(--dark-green-dm);
+}
 
 .red-signin {
   background-color: var(--red);
@@ -88,6 +101,12 @@ main {
   font-family: "Kumbh Sans";
 }
 
+body.dark-mode .red-signin{
+  background-color: var(--off-white-dm);
+  border-color: var(--dark-green-dm);
+  color: var(--dark-green-dm);
+}
+
 /* footer */
 html,
 body {
@@ -97,7 +116,6 @@ body {
 
 .footer-container {
   bottom: 0;
-  background-color: var(--red);
   width: 100%;
   padding-bottom: 1rem;
   margin-top: 5rem;
@@ -110,7 +128,6 @@ footer {
 .footer-line {
   height: 3px;
   width: 9rem;
-  background-color: var(--off-white);
   margin: auto;
   border-radius: 0.5rem;
   margin-top: 0;

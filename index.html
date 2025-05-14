@@ -21,6 +21,7 @@
     <script src="javascript/header-search.js" defer></script>
     <script src="javascript/hero.js" defer></script>
     <script src="javascript/drop-down-menu.js" defer></script>
+    <script src="javascript/dark-mode.js" defer></script>
     <title>Home</title>
   </head>
 
@@ -58,16 +59,17 @@
             <a class="header-text" href="watch-list.html">Watch List</a>
           </li>
           <li>
-            <a href="account.html"
+            <a href="account.html" id="icon-link-account"
               ><img
                 src="icons/account-icon.svg"
                 alt="account-icon"
                 class="icon"
+                id="account-icon"
             /></a>
           </li>
           <li id="flex-search">
             <div id="search-wrapper-header"></div>
-            <label for="search-header"
+            <label for="search-header" id="icon-search-header"
               ><img
                 src="icons/search-icon.svg"
                 alt="search-icon"
@@ -86,7 +88,7 @@
         <!--search bar things-->
         <div class="search-wrapper-home">
           <div class="search-container">
-            <label for="search"
+            <label for="search" id="search-icon-hero"
               ><img
                 class="icon"
                 id="search-img"

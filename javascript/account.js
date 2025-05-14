@@ -2,29 +2,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailElement = document.getElementById("account-details");
   const settingsElement = document.getElementById("settings");
   const contentElement = document.getElementById("account-content");
-
+  
   const images = {
     account: {
       inactive: "icons/account-red.png",
+      dark: "icons/account-dm.png",
       active: "icons/account-yellow.png",
     },
     settings: {
       inactive: "icons/settings-red.png",
+      dark: "icons/settings-dm.png",
       active: "icons/settings-yellow.png",
     },
   };
 
+    setInitialButtonImages();
+
   function clearActiveButtons() {
-    document.querySelectorAll(".list-account").forEach((el) => {
-      el.classList.remove("active");
-      const img = el.querySelector("img");
-      if (el.id === "account-details") {
-        img.src = images.account.inactive;
-      } else if (el.id === "settings") {
-        img.src = images.settings.inactive;
-      }
-    });
-  }
+  const isDark = localStorage.getItem("darkMode") === "enabled";
+
+  document.querySelectorAll(".list-account").forEach((el) => {
+    el.classList.remove("active");
+    const img = el.querySelector("img");
+    if (!img) return;
+
+    if (el.id === "account-details") {
+      img.src = isDark ? images.account.dark : images.account.inactive;
+    } else if (el.id === "settings") {
+      img.src = isDark ? images.settings.dark : images.settings.inactive;
+    }
+  });
+}
+function setInitialButtonImages() {
+  const isDark = localStorage.getItem("darkMode") === "enabled";
+
+  document.querySelectorAll(".list-account").forEach((el) => {
+    const img = el.querySelector("img");
+    if (!img) return;
+
+    if (el.id === "account-details") {
+      img.src = isDark ? images.account.dark : images.account.inactive;
+    } else if (el.id === "settings") {
+      img.src = isDark ? images.settings.dark : images.settings.inactive;
+    }
+  });
+}
 
   //this inserts html when pressing a button
   detailElement.addEventListener("click", function (event) {
@@ -61,8 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 
       /* Clicking the buttin will make the password appear, 
-and clicking it again will make it dissapear */
-
+      and clicking it again will make it dissapear */
       const showPasswordButton = document.getElementById("show-password");
       const logoutButton = document.getElementById("log-out");
       const passwordText = document.getElementById("password-text");
@@ -117,7 +138,7 @@ and clicking it again will make it dissapear */
               <div id="bowl"> 
                 <div id="settings-list1"> 
                   <h5>Light mode:</h5> 
-                  <img class="icon"" id="light" src="icons/sun-green.svg" alt="light mode button">
+                  <img class="icon" id="light" src="icons/sun-green.svg" alt="light mode button">
                 </div> 
                 <div id="settings-list2"> 
                   <h5>Dark mode:</h5> 
@@ -126,7 +147,64 @@ and clicking it again will make it dissapear */
               </div> 
             </section>
   `;
+         // code from previus project
+          const lightModeButton = document.getElementById("light");
+          const darkModeButton = document.getElementById("dark");
 
-    //change icons to light and dark mode icons
-  });
+          if (localStorage.getItem("darkMode") === "enabled") {
+            enableDarkMode();
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-dm.svg";
+            darkModeIconImg.src = "icons/moon-dm.svg"; 
+          }
+
+          lightModeButton.addEventListener("click", () => {
+            disableDarkMode();
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-green.svg";   
+            darkModeIconImg.src = "icons/moon-green.svg";  
+            
+            });
+
+          darkModeButton.addEventListener("click", () => {
+            enableDarkMode();
+            const lightModeIconImg = document.getElementById("light");
+            const darkModeIconImg = document.getElementById("dark");
+            lightModeIconImg.src = "icons/sun-dm.svg";
+            darkModeIconImg.src = "icons/moon-dm.svg"; 
+          });
+
+          function enableDarkMode() {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("darkMode", "enabled");
+              setInitialButtonImages();
+              clearActiveButtons();
+
+            const accountIconImg = document.getElementById("icon-link-account");
+            const searchIconImg = document.getElementById("icon-search-header");
+            const searchIconHeroImg = document.getElementById("search-icon-hero");
+            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon-dm.svg";
+            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon-dm.svg";
+            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero-dm.svg";
+
+          }
+
+          function disableDarkMode() {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("darkMode", "disabled");
+              setInitialButtonImages();
+              clearActiveButtons();
+
+            const accountIconImg = document.getElementById("icon-link-account");
+            const searchIconImg = document.getElementById("icon-search-header");
+            const searchIconHeroImg = document.getElementById("search-icon-hero");
+            if (accountIconImg) accountIconImg.querySelector("img").src = "icons/account-icon.svg";
+            if (searchIconImg) searchIconImg.querySelector("img").src = "icons/search-icon.svg";
+            if (searchIconHeroImg) searchIconHeroImg.querySelector("img").src = "icons/search-icon-hero.svg";
+
+          }
+     });
+
 });

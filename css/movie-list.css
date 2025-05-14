@@ -38,6 +38,9 @@
   font-weight: bold;
   height: 40px;
 }
+body.dark-mode .movie-name{
+  color: var(--off-white-dm);
+}
 
 .movie-sides {
   margin-left: 5%;
@@ -46,6 +49,9 @@
 
 .movie-body {
   background-color: var(--off-white);
+}
+body.dark-mode{
+  background-color: var(--dark-green-dm);
 }
 
 .movie-stars {
@@ -67,15 +73,17 @@
   margin-bottom: 0;
   margin-right: 0.7rem;
 }
-
-a {
-  text-decoration: none;
+body.dark-mode .number-of-reviews {
+  color: var(--off-white-dm);
 }
 
 .movie-line {
-  height: 0.2rem;
+  height: 0.3rem;
   background-color: var(--dark-green);
   margin-bottom: 2rem;
+}
+body.dark-mode .movie-line{
+  background-color: var(--green-dm);
 }
 
 .filter-buttons {
@@ -96,6 +104,10 @@ a {
   background-color: var(--red);
   transition-duration: 0.2s;
 }
+body.dark-mode .movie-filter {
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+}
 
 .movie-filter:hover {
   font-weight: bold;
@@ -114,10 +126,21 @@ a {
   visibility: hidden;
   transition-duration: 0.3s;
 }
+body.dark-mode #movie-filter-clear {
+  background-color: var(--red-dm);
+  border-color: var(--red-dm);
+}
 
 #movie-filter-clear:hover {
   background-color: var(--red);
   border-color: var(--red);
+}
+body.dark-mode #movie-filter-clear:hover {
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+}
+body.dark-mode .movie-filter-clear:hover {
+  color: var(--red-dm);
 }
 
 #movie-filter-comedy,
@@ -130,7 +153,21 @@ a {
   height: 100%;
   width: 100%;
   padding-top: 0.6rem;
+  text-decoration: none;
 }
+body.dark-mode #movie-filter-comedy,
+body.dark-mode #movie-filter-animation,
+body.dark-mode #movie-filter-action,
+body.dark-mode #movie-filter-scifi {
+  color: var(--dark-green-dm);
+}
+
+body.dark-mode .movie-filter-clear {
+  color: var(--off-white-dm);
+}
+
+
+
 /* Watchlist icon */
 
 .movie-watchlist {
@@ -176,6 +213,9 @@ a {
     justify-self: center;
     width: 19rem;
   }
+  .number-of-reviews {
+    margin-left: 10rem;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -183,9 +223,15 @@ a {
     justify-self: center;
     width: 17rem;
   }
+  .number-of-reviews {
+    margin-left: 8rem;
+  }
+  .movie-name{
+    font-size: 1.2rem;
+  }
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 615px) {
   .movie-box {
     justify-self: center;
     width: 15rem;
@@ -193,12 +239,18 @@ a {
   .filter-buttons {
     display: block;
   }
+  .number-of-reviews {
+    margin-left: 6rem;
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .movie-box {
     justify-self: center;
     width: 13rem;
+  }
+  .number-of-reviews {
+    margin-left: 4rem;
   }
 }
 
@@ -211,6 +263,7 @@ a {
   .movie-box {
     justify-self: center;
     width: 20rem;
+    margin-bottom: 1rem;
   }
   .movie-filter {
     margin: 0.1rem;
@@ -219,6 +272,12 @@ a {
   #movie-filter-clear {
     margin-top: 0.5rem;
   }
+  .number-of-reviews {
+    margin-left: 11rem;
+  }
+  .movie-name{
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -226,9 +285,9 @@ a {
     width: 17rem;
     margin-bottom: 0.8rem;
   }
-}
-
-@media only screen and (max-width: 400px) {
+  .number-of-reviews {
+    margin-left: 8rem;
+  }
   .movie-filter {
     width: 30%;
   }

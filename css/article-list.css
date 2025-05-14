@@ -1,3 +1,7 @@
+html {
+  font-family: "Kumbh Sans";
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,9 +42,16 @@
   text-align: center;
   color: black;
 }
+body.dark-mode .article-author,
+body.dark-mode .article-name{
+color: var(--off-white-dm);
+}
 
 .article-body {
   background-color: var(--off-white);
+}
+body.dark-mode{
+  background-color: var(--dark-green-dm);
 }
 
 a {

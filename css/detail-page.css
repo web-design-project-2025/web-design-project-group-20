@@ -7,7 +7,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   align-items: center;
-  gap: 2rem;
+  gap: 0;
 }
 
 #details {
@@ -50,6 +50,17 @@ body {
   margin-bottom: auto;
   margin-top: auto;
 }
+body.dark-mode .film-number-of-reviews,
+body.dark-mode .hero-number-of-reviews,
+body.dark-mode #detail-genres,
+body.dark-mode #detail-title {
+  color: var(--off-white-dm);
+}
+body.dark-mode #detail-description {
+  color: var(--off-white-dm);
+  font-weight: 350;
+}
+
 
 .hero-number-of-reviews {
   color: var(--off-white);
@@ -64,24 +75,33 @@ body {
 
 .review-box-right {
   background-color: var(--light-green);
-  margin-left: auto;
   margin-top: 5rem;
-  width: 95%;
+  padding-top: 1.5rem;
+  width: 100%;
   height: 62rem;
 }
 
 .review-box-left {
   background-color: var(--light-green);
-  margin-right: auto;
   margin-top: 5rem;
-  width: 95%;
+  padding-top: 1.5rem;
+  width: 100%;
   height: 62rem;
+}
+body.dark-mode .review-box-left,
+body.dark-mode .review-box-right{
+  background-color: var(--green-dm);
 }
 
 .review-header {
   color: var(--dark-green);
   font-size: 2rem;
   margin-bottom: 0;
+}
+body.dark-mode .review-header,
+body.dark-mode #title-label,
+body.dark-mode #your-review{
+  color: var(--off-white-dm);
 }
 
 /* user review css */
@@ -200,9 +220,21 @@ body {
   background-color: var(--light-green);
   border: none;
 }
+body.dark-mode #submit-button {
+  background-color: var(--green-dm);
+}
 
 #image-button {
   width: 100%;
+}
+#image-button:hover {
+  content: url("../icons/post-icon-yellow.png");
+}
+body.dark-mode #image-button {
+  content: url("../icons/post-icon-dm.png");
+}
+body.dark-mode #image-button:hover {
+  content: url("../icons/post-icon-yellow.png");
 }
 
 .write-review-div {
@@ -281,10 +313,11 @@ body {
   }
   .review-box-left {
     margin-top: 3rem;
-    height: 45rem;
+    margin-bottom: 0;
+    height: 40rem;
   }
   .review-box-right {
-    margin-top: 1rem;
+    margin-top: -2rem;
   }
 }
 

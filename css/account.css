@@ -6,7 +6,11 @@ img {
 body {
   background-color: var(--off-white);
 }
-#account-content {
+
+body.dark-mode{
+  background-color: var(--dark-green-dm);
+}
+#account-content{
   min-height: 19.5rem;
 }
 /*button flex*/
@@ -16,6 +20,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body.dark-mode #watchlist-button{
+    content: url("../icons/watchlist-dm.png");
+}
+
 .list-account {
   list-style: none;
   margin-left: 5vw;
@@ -23,12 +31,7 @@ body {
   margin-top: 3vw;
 }
 
-#bowl-logged-out {
-  text-align: center;
-}
-
 /*button flex end*/
-
 .button-click {
   background-color: var(--red);
   border: none;
@@ -44,6 +47,13 @@ body {
   font-weight: bold;
 }
 
+body.dark-mode .button-click{
+  background-color: var(--off-white-dm);
+  border-color: var(--off-white-dm);
+  color: var(--dark-green-dm);
+}
+
+
 #show-password {
   width: 9rem;
   height: 2.3rem;
@@ -55,6 +65,10 @@ body {
 }
 .account-text-color {
   color: var(--dark-green);
+}
+body.dark-mode .account-text-color,
+body.dark-mode .account-here {
+color: var(--off-white-dm);
 }
 
 .account-here {
@@ -107,6 +121,7 @@ body {
 #dark {
   margin-left: 2.15vw;
 }
+
 #light {
   margin-left: 2vw;
 }
@@ -115,7 +130,7 @@ body {
 h2 {
   text-align: center;
   color: var(--dark-green);
-  margin-top: 0;
+  margin-top: 2;
 }
 
 h5 {
@@ -129,12 +144,12 @@ p {
   margin: 0;
   margin-left: 0.5vw;
 }
-/*account content end*/
-
-footer {
-  background-color: transparent;
-  padding: 0;
+body.dark-mode h2,
+body.dark-mode h5,
+body.dark-mode p {
+color: var(--off-white-dm);
 }
+/*account content end*/
 
 html,
 body {
@@ -144,7 +159,6 @@ body {
 
 .footer-container {
   bottom: 0;
-  background-color: var(--red);
   width: 100%;
   padding-bottom: 1rem;
   margin-top: 5rem;
@@ -183,12 +197,20 @@ body {
 }
 @media only screen and (max-width: 490px) {
   .list-account img {
-    width: 8rem;
+    width: 11rem ;
   }
   .list-account {
     margin: 2.5vw;
     margin-bottom: 0;
   }
+  #button-list {
+    display: block;
+    margin-left: 28%;  
+  }
+  h5 {
+    font-weight: 600;
+  }
+
 }
 @media only screen and (max-width: 430px) {
   .list-account img {
@@ -198,6 +220,10 @@ body {
     margin: 2.3vw;
     margin-bottom: 0;
   }
+  #button-list{
+    display: block;
+    margin-left: 27%;  
+  }
 }
 @media only screen and (max-width: 395px) {
   .list-account img {
@@ -206,5 +232,9 @@ body {
   .list-account {
     margin: 2.2vw;
     margin-bottom: 0;
+  }
+  #button-list{
+    display: block;
+    margin-left: 26%;  
   }
 }

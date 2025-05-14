@@ -385,20 +385,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         starChange("write-review-rating-five", false);
       }
 
-      // post button changes colour on hover
-      document
-        .getElementById("image-button")
-        .addEventListener("mouseenter", function () {
-          document.getElementById("image-button").src =
-            "icons/post-icon-yellow.png";
-        });
-
-      document
-        .getElementById("image-button")
-        .addEventListener("mouseleave", function () {
-          document.getElementById("image-button").src =
-            "icons/post-icon-red.png";
-        });
     }
   } else if (document.getElementById("detail-article-div")) {
     //checking for which article is active, and loading data
