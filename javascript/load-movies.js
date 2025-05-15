@@ -64,7 +64,7 @@ from chatgpt: https://chatgpt.com/share/682321f8-2e70-800a-9288-e4debaf2ce09 */
     watchlistIconDarkMode = "icons/watchlist-icon-white.svg";
   }
 
-  /* Added 10 lines (60,64,66,67,79,80,82,83,86,90) from
+  /* Added 10 lines (71,75,100,101,105,106,110,112,113,121) from
 chatgpt https://chatgpt.com/share/681ccfa9-42a4-800a-a4ee-bc38c5c96870 :*/
 
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
