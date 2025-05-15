@@ -10,32 +10,32 @@ https://chatgpt.com/share/6808fac7-2550-8002-a76e-f02d7789adc5
 
 */
 
-const dataContentTemplate = document.querySelector("[data-content-template]")
-const dataShowContainer = document.querySelector("[data-show-container]")
-const searchInput = document.querySelector("[data-search='home']")
+const dataContentTemplate = document.querySelector("[data-content-template]");
+const dataShowContainer = document.querySelector("[data-show-container]");
+const searchInput = document.querySelector("[data-search='home']");
 
-let contentTitles =[]
+let contentTitles = [];
 let articleTitle = []; // Declareing globally so the event-listener can access them
-let movieTitle = [];  // Declareing globally so the event listener can access them
+let movieTitle = []; // Declareing globally so the event listener can access them
 
-const MAX_RESULTS = 5;   //makes it so that the home page does not get overwelmed by the titles
+const MAX_RESULTS = 5; //makes it so that the home page does not get overwelmed by the titles
 
-    // Search logic
+// Search logic
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value.toLowerCase()
+  const value = e.target.value.toLowerCase();
   let visibleCount = 0;
   let hasVisibleResults = false;
 
-  articleTitle.forEach(article => article.element.classList.add("hide"));
-  movieTitle.forEach(movie => movie.element.classList.add("hide"));
+  articleTitle.forEach((article) => article.element.classList.add("hide"));
+  movieTitle.forEach((movie) => movie.element.classList.add("hide"));
 
   if (value === "") {
-    articleTitle.forEach(articles => articles.element.classList.add("hide"));
-    movieTitle.forEach(movies => movies.element.classList.add("hide"));
+    articleTitle.forEach((articles) => articles.element.classList.add("hide"));
+    movieTitle.forEach((movies) => movies.element.classList.add("hide"));
     dataShowContainer.classList.remove("active");
     return;
   }
-  
+
   for (let i = 0; i < articleTitle.length; i++) {
     const article = articleTitle[i];
     if (article.title.toLowerCase().startsWith(value)) {
@@ -58,47 +58,50 @@ searchInput.addEventListener("input", (e) => {
   }
   dataShowContainer.classList.toggle("active", hasVisibleResults);
 
-  console.log(articleTitle, movieTitle)
-})
+  console.log(articleTitle, movieTitle);
+});
 
-    // enter to redirect
-    searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      const query = searchInput.value.trim();
-      if (query !== "") {
-        window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
-      }
+// enter to redirect
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const query = searchInput.value.trim();
+    if (query !== "") {
+      window.location.href = `search-results.html?query=${encodeURIComponent(
+        query
+      )}`;
     }
-  });
+  }
+});
 
-    // fetch data
-    fetch("data/articles.json")
-  .then(res => res.json())
-  .then(data => {
-    console.log(data); 
-    const articles = data.articles; 
-    articleTitle = articles.map(article => {
-      const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+// fetch data
+fetch("data/articles.json")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    const articles = data.articles;
+    articleTitle = articles.map((article) => {
+      const dataContent =
+        dataContentTemplate.content.cloneNode(true).children[0];
       const title = dataContent.querySelector("[data-title]");
       title.href = `detail-page-articles.html?id=${article.id}`;
       title.textContent = article.title;
       dataShowContainer.appendChild(dataContent);
-      return {title: article.title, element: dataContent}
+      return { title: article.title, element: dataContent };
     });
   });
- 
+
 fetch("data/movies.json")
-  .then(res => res.json())
-  .then(data => {
-    console.log(data); 
-    const movies = data.movies; 
-    movieTitle = movies.map(movie => {
-      const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    const movies = data.movies;
+    movieTitle = movies.map((movie) => {
+      const dataContent =
+        dataContentTemplate.content.cloneNode(true).children[0];
       const title = dataContent.querySelector("[data-title]");
       title.href = `detail-page.html?title=${movie.title}`;
       title.textContent = movie.title;
       dataShowContainer.appendChild(dataContent);
-      return {title: movie.title, element: dataContent}
+      return { title: movie.title, element: dataContent };
     });
-  })
-
+  });

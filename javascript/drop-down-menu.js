@@ -1,8 +1,8 @@
 const iconElementMenu = document.getElementById("drop-down-icon");
-const containerQuery = document.querySelector("[data-enter-list-items]")
+const containerQuery = document.querySelector("[data-enter-list-items]");
 
-function listItems (){
-    containerQuery.innerHTML =`
+function listItems() {
+  containerQuery.innerHTML = `
     <ul class="header-ul-menu">
         <li class="header-list-menu">
             <a class="header-text" href="index.html">Home</a>
@@ -22,21 +22,19 @@ function listItems (){
     </ul>
     `;
 }
-function listEmpty (){
-    containerQuery.innerHTML =``;
+function listEmpty() {
+  containerQuery.innerHTML = ``;
 }
-
-
 
 let menuActive = false;
 
-iconElementMenu.addEventListener ("click", function (event){
-    if(!menuActive){
-        iconElementMenu.classList.add("active");
-       listItems();
-    } else{
-        iconElementMenu.classList.remove("active");
-        listEmpty();
-    }
-    menuActive = !menuActive;
+iconElementMenu.addEventListener("click", function (event) {
+  if (!menuActive) {
+    iconElementMenu.classList.add("active");
+    listItems();
+  } else {
+    iconElementMenu.classList.remove("active");
+    listEmpty();
+  }
+  menuActive = !menuActive;
 });

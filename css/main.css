@@ -31,7 +31,7 @@ header {
   width: 100%;
 }
 
-body.dark-mode header{
+body.dark-mode header {
   background-color: var(--red-dm);
   color: var(--off-white-dm);
 }
@@ -97,7 +97,7 @@ nav ul {
   margin-left: 1rem;
   font-family: none;
 }
-body.dark-mode .cinema-logo{
+body.dark-mode .cinema-logo {
   content: url(../icons/cinema-logo-dm.png);
 }
 
@@ -116,7 +116,7 @@ h1 {
   margin-bottom: 3rem;
   margin-top: 0;
 }
-body.dark-mode .top-of-page{
+body.dark-mode .top-of-page {
   background-color: var(--green-dm);
 }
 .top-of-page-title {
@@ -126,7 +126,7 @@ body.dark-mode .top-of-page{
   font-size: 2.4rem;
   color: var(--dark-green);
 }
-body.dark-mode .top-of-page-title{
+body.dark-mode .top-of-page-title {
   color: var(--off-white-dm);
 }
 
@@ -135,7 +135,7 @@ footer {
   background-color: var(--red);
   padding-bottom: 1rem;
 }
-body.dark-mode footer{
+body.dark-mode footer {
   background-color: var(--red-dm);
   color: var(--off-white-dm);
 }
@@ -244,7 +244,7 @@ body.dark-mode footer{
   z-index: 2000;
   transform: translateX(-50%);
 }
-body.dark-mode .header-ul-menu{
+body.dark-mode .header-ul-menu {
   background-color: var(--red-dm);
 }
 

@@ -43,14 +43,14 @@ html {
   color: black;
 }
 body.dark-mode .article-author,
-body.dark-mode .article-name{
-color: var(--off-white-dm);
+body.dark-mode .article-name {
+  color: var(--off-white-dm);
 }
 
 .article-body {
   background-color: var(--off-white);
 }
-body.dark-mode{
+body.dark-mode {
   background-color: var(--dark-green-dm);
 }
 
@@ -58,39 +58,39 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1130px){
-  .article-box{
+@media only screen and (max-width: 1130px) {
+  .article-box {
     width: 18rem;
   }
 }
-@media only screen and (max-width: 980px){
-  .article-box{
+@media only screen and (max-width: 980px) {
+  .article-box {
     width: 15rem;
   }
 }
-@media only screen and (max-width: 810px){
-  .container{
+@media only screen and (max-width: 810px) {
+  .container {
     grid-template-columns: 1fr 1fr;
   }
-  .article-box{
+  .article-box {
     width: 18rem;
   }
 }
-@media only screen and (max-width: 700px){
-  .article-box{
+@media only screen and (max-width: 700px) {
+  .article-box {
     width: 16rem;
   }
 }
-@media only screen and (max-width: 580px){
-  .container{
+@media only screen and (max-width: 580px) {
+  .container {
     grid-template-columns: 1fr;
   }
-  .article-box{
+  .article-box {
     width: 25rem;
   }
 }
-@media only screen and (max-width: 400px){
-  .article-box{
+@media only screen and (max-width: 400px) {
+  .article-box {
     width: 19rem;
   }
 }

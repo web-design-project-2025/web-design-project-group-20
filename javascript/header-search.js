@@ -24,10 +24,13 @@ iconElement.addEventListener("click", () => {
       </template>
 `;
 
-
     // after inserting the HTML
-    const dataContentTemplate = wrapperElement.querySelector("[data-content-template]");
-    const dataShowContainer = wrapperElement.querySelector("[data-show-container]");
+    const dataContentTemplate = wrapperElement.querySelector(
+      "[data-content-template]"
+    );
+    const dataShowContainer = wrapperElement.querySelector(
+      "[data-show-container]"
+    );
     const searchInput = wrapperElement.querySelector("[data-search='header']");
 
     let articleTitle = [];
@@ -40,12 +43,14 @@ iconElement.addEventListener("click", () => {
       let visibleCount = 0;
       let hasVisibleResults = false;
 
-      articleTitle.forEach(article => article.element.classList.add("hide"));
-      movieTitle.forEach(movie => movie.element.classList.add("hide"));
+      articleTitle.forEach((article) => article.element.classList.add("hide"));
+      movieTitle.forEach((movie) => movie.element.classList.add("hide"));
 
       if (value === "") {
-        articleTitle.forEach(articles => articles.element.classList.add("hide"));
-        movieTitle.forEach(movies => movies.element.classList.add("hide"));
+        articleTitle.forEach((articles) =>
+          articles.element.classList.add("hide")
+        );
+        movieTitle.forEach((movies) => movies.element.classList.add("hide"));
         dataShowContainer.classList.remove("active");
         return;
       }
@@ -80,17 +85,20 @@ iconElement.addEventListener("click", () => {
       if (e.key === "Enter") {
         const query = searchInput.value.trim();
         if (query !== "") {
-          window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
+          window.location.href = `search-results.html?query=${encodeURIComponent(
+            query
+          )}`;
         }
       }
     });
 
     // fetch data
     fetch("data/articles.json")
-      .then(res => res.json())
-      .then(data => {
-        articleTitle = data.articles.map(article => {
-          const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+      .then((res) => res.json())
+      .then((data) => {
+        articleTitle = data.articles.map((article) => {
+          const dataContent =
+            dataContentTemplate.content.cloneNode(true).children[0];
           const title = dataContent.querySelector("[data-title]");
           title.href = `detail-page-articles.html?id=${article.id}`;
           title.textContent = article.title;
@@ -100,10 +108,11 @@ iconElement.addEventListener("click", () => {
       });
 
     fetch("data/movies.json")
-      .then(res => res.json())
-      .then(data => {
-        movieTitle = data.movies.map(movie => {
-          const dataContent = dataContentTemplate.content.cloneNode(true).children[0];
+      .then((res) => res.json())
+      .then((data) => {
+        movieTitle = data.movies.map((movie) => {
+          const dataContent =
+            dataContentTemplate.content.cloneNode(true).children[0];
           const title = dataContent.querySelector("[data-title]");
           title.href = `detail-page.html?title=${movie.title}`;
           title.textContent = movie.title;
