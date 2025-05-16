@@ -22,3 +22,6 @@ body {
   color: var(--dark-green);
   text-align: center;
 }
+body.dark-mode .watchlist-text-container {
+color: var(--off-white-dm);
+}
