@@ -128,7 +128,22 @@ body.dark-mode .input-search-header {
   position: relative;
   z-index: 1050;
 }
-/*search results*/
+.search-show-result {
+  align-items: center;
+  background-color: var(--red);
+  width: 23.8rem;
+  margin-left: 3.1rem;
+  margin-top: -0.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+}
+body.dark-mode .search-show-result {
+  background-color: var(--red-dm);
+}
+
+/*search results-------*/
+
+/*search results page*/
 .search-result-header {
   color: var(--off-white);
   padding: 0.5rem 0;
@@ -191,7 +206,6 @@ body.dark-mode .input-search-result {
 body.dark-mode .search-show-result {
   background-color: var(--red-dm);
 }
-
 /*search results-------*/
 
 /* Visibility Controls */
